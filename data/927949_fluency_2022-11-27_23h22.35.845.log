@@ -1,0 +1,56 @@
+2.3176 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+5.0790 	WARNING 	User requested fullscreen with size [1280  720], but screen is actually [1920, 1080]. Using actual size
+6.1841 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000019E4A422130>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x0000019E4D619DF0>, multiSample=False, name='window1', numSamples=2, pos=(0, 0), screen=0, size=array([1920, 1080]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+6.1843 	EXP 	window1: mouseVisible = True
+6.1846 	EXP 	window1: mouseVisible = False
+6.1846 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+6.1847 	EXP 	window1: recordFrameIntervals = False
+6.3500 	EXP 	window1: recordFrameIntervals = True
+6.5331 	EXP 	Screen (0) actual frame rate measured at 60.15Hz
+6.5332 	EXP 	window1: recordFrameIntervals = False
+8.5451 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+8.5457 	EXP 	Created specific_instructions = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='specific_instructions', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+8.5488 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_2', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='+', units='height', win=Window(...), wrapWidth=1)
+8.5541 	EXP 	Created face_image = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='face_image', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128.0, units='height', win=Window(...))
+8.5547 	EXP 	Created trial_prompt = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='trial_prompt', opacity=1.0, ori=0.0, pos=array([ 0. , -0.4]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+8.5725 	EXP 	Created out_of_time_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='out_of_time_2', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+8.5772 	EXP 	window1: mouseVisible = True
+8.5881 	EXP 	Created attractiveness_slider = Slider(__class__=<class 'psychopy.visual.slider.Slider'>, autoDraw=False, autoLog=True, borderColor=None, color=None, colorSpace='rgb', depth=0, fillColor=None, flip=False, font='Open Sans', granularity=0.0, labelColor=None, labelHeight=0.05, labelWrapWidth=None, labels=None, lineColor=None, markerColor=None, name='attractiveness_slider', opacity=None, ori=0.0, pos=array([ 0. , -0.4]), readOnly=False, self=UNKNOWN, size=array([1. , 0.1]), startValue=None, style='rating', styleTweaks=[], ticks=array([1, 2, 3, 4, 5]), units='height', win=Window(...))
+8.5997 	EXP 	Created attractiveness_instr = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='attractiveness_instr', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+8.6053 	EXP 	attractiveness_slider: autoLog = True
+8.6053 	EXP 	attractiveness_slider: markerPos = None
+8.6053 	EXP 	attractiveness_slider: styleTweaks = []
+8.6053 	EXP 	attractiveness_slider: styleTweaks = []
+8.6053 	EXP 	attractiveness_slider: styleTweaks = []
+8.6053 	EXP 	attractiveness_slider: styleTweaks = []
+8.6053 	EXP 	attractiveness_slider: contrast = 1.0
+8.6053 	EXP 	attractiveness_slider: autoLog = True
+8.6053 	EXP 	text: autoDraw = True
+9.2083 	EXP 	Imported fluency_conditions.xlsx as conditions, 5 conditions, 4 params
+9.2179 	EXP 	Created sequence: random, trialTypes=5, nReps=1, seed=None
+9.2182 	EXP 	New trial (rep=0, index=0): {'cond': 'CONTROL', 'face_file': 'img/B09_01.jpg', 'key_map': 'DK', 'instr': 'Press D or K as soon as you see a face!'}
+9.2270 	DATA 	Keypress: space
+9.2307 	EXP 	text: autoDraw = False
+9.2307 	EXP 	specific_instructions: height = 0.05
+9.2307 	EXP 	specific_instructions: height = 0.05
+9.2307 	EXP 	specific_instructions: height = 0.05
+9.2307 	EXP 	specific_instructions: text = 'Press D or K as soon as you see a face!\n hit spacebar to continue'
+9.2307 	EXP 	specific_instructions: autoDraw = True
+11.2073 	EXP 	Imported fluency_conditions.xlsx as conditions, 5 conditions, 4 params
+11.2080 	EXP 	Created sequence: random, trialTypes=5, nReps=1, seed=None
+11.2084 	EXP 	New trial (rep=0, index=0): {'cond': 'GCNB', 'face_file': 'img/B09_01.jpg', 'key_map': 'DK', 'instr': 'Press D if the face is GENDER-CONFORMING and K if the face is NONBINARY'}
+11.2087 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+11.2092 	EXP 	New trial (rep=0, index=0): None
+11.2204 	DATA 	Keypress: space
+11.2239 	EXP 	specific_instructions: autoDraw = False
+11.2239 	EXP 	text_2: autoDraw = True
+11.4772 	EXP 	text_2: autoDraw = False
+11.4772 	EXP 	text_2: autoDraw = False
+11.4772 	EXP 	face_image: image = 'img/B09_01.jpg'
+11.4772 	EXP 	trial_prompt: height = 0.05
+11.4772 	EXP 	trial_prompt: height = 0.05
+11.4772 	EXP 	trial_prompt: height = 0.05
+11.4772 	EXP 	trial_prompt: text = 'Press D if the face is GENDER-CONFORMING and K if the face is NONBINARY'
+11.4772 	EXP 	face_image: autoDraw = True
+11.4772 	EXP 	trial_prompt: autoDraw = True
+13.4612 	EXP 	window1: mouseVisible = True
