@@ -567,7 +567,7 @@ async function experimentInit() {
   instr_advance_3 = new core.Keyboard({psychoJS: psychoJS, clock: new util.Clock(), waitForStart: true});
   
   // Run 'Begin Experiment' code from condSelect
-  selected_rows = [671, 676];
+  selected_rows = util.range(((expInfo["participant"] % 110) * 2), (((expInfo["participant"] % 110) + 1) * 2));
   
   // Initialize components for Routine "specific_instr"
   specific_instrClock = new util.Clock();
@@ -766,7 +766,7 @@ async function experimentInit() {
   attnQuestion2 = new visual.TextStim({
     win: psychoJS.window,
     name: 'attnQuestion2',
-    text: 'Use your keyboard to answer the following question:\n\nWhich keys will you use to respond to the face?\n\na) J and K\n\nb) F and J\n\nc) A and D',
+    text: 'Use your keyboard to answer the following question:\n\nWhich keys will you use to respond to the face?\n\na) J or K\n\nb) F or C\n\nc) A or D',
     font: 'Open Sans',
     units: undefined, 
     pos: [0, 0], height: 0.05,  wrapWidth: 1.3, ori: 0.0,
