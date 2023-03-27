@@ -70,18 +70,18 @@ flowScheduler.add(trialsLoopEnd);
 flowScheduler.add(intro2QuestionsRoutineBegin());
 flowScheduler.add(intro2QuestionsRoutineEachFrame());
 flowScheduler.add(intro2QuestionsRoutineEnd());
-flowScheduler.add(ambiguity1RoutineBegin());
-flowScheduler.add(ambiguity1RoutineEachFrame());
-flowScheduler.add(ambiguity1RoutineEnd());
-flowScheduler.add(ambiguity2RoutineBegin());
-flowScheduler.add(ambiguity2RoutineEachFrame());
-flowScheduler.add(ambiguity2RoutineEnd());
-flowScheduler.add(ambiguity3RoutineBegin());
-flowScheduler.add(ambiguity3RoutineEachFrame());
-flowScheduler.add(ambiguity3RoutineEnd());
-flowScheduler.add(ambiguity4RoutineBegin());
-flowScheduler.add(ambiguity4RoutineEachFrame());
-flowScheduler.add(ambiguity4RoutineEnd());
+flowScheduler.add(closure1RoutineBegin());
+flowScheduler.add(closure1RoutineEachFrame());
+flowScheduler.add(closure1RoutineEnd());
+flowScheduler.add(closure2RoutineBegin());
+flowScheduler.add(closure2RoutineEachFrame());
+flowScheduler.add(closure2RoutineEnd());
+flowScheduler.add(closure3RoutineBegin());
+flowScheduler.add(closure3RoutineEachFrame());
+flowScheduler.add(closure3RoutineEnd());
+flowScheduler.add(closure4RoutineBegin());
+flowScheduler.add(closure4RoutineEachFrame());
+flowScheduler.add(closure4RoutineEnd());
 flowScheduler.add(demographicsRoutineBegin());
 flowScheduler.add(demographicsRoutineEachFrame());
 flowScheduler.add(demographicsRoutineEnd());
@@ -100,118 +100,118 @@ psychoJS.start({
   expName: expName,
   expInfo: expInfo,
   resources: [
-    {'name': 'img/B09_04.jpg', 'path': 'img/B09_04.jpg'},
-    {'name': 'img/B07_03.jpg', 'path': 'img/B07_03.jpg'},
-    {'name': 'img/B04_02.jpg', 'path': 'img/B04_02.jpg'},
-    {'name': 'img/B05_04.jpg', 'path': 'img/B05_04.jpg'},
-    {'name': 'img/B07_05.jpg', 'path': 'img/B07_05.jpg'},
-    {'name': 'img/B03_07.jpg', 'path': 'img/B03_07.jpg'},
-    {'name': 'img/B09_09.jpg', 'path': 'img/B09_09.jpg'},
-    {'name': 'img/B10_00.jpg', 'path': 'img/B10_00.jpg'},
-    {'name': 'img/B01_07.jpg', 'path': 'img/B01_07.jpg'},
-    {'name': 'img/B09_02.jpg', 'path': 'img/B09_02.jpg'},
-    {'name': 'img/B08_03.jpg', 'path': 'img/B08_03.jpg'},
-    {'name': 'img/B02_00.jpg', 'path': 'img/B02_00.jpg'},
-    {'name': 'img/B04_05.jpg', 'path': 'img/B04_05.jpg'},
-    {'name': 'img/B01_02.jpg', 'path': 'img/B01_02.jpg'},
-    {'name': 'img/B09_05.jpg', 'path': 'img/B09_05.jpg'},
-    {'name': 'img/B01_00.jpg', 'path': 'img/B01_00.jpg'},
-    {'name': 'img/B03_06.jpg', 'path': 'img/B03_06.jpg'},
-    {'name': 'img/B09_08.jpg', 'path': 'img/B09_08.jpg'},
-    {'name': 'img/B08_02.jpg', 'path': 'img/B08_02.jpg'},
-    {'name': 'img/B05_05.jpg', 'path': 'img/B05_05.jpg'},
-    {'name': 'img/B07_06.jpg', 'path': 'img/B07_06.jpg'},
-    {'name': 'img/B05_06.jpg', 'path': 'img/B05_06.jpg'},
-    {'name': 'img/B01_06.jpg', 'path': 'img/B01_06.jpg'},
-    {'name': 'img/B01_09.jpg', 'path': 'img/B01_09.jpg'},
-    {'name': 'img/B04_04.jpg', 'path': 'img/B04_04.jpg'},
-    {'name': 'img/B05_07.jpg', 'path': 'img/B05_07.jpg'},
-    {'name': 'img/B06_00.jpg', 'path': 'img/B06_00.jpg'},
-    {'name': 'img/B10_08.jpg', 'path': 'img/B10_08.jpg'},
-    {'name': 'img/B02_03.jpg', 'path': 'img/B02_03.jpg'},
-    {'name': 'img/B01_03.jpg', 'path': 'img/B01_03.jpg'},
-    {'name': 'img/B02_08.jpg', 'path': 'img/B02_08.jpg'},
-    {'name': 'img/B03_05.jpg', 'path': 'img/B03_05.jpg'},
-    {'name': 'img/B06_04.jpg', 'path': 'img/B06_04.jpg'},
-    {'name': 'img/B10_07.jpg', 'path': 'img/B10_07.jpg'},
-    {'name': 'img/B04_03.jpg', 'path': 'img/B04_03.jpg'},
-    {'name': 'img/B04_08.jpg', 'path': 'img/B04_08.jpg'},
-    {'name': 'img/B05_10.jpg', 'path': 'img/B05_10.jpg'},
-    {'name': 'img/B03_00.jpg', 'path': 'img/B03_00.jpg'},
     {'name': 'img/B09_06.jpg', 'path': 'img/B09_06.jpg'},
-    {'name': 'img/B10_05.jpg', 'path': 'img/B10_05.jpg'},
-    {'name': 'img/B03_01.jpg', 'path': 'img/B03_01.jpg'},
-    {'name': 'img/B08_08.jpg', 'path': 'img/B08_08.jpg'},
-    {'name': 'img/B02_10.jpg', 'path': 'img/B02_10.jpg'},
-    {'name': 'img/B06_03.jpg', 'path': 'img/B06_03.jpg'},
+    {'name': 'img/B06_04.jpg', 'path': 'img/B06_04.jpg'},
+    {'name': 'img/B10_04.jpg', 'path': 'img/B10_04.jpg'},
+    {'name': 'img/B02_00.jpg', 'path': 'img/B02_00.jpg'},
+    {'name': 'img/B05_00.jpg', 'path': 'img/B05_00.jpg'},
+    {'name': 'img/B09_01.jpg', 'path': 'img/B09_01.jpg'},
+    {'name': 'img/B07_05.jpg', 'path': 'img/B07_05.jpg'},
+    {'name': 'img/B06_06.jpg', 'path': 'img/B06_06.jpg'},
+    {'name': 'img/B05_01.jpg', 'path': 'img/B05_01.jpg'},
+    {'name': 'img/B02_03.jpg', 'path': 'img/B02_03.jpg'},
+    {'name': 'img/B01_00.jpg', 'path': 'img/B01_00.jpg'},
+    {'name': 'img/B04_03.jpg', 'path': 'img/B04_03.jpg'},
+    {'name': 'img/B04_05.jpg', 'path': 'img/B04_05.jpg'},
+    {'name': 'img/B02_05.jpg', 'path': 'img/B02_05.jpg'},
+    {'name': 'img/B04_00.jpg', 'path': 'img/B04_00.jpg'},
+    {'name': 'img/B09_00.jpg', 'path': 'img/B09_00.jpg'},
+    {'name': 'img/B01_05.jpg', 'path': 'img/B01_05.jpg'},
+    {'name': 'img/B03_04.jpg', 'path': 'img/B03_04.jpg'},
+    {'name': 'img/B05_10.jpg', 'path': 'img/B05_10.jpg'},
+    {'name': 'img/B07_07.jpg', 'path': 'img/B07_07.jpg'},
+    {'name': 'img/B10_07.jpg', 'path': 'img/B10_07.jpg'},
+    {'name': 'img/B01_02.jpg', 'path': 'img/B01_02.jpg'},
+    {'name': 'img/B01_10.jpg', 'path': 'img/B01_10.jpg'},
+    {'name': 'img/B10_08.jpg', 'path': 'img/B10_08.jpg'},
+    {'name': 'img/B08_05.jpg', 'path': 'img/B08_05.jpg'},
+    {'name': 'img/B09_04.jpg', 'path': 'img/B09_04.jpg'},
+    {'name': 'img/B07_09.jpg', 'path': 'img/B07_09.jpg'},
+    {'name': 'img/B10_00.jpg', 'path': 'img/B10_00.jpg'},
+    {'name': 'img/B07_01.jpg', 'path': 'img/B07_01.jpg'},
+    {'name': 'img/B09_10.jpg', 'path': 'img/B09_10.jpg'},
+    {'name': 'img/B01_07.jpg', 'path': 'img/B01_07.jpg'},
+    {'name': 'img/B08_04.jpg', 'path': 'img/B08_04.jpg'},
+    {'name': 'img/B01_08.jpg', 'path': 'img/B01_08.jpg'},
+    {'name': 'img/B02_02.jpg', 'path': 'img/B02_02.jpg'},
+    {'name': 'img/B04_10.jpg', 'path': 'img/B04_10.jpg'},
+    {'name': 'img/B03_06.jpg', 'path': 'img/B03_06.jpg'},
+    {'name': 'img/B10_09.jpg', 'path': 'img/B10_09.jpg'},
+    {'name': 'img/B02_06.jpg', 'path': 'img/B02_06.jpg'},
+    {'name': 'img/B06_07.jpg', 'path': 'img/B06_07.jpg'},
+    {'name': 'img/B01_06.jpg', 'path': 'img/B01_06.jpg'},
+    {'name': 'img/B03_09.jpg', 'path': 'img/B03_09.jpg'},
+    {'name': 'img/B06_01.jpg', 'path': 'img/B06_01.jpg'},
+    {'name': 'img/B07_03.jpg', 'path': 'img/B07_03.jpg'},
+    {'name': 'img/B09_05.jpg', 'path': 'img/B09_05.jpg'},
+    {'name': 'img/B02_08.jpg', 'path': 'img/B02_08.jpg'},
+    {'name': 'img/B06_09.jpg', 'path': 'img/B06_09.jpg'},
+    {'name': 'img/B07_10.jpg', 'path': 'img/B07_10.jpg'},
     {'name': 'img/B01_01.jpg', 'path': 'img/B01_01.jpg'},
     {'name': 'img/B05_09.jpg', 'path': 'img/B05_09.jpg'},
-    {'name': 'img/B06_07.jpg', 'path': 'img/B06_07.jpg'},
-    {'name': 'img/B07_08.jpg', 'path': 'img/B07_08.jpg'},
-    {'name': 'img/B08_06.jpg', 'path': 'img/B08_06.jpg'},
-    {'name': 'img/B02_01.jpg', 'path': 'img/B02_01.jpg'},
+    {'name': 'img/B04_01.jpg', 'path': 'img/B04_01.jpg'},
+    {'name': 'img/B09_08.jpg', 'path': 'img/B09_08.jpg'},
+    {'name': 'img/B05_08.jpg', 'path': 'img/B05_08.jpg'},
+    {'name': 'img/B04_09.jpg', 'path': 'img/B04_09.jpg'},
+    {'name': 'img/B06_00.jpg', 'path': 'img/B06_00.jpg'},
+    {'name': 'img/B07_06.jpg', 'path': 'img/B07_06.jpg'},
+    {'name': 'img/B10_02.jpg', 'path': 'img/B10_02.jpg'},
+    {'name': 'fluency_conditions.xlsx', 'path': 'fluency_conditions.xlsx'},
+    {'name': 'img/B08_08.jpg', 'path': 'img/B08_08.jpg'},
+    {'name': 'img/B09_03.jpg', 'path': 'img/B09_03.jpg'},
+    {'name': 'img/B05_04.jpg', 'path': 'img/B05_04.jpg'},
+    {'name': 'img/B06_02.jpg', 'path': 'img/B06_02.jpg'},
+    {'name': 'img/B03_03.jpg', 'path': 'img/B03_03.jpg'},
+    {'name': 'img/B04_08.jpg', 'path': 'img/B04_08.jpg'},
     {'name': 'img/B08_10.jpg', 'path': 'img/B08_10.jpg'},
-    {'name': 'img/B09_01.jpg', 'path': 'img/B09_01.jpg'},
-    {'name': 'img/B02_06.jpg', 'path': 'img/B02_06.jpg'},
-    {'name': 'img/B10_01.jpg', 'path': 'img/B10_01.jpg'},
-    {'name': 'img/B05_02.jpg', 'path': 'img/B05_02.jpg'},
+    {'name': 'img/B03_02.jpg', 'path': 'img/B03_02.jpg'},
+    {'name': 'img/B09_07.jpg', 'path': 'img/B09_07.jpg'},
+    {'name': 'img/B09_09.jpg', 'path': 'img/B09_09.jpg'},
     {'name': 'img/B10_03.jpg', 'path': 'img/B10_03.jpg'},
-    {'name': 'img/B02_04.jpg', 'path': 'img/B02_04.jpg'},
-    {'name': 'img/B06_09.jpg', 'path': 'img/B06_09.jpg'},
-    {'name': 'img/B07_00.jpg', 'path': 'img/B07_00.jpg'},
-    {'name': 'img/B04_07.jpg', 'path': 'img/B04_07.jpg'},
-    {'name': 'img/B06_06.jpg', 'path': 'img/B06_06.jpg'},
-    {'name': 'img/B08_00.jpg', 'path': 'img/B08_00.jpg'},
-    {'name': 'img/B04_00.jpg', 'path': 'img/B04_00.jpg'},
-    {'name': 'img/B02_07.jpg', 'path': 'img/B02_07.jpg'},
-    {'name': 'img/B08_09.jpg', 'path': 'img/B08_09.jpg'},
     {'name': 'img/B01_04.jpg', 'path': 'img/B01_04.jpg'},
-    {'name': 'img/B07_10.jpg', 'path': 'img/B07_10.jpg'},
+    {'name': 'img/B07_02.jpg', 'path': 'img/B07_02.jpg'},
+    {'name': 'img/B07_04.jpg', 'path': 'img/B07_04.jpg'},
+    {'name': 'img/B03_01.jpg', 'path': 'img/B03_01.jpg'},
+    {'name': 'img/B02_01.jpg', 'path': 'img/B02_01.jpg'},
+    {'name': 'img/B01_09.jpg', 'path': 'img/B01_09.jpg'},
+    {'name': 'img/B07_00.jpg', 'path': 'img/B07_00.jpg'},
+    {'name': 'img/B07_08.jpg', 'path': 'img/B07_08.jpg'},
+    {'name': 'img/B10_10.jpg', 'path': 'img/B10_10.jpg'},
+    {'name': 'img/B02_10.jpg', 'path': 'img/B02_10.jpg'},
+    {'name': 'img/B04_02.jpg', 'path': 'img/B04_02.jpg'},
+    {'name': 'img/B10_06.jpg', 'path': 'img/B10_06.jpg'},
+    {'name': 'img/B02_07.jpg', 'path': 'img/B02_07.jpg'},
+    {'name': 'img/B01_03.jpg', 'path': 'img/B01_03.jpg'},
+    {'name': 'img/B08_01.jpg', 'path': 'img/B08_01.jpg'},
+    {'name': 'img/B08_03.jpg', 'path': 'img/B08_03.jpg'},
+    {'name': 'img/B05_02.jpg', 'path': 'img/B05_02.jpg'},
+    {'name': 'img/B08_07.jpg', 'path': 'img/B08_07.jpg'},
+    {'name': 'img/B04_07.jpg', 'path': 'img/B04_07.jpg'},
+    {'name': 'img/B10_05.jpg', 'path': 'img/B10_05.jpg'},
+    {'name': 'img/B03_00.jpg', 'path': 'img/B03_00.jpg'},
+    {'name': 'img/B03_07.jpg', 'path': 'img/B03_07.jpg'},
+    {'name': 'img/B08_02.jpg', 'path': 'img/B08_02.jpg'},
+    {'name': 'img/B06_03.jpg', 'path': 'img/B06_03.jpg'},
+    {'name': 'img/B03_10.jpg', 'path': 'img/B03_10.jpg'},
+    {'name': 'img/B02_04.jpg', 'path': 'img/B02_04.jpg'},
+    {'name': 'img/B08_06.jpg', 'path': 'img/B08_06.jpg'},
+    {'name': 'img/B02_09.jpg', 'path': 'img/B02_09.jpg'},
+    {'name': 'img/B08_00.jpg', 'path': 'img/B08_00.jpg'},
+    {'name': 'img/B05_06.jpg', 'path': 'img/B05_06.jpg'},
+    {'name': 'img/B06_10.jpg', 'path': 'img/B06_10.jpg'},
+    {'name': 'img/B06_05.jpg', 'path': 'img/B06_05.jpg'},
+    {'name': 'img/B09_02.jpg', 'path': 'img/B09_02.jpg'},
+    {'name': 'img/practice_image.jpg', 'path': 'img/practice_image.jpg'},
+    {'name': 'img/B05_07.jpg', 'path': 'img/B05_07.jpg'},
+    {'name': 'img/B03_05.jpg', 'path': 'img/B03_05.jpg'},
+    {'name': 'img/B06_08.jpg', 'path': 'img/B06_08.jpg'},
+    {'name': 'img/B08_09.jpg', 'path': 'img/B08_09.jpg'},
     {'name': 'img/B03_08.jpg', 'path': 'img/B03_08.jpg'},
     {'name': 'img/B05_03.jpg', 'path': 'img/B05_03.jpg'},
-    {'name': 'img/B03_09.jpg', 'path': 'img/B03_09.jpg'},
-    {'name': 'img/B08_07.jpg', 'path': 'img/B08_07.jpg'},
-    {'name': 'img/B06_08.jpg', 'path': 'img/B06_08.jpg'},
-    {'name': 'img/B07_01.jpg', 'path': 'img/B07_01.jpg'},
-    {'name': 'img/B09_03.jpg', 'path': 'img/B09_03.jpg'},
-    {'name': 'img/B07_02.jpg', 'path': 'img/B07_02.jpg'},
-    {'name': 'img/B05_01.jpg', 'path': 'img/B05_01.jpg'},
-    {'name': 'img/B03_02.jpg', 'path': 'img/B03_02.jpg'},
-    {'name': 'img/B06_10.jpg', 'path': 'img/B06_10.jpg'},
-    {'name': 'img/B06_01.jpg', 'path': 'img/B06_01.jpg'},
-    {'name': 'img/B10_02.jpg', 'path': 'img/B10_02.jpg'},
-    {'name': 'img/B06_02.jpg', 'path': 'img/B06_02.jpg'},
-    {'name': 'img/B05_08.jpg', 'path': 'img/B05_08.jpg'},
-    {'name': 'img/B07_07.jpg', 'path': 'img/B07_07.jpg'},
-    {'name': 'img/B02_09.jpg', 'path': 'img/B02_09.jpg'},
-    {'name': 'img/B04_09.jpg', 'path': 'img/B04_09.jpg'},
-    {'name': 'img/B07_04.jpg', 'path': 'img/B07_04.jpg'},
-    {'name': 'img/B01_08.jpg', 'path': 'img/B01_08.jpg'},
-    {'name': 'img/B08_05.jpg', 'path': 'img/B08_05.jpg'},
-    {'name': 'img/B10_04.jpg', 'path': 'img/B10_04.jpg'},
-    {'name': 'img/B03_10.jpg', 'path': 'img/B03_10.jpg'},
-    {'name': 'img/B10_10.jpg', 'path': 'img/B10_10.jpg'},
-    {'name': 'img/B07_09.jpg', 'path': 'img/B07_09.jpg'},
-    {'name': 'img/B01_05.jpg', 'path': 'img/B01_05.jpg'},
-    {'name': 'img/B01_10.jpg', 'path': 'img/B01_10.jpg'},
-    {'name': 'img/B04_10.jpg', 'path': 'img/B04_10.jpg'},
-    {'name': 'img/B09_10.jpg', 'path': 'img/B09_10.jpg'},
+    {'name': 'img/B04_04.jpg', 'path': 'img/B04_04.jpg'},
+    {'name': 'img/B05_05.jpg', 'path': 'img/B05_05.jpg'},
     {'name': 'img/B04_06.jpg', 'path': 'img/B04_06.jpg'},
-    {'name': 'img/B03_03.jpg', 'path': 'img/B03_03.jpg'},
-    {'name': 'img/B04_01.jpg', 'path': 'img/B04_01.jpg'},
-    {'name': 'img/B10_09.jpg', 'path': 'img/B10_09.jpg'},
-    {'name': 'img/B08_04.jpg', 'path': 'img/B08_04.jpg'},
-    {'name': 'img/B05_00.jpg', 'path': 'img/B05_00.jpg'},
-    {'name': 'img/B03_04.jpg', 'path': 'img/B03_04.jpg'},
-    {'name': 'fluency_conditions.xlsx', 'path': 'fluency_conditions.xlsx'},
-    {'name': 'img/B09_00.jpg', 'path': 'img/B09_00.jpg'},
-    {'name': 'img/B02_02.jpg', 'path': 'img/B02_02.jpg'},
-    {'name': 'img/practice_image.jpg', 'path': 'img/practice_image.jpg'},
-    {'name': 'img/B02_05.jpg', 'path': 'img/B02_05.jpg'},
-    {'name': 'img/B10_06.jpg', 'path': 'img/B10_06.jpg'},
-    {'name': 'img/B08_01.jpg', 'path': 'img/B08_01.jpg'},
-    {'name': 'img/B09_07.jpg', 'path': 'img/B09_07.jpg'},
-    {'name': 'img/B06_05.jpg', 'path': 'img/B06_05.jpg'}
+    {'name': 'img/B10_01.jpg', 'path': 'img/B10_01.jpg'}
   ]
 });
 
@@ -343,7 +343,7 @@ var contPrompt;
 var intro2QuestionsClock;
 var qsIntro;
 var contResp_2;
-var ambiguity1Clock;
+var closure1Clock;
 var qsInstr;
 var questions1;
 var respQ1;
@@ -352,7 +352,7 @@ var respQ3;
 var respQ4;
 var nextButton1;
 var nextClick1;
-var ambiguity2Clock;
+var closure2Clock;
 var qsInstr_2;
 var questions2;
 var respQ5;
@@ -361,7 +361,7 @@ var respQ7;
 var respQ8;
 var nextButton2;
 var nextClick2;
-var ambiguity3Clock;
+var closure3Clock;
 var qsInstr_3;
 var questions3;
 var respQ9;
@@ -370,13 +370,12 @@ var respQ11;
 var respQ12;
 var nextButton3;
 var nextClick3;
-var ambiguity4Clock;
+var closure4Clock;
 var qsInstr_4;
 var questions4;
 var respQ13;
 var respQ14;
 var respQ15;
-var respQ16;
 var nextButton4;
 var nextClick4;
 var demographicsClock;
@@ -1072,15 +1071,15 @@ async function experimentInit() {
   
   contResp_2 = new core.Keyboard({psychoJS: psychoJS, clock: new util.Clock(), waitForStart: true});
   
-  // Initialize components for Routine "ambiguity1"
-  ambiguity1Clock = new util.Clock();
+  // Initialize components for Routine "closure1"
+  closure1Clock = new util.Clock();
   qsInstr = new visual.TextStim({
     win: psychoJS.window,
     name: 'qsInstr',
-    text: ' Please rate your agreement with the following statement on a scale from 1 (Strongly Disagree) to 7 (Strongly Agree). If you would prefer not to rate a given statement, select the option on the far left end of the scale.',
+    text: ' Please rate your agreement with the following statement on a scale from 1 (Strongly Disagree) to 5 (Strongly Agree). If you would prefer not to rate a given statement, select the "prefer not to answer" option on the far left end of the scale.',
     font: 'Open Sans',
     units: undefined, 
-    pos: [0, 0.325], height: 0.03,  wrapWidth: 1.5, ori: 0.0,
+    pos: [0, 0.32], height: 0.03,  wrapWidth: 1.5, ori: 0.0,
     languageStyle: 'LTR',
     color: new util.Color('white'),  opacity: undefined,
     depth: 0.0 
@@ -1089,10 +1088,10 @@ async function experimentInit() {
   questions1 = new visual.TextStim({
     win: psychoJS.window,
     name: 'questions1',
-    text: "1. An expert who doesn't come up with a definite answer probably doesn't know too much.\n\n\n\n2. There is really no such thing as a problem that can't be solved\n\n\n\n3. A good job is one where it is always clear what to do and how to do it.\n\n\n\n4. In the long run it is possible to get more done by tackling small, simple problems rather than large and complicated ones.",
+    text: '1. I don’t like situations that are uncertain. \n\n\n\n2. I dislike questions which could be answered in many different ways.\n\n\n\n3. I find that a well ordered life with regular hours suits my temperament.\n\n\n\n4. I feel uncomfortable when I don’t understand the reason why an event occurred in my life.',
     font: 'Open Sans',
     units: undefined, 
-    pos: [0, 0], height: 0.03,  wrapWidth: 1.2, ori: 0.0,
+    pos: [0, 0.021], height: 0.03,  wrapWidth: 1.3, ori: 0.0,
     languageStyle: 'LTR',
     color: new util.Color('white'),  opacity: undefined,
     depth: -1.0 
@@ -1102,7 +1101,7 @@ async function experimentInit() {
     win: psychoJS.window, name: 'respQ1',
     startValue: undefined,
     size: [1, 0.015], pos: [0, 0.175], ori: 0.0, units: 'height',
-    labels: ["PREFER NOT TO SAY", 1, 2, 3, 4, 5, 6, 7], fontSize: 0.0175, ticks: [0, 1, 2, 3, 4, 5, 6, 7],
+    labels: ["PREFER NOT TO SAY", 1, 2, 3, 4, 5], fontSize: 0.0175, ticks: [1, 2, 3, 4, 5, 6],
     granularity: 1.0, style: ["RADIO"],
     color: new util.Color('White'), markerColor: new util.Color('Red'), lineColor: new util.Color('White'), 
     opacity: undefined, fontFamily: 'Arial', bold: true, italic: false, depth: -2, 
@@ -1113,7 +1112,7 @@ async function experimentInit() {
     win: psychoJS.window, name: 'respQ2',
     startValue: undefined,
     size: [1, 0.015], pos: [0, 0.04], ori: 0.0, units: 'height',
-    labels: ["PREFER NOT TO SAY", 1, 2, 3, 4, 5, 6, 7], fontSize: 0.0175, ticks: [0, 1, 2, 3, 4, 5, 6, 7],
+    labels: ["PREFER NOT TO SAY", 1, 2, 3, 4, 5], fontSize: 0.0175, ticks: [1, 2, 3, 4, 5, 6],
     granularity: 1.0, style: ["RADIO"],
     color: new util.Color('White'), markerColor: new util.Color('Red'), lineColor: new util.Color('White'), 
     opacity: undefined, fontFamily: 'Arial', bold: true, italic: false, depth: -3, 
@@ -1124,7 +1123,7 @@ async function experimentInit() {
     win: psychoJS.window, name: 'respQ3',
     startValue: undefined,
     size: [1, 0.015], pos: [0, (- 0.09)], ori: 0.0, units: 'height',
-    labels: ["PREFER NOT TO SAY", 1, 2, 3, 4, 5, 6, 7], fontSize: 0.0175, ticks: [0, 1, 2, 3, 4, 5, 6, 7],
+    labels: ["PREFER NOT TO SAY", 1, 2, 3, 4, 5], fontSize: 0.0175, ticks: [1, 2, 3, 4, 5, 6],
     granularity: 1.0, style: ["RADIO"],
     color: new util.Color('White'), markerColor: new util.Color('Red'), lineColor: new util.Color('White'), 
     opacity: undefined, fontFamily: 'Arial', bold: true, italic: false, depth: -4, 
@@ -1134,8 +1133,8 @@ async function experimentInit() {
   respQ4 = new visual.Slider({
     win: psychoJS.window, name: 'respQ4',
     startValue: undefined,
-    size: [1, 0.015], pos: [0, (- 0.265)], ori: 0.0, units: 'height',
-    labels: ["PREFER NOT TO SAY", 1, 2, 3, 4, 5, 6, 7], fontSize: 0.0175, ticks: [0, 1, 2, 3, 4, 5, 6, 7],
+    size: [1, 0.015], pos: [0, (- 0.22)], ori: 0.0, units: 'height',
+    labels: ["PREFER NOT TO SAY", 1, 2, 3, 4, 5], fontSize: 0.0175, ticks: [1, 2, 3, 4, 5, 6],
     granularity: 1.0, style: ["RADIO"],
     color: new util.Color('White'), markerColor: new util.Color('Red'), lineColor: new util.Color('White'), 
     opacity: undefined, fontFamily: 'Arial', bold: true, italic: false, depth: -5, 
@@ -1158,15 +1157,15 @@ async function experimentInit() {
     win: psychoJS.window,
   });
   nextClick1.mouseClock = new util.Clock();
-  // Initialize components for Routine "ambiguity2"
-  ambiguity2Clock = new util.Clock();
+  // Initialize components for Routine "closure2"
+  closure2Clock = new util.Clock();
   qsInstr_2 = new visual.TextStim({
     win: psychoJS.window,
     name: 'qsInstr_2',
-    text: ' Please rate your agreement with the following statement on a scale from 1 (Strongly Disagree) to 7 (Strongly Agree).  If you would prefer not to rate a given statement, select the option on the far left end of the scale.',
+    text: ' Please rate your agreement with the following statement on a scale from 1 (Strongly Disagree) to 5 (Strongly Agree). If you would prefer not to rate a given statement, select the "prefer not to answer" option on the far left end of the scale.',
     font: 'Open Sans',
     units: undefined, 
-    pos: [0, 0.325], height: 0.03,  wrapWidth: 1.5, ori: 0.0,
+    pos: [0, 0.32], height: 0.03,  wrapWidth: 1.5, ori: 0.0,
     languageStyle: 'LTR',
     color: new util.Color('white'),  opacity: undefined,
     depth: 0.0 
@@ -1175,10 +1174,10 @@ async function experimentInit() {
   questions2 = new visual.TextStim({
     win: psychoJS.window,
     name: 'questions2',
-    text: '5. What we are used to is always preferable to what is unfamiliar.\n\n\n6. A person who leads an even, regular life in which few surprises or unexpected happenings really has a lot to be grateful for.\n\n\n7. I like parties where I know most of the people more than ones where all or most of the people are complete strangers.\n\n\n8. The sooner we all acquire similar values and ideals the better.',
+    text: '5. I feel irritated when one person disagrees with what everyone else in a group believes.\n\n\n\n6. I don’t like to go into a situation without knowing what I can expect from it.\n\n\n\n7. When I have made a decision, I feel relieved.\n\n\n\n8. When I am confronted with a problem, I’m dying to reach a solution very quickly.',
     font: 'Open Sans',
     units: undefined, 
-    pos: [0, 0.025], height: 0.03,  wrapWidth: 1.2, ori: 0.0,
+    pos: [0, 0.015], height: 0.03,  wrapWidth: 1.3, ori: 0.0,
     languageStyle: 'LTR',
     color: new util.Color('white'),  opacity: undefined,
     depth: -1.0 
@@ -1188,7 +1187,7 @@ async function experimentInit() {
     win: psychoJS.window, name: 'respQ5',
     startValue: undefined,
     size: [1, 0.015], pos: [0, 0.1725], ori: 0.0, units: 'height',
-    labels: ["PREFER NOT TO SAY", 1, 2, 3, 4, 5, 6, 7], fontSize: 0.0175, ticks: [0, 1, 2, 3, 4, 5, 6, 7],
+    labels: ["PREFER NOT TO SAY", 1, 2, 3, 4, 5], fontSize: 0.0175, ticks: [1, 2, 3, 4, 5, 6],
     granularity: 1.0, style: ["RADIO"],
     color: new util.Color('White'), markerColor: new util.Color('Red'), lineColor: new util.Color('White'), 
     opacity: undefined, fontFamily: 'Arial', bold: true, italic: false, depth: -2, 
@@ -1199,7 +1198,7 @@ async function experimentInit() {
     win: psychoJS.window, name: 'respQ6',
     startValue: undefined,
     size: [1, 0.015], pos: [0, 0.04], ori: 0.0, units: 'height',
-    labels: ["PREFER NOT TO SAY", 1, 2, 3, 4, 5, 6, 7], fontSize: 0.0175, ticks: [0, 1, 2, 3, 4, 5, 6, 7],
+    labels: ["PREFER NOT TO SAY", 1, 2, 3, 4, 5], fontSize: 0.0175, ticks: [1, 2, 3, 4, 5, 6],
     granularity: 1.0, style: ["RADIO"],
     color: new util.Color('White'), markerColor: new util.Color('Red'), lineColor: new util.Color('White'), 
     opacity: undefined, fontFamily: 'Arial', bold: true, italic: false, depth: -3, 
@@ -1209,8 +1208,8 @@ async function experimentInit() {
   respQ7 = new visual.Slider({
     win: psychoJS.window, name: 'respQ7',
     startValue: undefined,
-    size: [1, 0.015], pos: [0, (- 0.095)], ori: 0.0, units: 'height',
-    labels: ["PREFER NOT TO SAY", 1, 2, 3, 4, 5, 6, 7], fontSize: 0.0175, ticks: [0, 1, 2, 3, 4, 5, 6, 7],
+    size: [1, 0.014], pos: [0, (- 0.095)], ori: 0.0, units: 'height',
+    labels: ["PREFER NOT TO SAY", 1, 2, 3, 4, 5], fontSize: 0.0175, ticks: [1, 2, 3, 4, 5, 6],
     granularity: 1.0, style: ["RADIO"],
     color: new util.Color('White'), markerColor: new util.Color('Red'), lineColor: new util.Color('White'), 
     opacity: undefined, fontFamily: 'Arial', bold: true, italic: false, depth: -4, 
@@ -1220,8 +1219,8 @@ async function experimentInit() {
   respQ8 = new visual.Slider({
     win: psychoJS.window, name: 'respQ8',
     startValue: undefined,
-    size: [1, 0.015], pos: [0, (- 0.2)], ori: 0.0, units: 'height',
-    labels: ["PREFER NOT TO SAY", 1, 2, 3, 4, 5, 6, 7], fontSize: 0.0175, ticks: [0, 1, 2, 3, 4, 5, 6, 7],
+    size: [1, 0.015], pos: [0, (- 0.225)], ori: 0.0, units: 'height',
+    labels: ["PREFER NOT TO SAY", 1, 2, 3, 4, 5], fontSize: 0.0175, ticks: [1, 2, 3, 4, 5, 6],
     granularity: 1.0, style: ["RADIO"],
     color: new util.Color('White'), markerColor: new util.Color('Red'), lineColor: new util.Color('White'), 
     opacity: undefined, fontFamily: 'Arial', bold: true, italic: false, depth: -5, 
@@ -1244,15 +1243,15 @@ async function experimentInit() {
     win: psychoJS.window,
   });
   nextClick2.mouseClock = new util.Clock();
-  // Initialize components for Routine "ambiguity3"
-  ambiguity3Clock = new util.Clock();
+  // Initialize components for Routine "closure3"
+  closure3Clock = new util.Clock();
   qsInstr_3 = new visual.TextStim({
     win: psychoJS.window,
     name: 'qsInstr_3',
-    text: ' Please rate your agreement with the following statement on a scale from 1 (Strongly Disagree) to 7 (Strongly Agree).  If you would prefer not to rate a given statement, select the option on the far left end of the scale.',
+    text: ' Please rate your agreement with the following statement on a scale from 1 (Strongly Disagree) to 5 (Strongly Agree). If you would prefer not to rate a given statement, select the "prefer not to answer" option on the far left end of the scale.',
     font: 'Open Sans',
     units: undefined, 
-    pos: [0, 0.325], height: 0.03,  wrapWidth: 1.5, ori: 0.0,
+    pos: [0, 0.32], height: 0.03,  wrapWidth: 1.5, ori: 0.0,
     languageStyle: 'LTR',
     color: new util.Color('white'),  opacity: undefined,
     depth: 0.0 
@@ -1261,10 +1260,10 @@ async function experimentInit() {
   questions3 = new visual.TextStim({
     win: psychoJS.window,
     name: 'questions3',
-    text: "9. I would like to live in a foreign country for a while.\n\n\n10. People who fit their lives to a schedule probably miss most of the joy of living.\n\n\n11. It is more fun to tackle a complicated problem than to solve a simple one.\n\n\n12. Often the most interesting and stimulating people are those who don't mind being different and original.",
+    text: '9. I would quickly become impatient and irritated if I would not find a solution to a problem immediately.\n\n\n\n10. I don’t like to be with people who are capable of unexpected actions.\n\n\n\n11. I dislike it when a person’s statement could mean many different things.\n\n\n\n12. I find that establishing a consistent routine enables me to enjoy life more.',
     font: 'Open Sans',
     units: undefined, 
-    pos: [0, 0.04], height: 0.03,  wrapWidth: 1.15, ori: 0.0,
+    pos: [0, 0.025], height: 0.03,  wrapWidth: 1.3, ori: 0.0,
     languageStyle: 'LTR',
     color: new util.Color('white'),  opacity: undefined,
     depth: -1.0 
@@ -1273,8 +1272,8 @@ async function experimentInit() {
   respQ9 = new visual.Slider({
     win: psychoJS.window, name: 'respQ9',
     startValue: undefined,
-    size: [1, 0.015], pos: [0, 0.175], ori: 0.0, units: 'height',
-    labels: ["PREFER NOT TO SAY", 1, 2, 3, 4, 5, 6, 7], fontSize: 0.0175, ticks: [0, 1, 2, 3, 4, 5, 6, 7],
+    size: [1, 0.015], pos: [0, 0.177], ori: 0.0, units: 'height',
+    labels: ["PREFER NOT TO SAY", 1, 2, 3, 4, 5], fontSize: 0.0175, ticks: [1, 2, 3, 4, 5, 6],
     granularity: 1.0, style: ["RADIO"],
     color: new util.Color('White'), markerColor: new util.Color('Red'), lineColor: new util.Color('White'), 
     opacity: undefined, fontFamily: 'Arial', bold: true, italic: false, depth: -2, 
@@ -1284,8 +1283,8 @@ async function experimentInit() {
   respQ10 = new visual.Slider({
     win: psychoJS.window, name: 'respQ10',
     startValue: undefined,
-    size: [1, 0.015], pos: [0, 0.074], ori: 0.0, units: 'height',
-    labels: ["PREFER NOT TO SAY", 1, 2, 3, 4, 5, 6, 7], fontSize: 0.0175, ticks: [0, 1, 2, 3, 4, 5, 6, 7],
+    size: [1, 0.015], pos: [0, 0.05], ori: 0.0, units: 'height',
+    labels: ["PREFER NOT TO SAY", 1, 2, 3, 4, 5], fontSize: 0.0175, ticks: [1, 2, 3, 4, 5, 6],
     granularity: 1.0, style: ["RADIO"],
     color: new util.Color('White'), markerColor: new util.Color('Red'), lineColor: new util.Color('White'), 
     opacity: undefined, fontFamily: 'Arial', bold: true, italic: false, depth: -3, 
@@ -1295,8 +1294,8 @@ async function experimentInit() {
   respQ11 = new visual.Slider({
     win: psychoJS.window, name: 'respQ11',
     startValue: undefined,
-    size: [1, 0.015], pos: [0, (- 0.03)], ori: 0.0, units: 'height',
-    labels: ["PREFER NOT TO SAY", 1, 2, 3, 4, 5, 6, 7], fontSize: 0.0175, ticks: [0, 1, 2, 3, 4, 5, 6, 7],
+    size: [1, 0.015], pos: [0, (- 0.085)], ori: 0.0, units: 'height',
+    labels: ["PREFER NOT TO SAY", 1, 2, 3, 4, 5], fontSize: 0.0175, ticks: [1, 2, 3, 4, 5, 6],
     granularity: 1.0, style: ["RADIO"],
     color: new util.Color('White'), markerColor: new util.Color('Red'), lineColor: new util.Color('White'), 
     opacity: undefined, fontFamily: 'Arial', bold: true, italic: false, depth: -4, 
@@ -1306,8 +1305,8 @@ async function experimentInit() {
   respQ12 = new visual.Slider({
     win: psychoJS.window, name: 'respQ12',
     startValue: undefined,
-    size: [1, 0.015], pos: [0, (- 0.175)], ori: 0.0, units: 'height',
-    labels: ["PREFER NOT TO SAY", 1, 2, 3, 4, 5, 6, 7], fontSize: 0.0175, ticks: [0, 1, 2, 3, 4, 5, 6, 7],
+    size: [1, 0.015], pos: [0, (- 0.22)], ori: 0.0, units: 'height',
+    labels: ["PREFER NOT TO SAY", 1, 2, 3, 4, 5], fontSize: 0.0175, ticks: [1, 2, 3, 4, 5, 6],
     granularity: 1.0, style: ["RADIO"],
     color: new util.Color('White'), markerColor: new util.Color('Red'), lineColor: new util.Color('White'), 
     opacity: undefined, fontFamily: 'Arial', bold: true, italic: false, depth: -5, 
@@ -1330,15 +1329,15 @@ async function experimentInit() {
     win: psychoJS.window,
   });
   nextClick3.mouseClock = new util.Clock();
-  // Initialize components for Routine "ambiguity4"
-  ambiguity4Clock = new util.Clock();
+  // Initialize components for Routine "closure4"
+  closure4Clock = new util.Clock();
   qsInstr_4 = new visual.TextStim({
     win: psychoJS.window,
     name: 'qsInstr_4',
-    text: ' Please rate your agreement with the following statement on a scale from 1 (Strongly Disagree) to 7 (Strongly Agree).  If you would prefer not to rate a given statement, select the option on the far left end of the scale.',
+    text: ' Please rate your agreement with the following statement on a scale from 1 (Strongly Disagree) to 5 (Strongly Agree). If you would prefer not to rate a given statement, select the "prefer not to answer" option on the far left end of the scale.',
     font: 'Open Sans',
     units: undefined, 
-    pos: [0, 0.325], height: 0.03,  wrapWidth: 1.5, ori: 0.0,
+    pos: [0, 0.32], height: 0.03,  wrapWidth: 1.5, ori: 0.0,
     languageStyle: 'LTR',
     color: new util.Color('white'),  opacity: undefined,
     depth: 0.0 
@@ -1347,10 +1346,10 @@ async function experimentInit() {
   questions4 = new visual.TextStim({
     win: psychoJS.window,
     name: 'questions4',
-    text: "13. People who insist upon a yes or no answer just don't know how complicated things really are.\n\n\n14. Many of our most important decisions are based upon insufficient information.\n\n\n15. Teachers or supervisors who hand out vague assignments give a chance for one to show initiative and originality.\n\n\n16. A good teacher is one who makes you wonder about your way of looking at things.",
+    text: '13. I enjoy having a clear and structured mode of life.\n\n\n\n14. I do not usually consult many different opinions before forming my own view.\n\n\n\n15. I dislike unpredictable situations.',
     font: 'Open Sans',
     units: undefined, 
-    pos: [0, 0.04], height: 0.03,  wrapWidth: 1.2, ori: 0.0,
+    pos: [0, 0.087], height: 0.03,  wrapWidth: 1.3, ori: 0.0,
     languageStyle: 'LTR',
     color: new util.Color('white'),  opacity: undefined,
     depth: -1.0 
@@ -1360,7 +1359,7 @@ async function experimentInit() {
     win: psychoJS.window, name: 'respQ13',
     startValue: undefined,
     size: [1, 0.015], pos: [0, 0.175], ori: 0.0, units: 'height',
-    labels: ["PREFER NOT TO SAY", 1, 2, 3, 4, 5, 6, 7], fontSize: 0.0175, ticks: [0, 1, 2, 3, 4, 5, 6, 7],
+    labels: ["PREFER NOT TO SAY", 1, 2, 3, 4, 5], fontSize: 0.0175, ticks: [1, 2, 3, 4, 5, 6],
     granularity: 1.0, style: ["RADIO"],
     color: new util.Color('White'), markerColor: new util.Color('Red'), lineColor: new util.Color('White'), 
     opacity: undefined, fontFamily: 'Arial', bold: true, italic: false, depth: -2, 
@@ -1370,8 +1369,8 @@ async function experimentInit() {
   respQ14 = new visual.Slider({
     win: psychoJS.window, name: 'respQ14',
     startValue: undefined,
-    size: [1, 0.015], pos: [0, 0.074], ori: 0.0, units: 'height',
-    labels: ["PREFER NOT TO SAY", 1, 2, 3, 4, 5, 6, 7], fontSize: 0.0175, ticks: [0, 1, 2, 3, 4, 5, 6, 7],
+    size: [1, 0.015], pos: [0, 0.034], ori: 0.0, units: 'height',
+    labels: ["PREFER NOT TO SAY", 1, 2, 3, 4, 5], fontSize: 0.0175, ticks: [1, 2, 3, 4, 5, 6],
     granularity: 1.0, style: ["RADIO"],
     color: new util.Color('White'), markerColor: new util.Color('Red'), lineColor: new util.Color('White'), 
     opacity: undefined, fontFamily: 'Arial', bold: true, italic: false, depth: -3, 
@@ -1381,22 +1380,11 @@ async function experimentInit() {
   respQ15 = new visual.Slider({
     win: psychoJS.window, name: 'respQ15',
     startValue: undefined,
-    size: [1, 0.015], pos: [0, (- 0.07)], ori: 0.0, units: 'height',
-    labels: ["PREFER NOT TO SAY", 1, 2, 3, 4, 5, 6, 7], fontSize: 0.0175, ticks: [0, 1, 2, 3, 4, 5, 6, 7],
+    size: [1, 0.015], pos: [0, (- 0.093)], ori: 0.0, units: 'height',
+    labels: ["PREFER NOT TO SAY", 1, 2, 3, 4, 5], fontSize: 0.0175, ticks: [1, 2, 3, 4, 5, 6],
     granularity: 1.0, style: ["RADIO"],
     color: new util.Color('White'), markerColor: new util.Color('Red'), lineColor: new util.Color('White'), 
     opacity: undefined, fontFamily: 'Arial', bold: true, italic: false, depth: -4, 
-    flip: false,
-  });
-  
-  respQ16 = new visual.Slider({
-    win: psychoJS.window, name: 'respQ16',
-    startValue: undefined,
-    size: [1, 0.015], pos: [0, (- 0.175)], ori: 0.0, units: 'height',
-    labels: ["PREFER NOT TO SAY", 1, 2, 3, 4, 5, 6, 7], fontSize: 0.0175, ticks: [0, 1, 2, 3, 4, 5, 6, 7],
-    granularity: 1.0, style: ["RADIO"],
-    color: new util.Color('White'), markerColor: new util.Color('Red'), lineColor: new util.Color('White'), 
-    opacity: undefined, fontFamily: 'Arial', bold: true, italic: false, depth: -5, 
     flip: false,
   });
   
@@ -1409,7 +1397,7 @@ async function experimentInit() {
     pos: [0, (- 0.35)], height: 0.05,  wrapWidth: undefined, ori: 0.0,
     languageStyle: 'LTR',
     color: new util.Color('white'),  opacity: undefined,
-    depth: -6.0 
+    depth: -5.0 
   });
   
   nextClick4 = new core.Mouse({
@@ -6040,14 +6028,14 @@ function intro2QuestionsRoutineEnd(snapshot) {
 }
 
 
-var ambiguity1Components;
-function ambiguity1RoutineBegin(snapshot) {
+var closure1Components;
+function closure1RoutineBegin(snapshot) {
   return async function () {
     TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
     
-    //--- Prepare to start Routine 'ambiguity1' ---
+    //--- Prepare to start Routine 'closure1' ---
     t = 0;
-    ambiguity1Clock.reset(); // clock
+    closure1Clock.reset(); // clock
     frameN = -1;
     continueRoutine = true; // until we're told otherwise
     // update component parameters for each repeat
@@ -6063,17 +6051,17 @@ function ambiguity1RoutineBegin(snapshot) {
     questions1.alignHoriz = "left";
     
     // keep track of which components have finished
-    ambiguity1Components = [];
-    ambiguity1Components.push(qsInstr);
-    ambiguity1Components.push(questions1);
-    ambiguity1Components.push(respQ1);
-    ambiguity1Components.push(respQ2);
-    ambiguity1Components.push(respQ3);
-    ambiguity1Components.push(respQ4);
-    ambiguity1Components.push(nextButton1);
-    ambiguity1Components.push(nextClick1);
+    closure1Components = [];
+    closure1Components.push(qsInstr);
+    closure1Components.push(questions1);
+    closure1Components.push(respQ1);
+    closure1Components.push(respQ2);
+    closure1Components.push(respQ3);
+    closure1Components.push(respQ4);
+    closure1Components.push(nextButton1);
+    closure1Components.push(nextClick1);
     
-    ambiguity1Components.forEach( function(thisComponent) {
+    closure1Components.forEach( function(thisComponent) {
       if ('status' in thisComponent)
         thisComponent.status = PsychoJS.Status.NOT_STARTED;
        });
@@ -6082,11 +6070,11 @@ function ambiguity1RoutineBegin(snapshot) {
 }
 
 
-function ambiguity1RoutineEachFrame() {
+function closure1RoutineEachFrame() {
   return async function () {
-    //--- Loop for each frame of Routine 'ambiguity1' ---
+    //--- Loop for each frame of Routine 'closure1' ---
     // get current time
-    t = ambiguity1Clock.getTime();
+    t = closure1Clock.getTime();
     frameN = frameN + 1;// number of completed frames (so 0 is the first frame)
     // update/draw components on each frame
     
@@ -6199,7 +6187,7 @@ function ambiguity1RoutineEachFrame() {
     }
     
     continueRoutine = false;  // reverts to True if at least one component still running
-    ambiguity1Components.forEach( function(thisComponent) {
+    closure1Components.forEach( function(thisComponent) {
       if ('status' in thisComponent && thisComponent.status !== PsychoJS.Status.FINISHED) {
         continueRoutine = true;
       }
@@ -6215,10 +6203,10 @@ function ambiguity1RoutineEachFrame() {
 }
 
 
-function ambiguity1RoutineEnd(snapshot) {
+function closure1RoutineEnd(snapshot) {
   return async function () {
-    //--- Ending Routine 'ambiguity1' ---
-    ambiguity1Components.forEach( function(thisComponent) {
+    //--- Ending Routine 'closure1' ---
+    closure1Components.forEach( function(thisComponent) {
       if (typeof thisComponent.setAutoDraw === 'function') {
         thisComponent.setAutoDraw(false);
       }
@@ -6241,7 +6229,7 @@ function ambiguity1RoutineEnd(snapshot) {
     psychoJS.experiment.addData('nextClick1.rightButton', _mouseButtons[2]);
     if (nextClick1.clicked_name.length > 0) {
       psychoJS.experiment.addData('nextClick1.clicked_name', nextClick1.clicked_name[0]);}
-    // the Routine "ambiguity1" was not non-slip safe, so reset the non-slip timer
+    // the Routine "closure1" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset();
     
     // Routines running outside a loop should always advance the datafile row
@@ -6253,14 +6241,14 @@ function ambiguity1RoutineEnd(snapshot) {
 }
 
 
-var ambiguity2Components;
-function ambiguity2RoutineBegin(snapshot) {
+var closure2Components;
+function closure2RoutineBegin(snapshot) {
   return async function () {
     TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
     
-    //--- Prepare to start Routine 'ambiguity2' ---
+    //--- Prepare to start Routine 'closure2' ---
     t = 0;
-    ambiguity2Clock.reset(); // clock
+    closure2Clock.reset(); // clock
     frameN = -1;
     continueRoutine = true; // until we're told otherwise
     // update component parameters for each repeat
@@ -6276,17 +6264,17 @@ function ambiguity2RoutineBegin(snapshot) {
     questions2.alignHoriz = "left";
     
     // keep track of which components have finished
-    ambiguity2Components = [];
-    ambiguity2Components.push(qsInstr_2);
-    ambiguity2Components.push(questions2);
-    ambiguity2Components.push(respQ5);
-    ambiguity2Components.push(respQ6);
-    ambiguity2Components.push(respQ7);
-    ambiguity2Components.push(respQ8);
-    ambiguity2Components.push(nextButton2);
-    ambiguity2Components.push(nextClick2);
+    closure2Components = [];
+    closure2Components.push(qsInstr_2);
+    closure2Components.push(questions2);
+    closure2Components.push(respQ5);
+    closure2Components.push(respQ6);
+    closure2Components.push(respQ7);
+    closure2Components.push(respQ8);
+    closure2Components.push(nextButton2);
+    closure2Components.push(nextClick2);
     
-    ambiguity2Components.forEach( function(thisComponent) {
+    closure2Components.forEach( function(thisComponent) {
       if ('status' in thisComponent)
         thisComponent.status = PsychoJS.Status.NOT_STARTED;
        });
@@ -6295,11 +6283,11 @@ function ambiguity2RoutineBegin(snapshot) {
 }
 
 
-function ambiguity2RoutineEachFrame() {
+function closure2RoutineEachFrame() {
   return async function () {
-    //--- Loop for each frame of Routine 'ambiguity2' ---
+    //--- Loop for each frame of Routine 'closure2' ---
     // get current time
-    t = ambiguity2Clock.getTime();
+    t = closure2Clock.getTime();
     frameN = frameN + 1;// number of completed frames (so 0 is the first frame)
     // update/draw components on each frame
     
@@ -6412,7 +6400,7 @@ function ambiguity2RoutineEachFrame() {
     }
     
     continueRoutine = false;  // reverts to True if at least one component still running
-    ambiguity2Components.forEach( function(thisComponent) {
+    closure2Components.forEach( function(thisComponent) {
       if ('status' in thisComponent && thisComponent.status !== PsychoJS.Status.FINISHED) {
         continueRoutine = true;
       }
@@ -6428,10 +6416,10 @@ function ambiguity2RoutineEachFrame() {
 }
 
 
-function ambiguity2RoutineEnd(snapshot) {
+function closure2RoutineEnd(snapshot) {
   return async function () {
-    //--- Ending Routine 'ambiguity2' ---
-    ambiguity2Components.forEach( function(thisComponent) {
+    //--- Ending Routine 'closure2' ---
+    closure2Components.forEach( function(thisComponent) {
       if (typeof thisComponent.setAutoDraw === 'function') {
         thisComponent.setAutoDraw(false);
       }
@@ -6454,7 +6442,7 @@ function ambiguity2RoutineEnd(snapshot) {
     psychoJS.experiment.addData('nextClick2.rightButton', _mouseButtons[2]);
     if (nextClick2.clicked_name.length > 0) {
       psychoJS.experiment.addData('nextClick2.clicked_name', nextClick2.clicked_name[0]);}
-    // the Routine "ambiguity2" was not non-slip safe, so reset the non-slip timer
+    // the Routine "closure2" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset();
     
     // Routines running outside a loop should always advance the datafile row
@@ -6466,14 +6454,14 @@ function ambiguity2RoutineEnd(snapshot) {
 }
 
 
-var ambiguity3Components;
-function ambiguity3RoutineBegin(snapshot) {
+var closure3Components;
+function closure3RoutineBegin(snapshot) {
   return async function () {
     TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
     
-    //--- Prepare to start Routine 'ambiguity3' ---
+    //--- Prepare to start Routine 'closure3' ---
     t = 0;
-    ambiguity3Clock.reset(); // clock
+    closure3Clock.reset(); // clock
     frameN = -1;
     continueRoutine = true; // until we're told otherwise
     // update component parameters for each repeat
@@ -6489,17 +6477,17 @@ function ambiguity3RoutineBegin(snapshot) {
     questions3.alignHoriz = "left";
     
     // keep track of which components have finished
-    ambiguity3Components = [];
-    ambiguity3Components.push(qsInstr_3);
-    ambiguity3Components.push(questions3);
-    ambiguity3Components.push(respQ9);
-    ambiguity3Components.push(respQ10);
-    ambiguity3Components.push(respQ11);
-    ambiguity3Components.push(respQ12);
-    ambiguity3Components.push(nextButton3);
-    ambiguity3Components.push(nextClick3);
+    closure3Components = [];
+    closure3Components.push(qsInstr_3);
+    closure3Components.push(questions3);
+    closure3Components.push(respQ9);
+    closure3Components.push(respQ10);
+    closure3Components.push(respQ11);
+    closure3Components.push(respQ12);
+    closure3Components.push(nextButton3);
+    closure3Components.push(nextClick3);
     
-    ambiguity3Components.forEach( function(thisComponent) {
+    closure3Components.forEach( function(thisComponent) {
       if ('status' in thisComponent)
         thisComponent.status = PsychoJS.Status.NOT_STARTED;
        });
@@ -6508,11 +6496,11 @@ function ambiguity3RoutineBegin(snapshot) {
 }
 
 
-function ambiguity3RoutineEachFrame() {
+function closure3RoutineEachFrame() {
   return async function () {
-    //--- Loop for each frame of Routine 'ambiguity3' ---
+    //--- Loop for each frame of Routine 'closure3' ---
     // get current time
-    t = ambiguity3Clock.getTime();
+    t = closure3Clock.getTime();
     frameN = frameN + 1;// number of completed frames (so 0 is the first frame)
     // update/draw components on each frame
     
@@ -6625,7 +6613,7 @@ function ambiguity3RoutineEachFrame() {
     }
     
     continueRoutine = false;  // reverts to True if at least one component still running
-    ambiguity3Components.forEach( function(thisComponent) {
+    closure3Components.forEach( function(thisComponent) {
       if ('status' in thisComponent && thisComponent.status !== PsychoJS.Status.FINISHED) {
         continueRoutine = true;
       }
@@ -6641,10 +6629,10 @@ function ambiguity3RoutineEachFrame() {
 }
 
 
-function ambiguity3RoutineEnd(snapshot) {
+function closure3RoutineEnd(snapshot) {
   return async function () {
-    //--- Ending Routine 'ambiguity3' ---
-    ambiguity3Components.forEach( function(thisComponent) {
+    //--- Ending Routine 'closure3' ---
+    closure3Components.forEach( function(thisComponent) {
       if (typeof thisComponent.setAutoDraw === 'function') {
         thisComponent.setAutoDraw(false);
       }
@@ -6667,7 +6655,7 @@ function ambiguity3RoutineEnd(snapshot) {
     psychoJS.experiment.addData('nextClick3.rightButton', _mouseButtons[2]);
     if (nextClick3.clicked_name.length > 0) {
       psychoJS.experiment.addData('nextClick3.clicked_name', nextClick3.clicked_name[0]);}
-    // the Routine "ambiguity3" was not non-slip safe, so reset the non-slip timer
+    // the Routine "closure3" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset();
     
     // Routines running outside a loop should always advance the datafile row
@@ -6679,21 +6667,20 @@ function ambiguity3RoutineEnd(snapshot) {
 }
 
 
-var ambiguity4Components;
-function ambiguity4RoutineBegin(snapshot) {
+var closure4Components;
+function closure4RoutineBegin(snapshot) {
   return async function () {
     TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
     
-    //--- Prepare to start Routine 'ambiguity4' ---
+    //--- Prepare to start Routine 'closure4' ---
     t = 0;
-    ambiguity4Clock.reset(); // clock
+    closure4Clock.reset(); // clock
     frameN = -1;
     continueRoutine = true; // until we're told otherwise
     // update component parameters for each repeat
     respQ13.reset()
     respQ14.reset()
     respQ15.reset()
-    respQ16.reset()
     // setup some python lists for storing info about the nextClick4
     nextClick4.clicked_name = [];
     gotValidClick = false; // until a click is received
@@ -6702,17 +6689,16 @@ function ambiguity4RoutineBegin(snapshot) {
     questions4.alignHoriz = "left";
     
     // keep track of which components have finished
-    ambiguity4Components = [];
-    ambiguity4Components.push(qsInstr_4);
-    ambiguity4Components.push(questions4);
-    ambiguity4Components.push(respQ13);
-    ambiguity4Components.push(respQ14);
-    ambiguity4Components.push(respQ15);
-    ambiguity4Components.push(respQ16);
-    ambiguity4Components.push(nextButton4);
-    ambiguity4Components.push(nextClick4);
+    closure4Components = [];
+    closure4Components.push(qsInstr_4);
+    closure4Components.push(questions4);
+    closure4Components.push(respQ13);
+    closure4Components.push(respQ14);
+    closure4Components.push(respQ15);
+    closure4Components.push(nextButton4);
+    closure4Components.push(nextClick4);
     
-    ambiguity4Components.forEach( function(thisComponent) {
+    closure4Components.forEach( function(thisComponent) {
       if ('status' in thisComponent)
         thisComponent.status = PsychoJS.Status.NOT_STARTED;
        });
@@ -6721,11 +6707,11 @@ function ambiguity4RoutineBegin(snapshot) {
 }
 
 
-function ambiguity4RoutineEachFrame() {
+function closure4RoutineEachFrame() {
   return async function () {
-    //--- Loop for each frame of Routine 'ambiguity4' ---
+    //--- Loop for each frame of Routine 'closure4' ---
     // get current time
-    t = ambiguity4Clock.getTime();
+    t = closure4Clock.getTime();
     frameN = frameN + 1;// number of completed frames (so 0 is the first frame)
     // update/draw components on each frame
     
@@ -6779,18 +6765,8 @@ function ambiguity4RoutineEachFrame() {
     }
 
     
-    // *respQ16* updates
-    if (t >= 0.0 && respQ16.status === PsychoJS.Status.NOT_STARTED) {
-      // keep track of start time/frame for later
-      respQ16.tStart = t;  // (not accounting for frame time here)
-      respQ16.frameNStart = frameN;  // exact frame index
-      
-      respQ16.setAutoDraw(true);
-    }
-
-    
     // *nextButton4* updates
-    if ((((((respQ13.rating + respQ14.rating) + respQ15.rating) + respQ16.rating) > 0)) && nextButton4.status === PsychoJS.Status.NOT_STARTED) {
+    if (((((respQ13.rating + respQ14.rating) + respQ15.rating) > 0)) && nextButton4.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
       nextButton4.tStart = t;  // (not accounting for frame time here)
       nextButton4.frameNStart = frameN;  // exact frame index
@@ -6838,7 +6814,7 @@ function ambiguity4RoutineEachFrame() {
     }
     
     continueRoutine = false;  // reverts to True if at least one component still running
-    ambiguity4Components.forEach( function(thisComponent) {
+    closure4Components.forEach( function(thisComponent) {
       if ('status' in thisComponent && thisComponent.status !== PsychoJS.Status.FINISHED) {
         continueRoutine = true;
       }
@@ -6854,10 +6830,10 @@ function ambiguity4RoutineEachFrame() {
 }
 
 
-function ambiguity4RoutineEnd(snapshot) {
+function closure4RoutineEnd(snapshot) {
   return async function () {
-    //--- Ending Routine 'ambiguity4' ---
-    ambiguity4Components.forEach( function(thisComponent) {
+    //--- Ending Routine 'closure4' ---
+    closure4Components.forEach( function(thisComponent) {
       if (typeof thisComponent.setAutoDraw === 'function') {
         thisComponent.setAutoDraw(false);
       }
@@ -6868,8 +6844,6 @@ function ambiguity4RoutineEnd(snapshot) {
     psychoJS.experiment.addData('respQ14.rt', respQ14.getRT());
     psychoJS.experiment.addData('respQ15.response', respQ15.getRating());
     psychoJS.experiment.addData('respQ15.rt', respQ15.getRT());
-    psychoJS.experiment.addData('respQ16.response', respQ16.getRating());
-    psychoJS.experiment.addData('respQ16.rt', respQ16.getRT());
     // store data for psychoJS.experiment (ExperimentHandler)
     _mouseXYs = nextClick4.getPos();
     _mouseButtons = nextClick4.getPressed();
@@ -6880,7 +6854,7 @@ function ambiguity4RoutineEnd(snapshot) {
     psychoJS.experiment.addData('nextClick4.rightButton', _mouseButtons[2]);
     if (nextClick4.clicked_name.length > 0) {
       psychoJS.experiment.addData('nextClick4.clicked_name', nextClick4.clicked_name[0]);}
-    // the Routine "ambiguity4" was not non-slip safe, so reset the non-slip timer
+    // the Routine "closure4" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset();
     
     // Routines running outside a loop should always advance the datafile row
