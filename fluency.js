@@ -108,118 +108,118 @@ psychoJS.start({
   expName: expName,
   expInfo: expInfo,
   resources: [
-    {'name': 'img/B09_06.jpg', 'path': 'img/B09_06.jpg'},
-    {'name': 'img/B06_04.jpg', 'path': 'img/B06_04.jpg'},
-    {'name': 'img/B10_04.jpg', 'path': 'img/B10_04.jpg'},
-    {'name': 'img/B02_00.jpg', 'path': 'img/B02_00.jpg'},
-    {'name': 'img/B05_00.jpg', 'path': 'img/B05_00.jpg'},
-    {'name': 'img/B09_01.jpg', 'path': 'img/B09_01.jpg'},
-    {'name': 'img/B07_05.jpg', 'path': 'img/B07_05.jpg'},
-    {'name': 'img/B06_06.jpg', 'path': 'img/B06_06.jpg'},
-    {'name': 'img/B05_01.jpg', 'path': 'img/B05_01.jpg'},
-    {'name': 'img/B02_03.jpg', 'path': 'img/B02_03.jpg'},
-    {'name': 'img/B01_00.jpg', 'path': 'img/B01_00.jpg'},
-    {'name': 'img/B04_03.jpg', 'path': 'img/B04_03.jpg'},
-    {'name': 'img/B04_05.jpg', 'path': 'img/B04_05.jpg'},
-    {'name': 'img/B02_05.jpg', 'path': 'img/B02_05.jpg'},
-    {'name': 'img/B04_00.jpg', 'path': 'img/B04_00.jpg'},
-    {'name': 'img/B09_00.jpg', 'path': 'img/B09_00.jpg'},
-    {'name': 'img/B01_05.jpg', 'path': 'img/B01_05.jpg'},
-    {'name': 'img/B03_04.jpg', 'path': 'img/B03_04.jpg'},
-    {'name': 'img/B05_10.jpg', 'path': 'img/B05_10.jpg'},
-    {'name': 'img/B07_07.jpg', 'path': 'img/B07_07.jpg'},
-    {'name': 'img/B10_07.jpg', 'path': 'img/B10_07.jpg'},
-    {'name': 'img/B01_02.jpg', 'path': 'img/B01_02.jpg'},
-    {'name': 'img/B01_10.jpg', 'path': 'img/B01_10.jpg'},
-    {'name': 'img/B10_08.jpg', 'path': 'img/B10_08.jpg'},
-    {'name': 'img/B08_05.jpg', 'path': 'img/B08_05.jpg'},
-    {'name': 'img/B09_04.jpg', 'path': 'img/B09_04.jpg'},
-    {'name': 'img/B07_09.jpg', 'path': 'img/B07_09.jpg'},
-    {'name': 'img/B10_00.jpg', 'path': 'img/B10_00.jpg'},
     {'name': 'img/B07_01.jpg', 'path': 'img/B07_01.jpg'},
-    {'name': 'img/B09_10.jpg', 'path': 'img/B09_10.jpg'},
-    {'name': 'img/B01_07.jpg', 'path': 'img/B01_07.jpg'},
-    {'name': 'img/B08_04.jpg', 'path': 'img/B08_04.jpg'},
-    {'name': 'img/B01_08.jpg', 'path': 'img/B01_08.jpg'},
-    {'name': 'img/B02_02.jpg', 'path': 'img/B02_02.jpg'},
-    {'name': 'img/B04_10.jpg', 'path': 'img/B04_10.jpg'},
-    {'name': 'img/B03_06.jpg', 'path': 'img/B03_06.jpg'},
-    {'name': 'img/B10_09.jpg', 'path': 'img/B10_09.jpg'},
-    {'name': 'img/B02_06.jpg', 'path': 'img/B02_06.jpg'},
-    {'name': 'img/B06_07.jpg', 'path': 'img/B06_07.jpg'},
-    {'name': 'img/B01_06.jpg', 'path': 'img/B01_06.jpg'},
-    {'name': 'img/B03_09.jpg', 'path': 'img/B03_09.jpg'},
-    {'name': 'img/B06_01.jpg', 'path': 'img/B06_01.jpg'},
-    {'name': 'img/B07_03.jpg', 'path': 'img/B07_03.jpg'},
-    {'name': 'img/B09_05.jpg', 'path': 'img/B09_05.jpg'},
-    {'name': 'img/B02_08.jpg', 'path': 'img/B02_08.jpg'},
-    {'name': 'img/B06_09.jpg', 'path': 'img/B06_09.jpg'},
-    {'name': 'img/B07_10.jpg', 'path': 'img/B07_10.jpg'},
-    {'name': 'img/B01_01.jpg', 'path': 'img/B01_01.jpg'},
-    {'name': 'img/B05_09.jpg', 'path': 'img/B05_09.jpg'},
-    {'name': 'img/B04_01.jpg', 'path': 'img/B04_01.jpg'},
-    {'name': 'img/B09_08.jpg', 'path': 'img/B09_08.jpg'},
-    {'name': 'img/B05_08.jpg', 'path': 'img/B05_08.jpg'},
-    {'name': 'img/B04_09.jpg', 'path': 'img/B04_09.jpg'},
-    {'name': 'img/B06_00.jpg', 'path': 'img/B06_00.jpg'},
-    {'name': 'img/B07_06.jpg', 'path': 'img/B07_06.jpg'},
-    {'name': 'img/B10_02.jpg', 'path': 'img/B10_02.jpg'},
-    {'name': 'fluency_conditions.xlsx', 'path': 'fluency_conditions.xlsx'},
-    {'name': 'img/B08_08.jpg', 'path': 'img/B08_08.jpg'},
-    {'name': 'img/B09_03.jpg', 'path': 'img/B09_03.jpg'},
-    {'name': 'img/B05_04.jpg', 'path': 'img/B05_04.jpg'},
-    {'name': 'img/B06_02.jpg', 'path': 'img/B06_02.jpg'},
-    {'name': 'img/B03_03.jpg', 'path': 'img/B03_03.jpg'},
-    {'name': 'img/B04_08.jpg', 'path': 'img/B04_08.jpg'},
-    {'name': 'img/B08_10.jpg', 'path': 'img/B08_10.jpg'},
-    {'name': 'img/B03_02.jpg', 'path': 'img/B03_02.jpg'},
-    {'name': 'img/B09_07.jpg', 'path': 'img/B09_07.jpg'},
-    {'name': 'img/B09_09.jpg', 'path': 'img/B09_09.jpg'},
-    {'name': 'img/B10_03.jpg', 'path': 'img/B10_03.jpg'},
-    {'name': 'img/B01_04.jpg', 'path': 'img/B01_04.jpg'},
-    {'name': 'img/B07_02.jpg', 'path': 'img/B07_02.jpg'},
-    {'name': 'img/B07_04.jpg', 'path': 'img/B07_04.jpg'},
-    {'name': 'img/B03_01.jpg', 'path': 'img/B03_01.jpg'},
-    {'name': 'img/B02_01.jpg', 'path': 'img/B02_01.jpg'},
-    {'name': 'img/B01_09.jpg', 'path': 'img/B01_09.jpg'},
-    {'name': 'img/B07_00.jpg', 'path': 'img/B07_00.jpg'},
-    {'name': 'img/B07_08.jpg', 'path': 'img/B07_08.jpg'},
-    {'name': 'img/B10_10.jpg', 'path': 'img/B10_10.jpg'},
-    {'name': 'img/B02_10.jpg', 'path': 'img/B02_10.jpg'},
-    {'name': 'img/B04_02.jpg', 'path': 'img/B04_02.jpg'},
-    {'name': 'img/B10_06.jpg', 'path': 'img/B10_06.jpg'},
-    {'name': 'img/B02_07.jpg', 'path': 'img/B02_07.jpg'},
-    {'name': 'img/B01_03.jpg', 'path': 'img/B01_03.jpg'},
-    {'name': 'img/B08_01.jpg', 'path': 'img/B08_01.jpg'},
-    {'name': 'img/B08_03.jpg', 'path': 'img/B08_03.jpg'},
-    {'name': 'img/B05_02.jpg', 'path': 'img/B05_02.jpg'},
-    {'name': 'img/B08_07.jpg', 'path': 'img/B08_07.jpg'},
-    {'name': 'img/B04_07.jpg', 'path': 'img/B04_07.jpg'},
-    {'name': 'img/B10_05.jpg', 'path': 'img/B10_05.jpg'},
-    {'name': 'img/B03_00.jpg', 'path': 'img/B03_00.jpg'},
-    {'name': 'img/B03_07.jpg', 'path': 'img/B03_07.jpg'},
-    {'name': 'img/B08_02.jpg', 'path': 'img/B08_02.jpg'},
-    {'name': 'img/B06_03.jpg', 'path': 'img/B06_03.jpg'},
-    {'name': 'img/B03_10.jpg', 'path': 'img/B03_10.jpg'},
-    {'name': 'img/B02_04.jpg', 'path': 'img/B02_04.jpg'},
     {'name': 'img/B08_06.jpg', 'path': 'img/B08_06.jpg'},
-    {'name': 'img/B02_09.jpg', 'path': 'img/B02_09.jpg'},
-    {'name': 'img/B08_00.jpg', 'path': 'img/B08_00.jpg'},
-    {'name': 'img/B05_06.jpg', 'path': 'img/B05_06.jpg'},
-    {'name': 'img/B06_10.jpg', 'path': 'img/B06_10.jpg'},
-    {'name': 'img/B06_05.jpg', 'path': 'img/B06_05.jpg'},
-    {'name': 'img/B09_02.jpg', 'path': 'img/B09_02.jpg'},
-    {'name': 'img/practice_image.jpg', 'path': 'img/practice_image.jpg'},
-    {'name': 'img/B05_07.jpg', 'path': 'img/B05_07.jpg'},
-    {'name': 'img/B03_05.jpg', 'path': 'img/B03_05.jpg'},
-    {'name': 'img/B06_08.jpg', 'path': 'img/B06_08.jpg'},
-    {'name': 'img/B08_09.jpg', 'path': 'img/B08_09.jpg'},
+    {'name': 'img/B05_04.jpg', 'path': 'img/B05_04.jpg'},
+    {'name': 'img/B01_01.jpg', 'path': 'img/B01_01.jpg'},
+    {'name': 'img/B08_05.jpg', 'path': 'img/B08_05.jpg'},
+    {'name': 'img/B08_01.jpg', 'path': 'img/B08_01.jpg'},
     {'name': 'img/B03_08.jpg', 'path': 'img/B03_08.jpg'},
-    {'name': 'img/B05_03.jpg', 'path': 'img/B05_03.jpg'},
-    {'name': 'img/B04_04.jpg', 'path': 'img/B04_04.jpg'},
+    {'name': 'img/B07_07.jpg', 'path': 'img/B07_07.jpg'},
+    {'name': 'img/B06_04.jpg', 'path': 'img/B06_04.jpg'},
+    {'name': 'img/B09_06.jpg', 'path': 'img/B09_06.jpg'},
+    {'name': 'img/B05_00.jpg', 'path': 'img/B05_00.jpg'},
+    {'name': 'img/B10_07.jpg', 'path': 'img/B10_07.jpg'},
+    {'name': 'img/B05_06.jpg', 'path': 'img/B05_06.jpg'},
+    {'name': 'img/B02_01.jpg', 'path': 'img/B02_01.jpg'},
+    {'name': 'img/B06_10.jpg', 'path': 'img/B06_10.jpg'},
+    {'name': 'img/B01_04.jpg', 'path': 'img/B01_04.jpg'},
+    {'name': 'img/B09_01.jpg', 'path': 'img/B09_01.jpg'},
+    {'name': 'img/B04_09.jpg', 'path': 'img/B04_09.jpg'},
     {'name': 'img/B05_05.jpg', 'path': 'img/B05_05.jpg'},
+    {'name': 'img/B07_05.jpg', 'path': 'img/B07_05.jpg'},
+    {'name': 'img/B06_09.jpg', 'path': 'img/B06_09.jpg'},
+    {'name': 'img/B09_08.jpg', 'path': 'img/B09_08.jpg'},
+    {'name': 'img/B02_10.jpg', 'path': 'img/B02_10.jpg'},
+    {'name': 'img/B03_00.jpg', 'path': 'img/B03_00.jpg'},
+    {'name': 'img/B08_04.jpg', 'path': 'img/B08_04.jpg'},
+    {'name': 'img/B10_05.jpg', 'path': 'img/B10_05.jpg'},
+    {'name': 'img/B04_02.jpg', 'path': 'img/B04_02.jpg'},
+    {'name': 'img/B07_10.jpg', 'path': 'img/B07_10.jpg'},
+    {'name': 'img/B02_05.jpg', 'path': 'img/B02_05.jpg'},
+    {'name': 'img/B05_10.jpg', 'path': 'img/B05_10.jpg'},
+    {'name': 'img/B03_09.jpg', 'path': 'img/B03_09.jpg'},
+    {'name': 'img/B10_10.jpg', 'path': 'img/B10_10.jpg'},
+    {'name': 'img/B04_08.jpg', 'path': 'img/B04_08.jpg'},
+    {'name': 'img/B09_07.jpg', 'path': 'img/B09_07.jpg'},
+    {'name': 'img/B05_08.jpg', 'path': 'img/B05_08.jpg'},
+    {'name': 'img/B03_05.jpg', 'path': 'img/B03_05.jpg'},
+    {'name': 'img/B07_04.jpg', 'path': 'img/B07_04.jpg'},
+    {'name': 'fluency_conditions.xlsx', 'path': 'fluency_conditions.xlsx'},
+    {'name': 'img/B02_03.jpg', 'path': 'img/B02_03.jpg'},
+    {'name': 'img/B01_02.jpg', 'path': 'img/B01_02.jpg'},
+    {'name': 'img/B01_09.jpg', 'path': 'img/B01_09.jpg'},
+    {'name': 'img/B01_06.jpg', 'path': 'img/B01_06.jpg'},
+    {'name': 'img/B06_02.jpg', 'path': 'img/B06_02.jpg'},
+    {'name': 'img/B10_06.jpg', 'path': 'img/B10_06.jpg'},
+    {'name': 'img/B09_05.jpg', 'path': 'img/B09_05.jpg'},
+    {'name': 'img/B10_09.jpg', 'path': 'img/B10_09.jpg'},
+    {'name': 'img/B04_04.jpg', 'path': 'img/B04_04.jpg'},
+    {'name': 'img/B02_09.jpg', 'path': 'img/B02_09.jpg'},
+    {'name': 'img/B07_00.jpg', 'path': 'img/B07_00.jpg'},
+    {'name': 'img/B07_02.jpg', 'path': 'img/B07_02.jpg'},
+    {'name': 'img/B01_05.jpg', 'path': 'img/B01_05.jpg'},
+    {'name': 'img/B05_03.jpg', 'path': 'img/B05_03.jpg'},
+    {'name': 'img/B10_00.jpg', 'path': 'img/B10_00.jpg'},
+    {'name': 'img/B10_08.jpg', 'path': 'img/B10_08.jpg'},
+    {'name': 'img/B02_07.jpg', 'path': 'img/B02_07.jpg'},
+    {'name': 'img/B02_04.jpg', 'path': 'img/B02_04.jpg'},
+    {'name': 'img/B03_10.jpg', 'path': 'img/B03_10.jpg'},
+    {'name': 'img/B01_07.jpg', 'path': 'img/B01_07.jpg'},
+    {'name': 'img/B07_09.jpg', 'path': 'img/B07_09.jpg'},
+    {'name': 'img/B09_04.jpg', 'path': 'img/B09_04.jpg'},
+    {'name': 'img/B06_07.jpg', 'path': 'img/B06_07.jpg'},
+    {'name': 'img/B01_10.jpg', 'path': 'img/B01_10.jpg'},
+    {'name': 'img/B06_08.jpg', 'path': 'img/B06_08.jpg'},
+    {'name': 'img/B01_00.jpg', 'path': 'img/B01_00.jpg'},
+    {'name': 'img/B09_09.jpg', 'path': 'img/B09_09.jpg'},
+    {'name': 'img/B03_01.jpg', 'path': 'img/B03_01.jpg'},
+    {'name': 'img/B05_02.jpg', 'path': 'img/B05_02.jpg'},
+    {'name': 'img/B10_02.jpg', 'path': 'img/B10_02.jpg'},
+    {'name': 'img/B07_08.jpg', 'path': 'img/B07_08.jpg'},
     {'name': 'img/B04_06.jpg', 'path': 'img/B04_06.jpg'},
-    {'name': 'img/B10_01.jpg', 'path': 'img/B10_01.jpg'}
+    {'name': 'img/B04_07.jpg', 'path': 'img/B04_07.jpg'},
+    {'name': 'img/B07_03.jpg', 'path': 'img/B07_03.jpg'},
+    {'name': 'img/B03_07.jpg', 'path': 'img/B03_07.jpg'},
+    {'name': 'img/B05_01.jpg', 'path': 'img/B05_01.jpg'},
+    {'name': 'img/B03_02.jpg', 'path': 'img/B03_02.jpg'},
+    {'name': 'img/B06_05.jpg', 'path': 'img/B06_05.jpg'},
+    {'name': 'img/B09_03.jpg', 'path': 'img/B09_03.jpg'},
+    {'name': 'img/B05_07.jpg', 'path': 'img/B05_07.jpg'},
+    {'name': 'img/B08_00.jpg', 'path': 'img/B08_00.jpg'},
+    {'name': 'img/B08_09.jpg', 'path': 'img/B08_09.jpg'},
+    {'name': 'img/B04_03.jpg', 'path': 'img/B04_03.jpg'},
+    {'name': 'img/B07_06.jpg', 'path': 'img/B07_06.jpg'},
+    {'name': 'img/B06_01.jpg', 'path': 'img/B06_01.jpg'},
+    {'name': 'img/B06_06.jpg', 'path': 'img/B06_06.jpg'},
+    {'name': 'img/practice_image.jpg', 'path': 'img/practice_image.jpg'},
+    {'name': 'img/B05_09.jpg', 'path': 'img/B05_09.jpg'},
+    {'name': 'img/B03_06.jpg', 'path': 'img/B03_06.jpg'},
+    {'name': 'img/B03_04.jpg', 'path': 'img/B03_04.jpg'},
+    {'name': 'img/B08_08.jpg', 'path': 'img/B08_08.jpg'},
+    {'name': 'img/B02_06.jpg', 'path': 'img/B02_06.jpg'},
+    {'name': 'img/B09_02.jpg', 'path': 'img/B09_02.jpg'},
+    {'name': 'img/B01_03.jpg', 'path': 'img/B01_03.jpg'},
+    {'name': 'img/B08_07.jpg', 'path': 'img/B08_07.jpg'},
+    {'name': 'img/B08_03.jpg', 'path': 'img/B08_03.jpg'},
+    {'name': 'img/B08_10.jpg', 'path': 'img/B08_10.jpg'},
+    {'name': 'img/B10_03.jpg', 'path': 'img/B10_03.jpg'},
+    {'name': 'img/B02_08.jpg', 'path': 'img/B02_08.jpg'},
+    {'name': 'img/B01_08.jpg', 'path': 'img/B01_08.jpg'},
+    {'name': 'img/B10_04.jpg', 'path': 'img/B10_04.jpg'},
+    {'name': 'img/B04_10.jpg', 'path': 'img/B04_10.jpg'},
+    {'name': 'img/B10_01.jpg', 'path': 'img/B10_01.jpg'},
+    {'name': 'img/B04_05.jpg', 'path': 'img/B04_05.jpg'},
+    {'name': 'img/B02_00.jpg', 'path': 'img/B02_00.jpg'},
+    {'name': 'img/B06_03.jpg', 'path': 'img/B06_03.jpg'},
+    {'name': 'img/B04_01.jpg', 'path': 'img/B04_01.jpg'},
+    {'name': 'img/B04_00.jpg', 'path': 'img/B04_00.jpg'},
+    {'name': 'img/B02_02.jpg', 'path': 'img/B02_02.jpg'},
+    {'name': 'img/B06_00.jpg', 'path': 'img/B06_00.jpg'},
+    {'name': 'img/B08_02.jpg', 'path': 'img/B08_02.jpg'},
+    {'name': 'img/B03_03.jpg', 'path': 'img/B03_03.jpg'},
+    {'name': 'img/B09_10.jpg', 'path': 'img/B09_10.jpg'},
+    {'name': 'img/B09_00.jpg', 'path': 'img/B09_00.jpg'}
   ]
 });
 
@@ -358,8 +358,7 @@ var respQ1;
 var respQ2;
 var respQ3;
 var respQ4;
-var nextButton1;
-var nextClick1;
+var surveyContinue1;
 var closure2Clock;
 var qsInstr_2;
 var questions2;
@@ -367,8 +366,7 @@ var respQ5;
 var respQ6;
 var respQ7;
 var respQ8;
-var nextButton2;
-var nextClick2;
+var surveyContinue2;
 var closure3Clock;
 var qsInstr_3;
 var questions3;
@@ -376,16 +374,14 @@ var respQ9;
 var respQ10;
 var respQ11;
 var respQ12;
-var nextButton3;
-var nextClick3;
+var surveyContinue3;
 var closure4Clock;
 var qsInstr_4;
 var questions4;
 var respQ13;
 var respQ14;
 var respQ15;
-var nextButton4;
-var nextClick4;
+var surveyContinue4;
 var demographicsClock;
 var demographicsInstr;
 var age;
@@ -393,13 +389,11 @@ var respAge;
 var gender;
 var genderResp1;
 var genderResp2;
-var nextButton5;
-var demographClick;
+var demogexitClick;
 var openAnswerClock;
 var openPrompt;
 var textbox;
-var openanswerEnd;
-var openanswerClick;
+var openAnswerClick;
 var debriefClock;
 var debriefText;
 var exitMessage;
@@ -573,7 +567,7 @@ async function experimentInit() {
   genInstr2 = new visual.TextStim({
     win: psychoJS.window,
     name: 'genInstr2',
-    text: 'At the start of each trial, you will be looking at the middle of the screen (marked by a +). After a short time, a face will appear and you will respond within 2 seconds. The length of time before the face appears is random, so stay alert! To respond:',
+    text: 'At the start of each trial, you will be looking at the middle of the screen (marked by a +). After a short time, a face will appear and you will respond within 3 seconds. The length of time before the face appears is random, so stay alert! To respond:',
     font: 'Open Sans',
     units: undefined, 
     pos: [0, 0.15], height: 0.045,  wrapWidth: 1.3, ori: 0.0,
@@ -894,7 +888,7 @@ async function experimentInit() {
   out_of_time_2 = new visual.TextStim({
     win: psychoJS.window,
     name: 'out_of_time_2',
-    text: 'Oops, out of time! Remember to respond within two seconds of seeing the face - you will need to re-try this trial.\n\n\n\n\nPress SPACE to try again.',
+    text: 'Oops, out of time! Remember to respond within 3 seconds of seeing the face - you will need to re-try this trial.\n\n\n\n\nPress SPACE to try again.',
     font: 'Open Sans',
     units: undefined, 
     pos: [0, 0], height: 0.05,  wrapWidth: 1.3, ori: 0.0,
@@ -1149,22 +1143,20 @@ async function experimentInit() {
     flip: false,
   });
   
-  nextButton1 = new visual.TextStim({
+  surveyContinue1 = new visual.ButtonStim({
     win: psychoJS.window,
-    name: 'nextButton1',
-    text: 'CLICK TO CONTINUE',
-    font: 'Open Sans',
-    units: undefined, 
-    pos: [0, (- 0.35)], height: 0.05,  wrapWidth: undefined, ori: 0.0,
-    languageStyle: 'LTR',
-    color: new util.Color('white'),  opacity: undefined,
-    depth: -6.0 
+    name: 'surveyContinue1',
+    text: 'CLICK HERE TO CONTINUE',
+    fillColor: 'darkgrey',
+    borderColor: null,
+    color: 'white',
+    colorSpace: 'rgb',
+    pos: [0, (- 0.35)],
+    letterHeight: 0.03,
+    size: [0.5, 0.25]
   });
+  surveyContinue1.clock = new util.Clock();
   
-  nextClick1 = new core.Mouse({
-    win: psychoJS.window,
-  });
-  nextClick1.mouseClock = new util.Clock();
   // Initialize components for Routine "closure2"
   closure2Clock = new util.Clock();
   qsInstr_2 = new visual.TextStim({
@@ -1235,22 +1227,20 @@ async function experimentInit() {
     flip: false,
   });
   
-  nextButton2 = new visual.TextStim({
+  surveyContinue2 = new visual.ButtonStim({
     win: psychoJS.window,
-    name: 'nextButton2',
-    text: 'CLICK TO CONTINUE',
-    font: 'Open Sans',
-    units: undefined, 
-    pos: [0, (- 0.35)], height: 0.05,  wrapWidth: undefined, ori: 0.0,
-    languageStyle: 'LTR',
-    color: new util.Color('white'),  opacity: undefined,
-    depth: -6.0 
+    name: 'surveyContinue2',
+    text: 'CLICK HERE TO CONTINUE',
+    fillColor: 'darkgrey',
+    borderColor: null,
+    color: 'white',
+    colorSpace: 'rgb',
+    pos: [0, (- 0.35)],
+    letterHeight: 0.03,
+    size: [0.5, 0.25]
   });
+  surveyContinue2.clock = new util.Clock();
   
-  nextClick2 = new core.Mouse({
-    win: psychoJS.window,
-  });
-  nextClick2.mouseClock = new util.Clock();
   // Initialize components for Routine "closure3"
   closure3Clock = new util.Clock();
   qsInstr_3 = new visual.TextStim({
@@ -1321,22 +1311,20 @@ async function experimentInit() {
     flip: false,
   });
   
-  nextButton3 = new visual.TextStim({
+  surveyContinue3 = new visual.ButtonStim({
     win: psychoJS.window,
-    name: 'nextButton3',
-    text: 'CLICK TO CONTINUE',
-    font: 'Open Sans',
-    units: undefined, 
-    pos: [0, (- 0.35)], height: 0.05,  wrapWidth: undefined, ori: 0.0,
-    languageStyle: 'LTR',
-    color: new util.Color('white'),  opacity: undefined,
-    depth: -6.0 
+    name: 'surveyContinue3',
+    text: 'CLICK HERE TO CONTINUE',
+    fillColor: 'darkgrey',
+    borderColor: null,
+    color: 'white',
+    colorSpace: 'rgb',
+    pos: [0, (- 0.35)],
+    letterHeight: 0.03,
+    size: [0.5, 0.25]
   });
+  surveyContinue3.clock = new util.Clock();
   
-  nextClick3 = new core.Mouse({
-    win: psychoJS.window,
-  });
-  nextClick3.mouseClock = new util.Clock();
   // Initialize components for Routine "closure4"
   closure4Clock = new util.Clock();
   qsInstr_4 = new visual.TextStim({
@@ -1396,22 +1384,20 @@ async function experimentInit() {
     flip: false,
   });
   
-  nextButton4 = new visual.TextStim({
+  surveyContinue4 = new visual.ButtonStim({
     win: psychoJS.window,
-    name: 'nextButton4',
-    text: 'CLICK TO CONTINUE',
-    font: 'Open Sans',
-    units: undefined, 
-    pos: [0, (- 0.35)], height: 0.05,  wrapWidth: undefined, ori: 0.0,
-    languageStyle: 'LTR',
-    color: new util.Color('white'),  opacity: undefined,
-    depth: -5.0 
+    name: 'surveyContinue4',
+    text: 'CLICK HERE TO CONTINUE',
+    fillColor: 'darkgrey',
+    borderColor: null,
+    color: 'white',
+    colorSpace: 'rgb',
+    pos: [0, (- 0.35)],
+    letterHeight: 0.03,
+    size: [0.5, 0.25]
   });
+  surveyContinue4.clock = new util.Clock();
   
-  nextClick4 = new core.Mouse({
-    win: psychoJS.window,
-  });
-  nextClick4.mouseClock = new util.Clock();
   // Initialize components for Routine "demographics"
   demographicsClock = new util.Clock();
   demographicsInstr = new visual.TextStim({
@@ -1492,22 +1478,20 @@ async function experimentInit() {
     depth: -5.0 
   });
   
-  nextButton5 = new visual.TextStim({
+  demogexitClick = new visual.ButtonStim({
     win: psychoJS.window,
-    name: 'nextButton5',
-    text: 'CLICK TO CONTINUE',
-    font: 'Open Sans',
-    units: undefined, 
-    pos: [0, (- 0.25)], height: 0.05,  wrapWidth: undefined, ori: 0.0,
-    languageStyle: 'LTR',
-    color: new util.Color('white'),  opacity: undefined,
-    depth: -6.0 
+    name: 'demogexitClick',
+    text: 'CLICK HERE TO CONTINUE',
+    fillColor: 'darkgrey',
+    borderColor: null,
+    color: 'white',
+    colorSpace: 'rgb',
+    pos: [0, (- 0.35)],
+    letterHeight: 0.03,
+    size: [0.5, 0.25]
   });
+  demogexitClick.clock = new util.Clock();
   
-  demographClick = new core.Mouse({
-    win: psychoJS.window,
-  });
-  demographClick.mouseClock = new util.Clock();
   // Initialize components for Routine "openAnswer"
   openAnswerClock = new util.Clock();
   openPrompt = new visual.TextStim({
@@ -1542,22 +1526,20 @@ async function experimentInit() {
     depth: -1.0 
   });
   
-  openanswerEnd = new visual.TextStim({
+  openAnswerClick = new visual.ButtonStim({
     win: psychoJS.window,
-    name: 'openanswerEnd',
-    text: 'Once you are done, click here to continue!',
-    font: 'Open Sans',
-    units: undefined, 
-    pos: [0, (- 0.25)], height: 0.05,  wrapWidth: undefined, ori: 0.0,
-    languageStyle: 'LTR',
-    color: new util.Color('white'),  opacity: undefined,
-    depth: -2.0 
+    name: 'openAnswerClick',
+    text: 'CLICK HERE TO CONTINUE',
+    fillColor: 'darkgrey',
+    borderColor: null,
+    color: 'white',
+    colorSpace: 'rgb',
+    pos: [0, (- 0.25)],
+    letterHeight: 0.03,
+    size: [0.5, 0.25]
   });
+  openAnswerClick.clock = new util.Clock();
   
-  openanswerClick = new core.Mouse({
-    win: psychoJS.window,
-  });
-  openanswerClick.mouseClock = new util.Clock();
   // Initialize components for Routine "debrief"
   debriefClock = new util.Clock();
   debriefText = new visual.TextStim({
@@ -3774,7 +3756,7 @@ function specific_instr2RoutineBegin(snapshot) {
     frameN = -1;
     continueRoutine = true; // until we're told otherwise
     // update component parameters for each repeat
-    specific_instructions_2.setText((instr + '. Be sure to respond within 2 seconds; a green frame around the image will show that your response was registered.'));
+    specific_instructions_2.setText((instr + '. Be sure to respond within 3 seconds; a green frame around the image will show that your response was registered.'));
     definition_2.setText(term);
     spec_instr_adv_2.keys = undefined;
     spec_instr_adv_2.rt = undefined;
@@ -4962,7 +4944,7 @@ function practiceFaceRoutineEachFrame() {
       psychoJS.window.callOnFlip(function() { practiceResp.clearEvents(); });
     }
 
-    frameRemains = 0.0 + 2 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
+    frameRemains = 0.0 + 3 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
     if (practiceResp.status === PsychoJS.Status.STARTED && t >= frameRemains) {
       practiceResp.status = PsychoJS.Status.FINISHED;
   }
@@ -5000,7 +4982,7 @@ function practiceFaceRoutineEachFrame() {
     }
 
     // Run 'Each Frame' code from endTrial_2
-    if ((t > 2)) {
+    if ((t > 3)) {
         continueRoutine = false;
     }
     
@@ -5543,6 +5525,7 @@ function faceOnsetRoutineBegin(snapshot) {
     face_image.setImage(face_file);
     // Run 'Begin Routine' code from respCheck
     redo = 0;
+    timesRedone = 0;
     
     // keep track of which components have finished
     faceOnsetComponents = [];
@@ -5578,7 +5561,7 @@ function faceOnsetRoutineEachFrame() {
       psychoJS.window.callOnFlip(function() { catResp.clearEvents(); });
     }
 
-    frameRemains = 0.0 + 2 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
+    frameRemains = 0.0 + 3 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
     if (catResp.status === PsychoJS.Status.STARTED && t >= frameRemains) {
       catResp.status = PsychoJS.Status.FINISHED;
   }
@@ -5616,7 +5599,7 @@ function faceOnsetRoutineEachFrame() {
     }
 
     // Run 'Each Frame' code from endTrial
-    if ((t > 2)) {
+    if ((t > 3)) {
         continueRoutine = false;
     }
     
@@ -5684,6 +5667,7 @@ function faceOnsetRoutineEnd(snapshot) {
     }
     _pj = {};
     _pj_snippets(_pj);
+    keys = [];
     keys = psychoJS.eventManager.getKeys();
     if ((keys.length > 0)) {
         if ((_pj.in_es6("k", keys) || _pj.in_es6("j", keys))) {
@@ -5698,6 +5682,7 @@ function faceOnsetRoutineEnd(snapshot) {
         timesRedone = (timesRedone + 1);
     }
     psychoJS.experiment.addData("timesRedone", timesRedone);
+    psychoJS.experiment.addData("catRespPress", keys);
     
     // the Routine "faceOnset" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset();
@@ -6014,9 +5999,6 @@ function closure1RoutineBegin(snapshot) {
     respQ2.reset()
     respQ3.reset()
     respQ4.reset()
-    // setup some python lists for storing info about the nextClick1
-    nextClick1.clicked_name = [];
-    gotValidClick = false; // until a click is received
     // Run 'Begin Routine' code from leftText1
     questions1.alignText = "left";
     questions1.alignHoriz = "left";
@@ -6029,8 +6011,7 @@ function closure1RoutineBegin(snapshot) {
     closure1Components.push(respQ2);
     closure1Components.push(respQ3);
     closure1Components.push(respQ4);
-    closure1Components.push(nextButton1);
-    closure1Components.push(nextClick1);
+    closure1Components.push(surveyContinue1);
     
     for (const thisComponent of closure1Components)
       if ('status' in thisComponent)
@@ -6108,43 +6089,43 @@ function closure1RoutineEachFrame() {
     }
 
     
-    // *nextButton1* updates
-    if ((((((respQ1.rating + respQ2.rating) + respQ3.rating) + respQ4.rating) > 0)) && nextButton1.status === PsychoJS.Status.NOT_STARTED) {
+    // *surveyContinue1* updates
+    if ((((((respQ1.rating + respQ2.rating) + respQ3.rating) + respQ4.rating) > 0)) && surveyContinue1.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
-      nextButton1.tStart = t;  // (not accounting for frame time here)
-      nextButton1.frameNStart = frameN;  // exact frame index
+      surveyContinue1.tStart = t;  // (not accounting for frame time here)
+      surveyContinue1.frameNStart = frameN;  // exact frame index
       
-      nextButton1.setAutoDraw(true);
+      surveyContinue1.setAutoDraw(true);
     }
 
-    // *nextClick1* updates
-    if (t >= 0.0 && nextClick1.status === PsychoJS.Status.NOT_STARTED) {
-      // keep track of start time/frame for later
-      nextClick1.tStart = t;  // (not accounting for frame time here)
-      nextClick1.frameNStart = frameN;  // exact frame index
-      
-      nextClick1.status = PsychoJS.Status.STARTED;
-      nextClick1.mouseClock.reset();
-      prevButtonState = nextClick1.getPressed();  // if button is down already this ISN'T a new click
-      }
-    if (nextClick1.status === PsychoJS.Status.STARTED) {  // only update if started and not finished!
-      _mouseButtons = nextClick1.getPressed();
-      if (!_mouseButtons.every( (e,i,) => (e == prevButtonState[i]) )) { // button state changed?
-        prevButtonState = _mouseButtons;
-        if (_mouseButtons.reduce( (e, acc) => (e+acc) ) > 0) { // state changed to a new click
-          // check if the mouse was inside our 'clickable' objects
-          gotValidClick = false;
-          for (const obj of [nextButton1]) {
-            if (obj.contains(nextClick1)) {
-              gotValidClick = true;
-              nextClick1.clicked_name.push(obj.name)
-            }
-          }
-          if (gotValidClick === true) { // abort routine on response
-            continueRoutine = false;
-          }
+    if (surveyContinue1.status === PsychoJS.Status.STARTED) {
+      // check whether surveyContinue1 has been pressed
+      if (surveyContinue1.isClicked) {
+        if (!surveyContinue1.wasClicked) {
+          // store time of first click
+          surveyContinue1.timesOn.push(surveyContinue1.clock.getTime());
+          surveyContinue1.numClicks += 1;
+          // store time clicked until
+          surveyContinue1.timesOff.push(surveyContinue1.clock.getTime());
+        } else {
+          // update time clicked until;
+          surveyContinue1.timesOff[surveyContinue1.timesOff.length - 1] = surveyContinue1.clock.getTime();
         }
+        if (!surveyContinue1.wasClicked) {
+          // end routine when surveyContinue1 is clicked
+          continueRoutine = false;
+        }
+        // if surveyContinue1 is still clicked next frame, it is not a new click
+        surveyContinue1.wasClicked = true;
+      } else {
+        // if surveyContinue1 is clicked next frame, it is a new click
+        surveyContinue1.wasClicked = false;
       }
+    } else {
+      // keep clock at 0 if surveyContinue1 hasn't started / has finished
+      surveyContinue1.clock.reset();
+      // if surveyContinue1 is clicked next frame, it is a new click
+      surveyContinue1.wasClicked = false;
     }
     // check for quit (typically the Esc key)
     if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
@@ -6189,16 +6170,9 @@ function closure1RoutineEnd(snapshot) {
     psychoJS.experiment.addData('respQ3.rt', respQ3.getRT());
     psychoJS.experiment.addData('respQ4.response', respQ4.getRating());
     psychoJS.experiment.addData('respQ4.rt', respQ4.getRT());
-    // store data for psychoJS.experiment (ExperimentHandler)
-    _mouseXYs = nextClick1.getPos();
-    _mouseButtons = nextClick1.getPressed();
-    psychoJS.experiment.addData('nextClick1.x', _mouseXYs[0]);
-    psychoJS.experiment.addData('nextClick1.y', _mouseXYs[1]);
-    psychoJS.experiment.addData('nextClick1.leftButton', _mouseButtons[0]);
-    psychoJS.experiment.addData('nextClick1.midButton', _mouseButtons[1]);
-    psychoJS.experiment.addData('nextClick1.rightButton', _mouseButtons[2]);
-    if (nextClick1.clicked_name.length > 0) {
-      psychoJS.experiment.addData('nextClick1.clicked_name', nextClick1.clicked_name[0]);}
+    psychoJS.experiment.addData('surveyContinue1.numClicks', surveyContinue1.numClicks);
+    psychoJS.experiment.addData('surveyContinue1.timesOn', surveyContinue1.timesOn);
+    psychoJS.experiment.addData('surveyContinue1.timesOff', surveyContinue1.timesOff);
     // the Routine "closure1" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset();
     
@@ -6226,9 +6200,6 @@ function closure2RoutineBegin(snapshot) {
     respQ6.reset()
     respQ7.reset()
     respQ8.reset()
-    // setup some python lists for storing info about the nextClick2
-    nextClick2.clicked_name = [];
-    gotValidClick = false; // until a click is received
     // Run 'Begin Routine' code from leftText2
     questions2.alignText = "left";
     questions2.alignHoriz = "left";
@@ -6241,8 +6212,7 @@ function closure2RoutineBegin(snapshot) {
     closure2Components.push(respQ6);
     closure2Components.push(respQ7);
     closure2Components.push(respQ8);
-    closure2Components.push(nextButton2);
-    closure2Components.push(nextClick2);
+    closure2Components.push(surveyContinue2);
     
     for (const thisComponent of closure2Components)
       if ('status' in thisComponent)
@@ -6320,43 +6290,43 @@ function closure2RoutineEachFrame() {
     }
 
     
-    // *nextButton2* updates
-    if ((((((respQ5.rating + respQ6.rating) + respQ7.rating) + respQ8.rating) > 0)) && nextButton2.status === PsychoJS.Status.NOT_STARTED) {
+    // *surveyContinue2* updates
+    if ((((((respQ5.rating + respQ6.rating) + respQ7.rating) + respQ8.rating) > 0)) && surveyContinue2.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
-      nextButton2.tStart = t;  // (not accounting for frame time here)
-      nextButton2.frameNStart = frameN;  // exact frame index
+      surveyContinue2.tStart = t;  // (not accounting for frame time here)
+      surveyContinue2.frameNStart = frameN;  // exact frame index
       
-      nextButton2.setAutoDraw(true);
+      surveyContinue2.setAutoDraw(true);
     }
 
-    // *nextClick2* updates
-    if (t >= 0.0 && nextClick2.status === PsychoJS.Status.NOT_STARTED) {
-      // keep track of start time/frame for later
-      nextClick2.tStart = t;  // (not accounting for frame time here)
-      nextClick2.frameNStart = frameN;  // exact frame index
-      
-      nextClick2.status = PsychoJS.Status.STARTED;
-      nextClick2.mouseClock.reset();
-      prevButtonState = nextClick2.getPressed();  // if button is down already this ISN'T a new click
-      }
-    if (nextClick2.status === PsychoJS.Status.STARTED) {  // only update if started and not finished!
-      _mouseButtons = nextClick2.getPressed();
-      if (!_mouseButtons.every( (e,i,) => (e == prevButtonState[i]) )) { // button state changed?
-        prevButtonState = _mouseButtons;
-        if (_mouseButtons.reduce( (e, acc) => (e+acc) ) > 0) { // state changed to a new click
-          // check if the mouse was inside our 'clickable' objects
-          gotValidClick = false;
-          for (const obj of [nextButton2]) {
-            if (obj.contains(nextClick2)) {
-              gotValidClick = true;
-              nextClick2.clicked_name.push(obj.name)
-            }
-          }
-          if (gotValidClick === true) { // abort routine on response
-            continueRoutine = false;
-          }
+    if (surveyContinue2.status === PsychoJS.Status.STARTED) {
+      // check whether surveyContinue2 has been pressed
+      if (surveyContinue2.isClicked) {
+        if (!surveyContinue2.wasClicked) {
+          // store time of first click
+          surveyContinue2.timesOn.push(surveyContinue2.clock.getTime());
+          surveyContinue2.numClicks += 1;
+          // store time clicked until
+          surveyContinue2.timesOff.push(surveyContinue2.clock.getTime());
+        } else {
+          // update time clicked until;
+          surveyContinue2.timesOff[surveyContinue2.timesOff.length - 1] = surveyContinue2.clock.getTime();
         }
+        if (!surveyContinue2.wasClicked) {
+          // end routine when surveyContinue2 is clicked
+          continueRoutine = false;
+        }
+        // if surveyContinue2 is still clicked next frame, it is not a new click
+        surveyContinue2.wasClicked = true;
+      } else {
+        // if surveyContinue2 is clicked next frame, it is a new click
+        surveyContinue2.wasClicked = false;
       }
+    } else {
+      // keep clock at 0 if surveyContinue2 hasn't started / has finished
+      surveyContinue2.clock.reset();
+      // if surveyContinue2 is clicked next frame, it is a new click
+      surveyContinue2.wasClicked = false;
     }
     // check for quit (typically the Esc key)
     if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
@@ -6401,16 +6371,9 @@ function closure2RoutineEnd(snapshot) {
     psychoJS.experiment.addData('respQ7.rt', respQ7.getRT());
     psychoJS.experiment.addData('respQ8.response', respQ8.getRating());
     psychoJS.experiment.addData('respQ8.rt', respQ8.getRT());
-    // store data for psychoJS.experiment (ExperimentHandler)
-    _mouseXYs = nextClick2.getPos();
-    _mouseButtons = nextClick2.getPressed();
-    psychoJS.experiment.addData('nextClick2.x', _mouseXYs[0]);
-    psychoJS.experiment.addData('nextClick2.y', _mouseXYs[1]);
-    psychoJS.experiment.addData('nextClick2.leftButton', _mouseButtons[0]);
-    psychoJS.experiment.addData('nextClick2.midButton', _mouseButtons[1]);
-    psychoJS.experiment.addData('nextClick2.rightButton', _mouseButtons[2]);
-    if (nextClick2.clicked_name.length > 0) {
-      psychoJS.experiment.addData('nextClick2.clicked_name', nextClick2.clicked_name[0]);}
+    psychoJS.experiment.addData('surveyContinue2.numClicks', surveyContinue2.numClicks);
+    psychoJS.experiment.addData('surveyContinue2.timesOn', surveyContinue2.timesOn);
+    psychoJS.experiment.addData('surveyContinue2.timesOff', surveyContinue2.timesOff);
     // the Routine "closure2" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset();
     
@@ -6438,9 +6401,6 @@ function closure3RoutineBegin(snapshot) {
     respQ10.reset()
     respQ11.reset()
     respQ12.reset()
-    // setup some python lists for storing info about the nextClick3
-    nextClick3.clicked_name = [];
-    gotValidClick = false; // until a click is received
     // Run 'Begin Routine' code from leftText3
     questions3.alignText = "left";
     questions3.alignHoriz = "left";
@@ -6453,8 +6413,7 @@ function closure3RoutineBegin(snapshot) {
     closure3Components.push(respQ10);
     closure3Components.push(respQ11);
     closure3Components.push(respQ12);
-    closure3Components.push(nextButton3);
-    closure3Components.push(nextClick3);
+    closure3Components.push(surveyContinue3);
     
     for (const thisComponent of closure3Components)
       if ('status' in thisComponent)
@@ -6532,43 +6491,43 @@ function closure3RoutineEachFrame() {
     }
 
     
-    // *nextButton3* updates
-    if ((((((respQ9.rating + respQ10.rating) + respQ11.rating) + respQ12.rating) > 0)) && nextButton3.status === PsychoJS.Status.NOT_STARTED) {
+    // *surveyContinue3* updates
+    if ((((((respQ9.rating + respQ10.rating) + respQ11.rating) + respQ12.rating) > 0)) && surveyContinue3.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
-      nextButton3.tStart = t;  // (not accounting for frame time here)
-      nextButton3.frameNStart = frameN;  // exact frame index
+      surveyContinue3.tStart = t;  // (not accounting for frame time here)
+      surveyContinue3.frameNStart = frameN;  // exact frame index
       
-      nextButton3.setAutoDraw(true);
+      surveyContinue3.setAutoDraw(true);
     }
 
-    // *nextClick3* updates
-    if (t >= 0.0 && nextClick3.status === PsychoJS.Status.NOT_STARTED) {
-      // keep track of start time/frame for later
-      nextClick3.tStart = t;  // (not accounting for frame time here)
-      nextClick3.frameNStart = frameN;  // exact frame index
-      
-      nextClick3.status = PsychoJS.Status.STARTED;
-      nextClick3.mouseClock.reset();
-      prevButtonState = nextClick3.getPressed();  // if button is down already this ISN'T a new click
-      }
-    if (nextClick3.status === PsychoJS.Status.STARTED) {  // only update if started and not finished!
-      _mouseButtons = nextClick3.getPressed();
-      if (!_mouseButtons.every( (e,i,) => (e == prevButtonState[i]) )) { // button state changed?
-        prevButtonState = _mouseButtons;
-        if (_mouseButtons.reduce( (e, acc) => (e+acc) ) > 0) { // state changed to a new click
-          // check if the mouse was inside our 'clickable' objects
-          gotValidClick = false;
-          for (const obj of [nextButton3]) {
-            if (obj.contains(nextClick3)) {
-              gotValidClick = true;
-              nextClick3.clicked_name.push(obj.name)
-            }
-          }
-          if (gotValidClick === true) { // abort routine on response
-            continueRoutine = false;
-          }
+    if (surveyContinue3.status === PsychoJS.Status.STARTED) {
+      // check whether surveyContinue3 has been pressed
+      if (surveyContinue3.isClicked) {
+        if (!surveyContinue3.wasClicked) {
+          // store time of first click
+          surveyContinue3.timesOn.push(surveyContinue3.clock.getTime());
+          surveyContinue3.numClicks += 1;
+          // store time clicked until
+          surveyContinue3.timesOff.push(surveyContinue3.clock.getTime());
+        } else {
+          // update time clicked until;
+          surveyContinue3.timesOff[surveyContinue3.timesOff.length - 1] = surveyContinue3.clock.getTime();
         }
+        if (!surveyContinue3.wasClicked) {
+          // end routine when surveyContinue3 is clicked
+          continueRoutine = false;
+        }
+        // if surveyContinue3 is still clicked next frame, it is not a new click
+        surveyContinue3.wasClicked = true;
+      } else {
+        // if surveyContinue3 is clicked next frame, it is a new click
+        surveyContinue3.wasClicked = false;
       }
+    } else {
+      // keep clock at 0 if surveyContinue3 hasn't started / has finished
+      surveyContinue3.clock.reset();
+      // if surveyContinue3 is clicked next frame, it is a new click
+      surveyContinue3.wasClicked = false;
     }
     // check for quit (typically the Esc key)
     if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
@@ -6613,16 +6572,9 @@ function closure3RoutineEnd(snapshot) {
     psychoJS.experiment.addData('respQ11.rt', respQ11.getRT());
     psychoJS.experiment.addData('respQ12.response', respQ12.getRating());
     psychoJS.experiment.addData('respQ12.rt', respQ12.getRT());
-    // store data for psychoJS.experiment (ExperimentHandler)
-    _mouseXYs = nextClick3.getPos();
-    _mouseButtons = nextClick3.getPressed();
-    psychoJS.experiment.addData('nextClick3.x', _mouseXYs[0]);
-    psychoJS.experiment.addData('nextClick3.y', _mouseXYs[1]);
-    psychoJS.experiment.addData('nextClick3.leftButton', _mouseButtons[0]);
-    psychoJS.experiment.addData('nextClick3.midButton', _mouseButtons[1]);
-    psychoJS.experiment.addData('nextClick3.rightButton', _mouseButtons[2]);
-    if (nextClick3.clicked_name.length > 0) {
-      psychoJS.experiment.addData('nextClick3.clicked_name', nextClick3.clicked_name[0]);}
+    psychoJS.experiment.addData('surveyContinue3.numClicks', surveyContinue3.numClicks);
+    psychoJS.experiment.addData('surveyContinue3.timesOn', surveyContinue3.timesOn);
+    psychoJS.experiment.addData('surveyContinue3.timesOff', surveyContinue3.timesOff);
     // the Routine "closure3" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset();
     
@@ -6649,9 +6601,6 @@ function closure4RoutineBegin(snapshot) {
     respQ13.reset()
     respQ14.reset()
     respQ15.reset()
-    // setup some python lists for storing info about the nextClick4
-    nextClick4.clicked_name = [];
-    gotValidClick = false; // until a click is received
     // Run 'Begin Routine' code from leftText4
     questions4.alignText = "left";
     questions4.alignHoriz = "left";
@@ -6663,8 +6612,7 @@ function closure4RoutineBegin(snapshot) {
     closure4Components.push(respQ13);
     closure4Components.push(respQ14);
     closure4Components.push(respQ15);
-    closure4Components.push(nextButton4);
-    closure4Components.push(nextClick4);
+    closure4Components.push(surveyContinue4);
     
     for (const thisComponent of closure4Components)
       if ('status' in thisComponent)
@@ -6732,43 +6680,43 @@ function closure4RoutineEachFrame() {
     }
 
     
-    // *nextButton4* updates
-    if (((((respQ13.rating + respQ14.rating) + respQ15.rating) > 0)) && nextButton4.status === PsychoJS.Status.NOT_STARTED) {
+    // *surveyContinue4* updates
+    if (((((respQ13.rating + respQ14.rating) + respQ15.rating) > 0)) && surveyContinue4.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
-      nextButton4.tStart = t;  // (not accounting for frame time here)
-      nextButton4.frameNStart = frameN;  // exact frame index
+      surveyContinue4.tStart = t;  // (not accounting for frame time here)
+      surveyContinue4.frameNStart = frameN;  // exact frame index
       
-      nextButton4.setAutoDraw(true);
+      surveyContinue4.setAutoDraw(true);
     }
 
-    // *nextClick4* updates
-    if (t >= 0.0 && nextClick4.status === PsychoJS.Status.NOT_STARTED) {
-      // keep track of start time/frame for later
-      nextClick4.tStart = t;  // (not accounting for frame time here)
-      nextClick4.frameNStart = frameN;  // exact frame index
-      
-      nextClick4.status = PsychoJS.Status.STARTED;
-      nextClick4.mouseClock.reset();
-      prevButtonState = nextClick4.getPressed();  // if button is down already this ISN'T a new click
-      }
-    if (nextClick4.status === PsychoJS.Status.STARTED) {  // only update if started and not finished!
-      _mouseButtons = nextClick4.getPressed();
-      if (!_mouseButtons.every( (e,i,) => (e == prevButtonState[i]) )) { // button state changed?
-        prevButtonState = _mouseButtons;
-        if (_mouseButtons.reduce( (e, acc) => (e+acc) ) > 0) { // state changed to a new click
-          // check if the mouse was inside our 'clickable' objects
-          gotValidClick = false;
-          for (const obj of [nextButton4]) {
-            if (obj.contains(nextClick4)) {
-              gotValidClick = true;
-              nextClick4.clicked_name.push(obj.name)
-            }
-          }
-          if (gotValidClick === true) { // abort routine on response
-            continueRoutine = false;
-          }
+    if (surveyContinue4.status === PsychoJS.Status.STARTED) {
+      // check whether surveyContinue4 has been pressed
+      if (surveyContinue4.isClicked) {
+        if (!surveyContinue4.wasClicked) {
+          // store time of first click
+          surveyContinue4.timesOn.push(surveyContinue4.clock.getTime());
+          surveyContinue4.numClicks += 1;
+          // store time clicked until
+          surveyContinue4.timesOff.push(surveyContinue4.clock.getTime());
+        } else {
+          // update time clicked until;
+          surveyContinue4.timesOff[surveyContinue4.timesOff.length - 1] = surveyContinue4.clock.getTime();
         }
+        if (!surveyContinue4.wasClicked) {
+          // end routine when surveyContinue4 is clicked
+          continueRoutine = false;
+        }
+        // if surveyContinue4 is still clicked next frame, it is not a new click
+        surveyContinue4.wasClicked = true;
+      } else {
+        // if surveyContinue4 is clicked next frame, it is a new click
+        surveyContinue4.wasClicked = false;
       }
+    } else {
+      // keep clock at 0 if surveyContinue4 hasn't started / has finished
+      surveyContinue4.clock.reset();
+      // if surveyContinue4 is clicked next frame, it is a new click
+      surveyContinue4.wasClicked = false;
     }
     // check for quit (typically the Esc key)
     if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
@@ -6811,16 +6759,9 @@ function closure4RoutineEnd(snapshot) {
     psychoJS.experiment.addData('respQ14.rt', respQ14.getRT());
     psychoJS.experiment.addData('respQ15.response', respQ15.getRating());
     psychoJS.experiment.addData('respQ15.rt', respQ15.getRT());
-    // store data for psychoJS.experiment (ExperimentHandler)
-    _mouseXYs = nextClick4.getPos();
-    _mouseButtons = nextClick4.getPressed();
-    psychoJS.experiment.addData('nextClick4.x', _mouseXYs[0]);
-    psychoJS.experiment.addData('nextClick4.y', _mouseXYs[1]);
-    psychoJS.experiment.addData('nextClick4.leftButton', _mouseButtons[0]);
-    psychoJS.experiment.addData('nextClick4.midButton', _mouseButtons[1]);
-    psychoJS.experiment.addData('nextClick4.rightButton', _mouseButtons[2]);
-    if (nextClick4.clicked_name.length > 0) {
-      psychoJS.experiment.addData('nextClick4.clicked_name', nextClick4.clicked_name[0]);}
+    psychoJS.experiment.addData('surveyContinue4.numClicks', surveyContinue4.numClicks);
+    psychoJS.experiment.addData('surveyContinue4.timesOn', surveyContinue4.timesOn);
+    psychoJS.experiment.addData('surveyContinue4.timesOff', surveyContinue4.timesOff);
     // the Routine "closure4" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset();
     
@@ -6848,9 +6789,6 @@ function demographicsRoutineBegin(snapshot) {
     genderResp1.reset()
     genderResp2.setText('');
     genderResp2.refresh();
-    // setup some python lists for storing info about the demographClick
-    demographClick.clicked_name = [];
-    gotValidClick = false; // until a click is received
     // Run 'Begin Routine' code from demogLeft
     age.alignText = "left";
     age.alignHoriz = "left";
@@ -6865,8 +6803,7 @@ function demographicsRoutineBegin(snapshot) {
     demographicsComponents.push(gender);
     demographicsComponents.push(genderResp1);
     demographicsComponents.push(genderResp2);
-    demographicsComponents.push(nextButton5);
-    demographicsComponents.push(demographClick);
+    demographicsComponents.push(demogexitClick);
     
     for (const thisComponent of demographicsComponents)
       if ('status' in thisComponent)
@@ -6944,43 +6881,43 @@ function demographicsRoutineEachFrame() {
     }
 
     
-    // *nextButton5* updates
-    if (((respAge.rating && genderResp1.rating)) && nextButton5.status === PsychoJS.Status.NOT_STARTED) {
+    // *demogexitClick* updates
+    if (((respAge.rating && genderResp1.rating)) && demogexitClick.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
-      nextButton5.tStart = t;  // (not accounting for frame time here)
-      nextButton5.frameNStart = frameN;  // exact frame index
+      demogexitClick.tStart = t;  // (not accounting for frame time here)
+      demogexitClick.frameNStart = frameN;  // exact frame index
       
-      nextButton5.setAutoDraw(true);
+      demogexitClick.setAutoDraw(true);
     }
 
-    // *demographClick* updates
-    if (t >= 0.0 && demographClick.status === PsychoJS.Status.NOT_STARTED) {
-      // keep track of start time/frame for later
-      demographClick.tStart = t;  // (not accounting for frame time here)
-      demographClick.frameNStart = frameN;  // exact frame index
-      
-      demographClick.status = PsychoJS.Status.STARTED;
-      demographClick.mouseClock.reset();
-      prevButtonState = demographClick.getPressed();  // if button is down already this ISN'T a new click
-      }
-    if (demographClick.status === PsychoJS.Status.STARTED) {  // only update if started and not finished!
-      _mouseButtons = demographClick.getPressed();
-      if (!_mouseButtons.every( (e,i,) => (e == prevButtonState[i]) )) { // button state changed?
-        prevButtonState = _mouseButtons;
-        if (_mouseButtons.reduce( (e, acc) => (e+acc) ) > 0) { // state changed to a new click
-          // check if the mouse was inside our 'clickable' objects
-          gotValidClick = false;
-          for (const obj of [nextButton5]) {
-            if (obj.contains(demographClick)) {
-              gotValidClick = true;
-              demographClick.clicked_name.push(obj.name)
-            }
-          }
-          if (gotValidClick === true) { // abort routine on response
-            continueRoutine = false;
-          }
+    if (demogexitClick.status === PsychoJS.Status.STARTED) {
+      // check whether demogexitClick has been pressed
+      if (demogexitClick.isClicked) {
+        if (!demogexitClick.wasClicked) {
+          // store time of first click
+          demogexitClick.timesOn.push(demogexitClick.clock.getTime());
+          demogexitClick.numClicks += 1;
+          // store time clicked until
+          demogexitClick.timesOff.push(demogexitClick.clock.getTime());
+        } else {
+          // update time clicked until;
+          demogexitClick.timesOff[demogexitClick.timesOff.length - 1] = demogexitClick.clock.getTime();
         }
+        if (!demogexitClick.wasClicked) {
+          // end routine when demogexitClick is clicked
+          continueRoutine = false;
+        }
+        // if demogexitClick is still clicked next frame, it is not a new click
+        demogexitClick.wasClicked = true;
+      } else {
+        // if demogexitClick is clicked next frame, it is a new click
+        demogexitClick.wasClicked = false;
       }
+    } else {
+      // keep clock at 0 if demogexitClick hasn't started / has finished
+      demogexitClick.clock.reset();
+      // if demogexitClick is clicked next frame, it is a new click
+      demogexitClick.wasClicked = false;
     }
     // check for quit (typically the Esc key)
     if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
@@ -7022,16 +6959,9 @@ function demographicsRoutineEnd(snapshot) {
     psychoJS.experiment.addData('genderResp1.response', genderResp1.getRating());
     psychoJS.experiment.addData('genderResp1.rt', genderResp1.getRT());
     psychoJS.experiment.addData('genderResp2.text',genderResp2.text)
-    // store data for psychoJS.experiment (ExperimentHandler)
-    _mouseXYs = demographClick.getPos();
-    _mouseButtons = demographClick.getPressed();
-    psychoJS.experiment.addData('demographClick.x', _mouseXYs[0]);
-    psychoJS.experiment.addData('demographClick.y', _mouseXYs[1]);
-    psychoJS.experiment.addData('demographClick.leftButton', _mouseButtons[0]);
-    psychoJS.experiment.addData('demographClick.midButton', _mouseButtons[1]);
-    psychoJS.experiment.addData('demographClick.rightButton', _mouseButtons[2]);
-    if (demographClick.clicked_name.length > 0) {
-      psychoJS.experiment.addData('demographClick.clicked_name', demographClick.clicked_name[0]);}
+    psychoJS.experiment.addData('demogexitClick.numClicks', demogexitClick.numClicks);
+    psychoJS.experiment.addData('demogexitClick.timesOn', demogexitClick.timesOn);
+    psychoJS.experiment.addData('demogexitClick.timesOff', demogexitClick.timesOff);
     // the Routine "demographics" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset();
     
@@ -7057,22 +6987,11 @@ function openAnswerRoutineBegin(snapshot) {
     // update component parameters for each repeat
     textbox.setText('');
     textbox.refresh();
-    // setup some python lists for storing info about the openanswerClick
-    // current position of the mouse:
-    openanswerClick.x = [];
-    openanswerClick.y = [];
-    openanswerClick.leftButton = [];
-    openanswerClick.midButton = [];
-    openanswerClick.rightButton = [];
-    openanswerClick.time = [];
-    openanswerClick.clicked_name = [];
-    gotValidClick = false; // until a click is received
     // keep track of which components have finished
     openAnswerComponents = [];
     openAnswerComponents.push(openPrompt);
     openAnswerComponents.push(textbox);
-    openAnswerComponents.push(openanswerEnd);
-    openAnswerComponents.push(openanswerClick);
+    openAnswerComponents.push(openAnswerClick);
     
     for (const thisComponent of openAnswerComponents)
       if ('status' in thisComponent)
@@ -7110,49 +7029,43 @@ function openAnswerRoutineEachFrame() {
     }
 
     
-    // *openanswerEnd* updates
-    if (t >= 3 && openanswerEnd.status === PsychoJS.Status.NOT_STARTED) {
+    // *openAnswerClick* updates
+    if (t >= 3 && openAnswerClick.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
-      openanswerEnd.tStart = t;  // (not accounting for frame time here)
-      openanswerEnd.frameNStart = frameN;  // exact frame index
+      openAnswerClick.tStart = t;  // (not accounting for frame time here)
+      openAnswerClick.frameNStart = frameN;  // exact frame index
       
-      openanswerEnd.setAutoDraw(true);
+      openAnswerClick.setAutoDraw(true);
     }
 
-    // *openanswerClick* updates
-    if (t >= 3 && openanswerClick.status === PsychoJS.Status.NOT_STARTED) {
-      // keep track of start time/frame for later
-      openanswerClick.tStart = t;  // (not accounting for frame time here)
-      openanswerClick.frameNStart = frameN;  // exact frame index
-      
-      openanswerClick.status = PsychoJS.Status.STARTED;
-      openanswerClick.mouseClock.reset();
-      prevButtonState = openanswerClick.getPressed();  // if button is down already this ISN'T a new click
-      }
-    if (openanswerClick.status === PsychoJS.Status.STARTED) {  // only update if started and not finished!
-      _mouseButtons = openanswerClick.getPressed();
-      if (!_mouseButtons.every( (e,i,) => (e == prevButtonState[i]) )) { // button state changed?
-        prevButtonState = _mouseButtons;
-        if (_mouseButtons.reduce( (e, acc) => (e+acc) ) > 0) { // state changed to a new click
-          // check if the mouse was inside our 'clickable' objects
-          gotValidClick = false;
-          for (const obj of [openanswerEnd]) {
-            if (obj.contains(openanswerClick)) {
-              gotValidClick = true;
-              openanswerClick.clicked_name.push(obj.name)
-            }
-          }
-          _mouseXYs = openanswerClick.getPos();
-          openanswerClick.x.push(_mouseXYs[0]);
-          openanswerClick.y.push(_mouseXYs[1]);
-          openanswerClick.leftButton.push(_mouseButtons[0]);
-          openanswerClick.midButton.push(_mouseButtons[1]);
-          openanswerClick.rightButton.push(_mouseButtons[2]);
-          openanswerClick.time.push(openanswerClick.mouseClock.getTime());
-          // abort routine on response
+    if (openAnswerClick.status === PsychoJS.Status.STARTED) {
+      // check whether openAnswerClick has been pressed
+      if (openAnswerClick.isClicked) {
+        if (!openAnswerClick.wasClicked) {
+          // store time of first click
+          openAnswerClick.timesOn.push(openAnswerClick.clock.getTime());
+          openAnswerClick.numClicks += 1;
+          // store time clicked until
+          openAnswerClick.timesOff.push(openAnswerClick.clock.getTime());
+        } else {
+          // update time clicked until;
+          openAnswerClick.timesOff[openAnswerClick.timesOff.length - 1] = openAnswerClick.clock.getTime();
+        }
+        if (!openAnswerClick.wasClicked) {
+          // end routine when openAnswerClick is clicked
           continueRoutine = false;
         }
+        // if openAnswerClick is still clicked next frame, it is not a new click
+        openAnswerClick.wasClicked = true;
+      } else {
+        // if openAnswerClick is clicked next frame, it is a new click
+        openAnswerClick.wasClicked = false;
       }
+    } else {
+      // keep clock at 0 if openAnswerClick hasn't started / has finished
+      openAnswerClick.clock.reset();
+      // if openAnswerClick is clicked next frame, it is a new click
+      openAnswerClick.wasClicked = false;
     }
     // check for quit (typically the Esc key)
     if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
@@ -7190,15 +7103,9 @@ function openAnswerRoutineEnd(snapshot) {
       }
     }
     psychoJS.experiment.addData('textbox.text',textbox.text)
-    // store data for psychoJS.experiment (ExperimentHandler)
-    if (openanswerClick.x) {  psychoJS.experiment.addData('openanswerClick.x', openanswerClick.x[0])};
-    if (openanswerClick.y) {  psychoJS.experiment.addData('openanswerClick.y', openanswerClick.y[0])};
-    if (openanswerClick.leftButton) {  psychoJS.experiment.addData('openanswerClick.leftButton', openanswerClick.leftButton[0])};
-    if (openanswerClick.midButton) {  psychoJS.experiment.addData('openanswerClick.midButton', openanswerClick.midButton[0])};
-    if (openanswerClick.rightButton) {  psychoJS.experiment.addData('openanswerClick.rightButton', openanswerClick.rightButton[0])};
-    if (openanswerClick.time) {  psychoJS.experiment.addData('openanswerClick.time', openanswerClick.time[0])};
-    if (openanswerClick.clicked_name) {  psychoJS.experiment.addData('openanswerClick.clicked_name', openanswerClick.clicked_name[0])};
-    
+    psychoJS.experiment.addData('openAnswerClick.numClicks', openAnswerClick.numClicks);
+    psychoJS.experiment.addData('openAnswerClick.timesOn', openAnswerClick.timesOn);
+    psychoJS.experiment.addData('openAnswerClick.timesOff', openAnswerClick.timesOff);
     // the Routine "openAnswer" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset();
     
