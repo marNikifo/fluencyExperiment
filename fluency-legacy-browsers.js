@@ -52,13 +52,17 @@ flowScheduler.add(consent2RoutineEnd());
 flowScheduler.add(consent3RoutineBegin());
 flowScheduler.add(consent3RoutineEachFrame());
 flowScheduler.add(consent3RoutineEnd());
+const quitLoopLoopScheduler = new Scheduler(psychoJS);
+flowScheduler.add(quitLoopLoopBegin(quitLoopLoopScheduler));
+flowScheduler.add(quitLoopLoopScheduler);
+flowScheduler.add(quitLoopLoopEnd);
 flowScheduler.add(instrStartRoutineBegin());
 flowScheduler.add(instrStartRoutineEachFrame());
 flowScheduler.add(instrStartRoutineEnd());
-const instr_loopLoopScheduler = new Scheduler(psychoJS);
-flowScheduler.add(instr_loopLoopBegin(instr_loopLoopScheduler));
-flowScheduler.add(instr_loopLoopScheduler);
-flowScheduler.add(instr_loopLoopEnd);
+const instrLoopLoopScheduler = new Scheduler(psychoJS);
+flowScheduler.add(instrLoopLoopBegin(instrLoopLoopScheduler));
+flowScheduler.add(instrLoopLoopScheduler);
+flowScheduler.add(instrLoopLoopEnd);
 const attnCheckerLoopScheduler = new Scheduler(psychoJS);
 flowScheduler.add(attnCheckerLoopBegin(attnCheckerLoopScheduler));
 flowScheduler.add(attnCheckerLoopScheduler);
@@ -91,6 +95,9 @@ flowScheduler.add(openAnswerRoutineEnd());
 flowScheduler.add(debriefRoutineBegin());
 flowScheduler.add(debriefRoutineEachFrame());
 flowScheduler.add(debriefRoutineEnd());
+flowScheduler.add(completionRoutineBegin());
+flowScheduler.add(completionRoutineEachFrame());
+flowScheduler.add(completionRoutineEnd());
 flowScheduler.add(quitPsychoJS, '', true);
 
 // quit if user presses Cancel in dialog box:
@@ -100,118 +107,118 @@ psychoJS.start({
   expName: expName,
   expInfo: expInfo,
   resources: [
-    {'name': 'img/B02_05.jpg', 'path': 'img/B02_05.jpg'},
-    {'name': 'img/B03_07.jpg', 'path': 'img/B03_07.jpg'},
-    {'name': 'img/B05_00.jpg', 'path': 'img/B05_00.jpg'},
-    {'name': 'img/B01_00.jpg', 'path': 'img/B01_00.jpg'},
-    {'name': 'img/B06_05.jpg', 'path': 'img/B06_05.jpg'},
-    {'name': 'img/B04_07.jpg', 'path': 'img/B04_07.jpg'},
-    {'name': 'img/B02_04.jpg', 'path': 'img/B02_04.jpg'},
-    {'name': 'img/B01_07.jpg', 'path': 'img/B01_07.jpg'},
-    {'name': 'img/B01_09.jpg', 'path': 'img/B01_09.jpg'},
-    {'name': 'img/B06_01.jpg', 'path': 'img/B06_01.jpg'},
-    {'name': 'img/B09_08.jpg', 'path': 'img/B09_08.jpg'},
-    {'name': 'img/B09_00.jpg', 'path': 'img/B09_00.jpg'},
-    {'name': 'img/B03_08.jpg', 'path': 'img/B03_08.jpg'},
-    {'name': 'img/B08_09.jpg', 'path': 'img/B08_09.jpg'},
-    {'name': 'img/B07_02.jpg', 'path': 'img/B07_02.jpg'},
-    {'name': 'img/B01_03.jpg', 'path': 'img/B01_03.jpg'},
-    {'name': 'img/B05_09.jpg', 'path': 'img/B05_09.jpg'},
-    {'name': 'img/B05_08.jpg', 'path': 'img/B05_08.jpg'},
-    {'name': 'img/B06_07.jpg', 'path': 'img/B06_07.jpg'},
-    {'name': 'img/B04_04.jpg', 'path': 'img/B04_04.jpg'},
-    {'name': 'img/B07_05.jpg', 'path': 'img/B07_05.jpg'},
-    {'name': 'img/B03_03.jpg', 'path': 'img/B03_03.jpg'},
-    {'name': 'img/B07_01.jpg', 'path': 'img/B07_01.jpg'},
-    {'name': 'img/B03_06.jpg', 'path': 'img/B03_06.jpg'},
-    {'name': 'img/B08_01.jpg', 'path': 'img/B08_01.jpg'},
-    {'name': 'img/B10_04.jpg', 'path': 'img/B10_04.jpg'},
-    {'name': 'img/B10_05.jpg', 'path': 'img/B10_05.jpg'},
-    {'name': 'img/B09_06.jpg', 'path': 'img/B09_06.jpg'},
-    {'name': 'img/B02_10.jpg', 'path': 'img/B02_10.jpg'},
-    {'name': 'img/B08_07.jpg', 'path': 'img/B08_07.jpg'},
-    {'name': 'img/B01_08.jpg', 'path': 'img/B01_08.jpg'},
-    {'name': 'img/B04_01.jpg', 'path': 'img/B04_01.jpg'},
-    {'name': 'img/B05_05.jpg', 'path': 'img/B05_05.jpg'},
-    {'name': 'img/B09_10.jpg', 'path': 'img/B09_10.jpg'},
-    {'name': 'img/B09_09.jpg', 'path': 'img/B09_09.jpg'},
-    {'name': 'img/B09_05.jpg', 'path': 'img/B09_05.jpg'},
-    {'name': 'img/B04_08.jpg', 'path': 'img/B04_08.jpg'},
-    {'name': 'img/B03_10.jpg', 'path': 'img/B03_10.jpg'},
-    {'name': 'img/B06_08.jpg', 'path': 'img/B06_08.jpg'},
-    {'name': 'img/B10_08.jpg', 'path': 'img/B10_08.jpg'},
-    {'name': 'img/B05_02.jpg', 'path': 'img/B05_02.jpg'},
-    {'name': 'img/B05_07.jpg', 'path': 'img/B05_07.jpg'},
-    {'name': 'img/B08_02.jpg', 'path': 'img/B08_02.jpg'},
-    {'name': 'img/B06_00.jpg', 'path': 'img/B06_00.jpg'},
-    {'name': 'img/B07_03.jpg', 'path': 'img/B07_03.jpg'},
-    {'name': 'img/B10_09.jpg', 'path': 'img/B10_09.jpg'},
-    {'name': 'img/B08_00.jpg', 'path': 'img/B08_00.jpg'},
-    {'name': 'img/B08_05.jpg', 'path': 'img/B08_05.jpg'},
-    {'name': 'img/B06_09.jpg', 'path': 'img/B06_09.jpg'},
-    {'name': 'img/B03_09.jpg', 'path': 'img/B03_09.jpg'},
-    {'name': 'img/B06_06.jpg', 'path': 'img/B06_06.jpg'},
-    {'name': 'img/B06_03.jpg', 'path': 'img/B06_03.jpg'},
-    {'name': 'img/B03_05.jpg', 'path': 'img/B03_05.jpg'},
-    {'name': 'img/B10_07.jpg', 'path': 'img/B10_07.jpg'},
-    {'name': 'img/B01_01.jpg', 'path': 'img/B01_01.jpg'},
-    {'name': 'img/B06_04.jpg', 'path': 'img/B06_04.jpg'},
-    {'name': 'img/B07_00.jpg', 'path': 'img/B07_00.jpg'},
-    {'name': 'img/B08_06.jpg', 'path': 'img/B08_06.jpg'},
-    {'name': 'img/B04_02.jpg', 'path': 'img/B04_02.jpg'},
-    {'name': 'img/B05_10.jpg', 'path': 'img/B05_10.jpg'},
-    {'name': 'img/B08_10.jpg', 'path': 'img/B08_10.jpg'},
-    {'name': 'img/B10_10.jpg', 'path': 'img/B10_10.jpg'},
-    {'name': 'img/B06_02.jpg', 'path': 'img/B06_02.jpg'},
-    {'name': 'img/B10_03.jpg', 'path': 'img/B10_03.jpg'},
-    {'name': 'img/B09_04.jpg', 'path': 'img/B09_04.jpg'},
-    {'name': 'img/B07_08.jpg', 'path': 'img/B07_08.jpg'},
-    {'name': 'img/B04_05.jpg', 'path': 'img/B04_05.jpg'},
-    {'name': 'img/B01_10.jpg', 'path': 'img/B01_10.jpg'},
-    {'name': 'img/B07_06.jpg', 'path': 'img/B07_06.jpg'},
-    {'name': 'img/B07_10.jpg', 'path': 'img/B07_10.jpg'},
-    {'name': 'img/B04_00.jpg', 'path': 'img/B04_00.jpg'},
-    {'name': 'img/B03_00.jpg', 'path': 'img/B03_00.jpg'},
-    {'name': 'img/B04_03.jpg', 'path': 'img/B04_03.jpg'},
-    {'name': 'img/B09_01.jpg', 'path': 'img/B09_01.jpg'},
-    {'name': 'img/B06_10.jpg', 'path': 'img/B06_10.jpg'},
-    {'name': 'img/B07_09.jpg', 'path': 'img/B07_09.jpg'},
-    {'name': 'img/B04_06.jpg', 'path': 'img/B04_06.jpg'},
-    {'name': 'img/B04_10.jpg', 'path': 'img/B04_10.jpg'},
-    {'name': 'img/B02_00.jpg', 'path': 'img/B02_00.jpg'},
-    {'name': 'img/B02_07.jpg', 'path': 'img/B02_07.jpg'},
-    {'name': 'img/B05_04.jpg', 'path': 'img/B05_04.jpg'},
-    {'name': 'img/B09_03.jpg', 'path': 'img/B09_03.jpg'},
-    {'name': 'img/B09_07.jpg', 'path': 'img/B09_07.jpg'},
-    {'name': 'img/B02_03.jpg', 'path': 'img/B02_03.jpg'},
-    {'name': 'img/B03_01.jpg', 'path': 'img/B03_01.jpg'},
     {'name': 'img/B05_06.jpg', 'path': 'img/B05_06.jpg'},
-    {'name': 'img/B10_02.jpg', 'path': 'img/B10_02.jpg'},
-    {'name': 'img/B02_06.jpg', 'path': 'img/B02_06.jpg'},
-    {'name': 'img/B02_02.jpg', 'path': 'img/B02_02.jpg'},
-    {'name': 'img/B08_08.jpg', 'path': 'img/B08_08.jpg'},
-    {'name': 'img/B07_04.jpg', 'path': 'img/B07_04.jpg'},
+    {'name': 'img/B04_01.jpg', 'path': 'img/B04_01.jpg'},
+    {'name': 'img/B04_06.jpg', 'path': 'img/B04_06.jpg'},
+    {'name': 'img/B10_09.jpg', 'path': 'img/B10_09.jpg'},
+    {'name': 'img/B09_00.jpg', 'path': 'img/B09_00.jpg'},
+    {'name': 'img/B02_05.jpg', 'path': 'img/B02_05.jpg'},
+    {'name': 'img/B06_05.jpg', 'path': 'img/B06_05.jpg'},
+    {'name': 'img/B03_07.jpg', 'path': 'img/B03_07.jpg'},
     {'name': 'img/B03_02.jpg', 'path': 'img/B03_02.jpg'},
+    {'name': 'img/B09_07.jpg', 'path': 'img/B09_07.jpg'},
     {'name': 'img/B01_06.jpg', 'path': 'img/B01_06.jpg'},
-    {'name': 'fluency_conditions.xlsx', 'path': 'fluency_conditions.xlsx'},
-    {'name': 'img/B05_03.jpg', 'path': 'img/B05_03.jpg'},
-    {'name': 'img/B01_04.jpg', 'path': 'img/B01_04.jpg'},
-    {'name': 'img/B03_04.jpg', 'path': 'img/B03_04.jpg'},
-    {'name': 'img/B02_01.jpg', 'path': 'img/B02_01.jpg'},
-    {'name': 'img/B05_01.jpg', 'path': 'img/B05_01.jpg'},
-    {'name': 'img/B08_04.jpg', 'path': 'img/B08_04.jpg'},
-    {'name': 'img/B02_09.jpg', 'path': 'img/B02_09.jpg'},
-    {'name': 'img/B08_03.jpg', 'path': 'img/B08_03.jpg'},
-    {'name': 'img/B10_00.jpg', 'path': 'img/B10_00.jpg'},
-    {'name': 'img/B01_05.jpg', 'path': 'img/B01_05.jpg'},
-    {'name': 'img/practice_image.jpg', 'path': 'img/practice_image.jpg'},
-    {'name': 'img/B01_02.jpg', 'path': 'img/B01_02.jpg'},
+    {'name': 'img/B03_05.jpg', 'path': 'img/B03_05.jpg'},
+    {'name': 'img/B06_08.jpg', 'path': 'img/B06_08.jpg'},
+    {'name': 'img/B01_10.jpg', 'path': 'img/B01_10.jpg'},
     {'name': 'img/B02_08.jpg', 'path': 'img/B02_08.jpg'},
-    {'name': 'img/B04_09.jpg', 'path': 'img/B04_09.jpg'},
-    {'name': 'img/B10_06.jpg', 'path': 'img/B10_06.jpg'},
-    {'name': 'img/B07_07.jpg', 'path': 'img/B07_07.jpg'},
+    {'name': 'img/B07_00.jpg', 'path': 'img/B07_00.jpg'},
+    {'name': 'img/B06_02.jpg', 'path': 'img/B06_02.jpg'},
+    {'name': 'img/B02_02.jpg', 'path': 'img/B02_02.jpg'},
+    {'name': 'img/B07_08.jpg', 'path': 'img/B07_08.jpg'},
+    {'name': 'img/B03_10.jpg', 'path': 'img/B03_10.jpg'},
+    {'name': 'img/B10_07.jpg', 'path': 'img/B10_07.jpg'},
+    {'name': 'img/B10_03.jpg', 'path': 'img/B10_03.jpg'},
+    {'name': 'img/B08_00.jpg', 'path': 'img/B08_00.jpg'},
+    {'name': 'img/B03_00.jpg', 'path': 'img/B03_00.jpg'},
+    {'name': 'img/B09_06.jpg', 'path': 'img/B09_06.jpg'},
+    {'name': 'img/B03_04.jpg', 'path': 'img/B03_04.jpg'},
+    {'name': 'img/B04_02.jpg', 'path': 'img/B04_02.jpg'},
+    {'name': 'img/B04_00.jpg', 'path': 'img/B04_00.jpg'},
+    {'name': 'img/B07_05.jpg', 'path': 'img/B07_05.jpg'},
+    {'name': 'img/B05_05.jpg', 'path': 'img/B05_05.jpg'},
+    {'name': 'img/B08_04.jpg', 'path': 'img/B08_04.jpg'},
+    {'name': 'img/B07_04.jpg', 'path': 'img/B07_04.jpg'},
+    {'name': 'img/B02_00.jpg', 'path': 'img/B02_00.jpg'},
+    {'name': 'img/B06_03.jpg', 'path': 'img/B06_03.jpg'},
+    {'name': 'img/B01_01.jpg', 'path': 'img/B01_01.jpg'},
+    {'name': 'img/B02_04.jpg', 'path': 'img/B02_04.jpg'},
+    {'name': 'img/B07_06.jpg', 'path': 'img/B07_06.jpg'},
+    {'name': 'img/practice_image.jpg', 'path': 'img/practice_image.jpg'},
+    {'name': 'img/B07_03.jpg', 'path': 'img/B07_03.jpg'},
+    {'name': 'img/B10_04.jpg', 'path': 'img/B10_04.jpg'},
+    {'name': 'img/B04_10.jpg', 'path': 'img/B04_10.jpg'},
     {'name': 'img/B09_02.jpg', 'path': 'img/B09_02.jpg'},
-    {'name': 'img/B10_01.jpg', 'path': 'img/B10_01.jpg'}
+    {'name': 'img/B08_06.jpg', 'path': 'img/B08_06.jpg'},
+    {'name': 'img/B07_01.jpg', 'path': 'img/B07_01.jpg'},
+    {'name': 'img/B04_09.jpg', 'path': 'img/B04_09.jpg'},
+    {'name': 'img/B08_07.jpg', 'path': 'img/B08_07.jpg'},
+    {'name': 'img/B06_07.jpg', 'path': 'img/B06_07.jpg'},
+    {'name': 'img/B06_09.jpg', 'path': 'img/B06_09.jpg'},
+    {'name': 'img/B09_10.jpg', 'path': 'img/B09_10.jpg'},
+    {'name': 'img/B04_04.jpg', 'path': 'img/B04_04.jpg'},
+    {'name': 'img/B05_03.jpg', 'path': 'img/B05_03.jpg'},
+    {'name': 'img/B01_03.jpg', 'path': 'img/B01_03.jpg'},
+    {'name': 'img/B02_03.jpg', 'path': 'img/B02_03.jpg'},
+    {'name': 'img/B02_06.jpg', 'path': 'img/B02_06.jpg'},
+    {'name': 'img/B05_10.jpg', 'path': 'img/B05_10.jpg'},
+    {'name': 'img/B10_05.jpg', 'path': 'img/B10_05.jpg'},
+    {'name': 'img/B09_08.jpg', 'path': 'img/B09_08.jpg'},
+    {'name': 'img/B06_04.jpg', 'path': 'img/B06_04.jpg'},
+    {'name': 'fluency_conditions.xlsx', 'path': 'fluency_conditions.xlsx'},
+    {'name': 'img/B09_05.jpg', 'path': 'img/B09_05.jpg'},
+    {'name': 'img/B03_09.jpg', 'path': 'img/B03_09.jpg'},
+    {'name': 'img/B08_02.jpg', 'path': 'img/B08_02.jpg'},
+    {'name': 'img/B10_01.jpg', 'path': 'img/B10_01.jpg'},
+    {'name': 'img/B05_07.jpg', 'path': 'img/B05_07.jpg'},
+    {'name': 'img/B10_10.jpg', 'path': 'img/B10_10.jpg'},
+    {'name': 'img/B09_09.jpg', 'path': 'img/B09_09.jpg'},
+    {'name': 'img/B06_10.jpg', 'path': 'img/B06_10.jpg'},
+    {'name': 'img/B07_02.jpg', 'path': 'img/B07_02.jpg'},
+    {'name': 'img/B01_04.jpg', 'path': 'img/B01_04.jpg'},
+    {'name': 'img/B01_07.jpg', 'path': 'img/B01_07.jpg'},
+    {'name': 'img/B08_10.jpg', 'path': 'img/B08_10.jpg'},
+    {'name': 'img/B04_05.jpg', 'path': 'img/B04_05.jpg'},
+    {'name': 'img/B07_07.jpg', 'path': 'img/B07_07.jpg'},
+    {'name': 'img/B03_01.jpg', 'path': 'img/B03_01.jpg'},
+    {'name': 'img/B06_01.jpg', 'path': 'img/B06_01.jpg'},
+    {'name': 'img/B10_08.jpg', 'path': 'img/B10_08.jpg'},
+    {'name': 'img/B02_07.jpg', 'path': 'img/B02_07.jpg'},
+    {'name': 'img/B04_08.jpg', 'path': 'img/B04_08.jpg'},
+    {'name': 'img/B02_10.jpg', 'path': 'img/B02_10.jpg'},
+    {'name': 'img/B04_03.jpg', 'path': 'img/B04_03.jpg'},
+    {'name': 'img/B07_09.jpg', 'path': 'img/B07_09.jpg'},
+    {'name': 'img/B03_03.jpg', 'path': 'img/B03_03.jpg'},
+    {'name': 'img/B05_00.jpg', 'path': 'img/B05_00.jpg'},
+    {'name': 'img/B05_04.jpg', 'path': 'img/B05_04.jpg'},
+    {'name': 'img/B10_06.jpg', 'path': 'img/B10_06.jpg'},
+    {'name': 'img/B01_02.jpg', 'path': 'img/B01_02.jpg'},
+    {'name': 'img/B01_00.jpg', 'path': 'img/B01_00.jpg'},
+    {'name': 'img/B08_01.jpg', 'path': 'img/B08_01.jpg'},
+    {'name': 'img/B08_09.jpg', 'path': 'img/B08_09.jpg'},
+    {'name': 'img/B09_04.jpg', 'path': 'img/B09_04.jpg'},
+    {'name': 'img/B09_01.jpg', 'path': 'img/B09_01.jpg'},
+    {'name': 'img/B10_02.jpg', 'path': 'img/B10_02.jpg'},
+    {'name': 'img/B06_00.jpg', 'path': 'img/B06_00.jpg'},
+    {'name': 'img/B06_06.jpg', 'path': 'img/B06_06.jpg'},
+    {'name': 'img/B08_05.jpg', 'path': 'img/B08_05.jpg'},
+    {'name': 'img/B03_08.jpg', 'path': 'img/B03_08.jpg'},
+    {'name': 'img/B08_03.jpg', 'path': 'img/B08_03.jpg'},
+    {'name': 'img/B02_09.jpg', 'path': 'img/B02_09.jpg'},
+    {'name': 'img/B05_02.jpg', 'path': 'img/B05_02.jpg'},
+    {'name': 'img/B07_10.jpg', 'path': 'img/B07_10.jpg'},
+    {'name': 'img/B05_01.jpg', 'path': 'img/B05_01.jpg'},
+    {'name': 'img/B03_06.jpg', 'path': 'img/B03_06.jpg'},
+    {'name': 'img/B08_08.jpg', 'path': 'img/B08_08.jpg'},
+    {'name': 'img/B04_07.jpg', 'path': 'img/B04_07.jpg'},
+    {'name': 'img/B09_03.jpg', 'path': 'img/B09_03.jpg'},
+    {'name': 'img/B10_00.jpg', 'path': 'img/B10_00.jpg'},
+    {'name': 'img/B05_09.jpg', 'path': 'img/B05_09.jpg'},
+    {'name': 'img/B02_01.jpg', 'path': 'img/B02_01.jpg'},
+    {'name': 'img/B01_05.jpg', 'path': 'img/B01_05.jpg'},
+    {'name': 'img/B01_08.jpg', 'path': 'img/B01_08.jpg'},
+    {'name': 'img/B01_09.jpg', 'path': 'img/B01_09.jpg'},
+    {'name': 'img/B05_08.jpg', 'path': 'img/B05_08.jpg'}
   ]
 });
 
@@ -249,8 +256,8 @@ async function updateInfo() {
 
 var helloClock;
 var welcome;
-var introCont1;
-var welc_advance;
+var idTextbox;
+var welcomeDone;
 var consent1Clock;
 var consentText_1;
 var introCont2;
@@ -263,8 +270,13 @@ var consent3Clock;
 var consentText_3;
 var iAgree;
 var iQuit;
+var nonconsent;
 var consentClick;
-var quitClick;
+var consent_rejectedClock;
+var nonconsentMessage;
+var exitCode;
+var quitButtonText;
+var exitClick;
 var instrStartClock;
 var genInstr1;
 var IntroCont4;
@@ -388,7 +400,11 @@ var textbox;
 var openAnswerClick;
 var debriefClock;
 var debriefText;
+var debriefEnd;
+var completionClock;
 var exitMessage;
+var doneCode;
+var tabExitMessage;
 var exitKey;
 var globalClock;
 var routineTimer;
@@ -398,28 +414,48 @@ async function experimentInit() {
   welcome = new visual.TextStim({
     win: psychoJS.window,
     name: 'welcome',
-    text: 'Welcome to the study! Please make sure you are in a quiet environment where you will be able to concentrate on the task. Before we begin, you must review the consent form on the following three screens. ',
+    text: 'Welcome to the study! Please make sure you are in a quiet environment where you will be able to concentrate on the task.\n\nBefore we begin, you must enter your Prolific ID below and review the consent form on the next three screens. \n\nType your ID below:',
     font: 'Open Sans',
     units: undefined, 
-    pos: [0, 0.1], height: 0.05,  wrapWidth: 1.3, ori: 0.0,
+    pos: [0, 0.175], height: 0.045,  wrapWidth: 1.35, ori: 0.0,
     languageStyle: 'LTR',
     color: new util.Color('white'),  opacity: undefined,
     depth: 0.0 
   });
   
-  introCont1 = new visual.TextStim({
+  idTextbox = new visual.TextBox({
     win: psychoJS.window,
-    name: 'introCont1',
-    text: 'Press the SPACE BAR to continue when you are ready.',
+    name: 'idTextbox',
+    text: '',
     font: 'Open Sans',
-    units: undefined, 
-    pos: [0, (- 0.2)], height: 0.05,  wrapWidth: 1.5, ori: 0.0,
+    pos: [0, (- 0.1)], letterHeight: 0.025,
+    size: [0.45, 0.06],  units: undefined, 
+    color: 'black', colorSpace: 'rgb',
+    fillColor: 'white', borderColor: undefined,
     languageStyle: 'LTR',
-    color: new util.Color('white'),  opacity: undefined,
+    bold: false, italic: false,
+    opacity: undefined,
+    padding: 0.0,
+    alignment: 'center',
+    editable: true,
+    multiline: true,
+    anchor: 'center',
     depth: -1.0 
   });
   
-  welc_advance = new core.Keyboard({psychoJS: psychoJS, clock: new util.Clock(), waitForStart: true});
+  welcomeDone = new visual.ButtonStim({
+    win: psychoJS.window,
+    name: 'welcomeDone',
+    text: 'CLICK HERE TO CONTINUE AFTER TYPING YOUR ID',
+    fillColor: 'darkgrey',
+    borderColor: null,
+    color: 'white',
+    colorSpace: 'rgb',
+    pos: [0, (- 0.35)],
+    letterHeight: 0.03,
+    size: [1, 0.25]
+  });
+  welcomeDone.clock = new util.Clock();
   
   // Initialize components for Routine "consent1"
   consent1Clock = new util.Clock();
@@ -506,7 +542,7 @@ async function experimentInit() {
   iQuit = new visual.TextStim({
     win: psychoJS.window,
     name: 'iQuit',
-    text: 'I do not agree \n(click to exit experiment)',
+    text: 'I do not agree \n(click for exit code)',
     font: 'Open Sans',
     units: undefined, 
     pos: [(- 0.3), (- 0.35)], height: 0.04,  wrapWidth: undefined, ori: 0.0,
@@ -515,14 +551,55 @@ async function experimentInit() {
     depth: -2.0 
   });
   
+  // Run 'Begin Experiment' code from didTheyReject
+  nonconsent = 0;
+  
   consentClick = new core.Mouse({
     win: psychoJS.window,
   });
   consentClick.mouseClock = new util.Clock();
-  quitClick = new core.Mouse({
+  // Initialize components for Routine "consent_rejected"
+  consent_rejectedClock = new util.Clock();
+  nonconsentMessage = new visual.TextStim({
+    win: psychoJS.window,
+    name: 'nonconsentMessage',
+    text: 'You did not consent to participate in this study.\n\nHere is the completion code for this case! Write this down for Prolific:',
+    font: 'Open Sans',
+    units: undefined, 
+    pos: [0, 0.15], height: 0.04,  wrapWidth: 1.3, ori: 0.0,
+    languageStyle: 'LTR',
+    color: new util.Color('white'),  opacity: undefined,
+    depth: 0.0 
+  });
+  
+  exitCode = new visual.TextStim({
+    win: psychoJS.window,
+    name: 'exitCode',
+    text: 'C18OR9ZB',
+    font: 'Open Sans',
+    units: undefined, 
+    pos: [0, 0], height: 0.1,  wrapWidth: undefined, ori: 0.0,
+    languageStyle: 'LTR',
+    color: new util.Color('white'),  opacity: undefined,
+    depth: -1.0 
+  });
+  
+  quitButtonText = new visual.TextStim({
+    win: psychoJS.window,
+    name: 'quitButtonText',
+    text: 'Click here to exit',
+    font: 'Open Sans',
+    units: undefined, 
+    pos: [0, (- 0.3)], height: 0.07,  wrapWidth: undefined, ori: 0.0,
+    languageStyle: 'LTR',
+    color: new util.Color('white'),  opacity: undefined,
+    depth: -2.0 
+  });
+  
+  exitClick = new core.Mouse({
     win: psychoJS.window,
   });
-  quitClick.mouseClock = new util.Clock();
+  exitClick.mouseClock = new util.Clock();
   // Initialize components for Routine "instrStart"
   instrStartClock = new util.Clock();
   genInstr1 = new visual.TextStim({
@@ -1504,7 +1581,7 @@ async function experimentInit() {
     text: '',
     font: 'Open Sans',
     pos: [0, (- 0.05)], letterHeight: 0.025,
-    size: [1, 0.25],  units: undefined, 
+    size: [1.25, 0.25],  units: undefined, 
     color: 'black', colorSpace: 'rgb',
     fillColor: 'white', borderColor: undefined,
     languageStyle: 'LTR',
@@ -1537,7 +1614,7 @@ async function experimentInit() {
   debriefText = new visual.TextStim({
     win: psychoJS.window,
     name: 'debriefText',
-    text: "What this experiment was for:\n\nWe are investigating how having to categorize a face will affect its percieved attractiveness. Existing research indicates that the harder it is to process a face, the lower the attractiveness ratings given to it.\n\nIf you had to label the face whenever it appeared using J or K, you were in one of our experimental groups; if you simply had to press one of those keys whenever the face appeared, you were in the control group.\n\nWe are also interested in whether a person's tolerance of ambiguous situations affects how they feel about the faces they had a harder time categorizing. This is why we gave you that questionnaire at the end.",
+    text: "What this experiment was for:\n\nWe are investigating how having to categorize a face will affect its percieved attractiveness. Existing research indicates that the harder it is to process a face, the lower the attractiveness ratings given to it.\n\nIf you had to label the face whenever it appeared using J or K, you were in one of our experimental groups; if you simply had to press one of those keys whenever the face appeared, you were in the control group.\n\nWe are also interested in whether a person's tolerance of ambiguous situations affects how they feel about the faces they had a harder time categorizing. This is why we gave you that questionnaire at the end.\n\nPress SPACE to continue ",
     font: 'Open Sans',
     units: undefined, 
     pos: [0, 0.1], height: 0.035,  wrapWidth: 1.4, ori: 0.0,
@@ -1546,16 +1623,44 @@ async function experimentInit() {
     depth: 0.0 
   });
   
+  debriefEnd = new core.Keyboard({psychoJS: psychoJS, clock: new util.Clock(), waitForStart: true});
+  
+  // Initialize components for Routine "completion"
+  completionClock = new util.Clock();
   exitMessage = new visual.TextStim({
     win: psychoJS.window,
     name: 'exitMessage',
-    text: 'Thanks again for participating in the study! You can now exit this experiment by pressing the TAB KEY.',
+    text: 'Thanks again for participating in the study! Here is your completion code. Make sure to write this down for Prolific:',
     font: 'Open Sans',
     units: undefined, 
-    pos: [0, (- 0.25)], height: 0.035,  wrapWidth: undefined, ori: 0.0,
+    pos: [0, 0.25], height: 0.035,  wrapWidth: undefined, ori: 0.0,
+    languageStyle: 'LTR',
+    color: new util.Color('white'),  opacity: undefined,
+    depth: 0.0 
+  });
+  
+  doneCode = new visual.TextStim({
+    win: psychoJS.window,
+    name: 'doneCode',
+    text: 'CEQ8GRHQ',
+    font: 'Open Sans',
+    units: undefined, 
+    pos: [0, 0], height: 0.1,  wrapWidth: undefined, ori: 0.0,
     languageStyle: 'LTR',
     color: new util.Color('white'),  opacity: undefined,
     depth: -1.0 
+  });
+  
+  tabExitMessage = new visual.TextStim({
+    win: psychoJS.window,
+    name: 'tabExitMessage',
+    text: ' You can exit this experiment by pressing the TAB KEY.',
+    font: 'Open Sans',
+    units: undefined, 
+    pos: [0, (- 0.25)], height: 0.05,  wrapWidth: undefined, ori: 0.0,
+    languageStyle: 'LTR',
+    color: new util.Color('white'),  opacity: undefined,
+    depth: -2.0 
   });
   
   exitKey = new core.Keyboard({psychoJS: psychoJS, clock: new util.Clock(), waitForStart: true});
@@ -1571,7 +1676,6 @@ async function experimentInit() {
 var t;
 var frameN;
 var continueRoutine;
-var _welc_advance_allKeys;
 var helloComponents;
 function helloRoutineBegin(snapshot) {
   return async function () {
@@ -1583,14 +1687,13 @@ function helloRoutineBegin(snapshot) {
     frameN = -1;
     continueRoutine = true; // until we're told otherwise
     // update component parameters for each repeat
-    welc_advance.keys = undefined;
-    welc_advance.rt = undefined;
-    _welc_advance_allKeys = [];
+    idTextbox.setText('');
+    idTextbox.refresh();
     // keep track of which components have finished
     helloComponents = [];
     helloComponents.push(welcome);
-    helloComponents.push(introCont1);
-    helloComponents.push(welc_advance);
+    helloComponents.push(idTextbox);
+    helloComponents.push(welcomeDone);
     
     helloComponents.forEach( function(thisComponent) {
       if ('status' in thisComponent)
@@ -1619,39 +1722,54 @@ function helloRoutineEachFrame() {
     }
 
     
-    // *introCont1* updates
-    if (t >= 3 && introCont1.status === PsychoJS.Status.NOT_STARTED) {
+    // *idTextbox* updates
+    if (t >= 0 && idTextbox.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
-      introCont1.tStart = t;  // (not accounting for frame time here)
-      introCont1.frameNStart = frameN;  // exact frame index
+      idTextbox.tStart = t;  // (not accounting for frame time here)
+      idTextbox.frameNStart = frameN;  // exact frame index
       
-      introCont1.setAutoDraw(true);
+      idTextbox.setAutoDraw(true);
     }
 
     
-    // *welc_advance* updates
-    if (t >= 3 && welc_advance.status === PsychoJS.Status.NOT_STARTED) {
+    // *welcomeDone* updates
+    if (t >= 0 && welcomeDone.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
-      welc_advance.tStart = t;  // (not accounting for frame time here)
-      welc_advance.frameNStart = frameN;  // exact frame index
+      welcomeDone.tStart = t;  // (not accounting for frame time here)
+      welcomeDone.frameNStart = frameN;  // exact frame index
       
-      // keyboard checking is just starting
-      psychoJS.window.callOnFlip(function() { welc_advance.clock.reset(); });  // t=0 on next screen flip
-      psychoJS.window.callOnFlip(function() { welc_advance.start(); }); // start on screen flip
-      psychoJS.window.callOnFlip(function() { welc_advance.clearEvents(); });
+      welcomeDone.setAutoDraw(true);
     }
 
-    if (welc_advance.status === PsychoJS.Status.STARTED) {
-      let theseKeys = welc_advance.getKeys({keyList: ['space'], waitRelease: false});
-      _welc_advance_allKeys = _welc_advance_allKeys.concat(theseKeys);
-      if (_welc_advance_allKeys.length > 0) {
-        welc_advance.keys = _welc_advance_allKeys[_welc_advance_allKeys.length - 1].name;  // just the last key pressed
-        welc_advance.rt = _welc_advance_allKeys[_welc_advance_allKeys.length - 1].rt;
-        // a response ends the routine
-        continueRoutine = false;
+    if (welcomeDone.status === PsychoJS.Status.STARTED) {
+      // check whether welcomeDone has been pressed
+      if (welcomeDone.isClicked) {
+        if (!welcomeDone.wasClicked) {
+          // store time of first click
+          welcomeDone.timesOn.push(welcomeDone.clock.getTime());
+          welcomeDone.numClicks += 1;
+          // store time clicked until
+          welcomeDone.timesOff.push(welcomeDone.clock.getTime());
+        } else {
+          // update time clicked until;
+          welcomeDone.timesOff[welcomeDone.timesOff.length - 1] = welcomeDone.clock.getTime();
+        }
+        if (!welcomeDone.wasClicked) {
+          // end routine when welcomeDone is clicked
+          continueRoutine = false;
+        }
+        // if welcomeDone is still clicked next frame, it is not a new click
+        welcomeDone.wasClicked = true;
+      } else {
+        // if welcomeDone is clicked next frame, it is a new click
+        welcomeDone.wasClicked = false;
       }
+    } else {
+      // keep clock at 0 if welcomeDone hasn't started / has finished
+      welcomeDone.clock.reset();
+      // if welcomeDone is clicked next frame, it is a new click
+      welcomeDone.wasClicked = false;
     }
-    
     // check for quit (typically the Esc key)
     if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
       return quitPsychoJS('The [Escape] key was pressed. Goodbye!', false);
@@ -1687,17 +1805,10 @@ function helloRoutineEnd(snapshot) {
         thisComponent.setAutoDraw(false);
       }
     });
-    // update the trial handler
-    if (currentLoop instanceof MultiStairHandler) {
-      currentLoop.addResponse(welc_advance.corr, level);
-    }
-    psychoJS.experiment.addData('welc_advance.keys', welc_advance.keys);
-    if (typeof welc_advance.keys !== 'undefined') {  // we had a response
-        psychoJS.experiment.addData('welc_advance.rt', welc_advance.rt);
-        routineTimer.reset();
-        }
-    
-    welc_advance.stop();
+    psychoJS.experiment.addData('idTextbox.text',idTextbox.text)
+    psychoJS.experiment.addData('welcomeDone.numClicks', welcomeDone.numClicks);
+    psychoJS.experiment.addData('welcomeDone.timesOn', welcomeDone.timesOn);
+    psychoJS.experiment.addData('welcomeDone.timesOff', welcomeDone.timesOff);
     // the Routine "hello" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset();
     
@@ -2010,24 +2121,12 @@ function consent3RoutineBegin(snapshot) {
     consentClick.time = [];
     consentClick.clicked_name = [];
     gotValidClick = false; // until a click is received
-    // setup some python lists for storing info about the quitClick
-    // current position of the mouse:
-    quitClick.x = [];
-    quitClick.y = [];
-    quitClick.leftButton = [];
-    quitClick.midButton = [];
-    quitClick.rightButton = [];
-    quitClick.time = [];
-    quitClick.clicked_name = [];
-    gotValidClick = false; // until a click is received
-    quitClick.mouseClock.reset();
     // keep track of which components have finished
     consent3Components = [];
     consent3Components.push(consentText_3);
     consent3Components.push(iAgree);
     consent3Components.push(iQuit);
     consent3Components.push(consentClick);
-    consent3Components.push(quitClick);
     
     consent3Components.forEach( function(thisComponent) {
       if ('status' in thisComponent)
@@ -2078,6 +2177,11 @@ function consent3RoutineEachFrame() {
       iQuit.setAutoDraw(true);
     }
 
+    // Run 'Each Frame' code from didTheyReject
+    if (consentClick.isPressedIn(iQuit)) {
+        nonconsent = 1;
+    }
+    
     // *consentClick* updates
     if (t >= 0.0 && consentClick.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
@@ -2095,7 +2199,7 @@ function consent3RoutineEachFrame() {
         if (_mouseButtons.reduce( (e, acc) => (e+acc) ) > 0) { // state changed to a new click
           // check if the mouse was inside our 'clickable' objects
           gotValidClick = false;
-          for (const obj of [iAgree]) {
+          for (const obj of [iAgree, iQuit]) {
             if (obj.contains(consentClick)) {
               gotValidClick = true;
               consentClick.clicked_name.push(obj.name)
@@ -2114,43 +2218,6 @@ function consent3RoutineEachFrame() {
         }
       }
     }
-    // *quitClick* updates
-    if (t >= 0.0 && quitClick.status === PsychoJS.Status.NOT_STARTED) {
-      // keep track of start time/frame for later
-      quitClick.tStart = t;  // (not accounting for frame time here)
-      quitClick.frameNStart = frameN;  // exact frame index
-      
-      quitClick.status = PsychoJS.Status.STARTED;
-      prevButtonState = quitClick.getPressed();  // if button is down already this ISN'T a new click
-      }
-    if (quitClick.status === PsychoJS.Status.STARTED) {  // only update if started and not finished!
-      _mouseButtons = quitClick.getPressed();
-      if (!_mouseButtons.every( (e,i,) => (e == prevButtonState[i]) )) { // button state changed?
-        prevButtonState = _mouseButtons;
-        if (_mouseButtons.reduce( (e, acc) => (e+acc) ) > 0) { // state changed to a new click
-          // check if the mouse was inside our 'clickable' objects
-          gotValidClick = false;
-          for (const obj of [iQuit]) {
-            if (obj.contains(quitClick)) {
-              gotValidClick = true;
-              quitClick.clicked_name.push(obj.name)
-            }
-          }
-          _mouseXYs = quitClick.getPos();
-          quitClick.x.push(_mouseXYs[0]);
-          quitClick.y.push(_mouseXYs[1]);
-          quitClick.leftButton.push(_mouseButtons[0]);
-          quitClick.midButton.push(_mouseButtons[1]);
-          quitClick.rightButton.push(_mouseButtons[2]);
-          quitClick.time.push(quitClick.mouseClock.getTime());
-        }
-      }
-    }
-    // Run 'Each Frame' code from quitButton
-    if (quitClick.isPressedIn(iQuit)) {
-        return quitPsychoJS('Experiment exited. Have a nice day!', false);
-    }
-    
     // check for quit (typically the Esc key)
     if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
       return quitPsychoJS('The [Escape] key was pressed. Goodbye!', false);
@@ -2195,15 +2262,6 @@ function consent3RoutineEnd(snapshot) {
     if (consentClick.time) {  psychoJS.experiment.addData('consentClick.time', consentClick.time[0])};
     if (consentClick.clicked_name) {  psychoJS.experiment.addData('consentClick.clicked_name', consentClick.clicked_name[0])};
     
-    // store data for psychoJS.experiment (ExperimentHandler)
-    psychoJS.experiment.addData('quitClick.x', quitClick.x);
-    psychoJS.experiment.addData('quitClick.y', quitClick.y);
-    psychoJS.experiment.addData('quitClick.leftButton', quitClick.leftButton);
-    psychoJS.experiment.addData('quitClick.midButton', quitClick.midButton);
-    psychoJS.experiment.addData('quitClick.rightButton', quitClick.rightButton);
-    psychoJS.experiment.addData('quitClick.time', quitClick.time);
-    psychoJS.experiment.addData('quitClick.clicked_name', quitClick.clicked_name);
-    
     // the Routine "consent3" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset();
     
@@ -2216,173 +2274,31 @@ function consent3RoutineEnd(snapshot) {
 }
 
 
-var _instr_advance_3_allKeys;
-var instrStartComponents;
-function instrStartRoutineBegin(snapshot) {
-  return async function () {
-    TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
-    
-    //--- Prepare to start Routine 'instrStart' ---
-    t = 0;
-    instrStartClock.reset(); // clock
-    frameN = -1;
-    continueRoutine = true; // until we're told otherwise
-    // update component parameters for each repeat
-    instr_advance_3.keys = undefined;
-    instr_advance_3.rt = undefined;
-    _instr_advance_3_allKeys = [];
-    // keep track of which components have finished
-    instrStartComponents = [];
-    instrStartComponents.push(genInstr1);
-    instrStartComponents.push(IntroCont4);
-    instrStartComponents.push(instr_advance_3);
-    
-    instrStartComponents.forEach( function(thisComponent) {
-      if ('status' in thisComponent)
-        thisComponent.status = PsychoJS.Status.NOT_STARTED;
-       });
-    return Scheduler.Event.NEXT;
-  }
-}
-
-
-function instrStartRoutineEachFrame() {
-  return async function () {
-    //--- Loop for each frame of Routine 'instrStart' ---
-    // get current time
-    t = instrStartClock.getTime();
-    frameN = frameN + 1;// number of completed frames (so 0 is the first frame)
-    // update/draw components on each frame
-    
-    // *genInstr1* updates
-    if (t >= 0.0 && genInstr1.status === PsychoJS.Status.NOT_STARTED) {
-      // keep track of start time/frame for later
-      genInstr1.tStart = t;  // (not accounting for frame time here)
-      genInstr1.frameNStart = frameN;  // exact frame index
-      
-      genInstr1.setAutoDraw(true);
-    }
-
-    
-    // *IntroCont4* updates
-    if (t >= 4 && IntroCont4.status === PsychoJS.Status.NOT_STARTED) {
-      // keep track of start time/frame for later
-      IntroCont4.tStart = t;  // (not accounting for frame time here)
-      IntroCont4.frameNStart = frameN;  // exact frame index
-      
-      IntroCont4.setAutoDraw(true);
-    }
-
-    
-    // *instr_advance_3* updates
-    if (t >= 4 && instr_advance_3.status === PsychoJS.Status.NOT_STARTED) {
-      // keep track of start time/frame for later
-      instr_advance_3.tStart = t;  // (not accounting for frame time here)
-      instr_advance_3.frameNStart = frameN;  // exact frame index
-      
-      // keyboard checking is just starting
-      psychoJS.window.callOnFlip(function() { instr_advance_3.clock.reset(); });  // t=0 on next screen flip
-      psychoJS.window.callOnFlip(function() { instr_advance_3.start(); }); // start on screen flip
-      psychoJS.window.callOnFlip(function() { instr_advance_3.clearEvents(); });
-    }
-
-    if (instr_advance_3.status === PsychoJS.Status.STARTED) {
-      let theseKeys = instr_advance_3.getKeys({keyList: ['space'], waitRelease: false});
-      _instr_advance_3_allKeys = _instr_advance_3_allKeys.concat(theseKeys);
-      if (_instr_advance_3_allKeys.length > 0) {
-        instr_advance_3.keys = _instr_advance_3_allKeys[_instr_advance_3_allKeys.length - 1].name;  // just the last key pressed
-        instr_advance_3.rt = _instr_advance_3_allKeys[_instr_advance_3_allKeys.length - 1].rt;
-        // a response ends the routine
-        continueRoutine = false;
-      }
-    }
-    
-    // check for quit (typically the Esc key)
-    if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
-      return quitPsychoJS('The [Escape] key was pressed. Goodbye!', false);
-    }
-    
-    // check if the Routine should terminate
-    if (!continueRoutine) {  // a component has requested a forced-end of Routine
-      return Scheduler.Event.NEXT;
-    }
-    
-    continueRoutine = false;  // reverts to True if at least one component still running
-    instrStartComponents.forEach( function(thisComponent) {
-      if ('status' in thisComponent && thisComponent.status !== PsychoJS.Status.FINISHED) {
-        continueRoutine = true;
-      }
-    });
-    
-    // refresh the screen if continuing
-    if (continueRoutine) {
-      return Scheduler.Event.FLIP_REPEAT;
-    } else {
-      return Scheduler.Event.NEXT;
-    }
-  };
-}
-
-
-function instrStartRoutineEnd(snapshot) {
-  return async function () {
-    //--- Ending Routine 'instrStart' ---
-    instrStartComponents.forEach( function(thisComponent) {
-      if (typeof thisComponent.setAutoDraw === 'function') {
-        thisComponent.setAutoDraw(false);
-      }
-    });
-    // update the trial handler
-    if (currentLoop instanceof MultiStairHandler) {
-      currentLoop.addResponse(instr_advance_3.corr, level);
-    }
-    psychoJS.experiment.addData('instr_advance_3.keys', instr_advance_3.keys);
-    if (typeof instr_advance_3.keys !== 'undefined') {  // we had a response
-        psychoJS.experiment.addData('instr_advance_3.rt', instr_advance_3.rt);
-        routineTimer.reset();
-        }
-    
-    instr_advance_3.stop();
-    // the Routine "instrStart" was not non-slip safe, so reset the non-slip timer
-    routineTimer.reset();
-    
-    // Routines running outside a loop should always advance the datafile row
-    if (currentLoop === psychoJS.experiment) {
-      psychoJS.experiment.nextEntry(snapshot);
-    }
-    return Scheduler.Event.NEXT;
-  }
-}
-
-
-var instr_loop;
-function instr_loopLoopBegin(instr_loopLoopScheduler, snapshot) {
+var quitLoop;
+function quitLoopLoopBegin(quitLoopLoopScheduler, snapshot) {
   return async function() {
     TrialHandler.fromSnapshot(snapshot); // update internal variables (.thisN etc) of the loop
     
     // set up handler to look after randomisation of conditions etc
-    instr_loop = new TrialHandler({
+    quitLoop = new TrialHandler({
       psychoJS: psychoJS,
-      nReps: 1, method: TrialHandler.Method.RANDOM,
+      nReps: nonconsent, method: TrialHandler.Method.RANDOM,
       extraInfo: expInfo, originPath: undefined,
-      trialList: TrialHandler.importConditions(psychoJS.serverManager, 'fluency_conditions.xlsx', selected_rows),
-      seed: undefined, name: 'instr_loop'
+      trialList: undefined,
+      seed: undefined, name: 'quitLoop'
     });
-    psychoJS.experiment.addLoop(instr_loop); // add the loop to the experiment
-    currentLoop = instr_loop;  // we're now the current loop
+    psychoJS.experiment.addLoop(quitLoop); // add the loop to the experiment
+    currentLoop = quitLoop;  // we're now the current loop
     
     // Schedule all the trials in the trialList:
-    instr_loop.forEach(function() {
-      snapshot = instr_loop.getSnapshot();
+    quitLoop.forEach(function() {
+      snapshot = quitLoop.getSnapshot();
     
-      instr_loopLoopScheduler.add(importConditions(snapshot));
-      instr_loopLoopScheduler.add(specific_instrRoutineBegin(snapshot));
-      instr_loopLoopScheduler.add(specific_instrRoutineEachFrame());
-      instr_loopLoopScheduler.add(specific_instrRoutineEnd(snapshot));
-      instr_loopLoopScheduler.add(rateInstrRoutineBegin(snapshot));
-      instr_loopLoopScheduler.add(rateInstrRoutineEachFrame());
-      instr_loopLoopScheduler.add(rateInstrRoutineEnd(snapshot));
-      instr_loopLoopScheduler.add(instr_loopLoopEndIteration(instr_loopLoopScheduler, snapshot));
+      quitLoopLoopScheduler.add(importConditions(snapshot));
+      quitLoopLoopScheduler.add(consent_rejectedRoutineBegin(snapshot));
+      quitLoopLoopScheduler.add(consent_rejectedRoutineEachFrame());
+      quitLoopLoopScheduler.add(consent_rejectedRoutineEnd(snapshot));
+      quitLoopLoopScheduler.add(quitLoopLoopEndIteration(quitLoopLoopScheduler, snapshot));
     });
     
     return Scheduler.Event.NEXT;
@@ -2390,9 +2306,9 @@ function instr_loopLoopBegin(instr_loopLoopScheduler, snapshot) {
 }
 
 
-async function instr_loopLoopEnd() {
+async function quitLoopLoopEnd() {
   // terminate loop
-  psychoJS.experiment.removeLoop(instr_loop);
+  psychoJS.experiment.removeLoop(quitLoop);
   // update the current loop from the ExperimentHandler
   if (psychoJS.experiment._unfinishedLoops.length>0)
     currentLoop = psychoJS.experiment._unfinishedLoops.at(-1);
@@ -2402,7 +2318,74 @@ async function instr_loopLoopEnd() {
 }
 
 
-function instr_loopLoopEndIteration(scheduler, snapshot) {
+function quitLoopLoopEndIteration(scheduler, snapshot) {
+  // ------Prepare for next entry------
+  return async function () {
+    if (typeof snapshot !== 'undefined') {
+      // ------Check if user ended loop early------
+      if (snapshot.finished) {
+        // Check for and save orphaned data
+        if (psychoJS.experiment.isEntryEmpty()) {
+          psychoJS.experiment.nextEntry(snapshot);
+        }
+        scheduler.stop();
+      } else {
+        psychoJS.experiment.nextEntry(snapshot);
+      }
+    return Scheduler.Event.NEXT;
+    }
+  };
+}
+
+
+var instrLoop;
+function instrLoopLoopBegin(instrLoopLoopScheduler, snapshot) {
+  return async function() {
+    TrialHandler.fromSnapshot(snapshot); // update internal variables (.thisN etc) of the loop
+    
+    // set up handler to look after randomisation of conditions etc
+    instrLoop = new TrialHandler({
+      psychoJS: psychoJS,
+      nReps: 1, method: TrialHandler.Method.RANDOM,
+      extraInfo: expInfo, originPath: undefined,
+      trialList: TrialHandler.importConditions(psychoJS.serverManager, 'fluency_conditions.xlsx', selected_rows),
+      seed: undefined, name: 'instrLoop'
+    });
+    psychoJS.experiment.addLoop(instrLoop); // add the loop to the experiment
+    currentLoop = instrLoop;  // we're now the current loop
+    
+    // Schedule all the trials in the trialList:
+    instrLoop.forEach(function() {
+      snapshot = instrLoop.getSnapshot();
+    
+      instrLoopLoopScheduler.add(importConditions(snapshot));
+      instrLoopLoopScheduler.add(specific_instrRoutineBegin(snapshot));
+      instrLoopLoopScheduler.add(specific_instrRoutineEachFrame());
+      instrLoopLoopScheduler.add(specific_instrRoutineEnd(snapshot));
+      instrLoopLoopScheduler.add(rateInstrRoutineBegin(snapshot));
+      instrLoopLoopScheduler.add(rateInstrRoutineEachFrame());
+      instrLoopLoopScheduler.add(rateInstrRoutineEnd(snapshot));
+      instrLoopLoopScheduler.add(instrLoopLoopEndIteration(instrLoopLoopScheduler, snapshot));
+    });
+    
+    return Scheduler.Event.NEXT;
+  }
+}
+
+
+async function instrLoopLoopEnd() {
+  // terminate loop
+  psychoJS.experiment.removeLoop(instrLoop);
+  // update the current loop from the ExperimentHandler
+  if (psychoJS.experiment._unfinishedLoops.length>0)
+    currentLoop = psychoJS.experiment._unfinishedLoops.at(-1);
+  else
+    currentLoop = psychoJS.experiment;  // so we use addData from the experiment
+  return Scheduler.Event.NEXT;
+}
+
+
+function instrLoopLoopEndIteration(scheduler, snapshot) {
   // ------Prepare for next entry------
   return async function () {
     if (typeof snapshot !== 'undefined') {
@@ -3308,6 +3291,316 @@ function trialsLoopEndIteration(scheduler, snapshot) {
     return Scheduler.Event.NEXT;
     }
   };
+}
+
+
+var consent_rejectedComponents;
+function consent_rejectedRoutineBegin(snapshot) {
+  return async function () {
+    TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
+    
+    //--- Prepare to start Routine 'consent_rejected' ---
+    t = 0;
+    consent_rejectedClock.reset(); // clock
+    frameN = -1;
+    continueRoutine = true; // until we're told otherwise
+    // update component parameters for each repeat
+    // setup some python lists for storing info about the exitClick
+    // current position of the mouse:
+    exitClick.x = [];
+    exitClick.y = [];
+    exitClick.leftButton = [];
+    exitClick.midButton = [];
+    exitClick.rightButton = [];
+    exitClick.time = [];
+    exitClick.clicked_name = [];
+    gotValidClick = false; // until a click is received
+    // keep track of which components have finished
+    consent_rejectedComponents = [];
+    consent_rejectedComponents.push(nonconsentMessage);
+    consent_rejectedComponents.push(exitCode);
+    consent_rejectedComponents.push(quitButtonText);
+    consent_rejectedComponents.push(exitClick);
+    
+    consent_rejectedComponents.forEach( function(thisComponent) {
+      if ('status' in thisComponent)
+        thisComponent.status = PsychoJS.Status.NOT_STARTED;
+       });
+    return Scheduler.Event.NEXT;
+  }
+}
+
+
+function consent_rejectedRoutineEachFrame() {
+  return async function () {
+    //--- Loop for each frame of Routine 'consent_rejected' ---
+    // get current time
+    t = consent_rejectedClock.getTime();
+    frameN = frameN + 1;// number of completed frames (so 0 is the first frame)
+    // update/draw components on each frame
+    
+    // *nonconsentMessage* updates
+    if (t >= 0.0 && nonconsentMessage.status === PsychoJS.Status.NOT_STARTED) {
+      // keep track of start time/frame for later
+      nonconsentMessage.tStart = t;  // (not accounting for frame time here)
+      nonconsentMessage.frameNStart = frameN;  // exact frame index
+      
+      nonconsentMessage.setAutoDraw(true);
+    }
+
+    
+    // *exitCode* updates
+    if (t >= 0.0 && exitCode.status === PsychoJS.Status.NOT_STARTED) {
+      // keep track of start time/frame for later
+      exitCode.tStart = t;  // (not accounting for frame time here)
+      exitCode.frameNStart = frameN;  // exact frame index
+      
+      exitCode.setAutoDraw(true);
+    }
+
+    
+    // *quitButtonText* updates
+    if (t >= 3 && quitButtonText.status === PsychoJS.Status.NOT_STARTED) {
+      // keep track of start time/frame for later
+      quitButtonText.tStart = t;  // (not accounting for frame time here)
+      quitButtonText.frameNStart = frameN;  // exact frame index
+      
+      quitButtonText.setAutoDraw(true);
+    }
+
+    // *exitClick* updates
+    if (t >= 3 && exitClick.status === PsychoJS.Status.NOT_STARTED) {
+      // keep track of start time/frame for later
+      exitClick.tStart = t;  // (not accounting for frame time here)
+      exitClick.frameNStart = frameN;  // exact frame index
+      
+      exitClick.status = PsychoJS.Status.STARTED;
+      exitClick.mouseClock.reset();
+      prevButtonState = exitClick.getPressed();  // if button is down already this ISN'T a new click
+      }
+    if (exitClick.status === PsychoJS.Status.STARTED) {  // only update if started and not finished!
+      _mouseButtons = exitClick.getPressed();
+      if (!_mouseButtons.every( (e,i,) => (e == prevButtonState[i]) )) { // button state changed?
+        prevButtonState = _mouseButtons;
+        if (_mouseButtons.reduce( (e, acc) => (e+acc) ) > 0) { // state changed to a new click
+          // check if the mouse was inside our 'clickable' objects
+          gotValidClick = false;
+          for (const obj of [quitButtonText]) {
+            if (obj.contains(exitClick)) {
+              gotValidClick = true;
+              exitClick.clicked_name.push(obj.name)
+            }
+          }
+          _mouseXYs = exitClick.getPos();
+          exitClick.x.push(_mouseXYs[0]);
+          exitClick.y.push(_mouseXYs[1]);
+          exitClick.leftButton.push(_mouseButtons[0]);
+          exitClick.midButton.push(_mouseButtons[1]);
+          exitClick.rightButton.push(_mouseButtons[2]);
+          exitClick.time.push(exitClick.mouseClock.getTime());
+          if (gotValidClick === true) { // abort routine on response
+            continueRoutine = false;
+          }
+        }
+      }
+    }
+    // Run 'Each Frame' code from quitButton
+    if (exitClick.isPressedIn(quitButtonText)) {
+        quitPsychoJS('Experiment exited. Have a nice day!', false);
+    }
+    
+    // check for quit (typically the Esc key)
+    if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
+      return quitPsychoJS('The [Escape] key was pressed. Goodbye!', false);
+    }
+    
+    // check if the Routine should terminate
+    if (!continueRoutine) {  // a component has requested a forced-end of Routine
+      return Scheduler.Event.NEXT;
+    }
+    
+    continueRoutine = false;  // reverts to True if at least one component still running
+    consent_rejectedComponents.forEach( function(thisComponent) {
+      if ('status' in thisComponent && thisComponent.status !== PsychoJS.Status.FINISHED) {
+        continueRoutine = true;
+      }
+    });
+    
+    // refresh the screen if continuing
+    if (continueRoutine) {
+      return Scheduler.Event.FLIP_REPEAT;
+    } else {
+      return Scheduler.Event.NEXT;
+    }
+  };
+}
+
+
+function consent_rejectedRoutineEnd(snapshot) {
+  return async function () {
+    //--- Ending Routine 'consent_rejected' ---
+    consent_rejectedComponents.forEach( function(thisComponent) {
+      if (typeof thisComponent.setAutoDraw === 'function') {
+        thisComponent.setAutoDraw(false);
+      }
+    });
+    // store data for psychoJS.experiment (ExperimentHandler)
+    if (exitClick.x) {  psychoJS.experiment.addData('exitClick.x', exitClick.x[0])};
+    if (exitClick.y) {  psychoJS.experiment.addData('exitClick.y', exitClick.y[0])};
+    if (exitClick.leftButton) {  psychoJS.experiment.addData('exitClick.leftButton', exitClick.leftButton[0])};
+    if (exitClick.midButton) {  psychoJS.experiment.addData('exitClick.midButton', exitClick.midButton[0])};
+    if (exitClick.rightButton) {  psychoJS.experiment.addData('exitClick.rightButton', exitClick.rightButton[0])};
+    if (exitClick.time) {  psychoJS.experiment.addData('exitClick.time', exitClick.time[0])};
+    if (exitClick.clicked_name) {  psychoJS.experiment.addData('exitClick.clicked_name', exitClick.clicked_name[0])};
+    
+    // the Routine "consent_rejected" was not non-slip safe, so reset the non-slip timer
+    routineTimer.reset();
+    
+    // Routines running outside a loop should always advance the datafile row
+    if (currentLoop === psychoJS.experiment) {
+      psychoJS.experiment.nextEntry(snapshot);
+    }
+    return Scheduler.Event.NEXT;
+  }
+}
+
+
+var _instr_advance_3_allKeys;
+var instrStartComponents;
+function instrStartRoutineBegin(snapshot) {
+  return async function () {
+    TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
+    
+    //--- Prepare to start Routine 'instrStart' ---
+    t = 0;
+    instrStartClock.reset(); // clock
+    frameN = -1;
+    continueRoutine = true; // until we're told otherwise
+    // update component parameters for each repeat
+    instr_advance_3.keys = undefined;
+    instr_advance_3.rt = undefined;
+    _instr_advance_3_allKeys = [];
+    // keep track of which components have finished
+    instrStartComponents = [];
+    instrStartComponents.push(genInstr1);
+    instrStartComponents.push(IntroCont4);
+    instrStartComponents.push(instr_advance_3);
+    
+    instrStartComponents.forEach( function(thisComponent) {
+      if ('status' in thisComponent)
+        thisComponent.status = PsychoJS.Status.NOT_STARTED;
+       });
+    return Scheduler.Event.NEXT;
+  }
+}
+
+
+function instrStartRoutineEachFrame() {
+  return async function () {
+    //--- Loop for each frame of Routine 'instrStart' ---
+    // get current time
+    t = instrStartClock.getTime();
+    frameN = frameN + 1;// number of completed frames (so 0 is the first frame)
+    // update/draw components on each frame
+    
+    // *genInstr1* updates
+    if (t >= 0.0 && genInstr1.status === PsychoJS.Status.NOT_STARTED) {
+      // keep track of start time/frame for later
+      genInstr1.tStart = t;  // (not accounting for frame time here)
+      genInstr1.frameNStart = frameN;  // exact frame index
+      
+      genInstr1.setAutoDraw(true);
+    }
+
+    
+    // *IntroCont4* updates
+    if (t >= 4 && IntroCont4.status === PsychoJS.Status.NOT_STARTED) {
+      // keep track of start time/frame for later
+      IntroCont4.tStart = t;  // (not accounting for frame time here)
+      IntroCont4.frameNStart = frameN;  // exact frame index
+      
+      IntroCont4.setAutoDraw(true);
+    }
+
+    
+    // *instr_advance_3* updates
+    if (t >= 4 && instr_advance_3.status === PsychoJS.Status.NOT_STARTED) {
+      // keep track of start time/frame for later
+      instr_advance_3.tStart = t;  // (not accounting for frame time here)
+      instr_advance_3.frameNStart = frameN;  // exact frame index
+      
+      // keyboard checking is just starting
+      psychoJS.window.callOnFlip(function() { instr_advance_3.clock.reset(); });  // t=0 on next screen flip
+      psychoJS.window.callOnFlip(function() { instr_advance_3.start(); }); // start on screen flip
+      psychoJS.window.callOnFlip(function() { instr_advance_3.clearEvents(); });
+    }
+
+    if (instr_advance_3.status === PsychoJS.Status.STARTED) {
+      let theseKeys = instr_advance_3.getKeys({keyList: ['space'], waitRelease: false});
+      _instr_advance_3_allKeys = _instr_advance_3_allKeys.concat(theseKeys);
+      if (_instr_advance_3_allKeys.length > 0) {
+        instr_advance_3.keys = _instr_advance_3_allKeys[_instr_advance_3_allKeys.length - 1].name;  // just the last key pressed
+        instr_advance_3.rt = _instr_advance_3_allKeys[_instr_advance_3_allKeys.length - 1].rt;
+        // a response ends the routine
+        continueRoutine = false;
+      }
+    }
+    
+    // check for quit (typically the Esc key)
+    if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
+      return quitPsychoJS('The [Escape] key was pressed. Goodbye!', false);
+    }
+    
+    // check if the Routine should terminate
+    if (!continueRoutine) {  // a component has requested a forced-end of Routine
+      return Scheduler.Event.NEXT;
+    }
+    
+    continueRoutine = false;  // reverts to True if at least one component still running
+    instrStartComponents.forEach( function(thisComponent) {
+      if ('status' in thisComponent && thisComponent.status !== PsychoJS.Status.FINISHED) {
+        continueRoutine = true;
+      }
+    });
+    
+    // refresh the screen if continuing
+    if (continueRoutine) {
+      return Scheduler.Event.FLIP_REPEAT;
+    } else {
+      return Scheduler.Event.NEXT;
+    }
+  };
+}
+
+
+function instrStartRoutineEnd(snapshot) {
+  return async function () {
+    //--- Ending Routine 'instrStart' ---
+    instrStartComponents.forEach( function(thisComponent) {
+      if (typeof thisComponent.setAutoDraw === 'function') {
+        thisComponent.setAutoDraw(false);
+      }
+    });
+    // update the trial handler
+    if (currentLoop instanceof MultiStairHandler) {
+      currentLoop.addResponse(instr_advance_3.corr, level);
+    }
+    psychoJS.experiment.addData('instr_advance_3.keys', instr_advance_3.keys);
+    if (typeof instr_advance_3.keys !== 'undefined') {  // we had a response
+        psychoJS.experiment.addData('instr_advance_3.rt', instr_advance_3.rt);
+        routineTimer.reset();
+        }
+    
+    instr_advance_3.stop();
+    // the Routine "instrStart" was not non-slip safe, so reset the non-slip timer
+    routineTimer.reset();
+    
+    // Routines running outside a loop should always advance the datafile row
+    if (currentLoop === psychoJS.experiment) {
+      psychoJS.experiment.nextEntry(snapshot);
+    }
+    return Scheduler.Event.NEXT;
+  }
 }
 
 
@@ -7153,7 +7446,7 @@ function openAnswerRoutineEnd(snapshot) {
 }
 
 
-var _exitKey_allKeys;
+var _debriefEnd_allKeys;
 var debriefComponents;
 function debriefRoutineBegin(snapshot) {
   return async function () {
@@ -7165,14 +7458,13 @@ function debriefRoutineBegin(snapshot) {
     frameN = -1;
     continueRoutine = true; // until we're told otherwise
     // update component parameters for each repeat
-    exitKey.keys = undefined;
-    exitKey.rt = undefined;
-    _exitKey_allKeys = [];
+    debriefEnd.keys = undefined;
+    debriefEnd.rt = undefined;
+    _debriefEnd_allKeys = [];
     // keep track of which components have finished
     debriefComponents = [];
     debriefComponents.push(debriefText);
-    debriefComponents.push(exitMessage);
-    debriefComponents.push(exitKey);
+    debriefComponents.push(debriefEnd);
     
     debriefComponents.forEach( function(thisComponent) {
       if ('status' in thisComponent)
@@ -7201,34 +7493,24 @@ function debriefRoutineEachFrame() {
     }
 
     
-    // *exitMessage* updates
-    if (t >= 1 && exitMessage.status === PsychoJS.Status.NOT_STARTED) {
+    // *debriefEnd* updates
+    if (t >= 0 && debriefEnd.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
-      exitMessage.tStart = t;  // (not accounting for frame time here)
-      exitMessage.frameNStart = frameN;  // exact frame index
-      
-      exitMessage.setAutoDraw(true);
-    }
-
-    
-    // *exitKey* updates
-    if (t >= 1 && exitKey.status === PsychoJS.Status.NOT_STARTED) {
-      // keep track of start time/frame for later
-      exitKey.tStart = t;  // (not accounting for frame time here)
-      exitKey.frameNStart = frameN;  // exact frame index
+      debriefEnd.tStart = t;  // (not accounting for frame time here)
+      debriefEnd.frameNStart = frameN;  // exact frame index
       
       // keyboard checking is just starting
-      psychoJS.window.callOnFlip(function() { exitKey.clock.reset(); });  // t=0 on next screen flip
-      psychoJS.window.callOnFlip(function() { exitKey.start(); }); // start on screen flip
-      psychoJS.window.callOnFlip(function() { exitKey.clearEvents(); });
+      psychoJS.window.callOnFlip(function() { debriefEnd.clock.reset(); });  // t=0 on next screen flip
+      psychoJS.window.callOnFlip(function() { debriefEnd.start(); }); // start on screen flip
+      psychoJS.window.callOnFlip(function() { debriefEnd.clearEvents(); });
     }
 
-    if (exitKey.status === PsychoJS.Status.STARTED) {
-      let theseKeys = exitKey.getKeys({keyList: ['tab'], waitRelease: false});
-      _exitKey_allKeys = _exitKey_allKeys.concat(theseKeys);
-      if (_exitKey_allKeys.length > 0) {
-        exitKey.keys = _exitKey_allKeys[_exitKey_allKeys.length - 1].name;  // just the last key pressed
-        exitKey.rt = _exitKey_allKeys[_exitKey_allKeys.length - 1].rt;
+    if (debriefEnd.status === PsychoJS.Status.STARTED) {
+      let theseKeys = debriefEnd.getKeys({keyList: ['space'], waitRelease: false});
+      _debriefEnd_allKeys = _debriefEnd_allKeys.concat(theseKeys);
+      if (_debriefEnd_allKeys.length > 0) {
+        debriefEnd.keys = _debriefEnd_allKeys[_debriefEnd_allKeys.length - 1].name;  // just the last key pressed
+        debriefEnd.rt = _debriefEnd_allKeys[_debriefEnd_allKeys.length - 1].rt;
         // a response ends the routine
         continueRoutine = false;
       }
@@ -7271,6 +7553,156 @@ function debriefRoutineEnd(snapshot) {
     });
     // update the trial handler
     if (currentLoop instanceof MultiStairHandler) {
+      currentLoop.addResponse(debriefEnd.corr, level);
+    }
+    psychoJS.experiment.addData('debriefEnd.keys', debriefEnd.keys);
+    if (typeof debriefEnd.keys !== 'undefined') {  // we had a response
+        psychoJS.experiment.addData('debriefEnd.rt', debriefEnd.rt);
+        routineTimer.reset();
+        }
+    
+    debriefEnd.stop();
+    // the Routine "debrief" was not non-slip safe, so reset the non-slip timer
+    routineTimer.reset();
+    
+    // Routines running outside a loop should always advance the datafile row
+    if (currentLoop === psychoJS.experiment) {
+      psychoJS.experiment.nextEntry(snapshot);
+    }
+    return Scheduler.Event.NEXT;
+  }
+}
+
+
+var _exitKey_allKeys;
+var completionComponents;
+function completionRoutineBegin(snapshot) {
+  return async function () {
+    TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
+    
+    //--- Prepare to start Routine 'completion' ---
+    t = 0;
+    completionClock.reset(); // clock
+    frameN = -1;
+    continueRoutine = true; // until we're told otherwise
+    // update component parameters for each repeat
+    exitKey.keys = undefined;
+    exitKey.rt = undefined;
+    _exitKey_allKeys = [];
+    // keep track of which components have finished
+    completionComponents = [];
+    completionComponents.push(exitMessage);
+    completionComponents.push(doneCode);
+    completionComponents.push(tabExitMessage);
+    completionComponents.push(exitKey);
+    
+    completionComponents.forEach( function(thisComponent) {
+      if ('status' in thisComponent)
+        thisComponent.status = PsychoJS.Status.NOT_STARTED;
+       });
+    return Scheduler.Event.NEXT;
+  }
+}
+
+
+function completionRoutineEachFrame() {
+  return async function () {
+    //--- Loop for each frame of Routine 'completion' ---
+    // get current time
+    t = completionClock.getTime();
+    frameN = frameN + 1;// number of completed frames (so 0 is the first frame)
+    // update/draw components on each frame
+    
+    // *exitMessage* updates
+    if (t >= 0 && exitMessage.status === PsychoJS.Status.NOT_STARTED) {
+      // keep track of start time/frame for later
+      exitMessage.tStart = t;  // (not accounting for frame time here)
+      exitMessage.frameNStart = frameN;  // exact frame index
+      
+      exitMessage.setAutoDraw(true);
+    }
+
+    
+    // *doneCode* updates
+    if (t >= 0.0 && doneCode.status === PsychoJS.Status.NOT_STARTED) {
+      // keep track of start time/frame for later
+      doneCode.tStart = t;  // (not accounting for frame time here)
+      doneCode.frameNStart = frameN;  // exact frame index
+      
+      doneCode.setAutoDraw(true);
+    }
+
+    
+    // *tabExitMessage* updates
+    if (t >= 0.0 && tabExitMessage.status === PsychoJS.Status.NOT_STARTED) {
+      // keep track of start time/frame for later
+      tabExitMessage.tStart = t;  // (not accounting for frame time here)
+      tabExitMessage.frameNStart = frameN;  // exact frame index
+      
+      tabExitMessage.setAutoDraw(true);
+    }
+
+    
+    // *exitKey* updates
+    if (t >= 1 && exitKey.status === PsychoJS.Status.NOT_STARTED) {
+      // keep track of start time/frame for later
+      exitKey.tStart = t;  // (not accounting for frame time here)
+      exitKey.frameNStart = frameN;  // exact frame index
+      
+      // keyboard checking is just starting
+      psychoJS.window.callOnFlip(function() { exitKey.clock.reset(); });  // t=0 on next screen flip
+      psychoJS.window.callOnFlip(function() { exitKey.start(); }); // start on screen flip
+      psychoJS.window.callOnFlip(function() { exitKey.clearEvents(); });
+    }
+
+    if (exitKey.status === PsychoJS.Status.STARTED) {
+      let theseKeys = exitKey.getKeys({keyList: ['tab'], waitRelease: false});
+      _exitKey_allKeys = _exitKey_allKeys.concat(theseKeys);
+      if (_exitKey_allKeys.length > 0) {
+        exitKey.keys = _exitKey_allKeys[_exitKey_allKeys.length - 1].name;  // just the last key pressed
+        exitKey.rt = _exitKey_allKeys[_exitKey_allKeys.length - 1].rt;
+        // a response ends the routine
+        continueRoutine = false;
+      }
+    }
+    
+    // check for quit (typically the Esc key)
+    if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
+      return quitPsychoJS('The [Escape] key was pressed. Goodbye!', false);
+    }
+    
+    // check if the Routine should terminate
+    if (!continueRoutine) {  // a component has requested a forced-end of Routine
+      return Scheduler.Event.NEXT;
+    }
+    
+    continueRoutine = false;  // reverts to True if at least one component still running
+    completionComponents.forEach( function(thisComponent) {
+      if ('status' in thisComponent && thisComponent.status !== PsychoJS.Status.FINISHED) {
+        continueRoutine = true;
+      }
+    });
+    
+    // refresh the screen if continuing
+    if (continueRoutine) {
+      return Scheduler.Event.FLIP_REPEAT;
+    } else {
+      return Scheduler.Event.NEXT;
+    }
+  };
+}
+
+
+function completionRoutineEnd(snapshot) {
+  return async function () {
+    //--- Ending Routine 'completion' ---
+    completionComponents.forEach( function(thisComponent) {
+      if (typeof thisComponent.setAutoDraw === 'function') {
+        thisComponent.setAutoDraw(false);
+      }
+    });
+    // update the trial handler
+    if (currentLoop instanceof MultiStairHandler) {
       currentLoop.addResponse(exitKey.corr, level);
     }
     psychoJS.experiment.addData('exitKey.keys', exitKey.keys);
@@ -7280,7 +7712,7 @@ function debriefRoutineEnd(snapshot) {
         }
     
     exitKey.stop();
-    // the Routine "debrief" was not non-slip safe, so reset the non-slip timer
+    // the Routine "completion" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset();
     
     // Routines running outside a loop should always advance the datafile row
@@ -7305,6 +7737,8 @@ async function quitPsychoJS(message, isCompleted) {
   if (psychoJS.experiment.isEntryEmpty()) {
     psychoJS.experiment.nextEntry();
   }
+  
+  
   
   
   

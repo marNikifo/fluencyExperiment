@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2022.2.5),
-    on April 21, 2023, at 10:44
+    on April 26, 2023, at 11:14
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -37,7 +37,7 @@ os.chdir(_thisDir)
 psychopyVersion = '2022.2.5'
 expName = 'fluency'  # from the Builder filename that created this script
 expInfo = {
-    'participant': f"{randint(200, 9999):06.0f}",
+    'participant': f"{randint(0, 999999):06.0f}",
     'session': '001',
 }
 # --- Show participant info dialog --
@@ -162,7 +162,7 @@ iAgree = visual.TextStim(win=win, name='iAgree',
     languageStyle='LTR',
     depth=-1.0);
 iQuit = visual.TextStim(win=win, name='iQuit',
-    text='I do not agree \n(click to exit experiment)',
+    text='I do not agree \n(click for exit code)',
     font='Open Sans',
     pos=(-0.3, -0.35), height=0.04, wrapWidth=None, ori=0.0, 
     color='white', colorSpace='rgb', opacity=None, 
@@ -171,9 +171,27 @@ iQuit = visual.TextStim(win=win, name='iQuit',
 consentClick = event.Mouse(win=win)
 x, y = [None, None]
 consentClick.mouseClock = core.Clock()
-quitClick = event.Mouse(win=win)
+# Run 'Begin Experiment' code from didTheyReject
+nonconsent=0
+
+# --- Initialize components for Routine "consent_rejected" ---
+nonconsentMessage = visual.TextStim(win=win, name='nonconsentMessage',
+    text='You did not consent to participate in this study.\n\nHere is the completion code for this case! Write this down for Prolific:\n\nABC123',
+    font='Open Sans',
+    pos=(0, 0), height=0.05, wrapWidth=None, ori=0.0, 
+    color='white', colorSpace='rgb', opacity=None, 
+    languageStyle='LTR',
+    depth=0.0);
+quitButtonText = visual.TextStim(win=win, name='quitButtonText',
+    text='Click here to exit',
+    font='Open Sans',
+    pos=(0, -0.3), height=0.07, wrapWidth=None, ori=0.0, 
+    color='white', colorSpace='rgb', opacity=None, 
+    languageStyle='LTR',
+    depth=-1.0);
+exitClick = event.Mouse(win=win)
 x, y = [None, None]
-quitClick.mouseClock = core.Clock()
+exitClick.mouseClock = core.Clock()
 
 # --- Initialize components for Routine "instrStart" ---
 genInstr1 = visual.TextStim(win=win, name='genInstr1',
@@ -199,17 +217,14 @@ instr_advance_3 = keyboard.Keyboard()
 #for this purpose. 
 #use the modulo operator (%) to cycle through
 
-#this line selects the condition based on the number of the participant
-#selected_rows = range((expInfo['participant']%110)*2,(expInfo['participant']%110+1)*2)
-
 # selects 110 trials of given condition based on number of participants
-#selected_rows = range((expInfo['participant']%8)*110,(expInfo['participant']%8+1)*110)
+selected_rows = range((expInfo['participant']%8)*110,(expInfo['participant']%8+1)*110)
 
-selected_rows=[2,3]
+#selected_rows=[2,3]
 
 # --- Initialize components for Routine "specific_instr" ---
 genInstr2 = visual.TextStim(win=win, name='genInstr2',
-    text='At the start of each trial, you will be looking at the middle of the screen (marked by a +). After a short time, a face will appear and you will respond within 2 seconds. The length of time before the face appears is random, so stay alert! To respond:',
+    text='At the start of each trial, you will be looking at the middle of the screen (marked by a +). After a short time, a face will appear and you will respond within 3 seconds. The length of time before the face appears is random, so stay alert! To respond:',
     font='Open Sans',
     pos=(0, 0.15), height=0.045, wrapWidth=1.3, ori=0.0, 
     color='white', colorSpace='rgb', opacity=None, 
@@ -407,7 +422,7 @@ timesRedone = 0
 
 # --- Initialize components for Routine "redo_feedback" ---
 out_of_time_2 = visual.TextStim(win=win, name='out_of_time_2',
-    text='Oops, out of time! Remember to respond within two seconds of seeing the face - you will need to re-try this trial.\n\n\n\n\nPress SPACE to try again.',
+    text='Oops, out of time! Remember to respond within 3 seconds of seeing the face - you will need to re-try this trial.\n\n\n\n\nPress SPACE to try again.',
     font='Open Sans',
     pos=(0, 0), height=0.05, wrapWidth=1.3, ori=0.0, 
     color='white', colorSpace='rgb', opacity=None, 
@@ -493,7 +508,7 @@ timesRedone = 0
 
 # --- Initialize components for Routine "redo_feedback" ---
 out_of_time_2 = visual.TextStim(win=win, name='out_of_time_2',
-    text='Oops, out of time! Remember to respond within two seconds of seeing the face - you will need to re-try this trial.\n\n\n\n\nPress SPACE to try again.',
+    text='Oops, out of time! Remember to respond within 3 seconds of seeing the face - you will need to re-try this trial.\n\n\n\n\nPress SPACE to try again.',
     font='Open Sans',
     pos=(0, 0), height=0.05, wrapWidth=1.3, ori=0.0, 
     color='white', colorSpace='rgb', opacity=None, 
@@ -623,16 +638,20 @@ respQ4 = visual.Slider(win=win, name='respQ4',
     labelColor='White', markerColor='Red', lineColor='White', colorSpace='rgb',
     font='Arial', labelHeight=0.0175,
     flip=False, ori=0.0, depth=-5, readOnly=False)
-nextButton1 = visual.TextStim(win=win, name='nextButton1',
-    text='CLICK TO CONTINUE',
-    font='Open Sans',
-    pos=(0, -0.35), height=0.05, wrapWidth=None, ori=0.0, 
-    color='white', colorSpace='rgb', opacity=None, 
-    languageStyle='LTR',
-    depth=-6.0);
-nextClick1 = event.Mouse(win=win)
-x, y = [None, None]
-nextClick1.mouseClock = core.Clock()
+surveyContinue1 = visual.ButtonStim(win, 
+    text='CLICK HERE TO CONTINUE', font='Open Sans',
+    pos=(0, -0.35),
+    letterHeight=0.03,
+    size=(.5,.25), borderWidth=0.0,
+    fillColor='darkgrey', borderColor=None,
+    color='white', colorSpace='rgb',
+    opacity=None,
+    bold=True, italic=False,
+    padding=None,
+    anchor='center',
+    name='surveyContinue1'
+)
+surveyContinue1.buttonClock = core.Clock()
 
 # --- Initialize components for Routine "closure2" ---
 qsInstr_2 = visual.TextStim(win=win, name='qsInstr_2',
@@ -677,16 +696,20 @@ respQ8 = visual.Slider(win=win, name='respQ8',
     labelColor='White', markerColor='Red', lineColor='White', colorSpace='rgb',
     font='Arial', labelHeight=0.0175,
     flip=False, ori=0.0, depth=-5, readOnly=False)
-nextButton2 = visual.TextStim(win=win, name='nextButton2',
-    text='CLICK TO CONTINUE',
-    font='Open Sans',
-    pos=(0, -0.35), height=0.05, wrapWidth=None, ori=0.0, 
-    color='white', colorSpace='rgb', opacity=None, 
-    languageStyle='LTR',
-    depth=-6.0);
-nextClick2 = event.Mouse(win=win)
-x, y = [None, None]
-nextClick2.mouseClock = core.Clock()
+surveyContinue2 = visual.ButtonStim(win, 
+    text='CLICK HERE TO CONTINUE', font='Open Sans',
+    pos=(0, -0.35),
+    letterHeight=0.03,
+    size=(.5,.25), borderWidth=0.0,
+    fillColor='darkgrey', borderColor=None,
+    color='white', colorSpace='rgb',
+    opacity=None,
+    bold=True, italic=False,
+    padding=None,
+    anchor='center',
+    name='surveyContinue2'
+)
+surveyContinue2.buttonClock = core.Clock()
 
 # --- Initialize components for Routine "closure3" ---
 qsInstr_3 = visual.TextStim(win=win, name='qsInstr_3',
@@ -731,16 +754,20 @@ respQ12 = visual.Slider(win=win, name='respQ12',
     labelColor='White', markerColor='Red', lineColor='White', colorSpace='rgb',
     font='Arial', labelHeight=0.0175,
     flip=False, ori=0.0, depth=-5, readOnly=False)
-nextButton3 = visual.TextStim(win=win, name='nextButton3',
-    text='CLICK TO CONTINUE',
-    font='Open Sans',
-    pos=(0, -0.35), height=0.05, wrapWidth=None, ori=0.0, 
-    color='white', colorSpace='rgb', opacity=None, 
-    languageStyle='LTR',
-    depth=-6.0);
-nextClick3 = event.Mouse(win=win)
-x, y = [None, None]
-nextClick3.mouseClock = core.Clock()
+surveyContinue3 = visual.ButtonStim(win, 
+    text='CLICK HERE TO CONTINUE', font='Open Sans',
+    pos=(0, -0.35),
+    letterHeight=0.03,
+    size=(.5,.25), borderWidth=0.0,
+    fillColor='darkgrey', borderColor=None,
+    color='white', colorSpace='rgb',
+    opacity=None,
+    bold=True, italic=False,
+    padding=None,
+    anchor='center',
+    name='surveyContinue3'
+)
+surveyContinue3.buttonClock = core.Clock()
 
 # --- Initialize components for Routine "closure4" ---
 qsInstr_4 = visual.TextStim(win=win, name='qsInstr_4',
@@ -778,16 +805,20 @@ respQ15 = visual.Slider(win=win, name='respQ15',
     labelColor='White', markerColor='Red', lineColor='White', colorSpace='rgb',
     font='Arial', labelHeight=0.0175,
     flip=False, ori=0.0, depth=-4, readOnly=False)
-nextButton4 = visual.TextStim(win=win, name='nextButton4',
-    text='CLICK TO CONTINUE',
-    font='Open Sans',
-    pos=(0, -0.35), height=0.05, wrapWidth=None, ori=0.0, 
-    color='white', colorSpace='rgb', opacity=None, 
-    languageStyle='LTR',
-    depth=-5.0);
-nextClick4 = event.Mouse(win=win)
-x, y = [None, None]
-nextClick4.mouseClock = core.Clock()
+surveyContinue4 = visual.ButtonStim(win, 
+    text='CLICK HERE TO CONTINUE', font='Open Sans',
+    pos=(0, -0.35),
+    letterHeight=0.03,
+    size=(.5,.25), borderWidth=0.0,
+    fillColor='darkgrey', borderColor=None,
+    color='white', colorSpace='rgb',
+    opacity=None,
+    bold=True, italic=False,
+    padding=None,
+    anchor='center',
+    name='surveyContinue4'
+)
+surveyContinue4.buttonClock = core.Clock()
 
 # --- Initialize components for Routine "demographics" ---
 demographicsInstr = visual.TextStim(win=win, name='demographicsInstr',
@@ -841,16 +872,20 @@ genderResp2 = visual.TextBox2(
      name='genderResp2',
      autoLog=True,
 )
-nextButton5 = visual.TextStim(win=win, name='nextButton5',
-    text='CLICK TO CONTINUE',
-    font='Open Sans',
-    pos=(0, -0.25), height=0.05, wrapWidth=None, ori=0.0, 
-    color='white', colorSpace='rgb', opacity=None, 
-    languageStyle='LTR',
-    depth=-6.0);
-demographClick = event.Mouse(win=win)
-x, y = [None, None]
-demographClick.mouseClock = core.Clock()
+demogexitClick = visual.ButtonStim(win, 
+    text='CLICK HERE TO CONTINUE', font='Open Sans',
+    pos=(0, -0.35),
+    letterHeight=0.03,
+    size=(.5,.25), borderWidth=0.0,
+    fillColor='darkgrey', borderColor=None,
+    color='white', colorSpace='rgb',
+    opacity=None,
+    bold=True, italic=False,
+    padding=None,
+    anchor='center',
+    name='demogexitClick'
+)
+demogexitClick.buttonClock = core.Clock()
 
 # --- Initialize components for Routine "openAnswer" ---
 openPrompt = visual.TextStim(win=win, name='openPrompt',
@@ -876,16 +911,20 @@ textbox = visual.TextBox2(
      name='textbox',
      autoLog=True,
 )
-openanswerEnd = visual.TextStim(win=win, name='openanswerEnd',
-    text='Once you are done, click here to continue!',
-    font='Open Sans',
-    pos=(0, -0.25), height=0.05, wrapWidth=None, ori=0.0, 
-    color='white', colorSpace='rgb', opacity=None, 
-    languageStyle='LTR',
-    depth=-2.0);
-openanswerClick = event.Mouse(win=win)
-x, y = [None, None]
-openanswerClick.mouseClock = core.Clock()
+openAnswerClick = visual.ButtonStim(win, 
+    text='CLICK HERE TO CONTINUE', font='Open Sans',
+    pos=(0, -0.25),
+    letterHeight=0.03,
+    size=(.5,.25), borderWidth=0.0,
+    fillColor='darkgrey', borderColor=None,
+    color='white', colorSpace='rgb',
+    opacity=None,
+    bold=True, italic=False,
+    padding=None,
+    anchor='center',
+    name='openAnswerClick'
+)
+openAnswerClick.buttonClock = core.Clock()
 
 # --- Initialize components for Routine "debrief" ---
 debriefText = visual.TextStim(win=win, name='debriefText',
@@ -1245,18 +1284,8 @@ consentClick.rightButton = []
 consentClick.time = []
 consentClick.clicked_name = []
 gotValidClick = False  # until a click is received
-# setup some python lists for storing info about the quitClick
-quitClick.x = []
-quitClick.y = []
-quitClick.leftButton = []
-quitClick.midButton = []
-quitClick.rightButton = []
-quitClick.time = []
-quitClick.clicked_name = []
-gotValidClick = False  # until a click is received
-quitClick.mouseClock.reset()
 # keep track of which components have finished
-consent3Components = [consentText_3, iAgree, iQuit, consentClick, quitClick]
+consent3Components = [consentText_3, iAgree, iQuit, consentClick]
 for thisComponent in consent3Components:
     thisComponent.tStart = None
     thisComponent.tStop = None
@@ -1330,10 +1359,10 @@ while continueRoutine:
                 # check if the mouse was inside our 'clickable' objects
                 gotValidClick = False
                 try:
-                    iter(iAgree)
-                    clickableList = iAgree
+                    iter([iAgree, iQuit])
+                    clickableList = [iAgree, iQuit]
                 except:
-                    clickableList = [iAgree]
+                    clickableList = [[iAgree, iQuit]]
                 for obj in clickableList:
                     if obj.contains(consentClick):
                         gotValidClick = True
@@ -1348,44 +1377,9 @@ while continueRoutine:
                 consentClick.time.append(consentClick.mouseClock.getTime())
                 if gotValidClick:
                     continueRoutine = False  # abort routine on response
-    # *quitClick* updates
-    if quitClick.status == NOT_STARTED and t >= 0.0-frameTolerance:
-        # keep track of start time/frame for later
-        quitClick.frameNStart = frameN  # exact frame index
-        quitClick.tStart = t  # local t and not account for scr refresh
-        quitClick.tStartRefresh = tThisFlipGlobal  # on global time
-        win.timeOnFlip(quitClick, 'tStartRefresh')  # time at next scr refresh
-        # add timestamp to datafile
-        thisExp.addData('quitClick.started', t)
-        quitClick.status = STARTED
-        prevButtonState = quitClick.getPressed()  # if button is down already this ISN'T a new click
-    if quitClick.status == STARTED:  # only update if started and not finished!
-        buttons = quitClick.getPressed()
-        if buttons != prevButtonState:  # button state changed?
-            prevButtonState = buttons
-            if sum(buttons) > 0:  # state changed to a new click
-                # check if the mouse was inside our 'clickable' objects
-                gotValidClick = False
-                try:
-                    iter(iQuit)
-                    clickableList = iQuit
-                except:
-                    clickableList = [iQuit]
-                for obj in clickableList:
-                    if obj.contains(quitClick):
-                        gotValidClick = True
-                        quitClick.clicked_name.append(obj.name)
-                x, y = quitClick.getPos()
-                quitClick.x.append(x)
-                quitClick.y.append(y)
-                buttons = quitClick.getPressed()
-                quitClick.leftButton.append(buttons[0])
-                quitClick.midButton.append(buttons[1])
-                quitClick.rightButton.append(buttons[2])
-                quitClick.time.append(quitClick.mouseClock.getTime())
-    # Run 'Each Frame' code from quitButton
-    if quitClick.isPressedIn(iQuit):
-        core.quit()
+    # Run 'Each Frame' code from didTheyReject
+    if consentClick.isPressedIn(iQuit):
+        nonconsent=1
     
     # check for quit (typically the Esc key)
     if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -1418,17 +1412,161 @@ thisExp.addData('consentClick.rightButton', consentClick.rightButton)
 thisExp.addData('consentClick.time', consentClick.time)
 thisExp.addData('consentClick.clicked_name', consentClick.clicked_name)
 thisExp.nextEntry()
-# store data for thisExp (ExperimentHandler)
-thisExp.addData('quitClick.x', quitClick.x)
-thisExp.addData('quitClick.y', quitClick.y)
-thisExp.addData('quitClick.leftButton', quitClick.leftButton)
-thisExp.addData('quitClick.midButton', quitClick.midButton)
-thisExp.addData('quitClick.rightButton', quitClick.rightButton)
-thisExp.addData('quitClick.time', quitClick.time)
-thisExp.addData('quitClick.clicked_name', quitClick.clicked_name)
-thisExp.nextEntry()
 # the Routine "consent3" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
+
+# set up handler to look after randomisation of conditions etc
+quitLoop = data.TrialHandler(nReps=nonconsent, method='random', 
+    extraInfo=expInfo, originPath=-1,
+    trialList=[None],
+    seed=None, name='quitLoop')
+thisExp.addLoop(quitLoop)  # add the loop to the experiment
+thisQuitLoop = quitLoop.trialList[0]  # so we can initialise stimuli with some values
+# abbreviate parameter names if possible (e.g. rgb = thisQuitLoop.rgb)
+if thisQuitLoop != None:
+    for paramName in thisQuitLoop:
+        exec('{} = thisQuitLoop[paramName]'.format(paramName))
+
+for thisQuitLoop in quitLoop:
+    currentLoop = quitLoop
+    # abbreviate parameter names if possible (e.g. rgb = thisQuitLoop.rgb)
+    if thisQuitLoop != None:
+        for paramName in thisQuitLoop:
+            exec('{} = thisQuitLoop[paramName]'.format(paramName))
+    
+    # --- Prepare to start Routine "consent_rejected" ---
+    continueRoutine = True
+    routineForceEnded = False
+    # update component parameters for each repeat
+    # setup some python lists for storing info about the exitClick
+    exitClick.x = []
+    exitClick.y = []
+    exitClick.leftButton = []
+    exitClick.midButton = []
+    exitClick.rightButton = []
+    exitClick.time = []
+    exitClick.clicked_name = []
+    gotValidClick = False  # until a click is received
+    # keep track of which components have finished
+    consent_rejectedComponents = [nonconsentMessage, quitButtonText, exitClick]
+    for thisComponent in consent_rejectedComponents:
+        thisComponent.tStart = None
+        thisComponent.tStop = None
+        thisComponent.tStartRefresh = None
+        thisComponent.tStopRefresh = None
+        if hasattr(thisComponent, 'status'):
+            thisComponent.status = NOT_STARTED
+    # reset timers
+    t = 0
+    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+    frameN = -1
+    
+    # --- Run Routine "consent_rejected" ---
+    while continueRoutine:
+        # get current time
+        t = routineTimer.getTime()
+        tThisFlip = win.getFutureFlipTime(clock=routineTimer)
+        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+        # update/draw components on each frame
+        
+        # *nonconsentMessage* updates
+        if nonconsentMessage.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            nonconsentMessage.frameNStart = frameN  # exact frame index
+            nonconsentMessage.tStart = t  # local t and not account for scr refresh
+            nonconsentMessage.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(nonconsentMessage, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'nonconsentMessage.started')
+            nonconsentMessage.setAutoDraw(True)
+        
+        # *quitButtonText* updates
+        if quitButtonText.status == NOT_STARTED and tThisFlip >= 3-frameTolerance:
+            # keep track of start time/frame for later
+            quitButtonText.frameNStart = frameN  # exact frame index
+            quitButtonText.tStart = t  # local t and not account for scr refresh
+            quitButtonText.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(quitButtonText, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'quitButtonText.started')
+            quitButtonText.setAutoDraw(True)
+        # *exitClick* updates
+        if exitClick.status == NOT_STARTED and t >= 3-frameTolerance:
+            # keep track of start time/frame for later
+            exitClick.frameNStart = frameN  # exact frame index
+            exitClick.tStart = t  # local t and not account for scr refresh
+            exitClick.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(exitClick, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.addData('exitClick.started', t)
+            exitClick.status = STARTED
+            exitClick.mouseClock.reset()
+            prevButtonState = exitClick.getPressed()  # if button is down already this ISN'T a new click
+        if exitClick.status == STARTED:  # only update if started and not finished!
+            buttons = exitClick.getPressed()
+            if buttons != prevButtonState:  # button state changed?
+                prevButtonState = buttons
+                if sum(buttons) > 0:  # state changed to a new click
+                    # check if the mouse was inside our 'clickable' objects
+                    gotValidClick = False
+                    try:
+                        iter(quitButtonText)
+                        clickableList = quitButtonText
+                    except:
+                        clickableList = [quitButtonText]
+                    for obj in clickableList:
+                        if obj.contains(exitClick):
+                            gotValidClick = True
+                            exitClick.clicked_name.append(obj.name)
+                    x, y = exitClick.getPos()
+                    exitClick.x.append(x)
+                    exitClick.y.append(y)
+                    buttons = exitClick.getPressed()
+                    exitClick.leftButton.append(buttons[0])
+                    exitClick.midButton.append(buttons[1])
+                    exitClick.rightButton.append(buttons[2])
+                    exitClick.time.append(exitClick.mouseClock.getTime())
+        # Run 'Each Frame' code from quitButton
+        if exitClick.isPressedIn(quitButtonText):
+            core.quit()
+        
+        # check for quit (typically the Esc key)
+        if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+            core.quit()
+        
+        # check if all components have finished
+        if not continueRoutine:  # a component has requested a forced-end of Routine
+            routineForceEnded = True
+            break
+        continueRoutine = False  # will revert to True if at least one component still running
+        for thisComponent in consent_rejectedComponents:
+            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                continueRoutine = True
+                break  # at least one component has not yet finished
+        
+        # refresh the screen
+        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+            win.flip()
+    
+    # --- Ending Routine "consent_rejected" ---
+    for thisComponent in consent_rejectedComponents:
+        if hasattr(thisComponent, "setAutoDraw"):
+            thisComponent.setAutoDraw(False)
+    # store data for quitLoop (TrialHandler)
+    quitLoop.addData('exitClick.x', exitClick.x)
+    quitLoop.addData('exitClick.y', exitClick.y)
+    quitLoop.addData('exitClick.leftButton', exitClick.leftButton)
+    quitLoop.addData('exitClick.midButton', exitClick.midButton)
+    quitLoop.addData('exitClick.rightButton', exitClick.rightButton)
+    quitLoop.addData('exitClick.time', exitClick.time)
+    quitLoop.addData('exitClick.clicked_name', exitClick.clicked_name)
+    # the Routine "consent_rejected" was not non-slip safe, so reset the non-slip timer
+    routineTimer.reset()
+    thisExp.nextEntry()
+    
+# completed nonconsent repeats of 'quitLoop'
+
 
 # --- Prepare to start Routine "instrStart" ---
 continueRoutine = True
@@ -1971,7 +2109,7 @@ for thisAttnChecker in attnChecker:
             continueRoutine = True
             routineForceEnded = False
             # update component parameters for each repeat
-            specific_instructions_2.setText(instr + ". Be sure to respond within 2 seconds; a green frame around the image will show that your response was registered.")
+            specific_instructions_2.setText(instr + ". Be sure to respond within 3 seconds; a green frame around the image will show that your response was registered.")
             definition_2.setText(term)
             spec_instr_adv_2.keys = []
             spec_instr_adv_2.rt = []
@@ -2994,7 +3132,7 @@ for thisAttnChecker in attnChecker:
                     win.callOnFlip(practiceResp.clearEvents, eventType='keyboard')  # clear events on next screen flip
                 if practiceResp.status == STARTED:
                     # is it time to stop? (based on global clock, using actual start)
-                    if tThisFlipGlobal > practiceResp.tStartRefresh + 2-frameTolerance:
+                    if tThisFlipGlobal > practiceResp.tStartRefresh + 3-frameTolerance:
                         # keep track of stop time/frame for later
                         practiceResp.tStop = t  # not accounting for scr refresh
                         practiceResp.frameNStop = frameN  # exact frame index
@@ -3038,7 +3176,7 @@ for thisAttnChecker in attnChecker:
                     thisExp.timestampOnFlip(win, 'practiceImage.started')
                     practiceImage.setAutoDraw(True)
                 # Run 'Each Frame' code from endTrial_2
-                if t > 2:
+                if t > 3:
                     continueRoutine = False
                 
                 # check for quit (typically the Esc key)
@@ -3580,8 +3718,7 @@ for thisTrial in trials:
         face_image.setImage(face_file)
         # Run 'Begin Routine' code from respCheck
         redo = 0
-        
-        
+        timesRedone = 0
         # keep track of which components have finished
         faceOnsetComponents = [catResp, respIndicator, face_image]
         for thisComponent in faceOnsetComponents:
@@ -3622,7 +3759,7 @@ for thisTrial in trials:
                 win.callOnFlip(catResp.clearEvents, eventType='keyboard')  # clear events on next screen flip
             if catResp.status == STARTED:
                 # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > catResp.tStartRefresh + 2-frameTolerance:
+                if tThisFlipGlobal > catResp.tStartRefresh + 3-frameTolerance:
                     # keep track of stop time/frame for later
                     catResp.tStop = t  # not accounting for scr refresh
                     catResp.frameNStop = frameN  # exact frame index
@@ -3666,7 +3803,7 @@ for thisTrial in trials:
                 thisExp.timestampOnFlip(win, 'face_image.started')
                 face_image.setAutoDraw(True)
             # Run 'Each Frame' code from endTrial
-            if t > 2:
+            if t > 3:
                 continueRoutine = False
             
             # check for quit (typically the Esc key)
@@ -3698,6 +3835,7 @@ for thisTrial in trials:
         if catResp.keys != None:  # we had a response
             repeat_loop.addData('catResp.rt', catResp.rt)
         # Run 'End Routine' code from respCheck
+        keys = []
         keys = event.getKeys()
         if len(keys) > 0:
             if 'k' in keys or 'j' in keys:
@@ -3711,7 +3849,7 @@ for thisTrial in trials:
             timesRedone = timesRedone + 1
             
         thisExp.addData('timesRedone', timesRedone)
-        thisExp.addData('catTrialResp', keys)
+        thisExp.addData('catRespPress', keys)
         # the Routine "faceOnset" was not non-slip safe, so reset the non-slip timer
         routineTimer.reset()
         
@@ -4222,14 +4360,11 @@ respQ1.reset()
 respQ2.reset()
 respQ3.reset()
 respQ4.reset()
-# setup some python lists for storing info about the nextClick1
-nextClick1.clicked_name = []
-gotValidClick = False  # until a click is received
 # Run 'Begin Routine' code from leftText1
 questions1.alignText='left'
 questions1.alignHoriz = 'left'
 # keep track of which components have finished
-closure1Components = [qsInstr, questions1, respQ1, respQ2, respQ3, respQ4, nextButton1, nextClick1]
+closure1Components = [qsInstr, questions1, respQ1, respQ2, respQ3, respQ4, surveyContinue1]
 for thisComponent in closure1Components:
     thisComponent.tStart = None
     thisComponent.tStop = None
@@ -4317,46 +4452,32 @@ while continueRoutine:
         thisExp.timestampOnFlip(win, 'respQ4.started')
         respQ4.setAutoDraw(True)
     
-    # *nextButton1* updates
-    if nextButton1.status == NOT_STARTED and (respQ1.rating + respQ2.rating + respQ3.rating + respQ4.rating) > 0:
+    # *surveyContinue1* updates
+    if surveyContinue1.status == NOT_STARTED and (respQ1.rating + respQ2.rating + respQ3.rating + respQ4.rating) > 0:
         # keep track of start time/frame for later
-        nextButton1.frameNStart = frameN  # exact frame index
-        nextButton1.tStart = t  # local t and not account for scr refresh
-        nextButton1.tStartRefresh = tThisFlipGlobal  # on global time
-        win.timeOnFlip(nextButton1, 'tStartRefresh')  # time at next scr refresh
+        surveyContinue1.frameNStart = frameN  # exact frame index
+        surveyContinue1.tStart = t  # local t and not account for scr refresh
+        surveyContinue1.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(surveyContinue1, 'tStartRefresh')  # time at next scr refresh
         # add timestamp to datafile
-        thisExp.timestampOnFlip(win, 'nextButton1.started')
-        nextButton1.setAutoDraw(True)
-    # *nextClick1* updates
-    if nextClick1.status == NOT_STARTED and t >= 0.0-frameTolerance:
-        # keep track of start time/frame for later
-        nextClick1.frameNStart = frameN  # exact frame index
-        nextClick1.tStart = t  # local t and not account for scr refresh
-        nextClick1.tStartRefresh = tThisFlipGlobal  # on global time
-        win.timeOnFlip(nextClick1, 'tStartRefresh')  # time at next scr refresh
-        # add timestamp to datafile
-        thisExp.addData('nextClick1.started', t)
-        nextClick1.status = STARTED
-        nextClick1.mouseClock.reset()
-        prevButtonState = nextClick1.getPressed()  # if button is down already this ISN'T a new click
-    if nextClick1.status == STARTED:  # only update if started and not finished!
-        buttons = nextClick1.getPressed()
-        if buttons != prevButtonState:  # button state changed?
-            prevButtonState = buttons
-            if sum(buttons) > 0:  # state changed to a new click
-                # check if the mouse was inside our 'clickable' objects
-                gotValidClick = False
-                try:
-                    iter(nextButton1)
-                    clickableList = nextButton1
-                except:
-                    clickableList = [nextButton1]
-                for obj in clickableList:
-                    if obj.contains(nextClick1):
-                        gotValidClick = True
-                        nextClick1.clicked_name.append(obj.name)
-                if gotValidClick:  
-                    continueRoutine = False  # abort routine on response
+        thisExp.timestampOnFlip(win, 'surveyContinue1.started')
+        surveyContinue1.setAutoDraw(True)
+    if surveyContinue1.status == STARTED:
+        # check whether surveyContinue1 has been pressed
+        if surveyContinue1.isClicked:
+            if not surveyContinue1.wasClicked:
+                surveyContinue1.timesOn.append(surveyContinue1.buttonClock.getTime()) # store time of first click
+                surveyContinue1.timesOff.append(surveyContinue1.buttonClock.getTime()) # store time clicked until
+            else:
+                surveyContinue1.timesOff[-1] = surveyContinue1.buttonClock.getTime() # update time clicked until
+            if not surveyContinue1.wasClicked:
+                continueRoutine = False  # end routine when surveyContinue1 is clicked
+                None
+            surveyContinue1.wasClicked = True  # if surveyContinue1 is still clicked next frame, it is not a new click
+        else:
+            surveyContinue1.wasClicked = False  # if surveyContinue1 is clicked next frame, it is a new click
+    else:
+        surveyContinue1.wasClicked = False  # if surveyContinue1 is clicked next frame, it is a new click
     
     # check for quit (typically the Esc key)
     if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -4388,29 +4509,13 @@ thisExp.addData('respQ3.response', respQ3.getRating())
 thisExp.addData('respQ3.rt', respQ3.getRT())
 thisExp.addData('respQ4.response', respQ4.getRating())
 thisExp.addData('respQ4.rt', respQ4.getRT())
-# store data for thisExp (ExperimentHandler)
-x, y = nextClick1.getPos()
-buttons = nextClick1.getPressed()
-if sum(buttons):
-    # check if the mouse was inside our 'clickable' objects
-    gotValidClick = False
-    try:
-        iter(nextButton1)
-        clickableList = nextButton1
-    except:
-        clickableList = [nextButton1]
-    for obj in clickableList:
-        if obj.contains(nextClick1):
-            gotValidClick = True
-            nextClick1.clicked_name.append(obj.name)
-thisExp.addData('nextClick1.x', x)
-thisExp.addData('nextClick1.y', y)
-thisExp.addData('nextClick1.leftButton', buttons[0])
-thisExp.addData('nextClick1.midButton', buttons[1])
-thisExp.addData('nextClick1.rightButton', buttons[2])
-if len(nextClick1.clicked_name):
-    thisExp.addData('nextClick1.clicked_name', nextClick1.clicked_name[0])
-thisExp.nextEntry()
+thisExp.addData('surveyContinue1.numClicks', surveyContinue1.numClicks)
+if surveyContinue1.numClicks:
+   thisExp.addData('surveyContinue1.timesOn', surveyContinue1.timesOn)
+   thisExp.addData('surveyContinue1.timesOff', surveyContinue1.timesOff)
+else:
+   thisExp.addData('surveyContinue1.timesOn', "")
+   thisExp.addData('surveyContinue1.timesOff', "")
 # the Routine "closure1" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
 
@@ -4422,14 +4527,11 @@ respQ5.reset()
 respQ6.reset()
 respQ7.reset()
 respQ8.reset()
-# setup some python lists for storing info about the nextClick2
-nextClick2.clicked_name = []
-gotValidClick = False  # until a click is received
 # Run 'Begin Routine' code from leftText2
 questions2.alignText='left'
 questions2.alignHoriz = 'left'
 # keep track of which components have finished
-closure2Components = [qsInstr_2, questions2, respQ5, respQ6, respQ7, respQ8, nextButton2, nextClick2]
+closure2Components = [qsInstr_2, questions2, respQ5, respQ6, respQ7, respQ8, surveyContinue2]
 for thisComponent in closure2Components:
     thisComponent.tStart = None
     thisComponent.tStop = None
@@ -4517,46 +4619,32 @@ while continueRoutine:
         thisExp.timestampOnFlip(win, 'respQ8.started')
         respQ8.setAutoDraw(True)
     
-    # *nextButton2* updates
-    if nextButton2.status == NOT_STARTED and (respQ5.rating + respQ6.rating + respQ7.rating + respQ8.rating) > 0:
+    # *surveyContinue2* updates
+    if surveyContinue2.status == NOT_STARTED and (respQ5.rating + respQ6.rating + respQ7.rating + respQ8.rating) > 0:
         # keep track of start time/frame for later
-        nextButton2.frameNStart = frameN  # exact frame index
-        nextButton2.tStart = t  # local t and not account for scr refresh
-        nextButton2.tStartRefresh = tThisFlipGlobal  # on global time
-        win.timeOnFlip(nextButton2, 'tStartRefresh')  # time at next scr refresh
+        surveyContinue2.frameNStart = frameN  # exact frame index
+        surveyContinue2.tStart = t  # local t and not account for scr refresh
+        surveyContinue2.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(surveyContinue2, 'tStartRefresh')  # time at next scr refresh
         # add timestamp to datafile
-        thisExp.timestampOnFlip(win, 'nextButton2.started')
-        nextButton2.setAutoDraw(True)
-    # *nextClick2* updates
-    if nextClick2.status == NOT_STARTED and t >= 0.0-frameTolerance:
-        # keep track of start time/frame for later
-        nextClick2.frameNStart = frameN  # exact frame index
-        nextClick2.tStart = t  # local t and not account for scr refresh
-        nextClick2.tStartRefresh = tThisFlipGlobal  # on global time
-        win.timeOnFlip(nextClick2, 'tStartRefresh')  # time at next scr refresh
-        # add timestamp to datafile
-        thisExp.addData('nextClick2.started', t)
-        nextClick2.status = STARTED
-        nextClick2.mouseClock.reset()
-        prevButtonState = nextClick2.getPressed()  # if button is down already this ISN'T a new click
-    if nextClick2.status == STARTED:  # only update if started and not finished!
-        buttons = nextClick2.getPressed()
-        if buttons != prevButtonState:  # button state changed?
-            prevButtonState = buttons
-            if sum(buttons) > 0:  # state changed to a new click
-                # check if the mouse was inside our 'clickable' objects
-                gotValidClick = False
-                try:
-                    iter(nextButton2)
-                    clickableList = nextButton2
-                except:
-                    clickableList = [nextButton2]
-                for obj in clickableList:
-                    if obj.contains(nextClick2):
-                        gotValidClick = True
-                        nextClick2.clicked_name.append(obj.name)
-                if gotValidClick:  
-                    continueRoutine = False  # abort routine on response
+        thisExp.timestampOnFlip(win, 'surveyContinue2.started')
+        surveyContinue2.setAutoDraw(True)
+    if surveyContinue2.status == STARTED:
+        # check whether surveyContinue2 has been pressed
+        if surveyContinue2.isClicked:
+            if not surveyContinue2.wasClicked:
+                surveyContinue2.timesOn.append(surveyContinue2.buttonClock.getTime()) # store time of first click
+                surveyContinue2.timesOff.append(surveyContinue2.buttonClock.getTime()) # store time clicked until
+            else:
+                surveyContinue2.timesOff[-1] = surveyContinue2.buttonClock.getTime() # update time clicked until
+            if not surveyContinue2.wasClicked:
+                continueRoutine = False  # end routine when surveyContinue2 is clicked
+                None
+            surveyContinue2.wasClicked = True  # if surveyContinue2 is still clicked next frame, it is not a new click
+        else:
+            surveyContinue2.wasClicked = False  # if surveyContinue2 is clicked next frame, it is a new click
+    else:
+        surveyContinue2.wasClicked = False  # if surveyContinue2 is clicked next frame, it is a new click
     
     # check for quit (typically the Esc key)
     if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -4588,29 +4676,13 @@ thisExp.addData('respQ7.response', respQ7.getRating())
 thisExp.addData('respQ7.rt', respQ7.getRT())
 thisExp.addData('respQ8.response', respQ8.getRating())
 thisExp.addData('respQ8.rt', respQ8.getRT())
-# store data for thisExp (ExperimentHandler)
-x, y = nextClick2.getPos()
-buttons = nextClick2.getPressed()
-if sum(buttons):
-    # check if the mouse was inside our 'clickable' objects
-    gotValidClick = False
-    try:
-        iter(nextButton2)
-        clickableList = nextButton2
-    except:
-        clickableList = [nextButton2]
-    for obj in clickableList:
-        if obj.contains(nextClick2):
-            gotValidClick = True
-            nextClick2.clicked_name.append(obj.name)
-thisExp.addData('nextClick2.x', x)
-thisExp.addData('nextClick2.y', y)
-thisExp.addData('nextClick2.leftButton', buttons[0])
-thisExp.addData('nextClick2.midButton', buttons[1])
-thisExp.addData('nextClick2.rightButton', buttons[2])
-if len(nextClick2.clicked_name):
-    thisExp.addData('nextClick2.clicked_name', nextClick2.clicked_name[0])
-thisExp.nextEntry()
+thisExp.addData('surveyContinue2.numClicks', surveyContinue2.numClicks)
+if surveyContinue2.numClicks:
+   thisExp.addData('surveyContinue2.timesOn', surveyContinue2.timesOn)
+   thisExp.addData('surveyContinue2.timesOff', surveyContinue2.timesOff)
+else:
+   thisExp.addData('surveyContinue2.timesOn', "")
+   thisExp.addData('surveyContinue2.timesOff', "")
 # the Routine "closure2" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
 
@@ -4622,14 +4694,11 @@ respQ9.reset()
 respQ10.reset()
 respQ11.reset()
 respQ12.reset()
-# setup some python lists for storing info about the nextClick3
-nextClick3.clicked_name = []
-gotValidClick = False  # until a click is received
 # Run 'Begin Routine' code from leftText3
 questions3.alignText='left'
 questions3.alignHoriz = 'left'
 # keep track of which components have finished
-closure3Components = [qsInstr_3, questions3, respQ9, respQ10, respQ11, respQ12, nextButton3, nextClick3]
+closure3Components = [qsInstr_3, questions3, respQ9, respQ10, respQ11, respQ12, surveyContinue3]
 for thisComponent in closure3Components:
     thisComponent.tStart = None
     thisComponent.tStop = None
@@ -4717,46 +4786,32 @@ while continueRoutine:
         thisExp.timestampOnFlip(win, 'respQ12.started')
         respQ12.setAutoDraw(True)
     
-    # *nextButton3* updates
-    if nextButton3.status == NOT_STARTED and (respQ9.rating + respQ10.rating + respQ11.rating + respQ12.rating) > 0:
+    # *surveyContinue3* updates
+    if surveyContinue3.status == NOT_STARTED and (respQ9.rating + respQ10.rating + respQ11.rating + respQ12.rating) > 0:
         # keep track of start time/frame for later
-        nextButton3.frameNStart = frameN  # exact frame index
-        nextButton3.tStart = t  # local t and not account for scr refresh
-        nextButton3.tStartRefresh = tThisFlipGlobal  # on global time
-        win.timeOnFlip(nextButton3, 'tStartRefresh')  # time at next scr refresh
+        surveyContinue3.frameNStart = frameN  # exact frame index
+        surveyContinue3.tStart = t  # local t and not account for scr refresh
+        surveyContinue3.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(surveyContinue3, 'tStartRefresh')  # time at next scr refresh
         # add timestamp to datafile
-        thisExp.timestampOnFlip(win, 'nextButton3.started')
-        nextButton3.setAutoDraw(True)
-    # *nextClick3* updates
-    if nextClick3.status == NOT_STARTED and t >= 0.0-frameTolerance:
-        # keep track of start time/frame for later
-        nextClick3.frameNStart = frameN  # exact frame index
-        nextClick3.tStart = t  # local t and not account for scr refresh
-        nextClick3.tStartRefresh = tThisFlipGlobal  # on global time
-        win.timeOnFlip(nextClick3, 'tStartRefresh')  # time at next scr refresh
-        # add timestamp to datafile
-        thisExp.addData('nextClick3.started', t)
-        nextClick3.status = STARTED
-        nextClick3.mouseClock.reset()
-        prevButtonState = nextClick3.getPressed()  # if button is down already this ISN'T a new click
-    if nextClick3.status == STARTED:  # only update if started and not finished!
-        buttons = nextClick3.getPressed()
-        if buttons != prevButtonState:  # button state changed?
-            prevButtonState = buttons
-            if sum(buttons) > 0:  # state changed to a new click
-                # check if the mouse was inside our 'clickable' objects
-                gotValidClick = False
-                try:
-                    iter(nextButton3)
-                    clickableList = nextButton3
-                except:
-                    clickableList = [nextButton3]
-                for obj in clickableList:
-                    if obj.contains(nextClick3):
-                        gotValidClick = True
-                        nextClick3.clicked_name.append(obj.name)
-                if gotValidClick:  
-                    continueRoutine = False  # abort routine on response
+        thisExp.timestampOnFlip(win, 'surveyContinue3.started')
+        surveyContinue3.setAutoDraw(True)
+    if surveyContinue3.status == STARTED:
+        # check whether surveyContinue3 has been pressed
+        if surveyContinue3.isClicked:
+            if not surveyContinue3.wasClicked:
+                surveyContinue3.timesOn.append(surveyContinue3.buttonClock.getTime()) # store time of first click
+                surveyContinue3.timesOff.append(surveyContinue3.buttonClock.getTime()) # store time clicked until
+            else:
+                surveyContinue3.timesOff[-1] = surveyContinue3.buttonClock.getTime() # update time clicked until
+            if not surveyContinue3.wasClicked:
+                continueRoutine = False  # end routine when surveyContinue3 is clicked
+                None
+            surveyContinue3.wasClicked = True  # if surveyContinue3 is still clicked next frame, it is not a new click
+        else:
+            surveyContinue3.wasClicked = False  # if surveyContinue3 is clicked next frame, it is a new click
+    else:
+        surveyContinue3.wasClicked = False  # if surveyContinue3 is clicked next frame, it is a new click
     
     # check for quit (typically the Esc key)
     if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -4788,29 +4843,13 @@ thisExp.addData('respQ11.response', respQ11.getRating())
 thisExp.addData('respQ11.rt', respQ11.getRT())
 thisExp.addData('respQ12.response', respQ12.getRating())
 thisExp.addData('respQ12.rt', respQ12.getRT())
-# store data for thisExp (ExperimentHandler)
-x, y = nextClick3.getPos()
-buttons = nextClick3.getPressed()
-if sum(buttons):
-    # check if the mouse was inside our 'clickable' objects
-    gotValidClick = False
-    try:
-        iter(nextButton3)
-        clickableList = nextButton3
-    except:
-        clickableList = [nextButton3]
-    for obj in clickableList:
-        if obj.contains(nextClick3):
-            gotValidClick = True
-            nextClick3.clicked_name.append(obj.name)
-thisExp.addData('nextClick3.x', x)
-thisExp.addData('nextClick3.y', y)
-thisExp.addData('nextClick3.leftButton', buttons[0])
-thisExp.addData('nextClick3.midButton', buttons[1])
-thisExp.addData('nextClick3.rightButton', buttons[2])
-if len(nextClick3.clicked_name):
-    thisExp.addData('nextClick3.clicked_name', nextClick3.clicked_name[0])
-thisExp.nextEntry()
+thisExp.addData('surveyContinue3.numClicks', surveyContinue3.numClicks)
+if surveyContinue3.numClicks:
+   thisExp.addData('surveyContinue3.timesOn', surveyContinue3.timesOn)
+   thisExp.addData('surveyContinue3.timesOff', surveyContinue3.timesOff)
+else:
+   thisExp.addData('surveyContinue3.timesOn', "")
+   thisExp.addData('surveyContinue3.timesOff', "")
 # the Routine "closure3" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
 
@@ -4821,14 +4860,11 @@ routineForceEnded = False
 respQ13.reset()
 respQ14.reset()
 respQ15.reset()
-# setup some python lists for storing info about the nextClick4
-nextClick4.clicked_name = []
-gotValidClick = False  # until a click is received
 # Run 'Begin Routine' code from leftText4
 questions4.alignText ='left'
 questions4.alignHoriz = 'left'
 # keep track of which components have finished
-closure4Components = [qsInstr_4, questions4, respQ13, respQ14, respQ15, nextButton4, nextClick4]
+closure4Components = [qsInstr_4, questions4, respQ13, respQ14, respQ15, surveyContinue4]
 for thisComponent in closure4Components:
     thisComponent.tStart = None
     thisComponent.tStop = None
@@ -4905,46 +4941,32 @@ while continueRoutine:
         thisExp.timestampOnFlip(win, 'respQ15.started')
         respQ15.setAutoDraw(True)
     
-    # *nextButton4* updates
-    if nextButton4.status == NOT_STARTED and (respQ13.rating + respQ14.rating + respQ15.rating) > 0:
+    # *surveyContinue4* updates
+    if surveyContinue4.status == NOT_STARTED and (respQ13.rating + respQ14.rating + respQ15.rating) > 0:
         # keep track of start time/frame for later
-        nextButton4.frameNStart = frameN  # exact frame index
-        nextButton4.tStart = t  # local t and not account for scr refresh
-        nextButton4.tStartRefresh = tThisFlipGlobal  # on global time
-        win.timeOnFlip(nextButton4, 'tStartRefresh')  # time at next scr refresh
+        surveyContinue4.frameNStart = frameN  # exact frame index
+        surveyContinue4.tStart = t  # local t and not account for scr refresh
+        surveyContinue4.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(surveyContinue4, 'tStartRefresh')  # time at next scr refresh
         # add timestamp to datafile
-        thisExp.timestampOnFlip(win, 'nextButton4.started')
-        nextButton4.setAutoDraw(True)
-    # *nextClick4* updates
-    if nextClick4.status == NOT_STARTED and t >= 0.0-frameTolerance:
-        # keep track of start time/frame for later
-        nextClick4.frameNStart = frameN  # exact frame index
-        nextClick4.tStart = t  # local t and not account for scr refresh
-        nextClick4.tStartRefresh = tThisFlipGlobal  # on global time
-        win.timeOnFlip(nextClick4, 'tStartRefresh')  # time at next scr refresh
-        # add timestamp to datafile
-        thisExp.addData('nextClick4.started', t)
-        nextClick4.status = STARTED
-        nextClick4.mouseClock.reset()
-        prevButtonState = nextClick4.getPressed()  # if button is down already this ISN'T a new click
-    if nextClick4.status == STARTED:  # only update if started and not finished!
-        buttons = nextClick4.getPressed()
-        if buttons != prevButtonState:  # button state changed?
-            prevButtonState = buttons
-            if sum(buttons) > 0:  # state changed to a new click
-                # check if the mouse was inside our 'clickable' objects
-                gotValidClick = False
-                try:
-                    iter(nextButton4)
-                    clickableList = nextButton4
-                except:
-                    clickableList = [nextButton4]
-                for obj in clickableList:
-                    if obj.contains(nextClick4):
-                        gotValidClick = True
-                        nextClick4.clicked_name.append(obj.name)
-                if gotValidClick:  
-                    continueRoutine = False  # abort routine on response
+        thisExp.timestampOnFlip(win, 'surveyContinue4.started')
+        surveyContinue4.setAutoDraw(True)
+    if surveyContinue4.status == STARTED:
+        # check whether surveyContinue4 has been pressed
+        if surveyContinue4.isClicked:
+            if not surveyContinue4.wasClicked:
+                surveyContinue4.timesOn.append(surveyContinue4.buttonClock.getTime()) # store time of first click
+                surveyContinue4.timesOff.append(surveyContinue4.buttonClock.getTime()) # store time clicked until
+            else:
+                surveyContinue4.timesOff[-1] = surveyContinue4.buttonClock.getTime() # update time clicked until
+            if not surveyContinue4.wasClicked:
+                continueRoutine = False  # end routine when surveyContinue4 is clicked
+                None
+            surveyContinue4.wasClicked = True  # if surveyContinue4 is still clicked next frame, it is not a new click
+        else:
+            surveyContinue4.wasClicked = False  # if surveyContinue4 is clicked next frame, it is a new click
+    else:
+        surveyContinue4.wasClicked = False  # if surveyContinue4 is clicked next frame, it is a new click
     
     # check for quit (typically the Esc key)
     if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -4974,29 +4996,13 @@ thisExp.addData('respQ14.response', respQ14.getRating())
 thisExp.addData('respQ14.rt', respQ14.getRT())
 thisExp.addData('respQ15.response', respQ15.getRating())
 thisExp.addData('respQ15.rt', respQ15.getRT())
-# store data for thisExp (ExperimentHandler)
-x, y = nextClick4.getPos()
-buttons = nextClick4.getPressed()
-if sum(buttons):
-    # check if the mouse was inside our 'clickable' objects
-    gotValidClick = False
-    try:
-        iter(nextButton4)
-        clickableList = nextButton4
-    except:
-        clickableList = [nextButton4]
-    for obj in clickableList:
-        if obj.contains(nextClick4):
-            gotValidClick = True
-            nextClick4.clicked_name.append(obj.name)
-thisExp.addData('nextClick4.x', x)
-thisExp.addData('nextClick4.y', y)
-thisExp.addData('nextClick4.leftButton', buttons[0])
-thisExp.addData('nextClick4.midButton', buttons[1])
-thisExp.addData('nextClick4.rightButton', buttons[2])
-if len(nextClick4.clicked_name):
-    thisExp.addData('nextClick4.clicked_name', nextClick4.clicked_name[0])
-thisExp.nextEntry()
+thisExp.addData('surveyContinue4.numClicks', surveyContinue4.numClicks)
+if surveyContinue4.numClicks:
+   thisExp.addData('surveyContinue4.timesOn', surveyContinue4.timesOn)
+   thisExp.addData('surveyContinue4.timesOff', surveyContinue4.timesOff)
+else:
+   thisExp.addData('surveyContinue4.timesOn', "")
+   thisExp.addData('surveyContinue4.timesOff', "")
 # the Routine "closure4" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
 
@@ -5007,9 +5013,6 @@ routineForceEnded = False
 respAge.reset()
 genderResp1.reset()
 genderResp2.reset()
-# setup some python lists for storing info about the demographClick
-demographClick.clicked_name = []
-gotValidClick = False  # until a click is received
 # Run 'Begin Routine' code from demogLeft
 age.alignText='left'
 age.alignHoriz = 'left'
@@ -5017,7 +5020,7 @@ age.alignHoriz = 'left'
 gender.alignText='left'
 gender.alignHoriz = 'left'
 # keep track of which components have finished
-demographicsComponents = [demographicsInstr, age, respAge, gender, genderResp1, genderResp2, nextButton5, demographClick]
+demographicsComponents = [demographicsInstr, age, respAge, gender, genderResp1, genderResp2, demogexitClick]
 for thisComponent in demographicsComponents:
     thisComponent.tStart = None
     thisComponent.tStop = None
@@ -5105,46 +5108,32 @@ while continueRoutine:
         thisExp.timestampOnFlip(win, 'genderResp2.started')
         genderResp2.setAutoDraw(True)
     
-    # *nextButton5* updates
-    if nextButton5.status == NOT_STARTED and respAge.rating and genderResp1.rating:
+    # *demogexitClick* updates
+    if demogexitClick.status == NOT_STARTED and respAge.rating and genderResp1.rating:
         # keep track of start time/frame for later
-        nextButton5.frameNStart = frameN  # exact frame index
-        nextButton5.tStart = t  # local t and not account for scr refresh
-        nextButton5.tStartRefresh = tThisFlipGlobal  # on global time
-        win.timeOnFlip(nextButton5, 'tStartRefresh')  # time at next scr refresh
+        demogexitClick.frameNStart = frameN  # exact frame index
+        demogexitClick.tStart = t  # local t and not account for scr refresh
+        demogexitClick.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(demogexitClick, 'tStartRefresh')  # time at next scr refresh
         # add timestamp to datafile
-        thisExp.timestampOnFlip(win, 'nextButton5.started')
-        nextButton5.setAutoDraw(True)
-    # *demographClick* updates
-    if demographClick.status == NOT_STARTED and t >= 0.0-frameTolerance:
-        # keep track of start time/frame for later
-        demographClick.frameNStart = frameN  # exact frame index
-        demographClick.tStart = t  # local t and not account for scr refresh
-        demographClick.tStartRefresh = tThisFlipGlobal  # on global time
-        win.timeOnFlip(demographClick, 'tStartRefresh')  # time at next scr refresh
-        # add timestamp to datafile
-        thisExp.addData('demographClick.started', t)
-        demographClick.status = STARTED
-        demographClick.mouseClock.reset()
-        prevButtonState = demographClick.getPressed()  # if button is down already this ISN'T a new click
-    if demographClick.status == STARTED:  # only update if started and not finished!
-        buttons = demographClick.getPressed()
-        if buttons != prevButtonState:  # button state changed?
-            prevButtonState = buttons
-            if sum(buttons) > 0:  # state changed to a new click
-                # check if the mouse was inside our 'clickable' objects
-                gotValidClick = False
-                try:
-                    iter(nextButton5)
-                    clickableList = nextButton5
-                except:
-                    clickableList = [nextButton5]
-                for obj in clickableList:
-                    if obj.contains(demographClick):
-                        gotValidClick = True
-                        demographClick.clicked_name.append(obj.name)
-                if gotValidClick:  
-                    continueRoutine = False  # abort routine on response
+        thisExp.timestampOnFlip(win, 'demogexitClick.started')
+        demogexitClick.setAutoDraw(True)
+    if demogexitClick.status == STARTED:
+        # check whether demogexitClick has been pressed
+        if demogexitClick.isClicked:
+            if not demogexitClick.wasClicked:
+                demogexitClick.timesOn.append(demogexitClick.buttonClock.getTime()) # store time of first click
+                demogexitClick.timesOff.append(demogexitClick.buttonClock.getTime()) # store time clicked until
+            else:
+                demogexitClick.timesOff[-1] = demogexitClick.buttonClock.getTime() # update time clicked until
+            if not demogexitClick.wasClicked:
+                continueRoutine = False  # end routine when demogexitClick is clicked
+                None
+            demogexitClick.wasClicked = True  # if demogexitClick is still clicked next frame, it is not a new click
+        else:
+            demogexitClick.wasClicked = False  # if demogexitClick is clicked next frame, it is a new click
+    else:
+        demogexitClick.wasClicked = False  # if demogexitClick is clicked next frame, it is a new click
     
     # check for quit (typically the Esc key)
     if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -5173,29 +5162,13 @@ thisExp.addData('respAge.rt', respAge.getRT())
 thisExp.addData('genderResp1.response', genderResp1.getRating())
 thisExp.addData('genderResp1.rt', genderResp1.getRT())
 thisExp.addData('genderResp2.text',genderResp2.text)
-# store data for thisExp (ExperimentHandler)
-x, y = demographClick.getPos()
-buttons = demographClick.getPressed()
-if sum(buttons):
-    # check if the mouse was inside our 'clickable' objects
-    gotValidClick = False
-    try:
-        iter(nextButton5)
-        clickableList = nextButton5
-    except:
-        clickableList = [nextButton5]
-    for obj in clickableList:
-        if obj.contains(demographClick):
-            gotValidClick = True
-            demographClick.clicked_name.append(obj.name)
-thisExp.addData('demographClick.x', x)
-thisExp.addData('demographClick.y', y)
-thisExp.addData('demographClick.leftButton', buttons[0])
-thisExp.addData('demographClick.midButton', buttons[1])
-thisExp.addData('demographClick.rightButton', buttons[2])
-if len(demographClick.clicked_name):
-    thisExp.addData('demographClick.clicked_name', demographClick.clicked_name[0])
-thisExp.nextEntry()
+thisExp.addData('demogexitClick.numClicks', demogexitClick.numClicks)
+if demogexitClick.numClicks:
+   thisExp.addData('demogexitClick.timesOn', demogexitClick.timesOn)
+   thisExp.addData('demogexitClick.timesOff', demogexitClick.timesOff)
+else:
+   thisExp.addData('demogexitClick.timesOn', "")
+   thisExp.addData('demogexitClick.timesOff', "")
 # the Routine "demographics" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
 
@@ -5204,17 +5177,8 @@ continueRoutine = True
 routineForceEnded = False
 # update component parameters for each repeat
 textbox.reset()
-# setup some python lists for storing info about the openanswerClick
-openanswerClick.x = []
-openanswerClick.y = []
-openanswerClick.leftButton = []
-openanswerClick.midButton = []
-openanswerClick.rightButton = []
-openanswerClick.time = []
-openanswerClick.clicked_name = []
-gotValidClick = False  # until a click is received
 # keep track of which components have finished
-openAnswerComponents = [openPrompt, textbox, openanswerEnd, openanswerClick]
+openAnswerComponents = [openPrompt, textbox, openAnswerClick]
 for thisComponent in openAnswerComponents:
     thisComponent.tStart = None
     thisComponent.tStop = None
@@ -5258,54 +5222,32 @@ while continueRoutine:
         thisExp.timestampOnFlip(win, 'textbox.started')
         textbox.setAutoDraw(True)
     
-    # *openanswerEnd* updates
-    if openanswerEnd.status == NOT_STARTED and tThisFlip >= 3-frameTolerance:
+    # *openAnswerClick* updates
+    if openAnswerClick.status == NOT_STARTED and tThisFlip >= 3-frameTolerance:
         # keep track of start time/frame for later
-        openanswerEnd.frameNStart = frameN  # exact frame index
-        openanswerEnd.tStart = t  # local t and not account for scr refresh
-        openanswerEnd.tStartRefresh = tThisFlipGlobal  # on global time
-        win.timeOnFlip(openanswerEnd, 'tStartRefresh')  # time at next scr refresh
+        openAnswerClick.frameNStart = frameN  # exact frame index
+        openAnswerClick.tStart = t  # local t and not account for scr refresh
+        openAnswerClick.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(openAnswerClick, 'tStartRefresh')  # time at next scr refresh
         # add timestamp to datafile
-        thisExp.timestampOnFlip(win, 'openanswerEnd.started')
-        openanswerEnd.setAutoDraw(True)
-    # *openanswerClick* updates
-    if openanswerClick.status == NOT_STARTED and t >= 3-frameTolerance:
-        # keep track of start time/frame for later
-        openanswerClick.frameNStart = frameN  # exact frame index
-        openanswerClick.tStart = t  # local t and not account for scr refresh
-        openanswerClick.tStartRefresh = tThisFlipGlobal  # on global time
-        win.timeOnFlip(openanswerClick, 'tStartRefresh')  # time at next scr refresh
-        # add timestamp to datafile
-        thisExp.addData('openanswerClick.started', t)
-        openanswerClick.status = STARTED
-        openanswerClick.mouseClock.reset()
-        prevButtonState = openanswerClick.getPressed()  # if button is down already this ISN'T a new click
-    if openanswerClick.status == STARTED:  # only update if started and not finished!
-        buttons = openanswerClick.getPressed()
-        if buttons != prevButtonState:  # button state changed?
-            prevButtonState = buttons
-            if sum(buttons) > 0:  # state changed to a new click
-                # check if the mouse was inside our 'clickable' objects
-                gotValidClick = False
-                try:
-                    iter(openanswerEnd)
-                    clickableList = openanswerEnd
-                except:
-                    clickableList = [openanswerEnd]
-                for obj in clickableList:
-                    if obj.contains(openanswerClick):
-                        gotValidClick = True
-                        openanswerClick.clicked_name.append(obj.name)
-                x, y = openanswerClick.getPos()
-                openanswerClick.x.append(x)
-                openanswerClick.y.append(y)
-                buttons = openanswerClick.getPressed()
-                openanswerClick.leftButton.append(buttons[0])
-                openanswerClick.midButton.append(buttons[1])
-                openanswerClick.rightButton.append(buttons[2])
-                openanswerClick.time.append(openanswerClick.mouseClock.getTime())
-                
-                continueRoutine = False  # abort routine on response
+        thisExp.timestampOnFlip(win, 'openAnswerClick.started')
+        openAnswerClick.setAutoDraw(True)
+    if openAnswerClick.status == STARTED:
+        # check whether openAnswerClick has been pressed
+        if openAnswerClick.isClicked:
+            if not openAnswerClick.wasClicked:
+                openAnswerClick.timesOn.append(openAnswerClick.buttonClock.getTime()) # store time of first click
+                openAnswerClick.timesOff.append(openAnswerClick.buttonClock.getTime()) # store time clicked until
+            else:
+                openAnswerClick.timesOff[-1] = openAnswerClick.buttonClock.getTime() # update time clicked until
+            if not openAnswerClick.wasClicked:
+                continueRoutine = False  # end routine when openAnswerClick is clicked
+                None
+            openAnswerClick.wasClicked = True  # if openAnswerClick is still clicked next frame, it is not a new click
+        else:
+            openAnswerClick.wasClicked = False  # if openAnswerClick is clicked next frame, it is a new click
+    else:
+        openAnswerClick.wasClicked = False  # if openAnswerClick is clicked next frame, it is a new click
     
     # check for quit (typically the Esc key)
     if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -5330,15 +5272,13 @@ for thisComponent in openAnswerComponents:
     if hasattr(thisComponent, "setAutoDraw"):
         thisComponent.setAutoDraw(False)
 thisExp.addData('textbox.text',textbox.text)
-# store data for thisExp (ExperimentHandler)
-thisExp.addData('openanswerClick.x', openanswerClick.x)
-thisExp.addData('openanswerClick.y', openanswerClick.y)
-thisExp.addData('openanswerClick.leftButton', openanswerClick.leftButton)
-thisExp.addData('openanswerClick.midButton', openanswerClick.midButton)
-thisExp.addData('openanswerClick.rightButton', openanswerClick.rightButton)
-thisExp.addData('openanswerClick.time', openanswerClick.time)
-thisExp.addData('openanswerClick.clicked_name', openanswerClick.clicked_name)
-thisExp.nextEntry()
+thisExp.addData('openAnswerClick.numClicks', openAnswerClick.numClicks)
+if openAnswerClick.numClicks:
+   thisExp.addData('openAnswerClick.timesOn', openAnswerClick.timesOn)
+   thisExp.addData('openAnswerClick.timesOff', openAnswerClick.timesOff)
+else:
+   thisExp.addData('openAnswerClick.timesOn', "")
+   thisExp.addData('openAnswerClick.timesOff', "")
 # the Routine "openAnswer" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
 
