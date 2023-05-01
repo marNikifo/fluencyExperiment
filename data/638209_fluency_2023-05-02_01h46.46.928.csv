@@ -1,0 +1,6 @@
+﻿idTextbox.text,welcomeDone.numClicks,welcomeDone.timesOn,welcomeDone.timesOff,participant,session,date,expName,psychopyVersion,OS,frameRate,consent_advance.keys,consent_advance.rt,consent_advance_2.keys,consent_advance_2.rt,consentClick.x,consentClick.y,consentClick.leftButton,consentClick.midButton,consentClick.rightButton,consentClick.time,consentClick.clicked_name,instr_advance_3.keys,instr_advance_3.rt
+ReferenceError: instr_loop is not defined,1,[1.5028999998569486],[1.5030999999046326],638209,001,2023-05-02_01h46.46.928,fluency,2022.2.5,Win32,59.98440405,,,,,,,,,,,,,
+,,,,638209,001,2023-05-02_01h46.46.928,fluency,2022.2.5,Win32,59.98440405,space,1.3705,,,,,,,,,,,
+,,,,638209,001,2023-05-02_01h46.46.928,fluency,2022.2.5,Win32,59.98440405,,,space,0.4456,,,,,,,,,
+,,,,638209,001,2023-05-02_01h46.46.928,fluency,2022.2.5,Win32,59.98440405,,,,,0.286111111,-0.37037037,1,0,0,0.6953,iAgree,,
+,,,,638209,001,2023-05-02_01h46.46.928,fluency,2022.2.5,Win32,59.98440405,,,,,,,,,,,,space,0.4717
