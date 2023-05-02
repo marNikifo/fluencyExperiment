@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2022.2.5),
-    on April 26, 2023, at 11:14
+    on May 02, 2023, at 17:08
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -97,20 +97,42 @@ defaultKeyboard = keyboard.Keyboard(backend='iohub')
 
 # --- Initialize components for Routine "hello" ---
 welcome = visual.TextStim(win=win, name='welcome',
-    text='Welcome to the study! Please make sure you are in a quiet environment where you will be able to concentrate on the task. Before we begin, you must review the consent form on the following three screens. ',
+    text='Welcome to the study! Please make sure you are in a quiet environment where you will be able to concentrate on the task.\n\nBefore we begin, you must enter your Prolific ID below and review the consent form on the next three screens. \n\nType your ID below:',
     font='Open Sans',
-    pos=(0, 0.1), height=0.05, wrapWidth=1.3, ori=0.0, 
+    pos=(0, 0.175), height=0.045, wrapWidth=1.35, ori=0.0, 
     color='white', colorSpace='rgb', opacity=None, 
     languageStyle='LTR',
     depth=0.0);
-introCont1 = visual.TextStim(win=win, name='introCont1',
-    text='Press the SPACE BAR to continue when you are ready.',
-    font='Open Sans',
-    pos=(0, -0.2), height=0.05, wrapWidth=1.5, ori=0.0, 
-    color='white', colorSpace='rgb', opacity=None, 
-    languageStyle='LTR',
-    depth=-1.0);
-welc_advance = keyboard.Keyboard()
+idTextbox = visual.TextBox2(
+     win, text=None, font='Open Sans',
+     pos=(0, -.1),     letterHeight=0.025,
+     size=(0.45, 0.06), borderWidth=2.0,
+     color='black', colorSpace='rgb',
+     opacity=None,
+     bold=False, italic=False,
+     lineSpacing=1.0,
+     padding=0.0, alignment='center',
+     anchor='center',
+     fillColor='white', borderColor=None,
+     flipHoriz=False, flipVert=False, languageStyle='LTR',
+     editable=True,
+     name='idTextbox',
+     autoLog=True,
+)
+welcomeDone = visual.ButtonStim(win, 
+    text='CLICK HERE TO CONTINUE AFTER TYPING YOUR ID', font='Open Sans',
+    pos=(0, -0.35),
+    letterHeight=0.03,
+    size=(1,.25), borderWidth=0.0,
+    fillColor='darkgrey', borderColor=None,
+    color='white', colorSpace='rgb',
+    opacity=None,
+    bold=True, italic=False,
+    padding=None,
+    anchor='center',
+    name='welcomeDone'
+)
+welcomeDone.buttonClock = core.Clock()
 
 # --- Initialize components for Routine "consent1" ---
 consentText_1 = visual.TextStim(win=win, name='consentText_1',
@@ -168,27 +190,34 @@ iQuit = visual.TextStim(win=win, name='iQuit',
     color='white', colorSpace='rgb', opacity=None, 
     languageStyle='LTR',
     depth=-2.0);
+# Run 'Begin Experiment' code from didTheyReject
+nonconsent=0
 consentClick = event.Mouse(win=win)
 x, y = [None, None]
 consentClick.mouseClock = core.Clock()
-# Run 'Begin Experiment' code from didTheyReject
-nonconsent=0
 
 # --- Initialize components for Routine "consent_rejected" ---
 nonconsentMessage = visual.TextStim(win=win, name='nonconsentMessage',
-    text='You did not consent to participate in this study.\n\nHere is the completion code for this case! Write this down for Prolific:\n\nABC123',
+    text='You did not consent to participate in this study.\n\nHere is the completion code for this case! Write this down for Prolific:',
     font='Open Sans',
-    pos=(0, 0), height=0.05, wrapWidth=None, ori=0.0, 
+    pos=(0, 0.15), height=0.04, wrapWidth=1.3, ori=0.0, 
     color='white', colorSpace='rgb', opacity=None, 
     languageStyle='LTR',
     depth=0.0);
+exitCode = visual.TextStim(win=win, name='exitCode',
+    text='C18OR9ZB',
+    font='Open Sans',
+    pos=(0, 0), height=0.1, wrapWidth=None, ori=0.0, 
+    color='white', colorSpace='rgb', opacity=None, 
+    languageStyle='LTR',
+    depth=-1.0);
 quitButtonText = visual.TextStim(win=win, name='quitButtonText',
     text='Click here to exit',
     font='Open Sans',
     pos=(0, -0.3), height=0.07, wrapWidth=None, ori=0.0, 
     color='white', colorSpace='rgb', opacity=None, 
     languageStyle='LTR',
-    depth=-1.0);
+    depth=-2.0);
 exitClick = event.Mouse(win=win)
 x, y = [None, None]
 exitClick.mouseClock = core.Clock()
@@ -898,7 +927,7 @@ openPrompt = visual.TextStim(win=win, name='openPrompt',
 textbox = visual.TextBox2(
      win, text=None, font='Open Sans',
      pos=(0, -.05),     letterHeight=0.025,
-     size=(1, .25), borderWidth=1.0,
+     size=(1.25, .25), borderWidth=1.0,
      color='black', colorSpace='rgb',
      opacity=1.0,
      bold=False, italic=False,
@@ -928,19 +957,36 @@ openAnswerClick.buttonClock = core.Clock()
 
 # --- Initialize components for Routine "debrief" ---
 debriefText = visual.TextStim(win=win, name='debriefText',
-    text="What this experiment was for:\n\nWe are investigating how having to categorize a face will affect its percieved attractiveness. Existing research indicates that the harder it is to process a face, the lower the attractiveness ratings given to it.\n\nIf you had to label the face whenever it appeared using J or K, you were in one of our experimental groups; if you simply had to press one of those keys whenever the face appeared, you were in the control group.\n\nWe are also interested in whether a person's tolerance of ambiguous situations affects how they feel about the faces they had a harder time categorizing. This is why we gave you that questionnaire at the end.",
+    text="What this experiment was for:\n\nWe are investigating how having to categorize a face will affect its percieved attractiveness. Existing research indicates that the harder it is to process a face, the lower the attractiveness ratings given to it.\n\nIf you had to label the face whenever it appeared using J or K, you were in one of our experimental groups; if you simply had to press one of those keys whenever the face appeared, you were in the control group.\n\nWe are also interested in whether a person's tolerance of ambiguous situations affects how they feel about the faces they had a harder time categorizing. This is why we gave you that questionnaire at the end.\n\nPress SPACE to continue ",
     font='Open Sans',
     pos=(0, 0.1), height=0.035, wrapWidth=1.4, ori=0.0, 
     color='white', colorSpace='rgb', opacity=None, 
     languageStyle='LTR',
     depth=0.0);
+debriefEnd = keyboard.Keyboard()
+
+# --- Initialize components for Routine "completion" ---
 exitMessage = visual.TextStim(win=win, name='exitMessage',
-    text='Thanks again for participating in the study! You can now exit this experiment by pressing the TAB KEY.',
+    text='Thanks again for participating in the study! Here is your completion code. Make sure to write this down for Prolific:',
     font='Open Sans',
-    pos=(0, -0.25), height=0.035, wrapWidth=None, ori=0.0, 
+    pos=(0, 0.25), height=0.035, wrapWidth=None, ori=0.0, 
+    color='white', colorSpace='rgb', opacity=None, 
+    languageStyle='LTR',
+    depth=0.0);
+doneCode = visual.TextStim(win=win, name='doneCode',
+    text='CEQ8GRHQ',
+    font='Open Sans',
+    pos=(0, 0), height=0.1, wrapWidth=None, ori=0.0, 
     color='white', colorSpace='rgb', opacity=None, 
     languageStyle='LTR',
     depth=-1.0);
+tabExitMessage = visual.TextStim(win=win, name='tabExitMessage',
+    text=' You can exit this experiment by pressing the TAB KEY.',
+    font='Open Sans',
+    pos=(0, -.25), height=0.05, wrapWidth=None, ori=0.0, 
+    color='white', colorSpace='rgb', opacity=None, 
+    languageStyle='LTR',
+    depth=-2.0);
 exitKey = keyboard.Keyboard()
 
 # Create some handy timers
@@ -951,11 +997,9 @@ routineTimer = core.Clock()  # to track time remaining of each (possibly non-sli
 continueRoutine = True
 routineForceEnded = False
 # update component parameters for each repeat
-welc_advance.keys = []
-welc_advance.rt = []
-_welc_advance_allKeys = []
+idTextbox.reset()
 # keep track of which components have finished
-helloComponents = [welcome, introCont1, welc_advance]
+helloComponents = [welcome, idTextbox, welcomeDone]
 for thisComponent in helloComponents:
     thisComponent.tStart = None
     thisComponent.tStop = None
@@ -988,40 +1032,43 @@ while continueRoutine:
         thisExp.timestampOnFlip(win, 'welcome.started')
         welcome.setAutoDraw(True)
     
-    # *introCont1* updates
-    if introCont1.status == NOT_STARTED and tThisFlip >= 3-frameTolerance:
+    # *idTextbox* updates
+    if idTextbox.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
         # keep track of start time/frame for later
-        introCont1.frameNStart = frameN  # exact frame index
-        introCont1.tStart = t  # local t and not account for scr refresh
-        introCont1.tStartRefresh = tThisFlipGlobal  # on global time
-        win.timeOnFlip(introCont1, 'tStartRefresh')  # time at next scr refresh
+        idTextbox.frameNStart = frameN  # exact frame index
+        idTextbox.tStart = t  # local t and not account for scr refresh
+        idTextbox.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(idTextbox, 'tStartRefresh')  # time at next scr refresh
         # add timestamp to datafile
-        thisExp.timestampOnFlip(win, 'introCont1.started')
-        introCont1.setAutoDraw(True)
+        thisExp.timestampOnFlip(win, 'idTextbox.started')
+        idTextbox.setAutoDraw(True)
     
-    # *welc_advance* updates
-    waitOnFlip = False
-    if welc_advance.status == NOT_STARTED and tThisFlip >= 3-frameTolerance:
+    # *welcomeDone* updates
+    if welcomeDone.status == NOT_STARTED and tThisFlip >= 1-frameTolerance:
         # keep track of start time/frame for later
-        welc_advance.frameNStart = frameN  # exact frame index
-        welc_advance.tStart = t  # local t and not account for scr refresh
-        welc_advance.tStartRefresh = tThisFlipGlobal  # on global time
-        win.timeOnFlip(welc_advance, 'tStartRefresh')  # time at next scr refresh
+        welcomeDone.frameNStart = frameN  # exact frame index
+        welcomeDone.tStart = t  # local t and not account for scr refresh
+        welcomeDone.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(welcomeDone, 'tStartRefresh')  # time at next scr refresh
         # add timestamp to datafile
-        thisExp.timestampOnFlip(win, 'welc_advance.started')
-        welc_advance.status = STARTED
-        # keyboard checking is just starting
-        waitOnFlip = True
-        win.callOnFlip(welc_advance.clock.reset)  # t=0 on next screen flip
-        win.callOnFlip(welc_advance.clearEvents, eventType='keyboard')  # clear events on next screen flip
-    if welc_advance.status == STARTED and not waitOnFlip:
-        theseKeys = welc_advance.getKeys(keyList=['space'], waitRelease=False)
-        _welc_advance_allKeys.extend(theseKeys)
-        if len(_welc_advance_allKeys):
-            welc_advance.keys = _welc_advance_allKeys[-1].name  # just the last key pressed
-            welc_advance.rt = _welc_advance_allKeys[-1].rt
-            # a response ends the routine
-            continueRoutine = False
+        thisExp.timestampOnFlip(win, 'welcomeDone.started')
+        welcomeDone.setAutoDraw(True)
+    if welcomeDone.status == STARTED:
+        # check whether welcomeDone has been pressed
+        if welcomeDone.isClicked:
+            if not welcomeDone.wasClicked:
+                welcomeDone.timesOn.append(welcomeDone.buttonClock.getTime()) # store time of first click
+                welcomeDone.timesOff.append(welcomeDone.buttonClock.getTime()) # store time clicked until
+            else:
+                welcomeDone.timesOff[-1] = welcomeDone.buttonClock.getTime() # update time clicked until
+            if not welcomeDone.wasClicked:
+                continueRoutine = False  # end routine when welcomeDone is clicked
+                None
+            welcomeDone.wasClicked = True  # if welcomeDone is still clicked next frame, it is not a new click
+        else:
+            welcomeDone.wasClicked = False  # if welcomeDone is clicked next frame, it is a new click
+    else:
+        welcomeDone.wasClicked = False  # if welcomeDone is clicked next frame, it is a new click
     
     # check for quit (typically the Esc key)
     if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -1045,13 +1092,14 @@ while continueRoutine:
 for thisComponent in helloComponents:
     if hasattr(thisComponent, "setAutoDraw"):
         thisComponent.setAutoDraw(False)
-# check responses
-if welc_advance.keys in ['', [], None]:  # No response was made
-    welc_advance.keys = None
-thisExp.addData('welc_advance.keys',welc_advance.keys)
-if welc_advance.keys != None:  # we had a response
-    thisExp.addData('welc_advance.rt', welc_advance.rt)
-thisExp.nextEntry()
+thisExp.addData('idTextbox.text',idTextbox.text)
+thisExp.addData('welcomeDone.numClicks', welcomeDone.numClicks)
+if welcomeDone.numClicks:
+   thisExp.addData('welcomeDone.timesOn', welcomeDone.timesOn)
+   thisExp.addData('welcomeDone.timesOff', welcomeDone.timesOff)
+else:
+   thisExp.addData('welcomeDone.timesOn', "")
+   thisExp.addData('welcomeDone.timesOff', "")
 # the Routine "hello" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
 
@@ -1339,6 +1387,9 @@ while continueRoutine:
         # add timestamp to datafile
         thisExp.timestampOnFlip(win, 'iQuit.started')
         iQuit.setAutoDraw(True)
+    # Run 'Each Frame' code from didTheyReject
+    if consentClick.isPressedIn(iQuit):
+        nonconsent=1
     # *consentClick* updates
     if consentClick.status == NOT_STARTED and t >= 0.0-frameTolerance:
         # keep track of start time/frame for later
@@ -1377,9 +1428,6 @@ while continueRoutine:
                 consentClick.time.append(consentClick.mouseClock.getTime())
                 if gotValidClick:
                     continueRoutine = False  # abort routine on response
-    # Run 'Each Frame' code from didTheyReject
-    if consentClick.isPressedIn(iQuit):
-        nonconsent=1
     
     # check for quit (typically the Esc key)
     if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -1448,7 +1496,7 @@ for thisQuitLoop in quitLoop:
     exitClick.clicked_name = []
     gotValidClick = False  # until a click is received
     # keep track of which components have finished
-    consent_rejectedComponents = [nonconsentMessage, quitButtonText, exitClick]
+    consent_rejectedComponents = [nonconsentMessage, exitCode, quitButtonText, exitClick]
     for thisComponent in consent_rejectedComponents:
         thisComponent.tStart = None
         thisComponent.tStop = None
@@ -1480,6 +1528,17 @@ for thisQuitLoop in quitLoop:
             # add timestamp to datafile
             thisExp.timestampOnFlip(win, 'nonconsentMessage.started')
             nonconsentMessage.setAutoDraw(True)
+        
+        # *exitCode* updates
+        if exitCode.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            exitCode.frameNStart = frameN  # exact frame index
+            exitCode.tStart = t  # local t and not account for scr refresh
+            exitCode.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(exitCode, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'exitCode.started')
+            exitCode.setAutoDraw(True)
         
         # *quitButtonText* updates
         if quitButtonText.status == NOT_STARTED and tThisFlip >= 3-frameTolerance:
@@ -1527,6 +1586,8 @@ for thisQuitLoop in quitLoop:
                     exitClick.midButton.append(buttons[1])
                     exitClick.rightButton.append(buttons[2])
                     exitClick.time.append(exitClick.mouseClock.getTime())
+                    if gotValidClick:
+                        continueRoutine = False  # abort routine on response
         # Run 'Each Frame' code from quitButton
         if exitClick.isPressedIn(quitButtonText):
             core.quit()
@@ -1677,23 +1738,23 @@ thisExp.nextEntry()
 routineTimer.reset()
 
 # set up handler to look after randomisation of conditions etc
-instr_loop = data.TrialHandler(nReps=1.0, method='random', 
+instrLoop = data.TrialHandler(nReps=1.0, method='random', 
     extraInfo=expInfo, originPath=-1,
     trialList=data.importConditions('fluency_conditions.xlsx', selection=selected_rows),
-    seed=None, name='instr_loop')
-thisExp.addLoop(instr_loop)  # add the loop to the experiment
-thisInstr_loop = instr_loop.trialList[0]  # so we can initialise stimuli with some values
-# abbreviate parameter names if possible (e.g. rgb = thisInstr_loop.rgb)
-if thisInstr_loop != None:
-    for paramName in thisInstr_loop:
-        exec('{} = thisInstr_loop[paramName]'.format(paramName))
+    seed=None, name='instrLoop')
+thisExp.addLoop(instrLoop)  # add the loop to the experiment
+thisInstrLoop = instrLoop.trialList[0]  # so we can initialise stimuli with some values
+# abbreviate parameter names if possible (e.g. rgb = thisInstrLoop.rgb)
+if thisInstrLoop != None:
+    for paramName in thisInstrLoop:
+        exec('{} = thisInstrLoop[paramName]'.format(paramName))
 
-for thisInstr_loop in instr_loop:
-    currentLoop = instr_loop
-    # abbreviate parameter names if possible (e.g. rgb = thisInstr_loop.rgb)
-    if thisInstr_loop != None:
-        for paramName in thisInstr_loop:
-            exec('{} = thisInstr_loop[paramName]'.format(paramName))
+for thisInstrLoop in instrLoop:
+    currentLoop = instrLoop
+    # abbreviate parameter names if possible (e.g. rgb = thisInstrLoop.rgb)
+    if thisInstrLoop != None:
+        for paramName in thisInstrLoop:
+            exec('{} = thisInstrLoop[paramName]'.format(paramName))
     
     # --- Prepare to start Routine "specific_instr" ---
     continueRoutine = True
@@ -1820,9 +1881,9 @@ for thisInstr_loop in instr_loop:
     # check responses
     if spec_instr_adv.keys in ['', [], None]:  # No response was made
         spec_instr_adv.keys = None
-    instr_loop.addData('spec_instr_adv.keys',spec_instr_adv.keys)
+    instrLoop.addData('spec_instr_adv.keys',spec_instr_adv.keys)
     if spec_instr_adv.keys != None:  # we had a response
-        instr_loop.addData('spec_instr_adv.rt', spec_instr_adv.rt)
+        instrLoop.addData('spec_instr_adv.rt', spec_instr_adv.rt)
     # the Routine "specific_instr" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
     
@@ -1927,9 +1988,9 @@ for thisInstr_loop in instr_loop:
     # check responses
     if spec_instr_adv2.keys in ['', [], None]:  # No response was made
         spec_instr_adv2.keys = None
-    instr_loop.addData('spec_instr_adv2.keys',spec_instr_adv2.keys)
+    instrLoop.addData('spec_instr_adv2.keys',spec_instr_adv2.keys)
     if spec_instr_adv2.keys != None:  # we had a response
-        instr_loop.addData('spec_instr_adv2.rt', spec_instr_adv2.rt)
+        instrLoop.addData('spec_instr_adv2.rt', spec_instr_adv2.rt)
     # Run 'End Routine' code from isInstrDone
     instr_loop.finished = True
     event.getKeys()
@@ -1938,7 +1999,7 @@ for thisInstr_loop in instr_loop:
     routineTimer.reset()
     thisExp.nextEntry()
     
-# completed 1.0 repeats of 'instr_loop'
+# completed 1.0 repeats of 'instrLoop'
 
 
 # set up handler to look after randomisation of conditions etc
@@ -5286,11 +5347,11 @@ routineTimer.reset()
 continueRoutine = True
 routineForceEnded = False
 # update component parameters for each repeat
-exitKey.keys = []
-exitKey.rt = []
-_exitKey_allKeys = []
+debriefEnd.keys = []
+debriefEnd.rt = []
+_debriefEnd_allKeys = []
 # keep track of which components have finished
-debriefComponents = [debriefText, exitMessage, exitKey]
+debriefComponents = [debriefText, debriefEnd]
 for thisComponent in debriefComponents:
     thisComponent.tStart = None
     thisComponent.tStop = None
@@ -5323,8 +5384,94 @@ while continueRoutine:
         thisExp.timestampOnFlip(win, 'debriefText.started')
         debriefText.setAutoDraw(True)
     
+    # *debriefEnd* updates
+    waitOnFlip = False
+    if debriefEnd.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
+        # keep track of start time/frame for later
+        debriefEnd.frameNStart = frameN  # exact frame index
+        debriefEnd.tStart = t  # local t and not account for scr refresh
+        debriefEnd.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(debriefEnd, 'tStartRefresh')  # time at next scr refresh
+        # add timestamp to datafile
+        thisExp.timestampOnFlip(win, 'debriefEnd.started')
+        debriefEnd.status = STARTED
+        # keyboard checking is just starting
+        waitOnFlip = True
+        win.callOnFlip(debriefEnd.clock.reset)  # t=0 on next screen flip
+        win.callOnFlip(debriefEnd.clearEvents, eventType='keyboard')  # clear events on next screen flip
+    if debriefEnd.status == STARTED and not waitOnFlip:
+        theseKeys = debriefEnd.getKeys(keyList=['space'], waitRelease=False)
+        _debriefEnd_allKeys.extend(theseKeys)
+        if len(_debriefEnd_allKeys):
+            debriefEnd.keys = _debriefEnd_allKeys[-1].name  # just the last key pressed
+            debriefEnd.rt = _debriefEnd_allKeys[-1].rt
+            # a response ends the routine
+            continueRoutine = False
+    
+    # check for quit (typically the Esc key)
+    if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+        core.quit()
+    
+    # check if all components have finished
+    if not continueRoutine:  # a component has requested a forced-end of Routine
+        routineForceEnded = True
+        break
+    continueRoutine = False  # will revert to True if at least one component still running
+    for thisComponent in debriefComponents:
+        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+            continueRoutine = True
+            break  # at least one component has not yet finished
+    
+    # refresh the screen
+    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+        win.flip()
+
+# --- Ending Routine "debrief" ---
+for thisComponent in debriefComponents:
+    if hasattr(thisComponent, "setAutoDraw"):
+        thisComponent.setAutoDraw(False)
+# check responses
+if debriefEnd.keys in ['', [], None]:  # No response was made
+    debriefEnd.keys = None
+thisExp.addData('debriefEnd.keys',debriefEnd.keys)
+if debriefEnd.keys != None:  # we had a response
+    thisExp.addData('debriefEnd.rt', debriefEnd.rt)
+thisExp.nextEntry()
+# the Routine "debrief" was not non-slip safe, so reset the non-slip timer
+routineTimer.reset()
+
+# --- Prepare to start Routine "completion" ---
+continueRoutine = True
+routineForceEnded = False
+# update component parameters for each repeat
+exitKey.keys = []
+exitKey.rt = []
+_exitKey_allKeys = []
+# keep track of which components have finished
+completionComponents = [exitMessage, doneCode, tabExitMessage, exitKey]
+for thisComponent in completionComponents:
+    thisComponent.tStart = None
+    thisComponent.tStop = None
+    thisComponent.tStartRefresh = None
+    thisComponent.tStopRefresh = None
+    if hasattr(thisComponent, 'status'):
+        thisComponent.status = NOT_STARTED
+# reset timers
+t = 0
+_timeToFirstFrame = win.getFutureFlipTime(clock="now")
+frameN = -1
+
+# --- Run Routine "completion" ---
+while continueRoutine:
+    # get current time
+    t = routineTimer.getTime()
+    tThisFlip = win.getFutureFlipTime(clock=routineTimer)
+    tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+    # update/draw components on each frame
+    
     # *exitMessage* updates
-    if exitMessage.status == NOT_STARTED and tThisFlip >= 1-frameTolerance:
+    if exitMessage.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
         # keep track of start time/frame for later
         exitMessage.frameNStart = frameN  # exact frame index
         exitMessage.tStart = t  # local t and not account for scr refresh
@@ -5333,6 +5480,28 @@ while continueRoutine:
         # add timestamp to datafile
         thisExp.timestampOnFlip(win, 'exitMessage.started')
         exitMessage.setAutoDraw(True)
+    
+    # *doneCode* updates
+    if doneCode.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        doneCode.frameNStart = frameN  # exact frame index
+        doneCode.tStart = t  # local t and not account for scr refresh
+        doneCode.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(doneCode, 'tStartRefresh')  # time at next scr refresh
+        # add timestamp to datafile
+        thisExp.timestampOnFlip(win, 'doneCode.started')
+        doneCode.setAutoDraw(True)
+    
+    # *tabExitMessage* updates
+    if tabExitMessage.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        tabExitMessage.frameNStart = frameN  # exact frame index
+        tabExitMessage.tStart = t  # local t and not account for scr refresh
+        tabExitMessage.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(tabExitMessage, 'tStartRefresh')  # time at next scr refresh
+        # add timestamp to datafile
+        thisExp.timestampOnFlip(win, 'tabExitMessage.started')
+        tabExitMessage.setAutoDraw(True)
     
     # *exitKey* updates
     waitOnFlip = False
@@ -5367,7 +5536,7 @@ while continueRoutine:
         routineForceEnded = True
         break
     continueRoutine = False  # will revert to True if at least one component still running
-    for thisComponent in debriefComponents:
+    for thisComponent in completionComponents:
         if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
             continueRoutine = True
             break  # at least one component has not yet finished
@@ -5376,8 +5545,8 @@ while continueRoutine:
     if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
         win.flip()
 
-# --- Ending Routine "debrief" ---
-for thisComponent in debriefComponents:
+# --- Ending Routine "completion" ---
+for thisComponent in completionComponents:
     if hasattr(thisComponent, "setAutoDraw"):
         thisComponent.setAutoDraw(False)
 # check responses
@@ -5387,7 +5556,7 @@ thisExp.addData('exitKey.keys',exitKey.keys)
 if exitKey.keys != None:  # we had a response
     thisExp.addData('exitKey.rt', exitKey.rt)
 thisExp.nextEntry()
-# the Routine "debrief" was not non-slip safe, so reset the non-slip timer
+# the Routine "completion" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
 
 # --- End experiment ---

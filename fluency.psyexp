@@ -1502,8 +1502,8 @@
         <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
         <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
-        <Param val="instr_loop.finished = true;&amp;#10;psychoJS.eventManager.getKeys();&amp;#10;failure = 0;&amp;#10;" valType="extendedCode" updates="constant" name="End JS Routine"/>
-        <Param val="instr_loop.finished = True&amp;#10;event.getKeys()&amp;#10;failure = 0" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="instrLoop.finished = true;&amp;#10;psychoJS.eventManager.getKeys();&amp;#10;failure = 0;&amp;#10;" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="instrLoop.finished = True&amp;#10;event.getKeys()&amp;#10;failure = 0" valType="extendedCode" updates="constant" name="End Routine"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="isInstrDone" valType="code" updates="None" name="name"/>
       </CodeComponent>
