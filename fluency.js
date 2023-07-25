@@ -2,7 +2,7 @@
  * Fluency Test *
  ****************/
 
-import { core, data, sound, util, visual, hardware } from './lib/psychojs-2022.2.5.js';
+import { core, data, sound, util, visual, hardware } from './lib/psychojs-2022.2.4.js';
 const { PsychoJS } = core;
 const { TrialHandler, MultiStairHandler } = data;
 const { Scheduler } = util;
@@ -115,118 +115,118 @@ psychoJS.start({
   expName: expName,
   expInfo: expInfo,
   resources: [
-    {'name': 'img/B04_03.jpg', 'path': 'img/B04_03.jpg'},
-    {'name': 'img/B05_04.jpg', 'path': 'img/B05_04.jpg'},
-    {'name': 'img/B03_10.jpg', 'path': 'img/B03_10.jpg'},
-    {'name': 'img/B04_07.jpg', 'path': 'img/B04_07.jpg'},
-    {'name': 'img/B06_09.jpg', 'path': 'img/B06_09.jpg'},
-    {'name': 'img/B06_01.jpg', 'path': 'img/B06_01.jpg'},
-    {'name': 'img/B05_03.jpg', 'path': 'img/B05_03.jpg'},
-    {'name': 'img/B01_08.jpg', 'path': 'img/B01_08.jpg'},
-    {'name': 'img/B06_04.jpg', 'path': 'img/B06_04.jpg'},
-    {'name': 'img/B07_00.jpg', 'path': 'img/B07_00.jpg'},
-    {'name': 'img/B01_04.jpg', 'path': 'img/B01_04.jpg'},
-    {'name': 'img/B05_05.jpg', 'path': 'img/B05_05.jpg'},
-    {'name': 'img/B04_01.jpg', 'path': 'img/B04_01.jpg'},
-    {'name': 'img/B05_08.jpg', 'path': 'img/B05_08.jpg'},
-    {'name': 'img/B05_10.jpg', 'path': 'img/B05_10.jpg'},
-    {'name': 'img/B03_01.jpg', 'path': 'img/B03_01.jpg'},
-    {'name': 'img/B03_09.jpg', 'path': 'img/B03_09.jpg'},
-    {'name': 'img/B07_06.jpg', 'path': 'img/B07_06.jpg'},
-    {'name': 'img/B02_06.jpg', 'path': 'img/B02_06.jpg'},
-    {'name': 'img/B01_07.jpg', 'path': 'img/B01_07.jpg'},
-    {'name': 'img/B03_06.jpg', 'path': 'img/B03_06.jpg'},
-    {'name': 'img/B02_07.jpg', 'path': 'img/B02_07.jpg'},
+    {'name': 'img/B03_08.jpg', 'path': 'img/B03_08.jpg'},
+    {'name': 'img/B09_00.jpg', 'path': 'img/B09_00.jpg'},
+    {'name': 'img/B09_02.jpg', 'path': 'img/B09_02.jpg'},
+    {'name': 'img/B10_07.jpg', 'path': 'img/B10_07.jpg'},
+    {'name': 'img/B07_01.jpg', 'path': 'img/B07_01.jpg'},
     {'name': 'img/B03_02.jpg', 'path': 'img/B03_02.jpg'},
+    {'name': 'img/B03_06.jpg', 'path': 'img/B03_06.jpg'},
+    {'name': 'img/B06_00.jpg', 'path': 'img/B06_00.jpg'},
+    {'name': 'img/B10_04.jpg', 'path': 'img/B10_04.jpg'},
+    {'name': 'img/B03_03.jpg', 'path': 'img/B03_03.jpg'},
+    {'name': 'img/B04_03.jpg', 'path': 'img/B04_03.jpg'},
+    {'name': 'img/B01_03.jpg', 'path': 'img/B01_03.jpg'},
+    {'name': 'img/B05_05.jpg', 'path': 'img/B05_05.jpg'},
+    {'name': 'img/B04_00.jpg', 'path': 'img/B04_00.jpg'},
+    {'name': 'img/B10_10.jpg', 'path': 'img/B10_10.jpg'},
+    {'name': 'img/B06_04.jpg', 'path': 'img/B06_04.jpg'},
+    {'name': 'img/B01_10.jpg', 'path': 'img/B01_10.jpg'},
+    {'name': 'img/B02_05.jpg', 'path': 'img/B02_05.jpg'},
+    {'name': 'img/B01_04.jpg', 'path': 'img/B01_04.jpg'},
+    {'name': 'img/B06_05.jpg', 'path': 'img/B06_05.jpg'},
+    {'name': 'img/B06_08.jpg', 'path': 'img/B06_08.jpg'},
+    {'name': 'img/B08_02.jpg', 'path': 'img/B08_02.jpg'},
+    {'name': 'img/B05_04.jpg', 'path': 'img/B05_04.jpg'},
     {'name': 'img/B02_09.jpg', 'path': 'img/B02_09.jpg'},
+    {'name': 'img/B03_04.jpg', 'path': 'img/B03_04.jpg'},
+    {'name': 'img/B07_09.jpg', 'path': 'img/B07_09.jpg'},
+    {'name': 'img/B03_10.jpg', 'path': 'img/B03_10.jpg'},
+    {'name': 'img/B04_04.jpg', 'path': 'img/B04_04.jpg'},
+    {'name': 'img/B09_05.jpg', 'path': 'img/B09_05.jpg'},
+    {'name': 'img/B02_02.jpg', 'path': 'img/B02_02.jpg'},
+    {'name': 'img/B09_04.jpg', 'path': 'img/B09_04.jpg'},
+    {'name': 'img/B08_03.jpg', 'path': 'img/B08_03.jpg'},
+    {'name': 'img/B10_05.jpg', 'path': 'img/B10_05.jpg'},
+    {'name': 'img/B08_01.jpg', 'path': 'img/B08_01.jpg'},
+    {'name': 'img/B05_08.jpg', 'path': 'img/B05_08.jpg'},
+    {'name': 'img/B04_06.jpg', 'path': 'img/B04_06.jpg'},
+    {'name': 'img/B08_07.jpg', 'path': 'img/B08_07.jpg'},
+    {'name': 'img/B09_01.jpg', 'path': 'img/B09_01.jpg'},
+    {'name': 'img/B07_00.jpg', 'path': 'img/B07_00.jpg'},
+    {'name': 'img/B07_08.jpg', 'path': 'img/B07_08.jpg'},
+    {'name': 'img/B07_04.jpg', 'path': 'img/B07_04.jpg'},
+    {'name': 'img/B03_07.jpg', 'path': 'img/B03_07.jpg'},
+    {'name': 'img/B04_05.jpg', 'path': 'img/B04_05.jpg'},
+    {'name': 'img/B07_02.jpg', 'path': 'img/B07_02.jpg'},
     {'name': 'img/B08_05.jpg', 'path': 'img/B08_05.jpg'},
-    {'name': 'img/B04_02.jpg', 'path': 'img/B04_02.jpg'},
-    {'name': 'img/B10_02.jpg', 'path': 'img/B10_02.jpg'},
-    {'name': 'img/B06_07.jpg', 'path': 'img/B06_07.jpg'},
+    {'name': 'img/B07_06.jpg', 'path': 'img/B07_06.jpg'},
+    {'name': 'img/B03_00.jpg', 'path': 'img/B03_00.jpg'},
+    {'name': 'img/B10_09.jpg', 'path': 'img/B10_09.jpg'},
+    {'name': 'img/B02_07.jpg', 'path': 'img/B02_07.jpg'},
     {'name': 'img/B10_08.jpg', 'path': 'img/B10_08.jpg'},
-    {'name': 'img/B04_09.jpg', 'path': 'img/B04_09.jpg'},
-    {'name': 'img/B02_00.jpg', 'path': 'img/B02_00.jpg'},
-    {'name': 'img/B02_08.jpg', 'path': 'img/B02_08.jpg'},
+    {'name': 'img/B05_06.jpg', 'path': 'img/B05_06.jpg'},
+    {'name': 'img/B06_01.jpg', 'path': 'img/B06_01.jpg'},
+    {'name': 'img/B08_00.jpg', 'path': 'img/B08_00.jpg'},
+    {'name': 'img/B05_10.jpg', 'path': 'img/B05_10.jpg'},
+    {'name': 'img/B04_01.jpg', 'path': 'img/B04_01.jpg'},
+    {'name': 'img/B10_01.jpg', 'path': 'img/B10_01.jpg'},
+    {'name': 'img/B09_09.jpg', 'path': 'img/B09_09.jpg'},
+    {'name': 'img/B06_07.jpg', 'path': 'img/B06_07.jpg'},
     {'name': 'img/B05_01.jpg', 'path': 'img/B05_01.jpg'},
     {'name': 'img/B05_02.jpg', 'path': 'img/B05_02.jpg'},
-    {'name': 'img/B04_05.jpg', 'path': 'img/B04_05.jpg'},
-    {'name': 'img/B01_02.jpg', 'path': 'img/B01_02.jpg'},
-    {'name': 'img/B01_03.jpg', 'path': 'img/B01_03.jpg'},
-    {'name': 'img/B01_06.jpg', 'path': 'img/B01_06.jpg'},
     {'name': 'img/B03_05.jpg', 'path': 'img/B03_05.jpg'},
-    {'name': 'img/B09_04.jpg', 'path': 'img/B09_04.jpg'},
-    {'name': 'img/B07_03.jpg', 'path': 'img/B07_03.jpg'},
-    {'name': 'img/B01_10.jpg', 'path': 'img/B01_10.jpg'},
-    {'name': 'img/B10_04.jpg', 'path': 'img/B10_04.jpg'},
-    {'name': 'img/B09_10.jpg', 'path': 'img/B09_10.jpg'},
-    {'name': 'img/B10_05.jpg', 'path': 'img/B10_05.jpg'},
-    {'name': 'img/B08_06.jpg', 'path': 'img/B08_06.jpg'},
-    {'name': 'img/B08_00.jpg', 'path': 'img/B08_00.jpg'},
-    {'name': 'img/B03_08.jpg', 'path': 'img/B03_08.jpg'},
-    {'name': 'img/B10_07.jpg', 'path': 'img/B10_07.jpg'},
-    {'name': 'img/B06_06.jpg', 'path': 'img/B06_06.jpg'},
-    {'name': 'img/B09_03.jpg', 'path': 'img/B09_03.jpg'},
-    {'name': 'img/B05_07.jpg', 'path': 'img/B05_07.jpg'},
-    {'name': 'img/B03_00.jpg', 'path': 'img/B03_00.jpg'},
-    {'name': 'img/B06_02.jpg', 'path': 'img/B06_02.jpg'},
-    {'name': 'img/B04_08.jpg', 'path': 'img/B04_08.jpg'},
-    {'name': 'img/B07_05.jpg', 'path': 'img/B07_05.jpg'},
-    {'name': 'img/B04_00.jpg', 'path': 'img/B04_00.jpg'},
-    {'name': 'img/B05_09.jpg', 'path': 'img/B05_09.jpg'},
-    {'name': 'img/B07_04.jpg', 'path': 'img/B07_04.jpg'},
-    {'name': 'img/B10_03.jpg', 'path': 'img/B10_03.jpg'},
-    {'name': 'img/B02_02.jpg', 'path': 'img/B02_02.jpg'},
-    {'name': 'img/B04_04.jpg', 'path': 'img/B04_04.jpg'},
-    {'name': 'img/B06_00.jpg', 'path': 'img/B06_00.jpg'},
-    {'name': 'img/B04_06.jpg', 'path': 'img/B04_06.jpg'},
-    {'name': 'img/B07_09.jpg', 'path': 'img/B07_09.jpg'},
-    {'name': 'img/B02_01.jpg', 'path': 'img/B02_01.jpg'},
-    {'name': 'img/B08_08.jpg', 'path': 'img/B08_08.jpg'},
-    {'name': 'img/B08_01.jpg', 'path': 'img/B08_01.jpg'},
-    {'name': 'img/B10_00.jpg', 'path': 'img/B10_00.jpg'},
-    {'name': 'img/practice_image.jpg', 'path': 'img/practice_image.jpg'},
-    {'name': 'img/B09_01.jpg', 'path': 'img/B09_01.jpg'},
-    {'name': 'img/B03_03.jpg', 'path': 'img/B03_03.jpg'},
-    {'name': 'img/B06_10.jpg', 'path': 'img/B06_10.jpg'},
-    {'name': 'img/B08_04.jpg', 'path': 'img/B08_04.jpg'},
+    {'name': 'img/B02_06.jpg', 'path': 'img/B02_06.jpg'},
     {'name': 'img/B08_09.jpg', 'path': 'img/B08_09.jpg'},
-    {'name': 'img/B03_04.jpg', 'path': 'img/B03_04.jpg'},
-    {'name': 'img/B05_00.jpg', 'path': 'img/B05_00.jpg'},
-    {'name': 'img/B09_08.jpg', 'path': 'img/B09_08.jpg'},
-    {'name': 'img/B07_01.jpg', 'path': 'img/B07_01.jpg'},
-    {'name': 'img/B08_02.jpg', 'path': 'img/B08_02.jpg'},
-    {'name': 'img/B01_00.jpg', 'path': 'img/B01_00.jpg'},
-    {'name': 'img/B02_04.jpg', 'path': 'img/B02_04.jpg'},
     {'name': 'img/B01_05.jpg', 'path': 'img/B01_05.jpg'},
-    {'name': 'img/B07_10.jpg', 'path': 'img/B07_10.jpg'},
-    {'name': 'img/B09_05.jpg', 'path': 'img/B09_05.jpg'},
-    {'name': 'img/B01_01.jpg', 'path': 'img/B01_01.jpg'},
-    {'name': 'img/B08_03.jpg', 'path': 'img/B08_03.jpg'},
-    {'name': 'img/B10_06.jpg', 'path': 'img/B10_06.jpg'},
-    {'name': 'img/B10_10.jpg', 'path': 'img/B10_10.jpg'},
-    {'name': 'img/B06_05.jpg', 'path': 'img/B06_05.jpg'},
-    {'name': 'img/B10_09.jpg', 'path': 'img/B10_09.jpg'},
-    {'name': 'img/B08_07.jpg', 'path': 'img/B08_07.jpg'},
-    {'name': 'img/B08_10.jpg', 'path': 'img/B08_10.jpg'},
-    {'name': 'img/B09_09.jpg', 'path': 'img/B09_09.jpg'},
-    {'name': 'img/B09_07.jpg', 'path': 'img/B09_07.jpg'},
-    {'name': 'fluency_conditions.xlsx', 'path': 'fluency_conditions.xlsx'},
+    {'name': 'img/B03_01.jpg', 'path': 'img/B03_01.jpg'},
+    {'name': 'img/B09_08.jpg', 'path': 'img/B09_08.jpg'},
+    {'name': 'img/B01_08.jpg', 'path': 'img/B01_08.jpg'},
     {'name': 'img/B09_06.jpg', 'path': 'img/B09_06.jpg'},
-    {'name': 'img/B02_05.jpg', 'path': 'img/B02_05.jpg'},
-    {'name': 'img/B09_00.jpg', 'path': 'img/B09_00.jpg'},
-    {'name': 'img/B02_03.jpg', 'path': 'img/B02_03.jpg'},
-    {'name': 'img/B07_02.jpg', 'path': 'img/B07_02.jpg'},
-    {'name': 'img/B10_01.jpg', 'path': 'img/B10_01.jpg'},
-    {'name': 'img/B03_07.jpg', 'path': 'img/B03_07.jpg'},
-    {'name': 'img/B01_09.jpg', 'path': 'img/B01_09.jpg'},
-    {'name': 'img/B02_10.jpg', 'path': 'img/B02_10.jpg'},
-    {'name': 'img/B06_08.jpg', 'path': 'img/B06_08.jpg'},
-    {'name': 'img/B05_06.jpg', 'path': 'img/B05_06.jpg'},
-    {'name': 'img/B04_10.jpg', 'path': 'img/B04_10.jpg'},
-    {'name': 'img/B09_02.jpg', 'path': 'img/B09_02.jpg'},
+    {'name': 'img/B01_01.jpg', 'path': 'img/B01_01.jpg'},
+    {'name': 'img/B10_02.jpg', 'path': 'img/B10_02.jpg'},
+    {'name': 'img/B09_10.jpg', 'path': 'img/B09_10.jpg'},
+    {'name': 'img/B10_03.jpg', 'path': 'img/B10_03.jpg'},
+    {'name': 'img/B01_07.jpg', 'path': 'img/B01_07.jpg'},
     {'name': 'img/B07_07.jpg', 'path': 'img/B07_07.jpg'},
+    {'name': 'img/B09_07.jpg', 'path': 'img/B09_07.jpg'},
+    {'name': 'img/B06_10.jpg', 'path': 'img/B06_10.jpg'},
+    {'name': 'img/B08_08.jpg', 'path': 'img/B08_08.jpg'},
+    {'name': 'img/B04_10.jpg', 'path': 'img/B04_10.jpg'},
+    {'name': 'img/B04_09.jpg', 'path': 'img/B04_09.jpg'},
+    {'name': 'img/B02_04.jpg', 'path': 'img/B02_04.jpg'},
+    {'name': 'img/B05_09.jpg', 'path': 'img/B05_09.jpg'},
+    {'name': 'img/B04_08.jpg', 'path': 'img/B04_08.jpg'},
+    {'name': 'img/B02_03.jpg', 'path': 'img/B02_03.jpg'},
+    {'name': 'fluency_conditions.xlsx', 'path': 'fluency_conditions.xlsx'},
+    {'name': 'img/B04_07.jpg', 'path': 'img/B04_07.jpg'},
+    {'name': 'img/B06_09.jpg', 'path': 'img/B06_09.jpg'},
+    {'name': 'img/B06_02.jpg', 'path': 'img/B06_02.jpg'},
+    {'name': 'img/B02_10.jpg', 'path': 'img/B02_10.jpg'},
     {'name': 'img/B06_03.jpg', 'path': 'img/B06_03.jpg'},
-    {'name': 'img/B07_08.jpg', 'path': 'img/B07_08.jpg'}
+    {'name': 'img/B05_03.jpg', 'path': 'img/B05_03.jpg'},
+    {'name': 'img/B01_06.jpg', 'path': 'img/B01_06.jpg'},
+    {'name': 'img/B02_01.jpg', 'path': 'img/B02_01.jpg'},
+    {'name': 'img/B05_00.jpg', 'path': 'img/B05_00.jpg'},
+    {'name': 'img/B07_10.jpg', 'path': 'img/B07_10.jpg'},
+    {'name': 'img/B10_00.jpg', 'path': 'img/B10_00.jpg'},
+    {'name': 'img/B07_03.jpg', 'path': 'img/B07_03.jpg'},
+    {'name': 'img/B08_04.jpg', 'path': 'img/B08_04.jpg'},
+    {'name': 'img/practice_image.jpg', 'path': 'img/practice_image.jpg'},
+    {'name': 'img/B05_07.jpg', 'path': 'img/B05_07.jpg'},
+    {'name': 'img/B10_06.jpg', 'path': 'img/B10_06.jpg'},
+    {'name': 'img/B08_06.jpg', 'path': 'img/B08_06.jpg'},
+    {'name': 'img/B08_10.jpg', 'path': 'img/B08_10.jpg'},
+    {'name': 'img/B07_05.jpg', 'path': 'img/B07_05.jpg'},
+    {'name': 'img/B03_09.jpg', 'path': 'img/B03_09.jpg'},
+    {'name': 'img/B02_00.jpg', 'path': 'img/B02_00.jpg'},
+    {'name': 'img/B09_03.jpg', 'path': 'img/B09_03.jpg'},
+    {'name': 'img/B01_09.jpg', 'path': 'img/B01_09.jpg'},
+    {'name': 'img/B04_02.jpg', 'path': 'img/B04_02.jpg'},
+    {'name': 'img/B02_08.jpg', 'path': 'img/B02_08.jpg'},
+    {'name': 'img/B06_06.jpg', 'path': 'img/B06_06.jpg'},
+    {'name': 'img/B01_00.jpg', 'path': 'img/B01_00.jpg'},
+    {'name': 'img/B01_02.jpg', 'path': 'img/B01_02.jpg'}
   ]
 });
 
@@ -239,9 +239,10 @@ async function updateInfo() {
   currentLoop = psychoJS.experiment;  // right now there are no loops
   expInfo['date'] = util.MonotonicClock.getDateStr();  // add a simple timestamp
   expInfo['expName'] = expName;
-  expInfo['psychopyVersion'] = '2022.2.5';
+  expInfo['psychopyVersion'] = '2022.2.4';
   expInfo['OS'] = window.navigator.platform;
 
+  psychoJS.experiment.dataFileName = (("." + "/") + `data/${expInfo["participant"]}_${expName}_${expInfo["date"]}`);
 
   // store frame rate of monitor if we can measure it successfully
   expInfo['frameRate'] = psychoJS.window.getActualFrameRate();
@@ -253,11 +254,6 @@ async function updateInfo() {
   // add info from the URL:
   util.addInfoFromUrl(expInfo);
   
-
-  
-  psychoJS.experiment.dataFileName = (("." + "/") + `data/${expInfo["participant"]}_${expName}_${expInfo["date"]}`);
-
-
   return Scheduler.Event.NEXT;
 }
 
@@ -352,6 +348,7 @@ var attnSuccess_continue;
 var key_resp_3;
 var faceOnsetClock;
 var catResp;
+var catAllKeys;
 var respIndicator;
 var face_image;
 var contClock;
@@ -1059,6 +1056,8 @@ async function experimentInit() {
   faceOnsetClock = new util.Clock();
   catResp = new core.Keyboard({psychoJS: psychoJS, clock: new util.Clock(), waitForStart: true});
   
+  catAllKeys = new core.Keyboard({psychoJS: psychoJS, clock: new util.Clock(), waitForStart: true});
+  
   respIndicator = new visual.Rect ({
     win: psychoJS.window, name: 'respIndicator', 
     width: [0.41, 0.61][0], height: [0.41, 0.61][1],
@@ -1067,7 +1066,7 @@ async function experimentInit() {
     colorSpace: 'rgb',
     lineColor: new util.Color([0.0, 0.0, 0.0]),
     fillColor: new util.Color([(- 1.0), 1.0, (- 1.0)]),
-    opacity: 1.0, depth: -1, interpolate: true,
+    opacity: 1.0, depth: -2, interpolate: true,
   });
   
   face_image = new visual.ImageStim({
@@ -1077,7 +1076,7 @@ async function experimentInit() {
     ori : 0.0, pos : [0, 0], size : [0.4, 0.6],
     color : new util.Color([1,1,1]), opacity : undefined,
     flipHoriz : false, flipVert : false,
-    texRes : 128.0, interpolate : true, depth : -2.0 
+    texRes : 128.0, interpolate : true, depth : -3.0 
   });
   // Run 'Begin Experiment' code from respCheck
   timesRedone = 0;
@@ -5341,7 +5340,7 @@ function practiceFaceRoutineEnd(snapshot) {
     }
     _pj = {};
     _pj_snippets(_pj);
-    keys = psychoJS.eventManager.getKeys();
+    keys = psychoJS.eventManager.getKeys(["j", "k"]);
     if ((keys.length > 0)) {
         if ((_pj.in_es6("k", keys) || _pj.in_es6("j", keys))) {
             practiceRepeat.finished = true;
@@ -5799,6 +5798,7 @@ function introDoneRoutineEnd(snapshot) {
 
 
 var _catResp_allKeys;
+var _catAllKeys_allKeys;
 var faceOnsetComponents;
 function faceOnsetRoutineBegin(snapshot) {
   return async function () {
@@ -5813,14 +5813,17 @@ function faceOnsetRoutineBegin(snapshot) {
     catResp.keys = undefined;
     catResp.rt = undefined;
     _catResp_allKeys = [];
+    catAllKeys.keys = undefined;
+    catAllKeys.rt = undefined;
+    _catAllKeys_allKeys = [];
     face_image.setImage(face_file);
     // Run 'Begin Routine' code from respCheck
     redo = 0;
-    timesRedone = 0;
     
     // keep track of which components have finished
     faceOnsetComponents = [];
     faceOnsetComponents.push(catResp);
+    faceOnsetComponents.push(catAllKeys);
     faceOnsetComponents.push(respIndicator);
     faceOnsetComponents.push(face_image);
     
@@ -5861,8 +5864,35 @@ function faceOnsetRoutineEachFrame() {
       let theseKeys = catResp.getKeys({keyList: ['j', 'k'], waitRelease: false});
       _catResp_allKeys = _catResp_allKeys.concat(theseKeys);
       if (_catResp_allKeys.length > 0) {
-        catResp.keys = _catResp_allKeys[_catResp_allKeys.length - 1].name;  // just the last key pressed
-        catResp.rt = _catResp_allKeys[_catResp_allKeys.length - 1].rt;
+        catResp.keys = _catResp_allKeys.map((key) => key.name);  // storing all keys
+        catResp.rt = _catResp_allKeys.map((key) => key.rt);
+      }
+    }
+    
+    
+    // *catAllKeys* updates
+    if (t >= 0.0 && catAllKeys.status === PsychoJS.Status.NOT_STARTED) {
+      // keep track of start time/frame for later
+      catAllKeys.tStart = t;  // (not accounting for frame time here)
+      catAllKeys.frameNStart = frameN;  // exact frame index
+      
+      // keyboard checking is just starting
+      psychoJS.window.callOnFlip(function() { catAllKeys.clock.reset(); });  // t=0 on next screen flip
+      psychoJS.window.callOnFlip(function() { catAllKeys.start(); }); // start on screen flip
+      psychoJS.window.callOnFlip(function() { catAllKeys.clearEvents(); });
+    }
+
+    frameRemains = 0.0 + 3 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
+    if (catAllKeys.status === PsychoJS.Status.STARTED && t >= frameRemains) {
+      catAllKeys.status = PsychoJS.Status.FINISHED;
+  }
+
+    if (catAllKeys.status === PsychoJS.Status.STARTED) {
+      let theseKeys = catAllKeys.getKeys({keyList: [], waitRelease: false});
+      _catAllKeys_allKeys = _catAllKeys_allKeys.concat(theseKeys);
+      if (_catAllKeys_allKeys.length > 0) {
+        catAllKeys.keys = _catAllKeys_allKeys.map((key) => key.name);  // storing all keys
+        catAllKeys.rt = _catAllKeys_allKeys.map((key) => key.rt);
       }
     }
     
@@ -5939,6 +5969,16 @@ function faceOnsetRoutineEnd(snapshot) {
         }
     
     catResp.stop();
+    // update the trial handler
+    if (currentLoop instanceof MultiStairHandler) {
+      currentLoop.addResponse(catAllKeys.corr, level);
+    }
+    psychoJS.experiment.addData('catAllKeys.keys', catAllKeys.keys);
+    if (typeof catAllKeys.keys !== 'undefined') {  // we had a response
+        psychoJS.experiment.addData('catAllKeys.rt', catAllKeys.rt);
+        }
+    
+    catAllKeys.stop();
     // Run 'End Routine' code from respCheck
     var _pj;
     function _pj_snippets(container) {
@@ -5958,8 +5998,7 @@ function faceOnsetRoutineEnd(snapshot) {
     }
     _pj = {};
     _pj_snippets(_pj);
-    keys = [];
-    keys = psychoJS.eventManager.getKeys();
+    keys = psychoJS.eventManager.getKeys(["j", "k"]);
     if ((keys.length > 0)) {
         if ((_pj.in_es6("k", keys) || _pj.in_es6("j", keys))) {
             repeat_loop.finished = true;
@@ -5973,7 +6012,6 @@ function faceOnsetRoutineEnd(snapshot) {
         timesRedone = (timesRedone + 1);
     }
     psychoJS.experiment.addData("timesRedone", timesRedone);
-    psychoJS.experiment.addData("catRespPress", keys);
     
     // the Routine "faceOnset" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset();

@@ -1,8 +1,8 @@
 ﻿#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-This experiment was created using PsychoPy3 Experiment Builder (v2022.2.5),
-    on May 02, 2023, at 17:08
+This experiment was created using PsychoPy3 Experiment Builder (v2022.2.4),
+    on July 24, 2023, at 22:41
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -34,7 +34,7 @@ from psychopy.hardware import keyboard
 _thisDir = os.path.dirname(os.path.abspath(__file__))
 os.chdir(_thisDir)
 # Store info about the experiment session
-psychopyVersion = '2022.2.5'
+psychopyVersion = '2022.2.4'
 expName = 'fluency'  # from the Builder filename that created this script
 expInfo = {
     'participant': f"{randint(0, 999999):06.0f}",
@@ -54,7 +54,7 @@ filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participant'], expNa
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath='C:\\Users\\marni\\OneDrive\\Desktop\\fluency-master\\fluency.py',
+    originPath='E:\\fluency-master\\fluency.py',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 # save a log file for detail verbose info
@@ -247,9 +247,9 @@ instr_advance_3 = keyboard.Keyboard()
 #use the modulo operator (%) to cycle through
 
 # selects 110 trials of given condition based on number of participants
-selected_rows = range((expInfo['participant']%8)*110,(expInfo['participant']%8+1)*110)
+#selected_rows = range((expInfo['participant']%8)*110,(expInfo['participant']%8+1)*110)
 
-#selected_rows=[2,3]
+selected_rows=[2,3]
 
 # --- Initialize components for Routine "specific_instr" ---
 genInstr2 = visual.TextStim(win=win, name='genInstr2',
@@ -534,6 +534,7 @@ face_image = visual.ImageStim(
     texRes=128.0, interpolate=True, depth=-2.0)
 # Run 'Begin Experiment' code from respCheck
 timesRedone = 0
+
 
 # --- Initialize components for Routine "redo_feedback" ---
 out_of_time_2 = visual.TextStim(win=win, name='out_of_time_2',
@@ -1992,7 +1993,7 @@ for thisInstrLoop in instrLoop:
     if spec_instr_adv2.keys != None:  # we had a response
         instrLoop.addData('spec_instr_adv2.rt', spec_instr_adv2.rt)
     # Run 'End Routine' code from isInstrDone
-    instr_loop.finished = True
+    instrLoop.finished = True
     event.getKeys()
     failure = 0
     # the Routine "rateInstr" was not non-slip safe, so reset the non-slip timer
@@ -2003,7 +2004,7 @@ for thisInstrLoop in instrLoop:
 
 
 # set up handler to look after randomisation of conditions etc
-attnChecker = data.TrialHandler(nReps=1.0, method='sequential', 
+attnChecker = data.TrialHandler(nReps=0.0, method='sequential', 
     extraInfo=expInfo, originPath=-1,
     trialList=[None],
     seed=None, name='attnChecker')
@@ -3269,7 +3270,7 @@ for thisAttnChecker in attnChecker:
             if practiceResp.keys != None:  # we had a response
                 practiceRepeat.addData('practiceResp.rt', practiceResp.rt)
             # Run 'End Routine' code from respCheck_2
-            keys = event.getKeys()
+            keys = event.getKeys(['j','k'])
             if len(keys) > 0:
                 if 'k' in keys or 'j' in keys:
                     practiceRepeat.finished = True
@@ -3654,7 +3655,7 @@ for thisAttnChecker in attnChecker:
     routineTimer.reset()
     thisExp.nextEntry()
     
-# completed 1.0 repeats of 'attnChecker'
+# completed 0.0 repeats of 'attnChecker'
 
 
 # set up handler to look after randomisation of conditions etc
@@ -3780,6 +3781,10 @@ for thisTrial in trials:
         # Run 'Begin Routine' code from respCheck
         redo = 0
         timesRedone = 0
+        #defaultKeyboard.clock.reset()  # when you want to start the timer from
+        #keys = [] #empty key storage for new attempt
+        
+        
         # keep track of which components have finished
         faceOnsetComponents = [catResp, respIndicator, face_image]
         for thisComponent in faceOnsetComponents:
@@ -3896,21 +3901,22 @@ for thisTrial in trials:
         if catResp.keys != None:  # we had a response
             repeat_loop.addData('catResp.rt', catResp.rt)
         # Run 'End Routine' code from respCheck
-        keys = []
-        keys = event.getKeys()
-        if len(keys) > 0:
-            if 'k' in keys or 'j' in keys:
+        keys = defaultKeyboard.getKeys(keyList=None, timeStamped=True)
+        
+        for thisKey in keys:
+            if thisKey=='j':
                 repeat_loop.finished = True
                 redo = 0
             else:
                 redo = 1
-                timesRedone = timesRedone +1
-        else:
-            redo = 1
-            timesRedone = timesRedone + 1
-            
+                repeat_loop.finished = False
+                timesRedone = timesRedone + 1
+        
         thisExp.addData('timesRedone', timesRedone)
-        thisExp.addData('catRespPress', keys)
+        
+        for thisKey in keys:
+            thisExp.addData('catRespPress', thisKey.name)
+            thisExp.addData('catRespRT', thisKey.rt)
         # the Routine "faceOnset" was not non-slip safe, so reset the non-slip timer
         routineTimer.reset()
         

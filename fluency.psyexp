@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" ?>
-<PsychoPy2experiment encoding="utf-8" version="2022.2.5">
+<PsychoPy2experiment encoding="utf-8" version="2022.2.4">
   <Settings>
     <Param val="use prefs" valType="str" updates="None" name="Audio latency priority"/>
     <Param val="use prefs" valType="str" updates="None" name="Audio lib"/>
@@ -2237,8 +2237,8 @@
         <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
         <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
-        <Param val="var _pj;&amp;#10;function _pj_snippets(container) {&amp;#10;    function in_es6(left, right) {&amp;#10;        if (((right instanceof Array) || ((typeof right) === &quot;string&quot;))) {&amp;#10;            return (right.indexOf(left) &gt; (- 1));&amp;#10;        } else {&amp;#10;            if (((right instanceof Map) || (right instanceof Set) || (right instanceof WeakMap) || (right instanceof WeakSet))) {&amp;#10;                return right.has(left);&amp;#10;            } else {&amp;#10;                return (left in right);&amp;#10;            }&amp;#10;        }&amp;#10;    }&amp;#10;    container[&quot;in_es6&quot;] = in_es6;&amp;#10;    return container;&amp;#10;}&amp;#10;_pj = {};&amp;#10;_pj_snippets(_pj);&amp;#10;keys = psychoJS.eventManager.getKeys();&amp;#10;if ((keys.length &gt; 0)) {&amp;#10;    if ((_pj.in_es6(&quot;k&quot;, keys) || _pj.in_es6(&quot;j&quot;, keys))) {&amp;#10;        practiceRepeat.finished = true;&amp;#10;        redo = 0;&amp;#10;    } else {&amp;#10;        redo = 1;&amp;#10;        timesRedone = (timesRedone + 1);&amp;#10;    }&amp;#10;} else {&amp;#10;    redo = 1;&amp;#10;    timesRedone = (timesRedone + 1);&amp;#10;}&amp;#10;psychoJS.experiment.addData(&quot;timesRedone&quot;, timesRedone);&amp;#10;" valType="extendedCode" updates="constant" name="End JS Routine"/>
-        <Param val="keys = event.getKeys()&amp;#10;if len(keys) &gt; 0:&amp;#10;    if 'k' in keys or 'j' in keys:&amp;#10;        practiceRepeat.finished = True&amp;#10;        redo = 0&amp;#10;    else:&amp;#10;        redo = 1&amp;#10;        timesRedone = timesRedone +1&amp;#10;else:&amp;#10;    redo = 1&amp;#10;    timesRedone = timesRedone + 1&amp;#10;    &amp;#10;thisExp.addData('timesRedone', timesRedone)" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="var _pj;&amp;#10;function _pj_snippets(container) {&amp;#10;    function in_es6(left, right) {&amp;#10;        if (((right instanceof Array) || ((typeof right) === &quot;string&quot;))) {&amp;#10;            return (right.indexOf(left) &gt; (- 1));&amp;#10;        } else {&amp;#10;            if (((right instanceof Map) || (right instanceof Set) || (right instanceof WeakMap) || (right instanceof WeakSet))) {&amp;#10;                return right.has(left);&amp;#10;            } else {&amp;#10;                return (left in right);&amp;#10;            }&amp;#10;        }&amp;#10;    }&amp;#10;    container[&quot;in_es6&quot;] = in_es6;&amp;#10;    return container;&amp;#10;}&amp;#10;_pj = {};&amp;#10;_pj_snippets(_pj);&amp;#10;keys = psychoJS.eventManager.getKeys([&quot;j&quot;, &quot;k&quot;]);&amp;#10;if ((keys.length &gt; 0)) {&amp;#10;    if ((_pj.in_es6(&quot;k&quot;, keys) || _pj.in_es6(&quot;j&quot;, keys))) {&amp;#10;        practiceRepeat.finished = true;&amp;#10;        redo = 0;&amp;#10;    } else {&amp;#10;        redo = 1;&amp;#10;        timesRedone = (timesRedone + 1);&amp;#10;    }&amp;#10;} else {&amp;#10;    redo = 1;&amp;#10;    timesRedone = (timesRedone + 1);&amp;#10;}&amp;#10;psychoJS.experiment.addData(&quot;timesRedone&quot;, timesRedone);&amp;#10;" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="keys = event.getKeys(['j','k'])&amp;#10;if len(keys) &gt; 0:&amp;#10;    if 'k' in keys or 'j' in keys:&amp;#10;        practiceRepeat.finished = True&amp;#10;        redo = 0&amp;#10;    else:&amp;#10;        redo = 1&amp;#10;        timesRedone = timesRedone +1&amp;#10;else:&amp;#10;    redo = 1&amp;#10;    timesRedone = timesRedone + 1&amp;#10;    &amp;#10;thisExp.addData('timesRedone', timesRedone)" valType="extendedCode" updates="constant" name="End Routine"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="respCheck_2" valType="code" updates="None" name="name"/>
       </CodeComponent>
@@ -2262,7 +2262,7 @@
     </Routine>
     <Routine name="faceOnset">
       <KeyboardComponent name="catResp">
-        <Param val="'j', 'k'" valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="'j','k'" valType="list" updates="constant" name="allowedKeys"/>
         <Param val="" valType="str" updates="constant" name="correctAns"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="True" valType="bool" updates="constant" name="discard previous"/>
@@ -2275,7 +2275,25 @@
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="3" valType="code" updates="constant" name="stopVal"/>
-        <Param val="last key" valType="str" updates="constant" name="store"/>
+        <Param val="all keys" valType="str" updates="constant" name="store"/>
+        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+      </KeyboardComponent>
+      <KeyboardComponent name="catAllKeys">
+        <Param val="" valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="" valType="str" updates="constant" name="correctAns"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="True" valType="bool" updates="constant" name="discard previous"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="catAllKeys" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="3" valType="code" updates="constant" name="stopVal"/>
+        <Param val="all keys" valType="str" updates="constant" name="store"/>
         <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
         <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
       </KeyboardComponent>
@@ -2336,17 +2354,17 @@
       <CodeComponent name="respCheck">
         <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
-        <Param val="timesRedone = 0" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="timesRedone = 0&amp;#10;" valType="extendedCode" updates="constant" name="Begin Experiment"/>
         <Param val="timesRedone = 0;&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
-        <Param val="redo = 0;&amp;#10;timesRedone = 0;&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
-        <Param val="redo = 0&amp;#10;timesRedone = 0" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="redo = 0;&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="redo = 0&amp;#10;" valType="extendedCode" updates="constant" name="Begin Routine"/>
         <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
         <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
         <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
         <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
-        <Param val="var _pj;&amp;#10;function _pj_snippets(container) {&amp;#10;    function in_es6(left, right) {&amp;#10;        if (((right instanceof Array) || ((typeof right) === &quot;string&quot;))) {&amp;#10;            return (right.indexOf(left) &gt; (- 1));&amp;#10;        } else {&amp;#10;            if (((right instanceof Map) || (right instanceof Set) || (right instanceof WeakMap) || (right instanceof WeakSet))) {&amp;#10;                return right.has(left);&amp;#10;            } else {&amp;#10;                return (left in right);&amp;#10;            }&amp;#10;        }&amp;#10;    }&amp;#10;    container[&quot;in_es6&quot;] = in_es6;&amp;#10;    return container;&amp;#10;}&amp;#10;_pj = {};&amp;#10;_pj_snippets(_pj);&amp;#10;keys = [];&amp;#10;keys = psychoJS.eventManager.getKeys();&amp;#10;if ((keys.length &gt; 0)) {&amp;#10;    if ((_pj.in_es6(&quot;k&quot;, keys) || _pj.in_es6(&quot;j&quot;, keys))) {&amp;#10;        repeat_loop.finished = true;&amp;#10;        redo = 0;&amp;#10;    } else {&amp;#10;        redo = 1;&amp;#10;        timesRedone = (timesRedone + 1);&amp;#10;    }&amp;#10;} else {&amp;#10;    redo = 1;&amp;#10;    timesRedone = (timesRedone + 1);&amp;#10;}&amp;#10;psychoJS.experiment.addData(&quot;timesRedone&quot;, timesRedone);&amp;#10;psychoJS.experiment.addData(&quot;catRespPress&quot;, keys);&amp;#10;" valType="extendedCode" updates="constant" name="End JS Routine"/>
-        <Param val="keys = []&amp;#10;keys = event.getKeys()&amp;#10;if len(keys) &gt; 0:&amp;#10;    if 'k' in keys or 'j' in keys:&amp;#10;        repeat_loop.finished = True&amp;#10;        redo = 0&amp;#10;    else:&amp;#10;        redo = 1&amp;#10;        timesRedone = timesRedone +1&amp;#10;else:&amp;#10;    redo = 1&amp;#10;    timesRedone = timesRedone + 1&amp;#10;    &amp;#10;thisExp.addData('timesRedone', timesRedone)&amp;#10;thisExp.addData('catRespPress', keys)" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="var _pj;&amp;#10;function _pj_snippets(container) {&amp;#10;    function in_es6(left, right) {&amp;#10;        if (((right instanceof Array) || ((typeof right) === &quot;string&quot;))) {&amp;#10;            return (right.indexOf(left) &gt; (- 1));&amp;#10;        } else {&amp;#10;            if (((right instanceof Map) || (right instanceof Set) || (right instanceof WeakMap) || (right instanceof WeakSet))) {&amp;#10;                return right.has(left);&amp;#10;            } else {&amp;#10;                return (left in right);&amp;#10;            }&amp;#10;        }&amp;#10;    }&amp;#10;    container[&quot;in_es6&quot;] = in_es6;&amp;#10;    return container;&amp;#10;}&amp;#10;_pj = {};&amp;#10;_pj_snippets(_pj);&amp;#10;keys = psychoJS.eventManager.getKeys([&quot;j&quot;, &quot;k&quot;]);&amp;#10;if ((keys.length &gt; 0)) {&amp;#10;    if ((_pj.in_es6(&quot;k&quot;, keys) || _pj.in_es6(&quot;j&quot;, keys))) {&amp;#10;        repeat_loop.finished = true;&amp;#10;        redo = 0;&amp;#10;    } else {&amp;#10;        redo = 1;&amp;#10;        timesRedone = (timesRedone + 1);&amp;#10;    }&amp;#10;} else {&amp;#10;    redo = 1;&amp;#10;    timesRedone = (timesRedone + 1);&amp;#10;}&amp;#10;psychoJS.experiment.addData(&quot;timesRedone&quot;, timesRedone);&amp;#10;" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="keys = event.getKeys(['j','k'])&amp;#10;&amp;#10;if len(keys) &gt; 0:&amp;#10;    if 'k' in keys or 'j' in keys:&amp;#10;        repeat_loop.finished = True&amp;#10;        redo = 0&amp;#10;    else:&amp;#10;        redo = 1&amp;#10;        timesRedone = timesRedone + 1&amp;#10;else:&amp;#10;    redo = 1&amp;#10;    timesRedone = timesRedone + 1&amp;#10;&amp;#10;thisExp.addData('timesRedone', timesRedone)" valType="extendedCode" updates="constant" name="End Routine"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="respCheck" valType="code" updates="None" name="name"/>
       </CodeComponent>
