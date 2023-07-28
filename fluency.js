@@ -580,7 +580,7 @@ async function experimentInit() {
   exitCode = new visual.TextStim({
     win: psychoJS.window,
     name: 'exitCode',
-    text: 'C18OR9ZB',
+    text: 'C5OK40TS',
     font: 'Open Sans',
     units: undefined, 
     pos: [0, 0], height: 0.1,  wrapWidth: undefined, ori: 0.0,
@@ -1649,7 +1649,7 @@ async function experimentInit() {
   doneCode = new visual.TextStim({
     win: psychoJS.window,
     name: 'doneCode',
-    text: 'CEQ8GRHQ',
+    text: 'CW023GNS',
     font: 'Open Sans',
     units: undefined, 
     pos: [0, 0], height: 0.1,  wrapWidth: undefined, ori: 0.0,
