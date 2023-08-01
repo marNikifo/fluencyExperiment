@@ -14,8 +14,8 @@
     <Param val="" valType="str" updates="None" name="Incomplete URL"/>
     <Param val="testMonitor" valType="str" updates="None" name="Monitor"/>
     <Param val="['img/B01_00.jpg', 'img/B01_01.jpg', 'img/B01_02.jpg', 'img/B01_03.jpg', 'img/B01_04.jpg', 'img/B01_05.jpg', 'img/B01_06.jpg', 'img/B01_07.jpg', 'img/B01_08.jpg', 'img/B01_09.jpg', 'img/B01_10.jpg', 'img/B02_00.jpg', 'img/B02_01.jpg', 'img/B02_02.jpg', 'img/B02_03.jpg', 'img/B02_04.jpg', 'img/B02_05.jpg', 'img/B02_06.jpg', 'img/B02_07.jpg', 'img/B02_08.jpg', 'img/B02_09.jpg', 'img/B02_10.jpg', 'img/B03_00.jpg', 'img/B03_01.jpg', 'img/B03_02.jpg', 'img/B03_03.jpg', 'img/B03_04.jpg', 'img/B03_05.jpg', 'img/B03_06.jpg', 'img/B03_07.jpg', 'img/B03_08.jpg', 'img/B03_09.jpg', 'img/B03_10.jpg', 'img/B04_00.jpg', 'img/B04_01.jpg', 'img/B04_02.jpg', 'img/B04_03.jpg', 'img/B04_04.jpg', 'img/B04_05.jpg', 'img/B04_06.jpg', 'img/B04_07.jpg', 'img/B04_08.jpg', 'img/B04_09.jpg', 'img/B04_10.jpg', 'img/B05_00.jpg', 'img/B05_01.jpg', 'img/B05_02.jpg', 'img/B05_03.jpg', 'img/B05_04.jpg', 'img/B05_05.jpg', 'img/B05_06.jpg', 'img/B05_07.jpg', 'img/B05_08.jpg', 'img/B05_09.jpg', 'img/B05_10.jpg', 'img/B06_00.jpg', 'img/B06_01.jpg', 'img/B06_02.jpg', 'img/B06_03.jpg', 'img/B06_04.jpg', 'img/B06_05.jpg', 'img/B06_06.jpg', 'img/B06_07.jpg', 'img/B06_08.jpg', 'img/B06_09.jpg', 'img/B06_10.jpg', 'img/B07_00.jpg', 'img/B07_01.jpg', 'img/B07_02.jpg', 'img/B07_03.jpg', 'img/B07_04.jpg', 'img/B07_05.jpg', 'img/B07_06.jpg', 'img/B07_07.jpg', 'img/B07_08.jpg', 'img/B07_09.jpg', 'img/B07_10.jpg', 'img/B08_00.jpg', 'img/B08_01.jpg', 'img/B08_02.jpg', 'img/B08_03.jpg', 'img/B08_04.jpg', 'img/B08_05.jpg', 'img/B08_06.jpg', 'img/B08_07.jpg', 'img/B08_08.jpg', 'img/B08_09.jpg', 'img/B08_10.jpg', 'img/B09_00.jpg', 'img/B09_01.jpg', 'img/B09_02.jpg', 'img/B09_03.jpg', 'img/B09_04.jpg', 'img/B09_05.jpg', 'img/B09_06.jpg', 'img/B09_07.jpg', 'img/B09_08.jpg', 'img/B09_09.jpg', 'img/B09_10.jpg', 'img/B10_00.jpg', 'img/B10_01.jpg', 'img/B10_02.jpg', 'img/B10_03.jpg', 'img/B10_04.jpg', 'img/B10_05.jpg', 'img/B10_06.jpg', 'img/B10_07.jpg', 'img/B10_08.jpg', 'img/B10_09.jpg', 'img/B10_10.jpg']" valType="list" updates="None" name="Resources"/>
-    <Param val="False" valType="bool" updates="None" name="Save csv file"/>
-    <Param val="False" valType="bool" updates="None" name="Save excel file"/>
+    <Param val="True" valType="bool" updates="None" name="Save csv file"/>
+    <Param val="True" valType="bool" updates="None" name="Save excel file"/>
     <Param val="False" valType="bool" updates="None" name="Save hdf5 file"/>
     <Param val="True" valType="bool" updates="None" name="Save log file"/>
     <Param val="True" valType="bool" updates="None" name="Save psydat file"/>
@@ -25,7 +25,7 @@
     <Param val="False" valType="bool" updates="None" name="Show mouse"/>
     <Param val="height" valType="str" updates="None" name="Units"/>
     <Param val="" valType="str" updates="None" name="Use version"/>
-    <Param val="[1536, 864]" valType="list" updates="None" name="Window size (pixels)"/>
+    <Param val="[1920, 1080]" valType="list" updates="None" name="Window size (pixels)"/>
     <Param val="avg" valType="str" updates="None" name="blendMode"/>
     <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
     <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
@@ -1406,7 +1406,7 @@
       <CodeComponent name="condSelect">
         <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
-        <Param val="#Use if-else flow to choose rows from the main&amp;#10;#file. These rows should be python &quot;lists&quot;. &amp;#10;&amp;#10;#I find the easiest way to use the participant number&amp;#10;#for this purpose. &amp;#10;#use the modulo operator (%) to cycle through&amp;#10;&amp;#10;# selects 110 trials of given condition based on number of participants&amp;#10;selected_rows = range((expInfo['participant']%8)*110,(expInfo['participant']%8+1)*110)&amp;#10;&amp;#10;#selected_rows=[2,3]" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="#Use if-else flow to choose rows from the main&amp;#10;#file. These rows should be python &quot;lists&quot;. &amp;#10;&amp;#10;#I find the easiest way to use the participant number&amp;#10;#for this purpose. &amp;#10;#use the modulo operator (%) to cycle through&amp;#10;&amp;#10;# selects 110 trials of given condition based on number of participants&amp;#10;selected_rows = range((expInfo['participant']%8)*110,(expInfo['participant']%8+1)*110)&amp;#10;&amp;#10;#two trial 'run' for testing&amp;#10;#selected_rows=[2,3]" valType="extendedCode" updates="constant" name="Begin Experiment"/>
         <Param val="selected_rows = util.range(((expInfo[&quot;participant&quot;] % 8) * 110), (((expInfo[&quot;participant&quot;] % 8) + 1) * 110));&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin Routine"/>
@@ -2261,42 +2261,6 @@
       </CodeComponent>
     </Routine>
     <Routine name="faceOnset">
-      <KeyboardComponent name="catResp">
-        <Param val="'j','k'" valType="list" updates="constant" name="allowedKeys"/>
-        <Param val="" valType="str" updates="constant" name="correctAns"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="True" valType="bool" updates="constant" name="discard previous"/>
-        <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="False" valType="bool" updates="constant" name="forceEndRoutine"/>
-        <Param val="catResp" valType="code" updates="None" name="name"/>
-        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="" valType="code" updates="None" name="startEstim"/>
-        <Param val="time (s)" valType="str" updates="None" name="startType"/>
-        <Param val="0.0" valType="code" updates="None" name="startVal"/>
-        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="3" valType="code" updates="constant" name="stopVal"/>
-        <Param val="all keys" valType="str" updates="constant" name="store"/>
-        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
-        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
-      </KeyboardComponent>
-      <KeyboardComponent name="catAllKeys">
-        <Param val="" valType="list" updates="constant" name="allowedKeys"/>
-        <Param val="" valType="str" updates="constant" name="correctAns"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="True" valType="bool" updates="constant" name="discard previous"/>
-        <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="False" valType="bool" updates="constant" name="forceEndRoutine"/>
-        <Param val="catAllKeys" valType="code" updates="None" name="name"/>
-        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="" valType="code" updates="None" name="startEstim"/>
-        <Param val="time (s)" valType="str" updates="None" name="startType"/>
-        <Param val="0.0" valType="code" updates="None" name="startVal"/>
-        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="3" valType="code" updates="constant" name="stopVal"/>
-        <Param val="all keys" valType="str" updates="constant" name="store"/>
-        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
-        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
-      </KeyboardComponent>
       <PolygonComponent name="respIndicator">
         <Param val="center" valType="str" updates="constant" name="anchor"/>
         <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
@@ -2351,6 +2315,41 @@
         <Param val="128" valType="num" updates="constant" name="texture resolution"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
       </ImageComponent>
+      <CodeComponent name="absoluteTime">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="#import time&amp;#10;#library allows me to record time since exp started&amp;#10;#aka absolute time&amp;#10;#thisExp.addData('startTime', time.time())" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="/* Syntax Error: Fix Python code */" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="psychoJS.experiment.addData(&quot;faceOnsetTime&quot;, globalClock.getTime());&amp;#10;psychoJS.experiment.nextEntry();&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="#thisExp.addData('faceOnsetTime', time.time())&amp;#10;#absoulute time that routine started&amp;#10;#functionally when face img for given trial shown&amp;#10;#will allow to cross-ref with log file if needed&amp;#10;&amp;#10;thisExp.addData(&quot;faceOnsetTime&quot;, globalClock.getTime())&amp;#10;thisExp.nextEntry()" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="absoluteTime" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+      <KeyboardComponent name="catResp">
+        <Param val="'j','k'" valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="" valType="str" updates="constant" name="correctAns"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="True" valType="bool" updates="constant" name="discard previous"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="catResp" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="3" valType="code" updates="constant" name="stopVal"/>
+        <Param val="all keys" valType="str" updates="constant" name="store"/>
+        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+      </KeyboardComponent>
       <CodeComponent name="respCheck">
         <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
@@ -2368,6 +2367,24 @@
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="respCheck" valType="code" updates="None" name="name"/>
       </CodeComponent>
+      <KeyboardComponent name="catAllKeys">
+        <Param val="" valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="" valType="str" updates="constant" name="correctAns"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="False" valType="bool" updates="constant" name="discard previous"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="catAllKeys" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="3" valType="code" updates="constant" name="stopVal"/>
+        <Param val="all keys" valType="str" updates="constant" name="store"/>
+        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+      </KeyboardComponent>
       <CodeComponent name="endTrial">
         <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>

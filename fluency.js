@@ -115,118 +115,118 @@ psychoJS.start({
   expName: expName,
   expInfo: expInfo,
   resources: [
-    {'name': 'img/B07_05.jpg', 'path': 'img/B07_05.jpg'},
-    {'name': 'img/B08_08.jpg', 'path': 'img/B08_08.jpg'},
-    {'name': 'img/B03_05.jpg', 'path': 'img/B03_05.jpg'},
-    {'name': 'img/B10_04.jpg', 'path': 'img/B10_04.jpg'},
-    {'name': 'img/B07_00.jpg', 'path': 'img/B07_00.jpg'},
-    {'name': 'img/B10_00.jpg', 'path': 'img/B10_00.jpg'},
-    {'name': 'img/B06_07.jpg', 'path': 'img/B06_07.jpg'},
-    {'name': 'img/B03_10.jpg', 'path': 'img/B03_10.jpg'},
-    {'name': 'img/B03_04.jpg', 'path': 'img/B03_04.jpg'},
-    {'name': 'img/B03_06.jpg', 'path': 'img/B03_06.jpg'},
-    {'name': 'img/B02_08.jpg', 'path': 'img/B02_08.jpg'},
-    {'name': 'img/B06_05.jpg', 'path': 'img/B06_05.jpg'},
-    {'name': 'img/B06_03.jpg', 'path': 'img/B06_03.jpg'},
-    {'name': 'img/B01_07.jpg', 'path': 'img/B01_07.jpg'},
-    {'name': 'img/B02_06.jpg', 'path': 'img/B02_06.jpg'},
-    {'name': 'img/B10_07.jpg', 'path': 'img/B10_07.jpg'},
-    {'name': 'img/B09_06.jpg', 'path': 'img/B09_06.jpg'},
-    {'name': 'img/B05_04.jpg', 'path': 'img/B05_04.jpg'},
-    {'name': 'img/practice_image.jpg', 'path': 'img/practice_image.jpg'},
-    {'name': 'img/B04_03.jpg', 'path': 'img/B04_03.jpg'},
-    {'name': 'img/B05_00.jpg', 'path': 'img/B05_00.jpg'},
-    {'name': 'img/B04_05.jpg', 'path': 'img/B04_05.jpg'},
-    {'name': 'img/B06_02.jpg', 'path': 'img/B06_02.jpg'},
-    {'name': 'img/B10_06.jpg', 'path': 'img/B10_06.jpg'},
-    {'name': 'img/B09_03.jpg', 'path': 'img/B09_03.jpg'},
-    {'name': 'img/B06_01.jpg', 'path': 'img/B06_01.jpg'},
-    {'name': 'img/B02_05.jpg', 'path': 'img/B02_05.jpg'},
-    {'name': 'img/B07_06.jpg', 'path': 'img/B07_06.jpg'},
-    {'name': 'img/B08_03.jpg', 'path': 'img/B08_03.jpg'},
-    {'name': 'img/B10_05.jpg', 'path': 'img/B10_05.jpg'},
-    {'name': 'img/B03_03.jpg', 'path': 'img/B03_03.jpg'},
-    {'name': 'img/B03_07.jpg', 'path': 'img/B03_07.jpg'},
-    {'name': 'img/B04_10.jpg', 'path': 'img/B04_10.jpg'},
-    {'name': 'img/B07_02.jpg', 'path': 'img/B07_02.jpg'},
-    {'name': 'img/B02_00.jpg', 'path': 'img/B02_00.jpg'},
-    {'name': 'img/B09_08.jpg', 'path': 'img/B09_08.jpg'},
-    {'name': 'img/B04_02.jpg', 'path': 'img/B04_02.jpg'},
-    {'name': 'img/B09_07.jpg', 'path': 'img/B09_07.jpg'},
-    {'name': 'img/B08_09.jpg', 'path': 'img/B08_09.jpg'},
-    {'name': 'img/B06_10.jpg', 'path': 'img/B06_10.jpg'},
-    {'name': 'img/B05_08.jpg', 'path': 'img/B05_08.jpg'},
-    {'name': 'img/B01_00.jpg', 'path': 'img/B01_00.jpg'},
-    {'name': 'img/B05_02.jpg', 'path': 'img/B05_02.jpg'},
+    {'name': 'img/B08_05.jpg', 'path': 'img/B08_05.jpg'},
     {'name': 'img/B02_02.jpg', 'path': 'img/B02_02.jpg'},
-    {'name': 'img/B10_01.jpg', 'path': 'img/B10_01.jpg'},
+    {'name': 'img/B06_01.jpg', 'path': 'img/B06_01.jpg'},
     {'name': 'img/B08_10.jpg', 'path': 'img/B08_10.jpg'},
-    {'name': 'img/B10_08.jpg', 'path': 'img/B10_08.jpg'},
-    {'name': 'img/B05_01.jpg', 'path': 'img/B05_01.jpg'},
-    {'name': 'img/B08_00.jpg', 'path': 'img/B08_00.jpg'},
-    {'name': 'img/B04_07.jpg', 'path': 'img/B04_07.jpg'},
-    {'name': 'img/B03_00.jpg', 'path': 'img/B03_00.jpg'},
-    {'name': 'img/B02_10.jpg', 'path': 'img/B02_10.jpg'},
-    {'name': 'img/B01_02.jpg', 'path': 'img/B01_02.jpg'},
-    {'name': 'img/B07_04.jpg', 'path': 'img/B07_04.jpg'},
-    {'name': 'img/B08_06.jpg', 'path': 'img/B08_06.jpg'},
+    {'name': 'img/B05_00.jpg', 'path': 'img/B05_00.jpg'},
+    {'name': 'img/B01_03.jpg', 'path': 'img/B01_03.jpg'},
+    {'name': 'img/B04_04.jpg', 'path': 'img/B04_04.jpg'},
+    {'name': 'img/B07_06.jpg', 'path': 'img/B07_06.jpg'},
+    {'name': 'img/B04_08.jpg', 'path': 'img/B04_08.jpg'},
+    {'name': 'img/B09_03.jpg', 'path': 'img/B09_03.jpg'},
     {'name': 'img/B07_03.jpg', 'path': 'img/B07_03.jpg'},
-    {'name': 'img/B08_07.jpg', 'path': 'img/B08_07.jpg'},
-    {'name': 'img/B05_07.jpg', 'path': 'img/B05_07.jpg'},
-    {'name': 'img/B09_09.jpg', 'path': 'img/B09_09.jpg'},
-    {'name': 'img/B10_09.jpg', 'path': 'img/B10_09.jpg'},
+    {'name': 'img/B02_03.jpg', 'path': 'img/B02_03.jpg'},
+    {'name': 'img/B10_07.jpg', 'path': 'img/B10_07.jpg'},
+    {'name': 'img/B07_09.jpg', 'path': 'img/B07_09.jpg'},
+    {'name': 'img/B06_09.jpg', 'path': 'img/B06_09.jpg'},
+    {'name': 'img/B06_07.jpg', 'path': 'img/B06_07.jpg'},
+    {'name': 'img/B03_07.jpg', 'path': 'img/B03_07.jpg'},
+    {'name': 'img/B05_09.jpg', 'path': 'img/B05_09.jpg'},
+    {'name': 'img/B04_01.jpg', 'path': 'img/B04_01.jpg'},
+    {'name': 'img/B07_01.jpg', 'path': 'img/B07_01.jpg'},
     {'name': 'img/B07_08.jpg', 'path': 'img/B07_08.jpg'},
-    {'name': 'img/B01_06.jpg', 'path': 'img/B01_06.jpg'},
+    {'name': 'img/B04_05.jpg', 'path': 'img/B04_05.jpg'},
+    {'name': 'img/B03_01.jpg', 'path': 'img/B03_01.jpg'},
+    {'name': 'img/B08_02.jpg', 'path': 'img/B08_02.jpg'},
+    {'name': 'img/B09_04.jpg', 'path': 'img/B09_04.jpg'},
+    {'name': 'img/B09_05.jpg', 'path': 'img/B09_05.jpg'},
+    {'name': 'img/B03_10.jpg', 'path': 'img/B03_10.jpg'},
+    {'name': 'img/B10_05.jpg', 'path': 'img/B10_05.jpg'},
+    {'name': 'img/B02_06.jpg', 'path': 'img/B02_06.jpg'},
+    {'name': 'img/B10_06.jpg', 'path': 'img/B10_06.jpg'},
+    {'name': 'img/B08_00.jpg', 'path': 'img/B08_00.jpg'},
+    {'name': 'img/B08_06.jpg', 'path': 'img/B08_06.jpg'},
+    {'name': 'img/B06_05.jpg', 'path': 'img/B06_05.jpg'},
+    {'name': 'img/B05_02.jpg', 'path': 'img/B05_02.jpg'},
+    {'name': 'img/B07_00.jpg', 'path': 'img/B07_00.jpg'},
+    {'name': 'img/B01_05.jpg', 'path': 'img/B01_05.jpg'},
+    {'name': 'img/B08_04.jpg', 'path': 'img/B08_04.jpg'},
+    {'name': 'img/B06_04.jpg', 'path': 'img/B06_04.jpg'},
     {'name': 'img/B01_01.jpg', 'path': 'img/B01_01.jpg'},
-    {'name': 'img/B01_08.jpg', 'path': 'img/B01_08.jpg'},
+    {'name': 'img/B10_09.jpg', 'path': 'img/B10_09.jpg'},
+    {'name': 'img/B10_08.jpg', 'path': 'img/B10_08.jpg'},
+    {'name': 'img/B09_06.jpg', 'path': 'img/B09_06.jpg'},
+    {'name': 'img/B01_07.jpg', 'path': 'img/B01_07.jpg'},
+    {'name': 'img/B02_00.jpg', 'path': 'img/B02_00.jpg'},
+    {'name': 'img/B01_04.jpg', 'path': 'img/B01_04.jpg'},
+    {'name': 'img/B04_00.jpg', 'path': 'img/B04_00.jpg'},
+    {'name': 'img/B09_07.jpg', 'path': 'img/B09_07.jpg'},
+    {'name': 'img/B02_08.jpg', 'path': 'img/B02_08.jpg'},
+    {'name': 'img/B01_00.jpg', 'path': 'img/B01_00.jpg'},
+    {'name': 'img/B08_01.jpg', 'path': 'img/B08_01.jpg'},
+    {'name': 'img/B06_02.jpg', 'path': 'img/B06_02.jpg'},
+    {'name': 'img/B09_08.jpg', 'path': 'img/B09_08.jpg'},
+    {'name': 'img/B02_04.jpg', 'path': 'img/B02_04.jpg'},
+    {'name': 'img/B05_10.jpg', 'path': 'img/B05_10.jpg'},
+    {'name': 'img/B06_08.jpg', 'path': 'img/B06_08.jpg'},
+    {'name': 'img/B05_03.jpg', 'path': 'img/B05_03.jpg'},
+    {'name': 'img/B04_03.jpg', 'path': 'img/B04_03.jpg'},
+    {'name': 'img/B01_02.jpg', 'path': 'img/B01_02.jpg'},
+    {'name': 'img/B03_06.jpg', 'path': 'img/B03_06.jpg'},
+    {'name': 'img/B07_07.jpg', 'path': 'img/B07_07.jpg'},
+    {'name': 'img/B03_08.jpg', 'path': 'img/B03_08.jpg'},
+    {'name': 'img/B01_06.jpg', 'path': 'img/B01_06.jpg'},
+    {'name': 'img/B07_05.jpg', 'path': 'img/B07_05.jpg'},
+    {'name': 'img/B02_07.jpg', 'path': 'img/B02_07.jpg'},
+    {'name': 'img/B05_04.jpg', 'path': 'img/B05_04.jpg'},
     {'name': 'img/B10_03.jpg', 'path': 'img/B10_03.jpg'},
+    {'name': 'img/B03_04.jpg', 'path': 'img/B03_04.jpg'},
+    {'name': 'img/B09_10.jpg', 'path': 'img/B09_10.jpg'},
+    {'name': 'img/B05_01.jpg', 'path': 'img/B05_01.jpg'},
+    {'name': 'img/B03_05.jpg', 'path': 'img/B03_05.jpg'},
+    {'name': 'img/B03_03.jpg', 'path': 'img/B03_03.jpg'},
+    {'name': 'img/practice_image.jpg', 'path': 'img/practice_image.jpg'},
+    {'name': 'img/B07_02.jpg', 'path': 'img/B07_02.jpg'},
+    {'name': 'img/B05_06.jpg', 'path': 'img/B05_06.jpg'},
+    {'name': 'img/B07_04.jpg', 'path': 'img/B07_04.jpg'},
+    {'name': 'img/B02_05.jpg', 'path': 'img/B02_05.jpg'},
+    {'name': 'img/B09_09.jpg', 'path': 'img/B09_09.jpg'},
+    {'name': 'fluency_conditions.xlsx', 'path': 'fluency_conditions.xlsx'},
+    {'name': 'img/B06_10.jpg', 'path': 'img/B06_10.jpg'},
+    {'name': 'img/B04_10.jpg', 'path': 'img/B04_10.jpg'},
+    {'name': 'img/B07_10.jpg', 'path': 'img/B07_10.jpg'},
+    {'name': 'img/B04_02.jpg', 'path': 'img/B04_02.jpg'},
+    {'name': 'img/B08_07.jpg', 'path': 'img/B08_07.jpg'},
+    {'name': 'img/B10_10.jpg', 'path': 'img/B10_10.jpg'},
+    {'name': 'img/B02_10.jpg', 'path': 'img/B02_10.jpg'},
+    {'name': 'img/B05_08.jpg', 'path': 'img/B05_08.jpg'},
+    {'name': 'img/B03_09.jpg', 'path': 'img/B03_09.jpg'},
+    {'name': 'img/B08_08.jpg', 'path': 'img/B08_08.jpg'},
+    {'name': 'img/B03_00.jpg', 'path': 'img/B03_00.jpg'},
+    {'name': 'img/B01_10.jpg', 'path': 'img/B01_10.jpg'},
+    {'name': 'img/B06_03.jpg', 'path': 'img/B06_03.jpg'},
+    {'name': 'img/B06_06.jpg', 'path': 'img/B06_06.jpg'},
+    {'name': 'img/B09_02.jpg', 'path': 'img/B09_02.jpg'},
+    {'name': 'img/B09_00.jpg', 'path': 'img/B09_00.jpg'},
+    {'name': 'img/B04_07.jpg', 'path': 'img/B04_07.jpg'},
+    {'name': 'img/B08_09.jpg', 'path': 'img/B08_09.jpg'},
+    {'name': 'img/B01_08.jpg', 'path': 'img/B01_08.jpg'},
+    {'name': 'img/B08_03.jpg', 'path': 'img/B08_03.jpg'},
     {'name': 'img/B02_01.jpg', 'path': 'img/B02_01.jpg'},
     {'name': 'img/B03_02.jpg', 'path': 'img/B03_02.jpg'},
-    {'name': 'img/B02_03.jpg', 'path': 'img/B02_03.jpg'},
-    {'name': 'img/B05_06.jpg', 'path': 'img/B05_06.jpg'},
-    {'name': 'img/B01_09.jpg', 'path': 'img/B01_09.jpg'},
-    {'name': 'img/B02_09.jpg', 'path': 'img/B02_09.jpg'},
-    {'name': 'img/B01_10.jpg', 'path': 'img/B01_10.jpg'},
-    {'name': 'img/B06_04.jpg', 'path': 'img/B06_04.jpg'},
-    {'name': 'img/B02_04.jpg', 'path': 'img/B02_04.jpg'},
-    {'name': 'img/B07_10.jpg', 'path': 'img/B07_10.jpg'},
-    {'name': 'img/B05_09.jpg', 'path': 'img/B05_09.jpg'},
-    {'name': 'img/B01_04.jpg', 'path': 'img/B01_04.jpg'},
-    {'name': 'img/B08_04.jpg', 'path': 'img/B08_04.jpg'},
-    {'name': 'img/B09_02.jpg', 'path': 'img/B09_02.jpg'},
-    {'name': 'img/B08_02.jpg', 'path': 'img/B08_02.jpg'},
     {'name': 'img/B09_01.jpg', 'path': 'img/B09_01.jpg'},
-    {'name': 'img/B08_01.jpg', 'path': 'img/B08_01.jpg'},
-    {'name': 'img/B03_09.jpg', 'path': 'img/B03_09.jpg'},
+    {'name': 'img/B01_09.jpg', 'path': 'img/B01_09.jpg'},
     {'name': 'img/B04_09.jpg', 'path': 'img/B04_09.jpg'},
-    {'name': 'fluency_conditions.xlsx', 'path': 'fluency_conditions.xlsx'},
+    {'name': 'img/B02_09.jpg', 'path': 'img/B02_09.jpg'},
+    {'name': 'img/B10_01.jpg', 'path': 'img/B10_01.jpg'},
     {'name': 'img/B06_00.jpg', 'path': 'img/B06_00.jpg'},
-    {'name': 'img/B07_09.jpg', 'path': 'img/B07_09.jpg'},
-    {'name': 'img/B09_10.jpg', 'path': 'img/B09_10.jpg'},
-    {'name': 'img/B06_08.jpg', 'path': 'img/B06_08.jpg'},
-    {'name': 'img/B03_01.jpg', 'path': 'img/B03_01.jpg'},
-    {'name': 'img/B04_04.jpg', 'path': 'img/B04_04.jpg'},
-    {'name': 'img/B02_07.jpg', 'path': 'img/B02_07.jpg'},
-    {'name': 'img/B08_05.jpg', 'path': 'img/B08_05.jpg'},
+    {'name': 'img/B05_07.jpg', 'path': 'img/B05_07.jpg'},
     {'name': 'img/B04_06.jpg', 'path': 'img/B04_06.jpg'},
-    {'name': 'img/B06_09.jpg', 'path': 'img/B06_09.jpg'},
-    {'name': 'img/B01_03.jpg', 'path': 'img/B01_03.jpg'},
-    {'name': 'img/B09_00.jpg', 'path': 'img/B09_00.jpg'},
-    {'name': 'img/B10_10.jpg', 'path': 'img/B10_10.jpg'},
-    {'name': 'img/B06_06.jpg', 'path': 'img/B06_06.jpg'},
     {'name': 'img/B05_05.jpg', 'path': 'img/B05_05.jpg'},
-    {'name': 'img/B01_05.jpg', 'path': 'img/B01_05.jpg'},
-    {'name': 'img/B07_07.jpg', 'path': 'img/B07_07.jpg'},
-    {'name': 'img/B10_02.jpg', 'path': 'img/B10_02.jpg'},
-    {'name': 'img/B09_05.jpg', 'path': 'img/B09_05.jpg'},
-    {'name': 'img/B04_00.jpg', 'path': 'img/B04_00.jpg'},
-    {'name': 'img/B07_01.jpg', 'path': 'img/B07_01.jpg'},
-    {'name': 'img/B04_08.jpg', 'path': 'img/B04_08.jpg'},
-    {'name': 'img/B09_04.jpg', 'path': 'img/B09_04.jpg'},
-    {'name': 'img/B03_08.jpg', 'path': 'img/B03_08.jpg'},
-    {'name': 'img/B05_10.jpg', 'path': 'img/B05_10.jpg'},
-    {'name': 'img/B04_01.jpg', 'path': 'img/B04_01.jpg'},
-    {'name': 'img/B05_03.jpg', 'path': 'img/B05_03.jpg'}
+    {'name': 'img/B10_04.jpg', 'path': 'img/B10_04.jpg'},
+    {'name': 'img/B10_00.jpg', 'path': 'img/B10_00.jpg'},
+    {'name': 'img/B10_02.jpg', 'path': 'img/B10_02.jpg'}
   ]
 });
 
@@ -347,10 +347,10 @@ var introDoneClock;
 var attnSuccess_continue;
 var key_resp_3;
 var faceOnsetClock;
-var catResp;
-var catAllKeys;
 var respIndicator;
 var face_image;
+var catResp;
+var catAllKeys;
 var contClock;
 var trialPassed;
 var fixCross_2;
@@ -1054,10 +1054,6 @@ async function experimentInit() {
   
   // Initialize components for Routine "faceOnset"
   faceOnsetClock = new util.Clock();
-  catResp = new core.Keyboard({psychoJS: psychoJS, clock: new util.Clock(), waitForStart: true});
-  
-  catAllKeys = new core.Keyboard({psychoJS: psychoJS, clock: new util.Clock(), waitForStart: true});
-  
   respIndicator = new visual.Rect ({
     win: psychoJS.window, name: 'respIndicator', 
     width: [0.41, 0.61][0], height: [0.41, 0.61][1],
@@ -1066,7 +1062,7 @@ async function experimentInit() {
     colorSpace: 'rgb',
     lineColor: new util.Color([0.0, 0.0, 0.0]),
     fillColor: new util.Color([(- 1.0), 1.0, (- 1.0)]),
-    opacity: 1.0, depth: -2, interpolate: true,
+    opacity: 1.0, depth: 0, interpolate: true,
   });
   
   face_image = new visual.ImageStim({
@@ -1076,10 +1072,16 @@ async function experimentInit() {
     ori : 0.0, pos : [0, 0], size : [0.4, 0.6],
     color : new util.Color([1,1,1]), opacity : undefined,
     flipHoriz : false, flipVert : false,
-    texRes : 128.0, interpolate : true, depth : -3.0 
+    texRes : 128.0, interpolate : true, depth : -1.0 
   });
+  // Run 'Begin Experiment' code from absoluteTime
+  /* Syntax Error: Fix Python code */
+  catResp = new core.Keyboard({psychoJS: psychoJS, clock: new util.Clock(), waitForStart: true});
+  
   // Run 'Begin Experiment' code from respCheck
   timesRedone = 0;
+  
+  catAllKeys = new core.Keyboard({psychoJS: psychoJS, clock: new util.Clock(), waitForStart: true});
   
   // Initialize components for Routine "cont"
   contClock = new util.Clock();
@@ -5810,22 +5812,26 @@ function faceOnsetRoutineBegin(snapshot) {
     frameN = -1;
     continueRoutine = true; // until we're told otherwise
     // update component parameters for each repeat
+    face_image.setImage(face_file);
+    // Run 'Begin Routine' code from absoluteTime
+    psychoJS.experiment.addData("faceOnsetTime", globalClock.getTime());
+    psychoJS.experiment.nextEntry();
+    
     catResp.keys = undefined;
     catResp.rt = undefined;
     _catResp_allKeys = [];
-    catAllKeys.keys = undefined;
-    catAllKeys.rt = undefined;
-    _catAllKeys_allKeys = [];
-    face_image.setImage(face_file);
     // Run 'Begin Routine' code from respCheck
     redo = 0;
     
+    catAllKeys.keys = undefined;
+    catAllKeys.rt = undefined;
+    _catAllKeys_allKeys = [];
     // keep track of which components have finished
     faceOnsetComponents = [];
-    faceOnsetComponents.push(catResp);
-    faceOnsetComponents.push(catAllKeys);
     faceOnsetComponents.push(respIndicator);
     faceOnsetComponents.push(face_image);
+    faceOnsetComponents.push(catResp);
+    faceOnsetComponents.push(catAllKeys);
     
     for (const thisComponent of faceOnsetComponents)
       if ('status' in thisComponent)
@@ -5842,6 +5848,29 @@ function faceOnsetRoutineEachFrame() {
     t = faceOnsetClock.getTime();
     frameN = frameN + 1;// number of completed frames (so 0 is the first frame)
     // update/draw components on each frame
+    
+    // *respIndicator* updates
+    if ((catResp.keys) && respIndicator.status === PsychoJS.Status.NOT_STARTED) {
+      // keep track of start time/frame for later
+      respIndicator.tStart = t;  // (not accounting for frame time here)
+      respIndicator.frameNStart = frameN;  // exact frame index
+      
+      respIndicator.setAutoDraw(true);
+    }
+
+    if (respIndicator.status === PsychoJS.Status.STARTED && Boolean((face_image.status == FINISHED))) {
+      respIndicator.setAutoDraw(false);
+    }
+    
+    // *face_image* updates
+    if (t >= 0.0 && face_image.status === PsychoJS.Status.NOT_STARTED) {
+      // keep track of start time/frame for later
+      face_image.tStart = t;  // (not accounting for frame time here)
+      face_image.frameNStart = frameN;  // exact frame index
+      
+      face_image.setAutoDraw(true);
+    }
+
     
     // *catResp* updates
     if (t >= 0.0 && catResp.status === PsychoJS.Status.NOT_STARTED) {
@@ -5879,7 +5908,6 @@ function faceOnsetRoutineEachFrame() {
       // keyboard checking is just starting
       psychoJS.window.callOnFlip(function() { catAllKeys.clock.reset(); });  // t=0 on next screen flip
       psychoJS.window.callOnFlip(function() { catAllKeys.start(); }); // start on screen flip
-      psychoJS.window.callOnFlip(function() { catAllKeys.clearEvents(); });
     }
 
     frameRemains = 0.0 + 3 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
@@ -5896,29 +5924,6 @@ function faceOnsetRoutineEachFrame() {
       }
     }
     
-    
-    // *respIndicator* updates
-    if ((catResp.keys) && respIndicator.status === PsychoJS.Status.NOT_STARTED) {
-      // keep track of start time/frame for later
-      respIndicator.tStart = t;  // (not accounting for frame time here)
-      respIndicator.frameNStart = frameN;  // exact frame index
-      
-      respIndicator.setAutoDraw(true);
-    }
-
-    if (respIndicator.status === PsychoJS.Status.STARTED && Boolean((face_image.status == FINISHED))) {
-      respIndicator.setAutoDraw(false);
-    }
-    
-    // *face_image* updates
-    if (t >= 0.0 && face_image.status === PsychoJS.Status.NOT_STARTED) {
-      // keep track of start time/frame for later
-      face_image.tStart = t;  // (not accounting for frame time here)
-      face_image.frameNStart = frameN;  // exact frame index
-      
-      face_image.setAutoDraw(true);
-    }
-
     // Run 'Each Frame' code from endTrial
     if ((t > 3)) {
         continueRoutine = false;
@@ -5969,16 +5974,6 @@ function faceOnsetRoutineEnd(snapshot) {
         }
     
     catResp.stop();
-    // update the trial handler
-    if (currentLoop instanceof MultiStairHandler) {
-      currentLoop.addResponse(catAllKeys.corr, level);
-    }
-    psychoJS.experiment.addData('catAllKeys.keys', catAllKeys.keys);
-    if (typeof catAllKeys.keys !== 'undefined') {  // we had a response
-        psychoJS.experiment.addData('catAllKeys.rt', catAllKeys.rt);
-        }
-    
-    catAllKeys.stop();
     // Run 'End Routine' code from respCheck
     var _pj;
     function _pj_snippets(container) {
@@ -6013,6 +6008,16 @@ function faceOnsetRoutineEnd(snapshot) {
     }
     psychoJS.experiment.addData("globalTimesRedone", timesRedone);
     
+    // update the trial handler
+    if (currentLoop instanceof MultiStairHandler) {
+      currentLoop.addResponse(catAllKeys.corr, level);
+    }
+    psychoJS.experiment.addData('catAllKeys.keys', catAllKeys.keys);
+    if (typeof catAllKeys.keys !== 'undefined') {  // we had a response
+        psychoJS.experiment.addData('catAllKeys.rt', catAllKeys.rt);
+        }
+    
+    catAllKeys.stop();
     // the Routine "faceOnset" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset();
     
@@ -7736,6 +7741,8 @@ async function quitPsychoJS(message, isCompleted) {
   if (psychoJS.experiment.isEntryEmpty()) {
     psychoJS.experiment.nextEntry();
   }
+  
+  
   
   
   
