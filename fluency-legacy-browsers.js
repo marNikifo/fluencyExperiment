@@ -63,10 +63,20 @@ const instrLoopLoopScheduler = new Scheduler(psychoJS);
 flowScheduler.add(instrLoopLoopBegin(instrLoopLoopScheduler));
 flowScheduler.add(instrLoopLoopScheduler);
 flowScheduler.add(instrLoopLoopEnd);
-const attnCheckerLoopScheduler = new Scheduler(psychoJS);
-flowScheduler.add(attnCheckerLoopBegin(attnCheckerLoopScheduler));
-flowScheduler.add(attnCheckerLoopScheduler);
-flowScheduler.add(attnCheckerLoopEnd);
+const attnLoopLoopScheduler = new Scheduler(psychoJS);
+flowScheduler.add(attnLoopLoopBegin(attnLoopLoopScheduler));
+flowScheduler.add(attnLoopLoopScheduler);
+flowScheduler.add(attnLoopLoopEnd);
+flowScheduler.add(attnSuccessRoutineBegin());
+flowScheduler.add(attnSuccessRoutineEachFrame());
+flowScheduler.add(attnSuccessRoutineEnd());
+const practiceTrialLoopScheduler = new Scheduler(psychoJS);
+flowScheduler.add(practiceTrialLoopBegin(practiceTrialLoopScheduler));
+flowScheduler.add(practiceTrialLoopScheduler);
+flowScheduler.add(practiceTrialLoopEnd);
+flowScheduler.add(introDoneRoutineBegin());
+flowScheduler.add(introDoneRoutineEachFrame());
+flowScheduler.add(introDoneRoutineEnd());
 const trialsLoopScheduler = new Scheduler(psychoJS);
 flowScheduler.add(trialsLoopBegin(trialsLoopScheduler));
 flowScheduler.add(trialsLoopScheduler);
@@ -107,118 +117,118 @@ psychoJS.start({
   expName: expName,
   expInfo: expInfo,
   resources: [
-    {'name': 'img/B05_00.jpg', 'path': 'img/B05_00.jpg'},
-    {'name': 'img/B06_09.jpg', 'path': 'img/B06_09.jpg'},
-    {'name': 'img/B01_07.jpg', 'path': 'img/B01_07.jpg'},
-    {'name': 'img/B09_09.jpg', 'path': 'img/B09_09.jpg'},
-    {'name': 'img/B06_03.jpg', 'path': 'img/B06_03.jpg'},
-    {'name': 'img/B08_03.jpg', 'path': 'img/B08_03.jpg'},
-    {'name': 'img/B10_02.jpg', 'path': 'img/B10_02.jpg'},
-    {'name': 'img/B08_04.jpg', 'path': 'img/B08_04.jpg'},
-    {'name': 'img/B06_00.jpg', 'path': 'img/B06_00.jpg'},
-    {'name': 'img/B01_06.jpg', 'path': 'img/B01_06.jpg'},
-    {'name': 'img/B07_04.jpg', 'path': 'img/B07_04.jpg'},
-    {'name': 'img/B04_10.jpg', 'path': 'img/B04_10.jpg'},
-    {'name': 'img/B03_04.jpg', 'path': 'img/B03_04.jpg'},
-    {'name': 'img/B06_01.jpg', 'path': 'img/B06_01.jpg'},
-    {'name': 'img/B07_01.jpg', 'path': 'img/B07_01.jpg'},
-    {'name': 'fluency_conditions.xlsx', 'path': 'fluency_conditions.xlsx'},
-    {'name': 'img/B08_08.jpg', 'path': 'img/B08_08.jpg'},
+    {'name': 'img/B07_08.jpg', 'path': 'img/B07_08.jpg'},
+    {'name': 'img/B01_01.jpg', 'path': 'img/B01_01.jpg'},
+    {'name': 'img/B05_01.jpg', 'path': 'img/B05_01.jpg'},
+    {'name': 'img/B07_03.jpg', 'path': 'img/B07_03.jpg'},
+    {'name': 'img/B04_04.jpg', 'path': 'img/B04_04.jpg'},
+    {'name': 'img/B01_02.jpg', 'path': 'img/B01_02.jpg'},
+    {'name': 'img/B04_09.jpg', 'path': 'img/B04_09.jpg'},
+    {'name': 'img/B03_02.jpg', 'path': 'img/B03_02.jpg'},
+    {'name': 'img/B09_07.jpg', 'path': 'img/B09_07.jpg'},
+    {'name': 'img/B09_08.jpg', 'path': 'img/B09_08.jpg'},
+    {'name': 'img/B10_09.jpg', 'path': 'img/B10_09.jpg'},
+    {'name': 'img/B03_06.jpg', 'path': 'img/B03_06.jpg'},
     {'name': 'img/B04_06.jpg', 'path': 'img/B04_06.jpg'},
+    {'name': 'img/B06_07.jpg', 'path': 'img/B06_07.jpg'},
+    {'name': 'img/B07_04.jpg', 'path': 'img/B07_04.jpg'},
+    {'name': 'img/B07_06.jpg', 'path': 'img/B07_06.jpg'},
+    {'name': 'img/B03_07.jpg', 'path': 'img/B03_07.jpg'},
+    {'name': 'img/B05_03.jpg', 'path': 'img/B05_03.jpg'},
+    {'name': 'img/B08_09.jpg', 'path': 'img/B08_09.jpg'},
+    {'name': 'img/B02_02.jpg', 'path': 'img/B02_02.jpg'},
+    {'name': 'img/B10_02.jpg', 'path': 'img/B10_02.jpg'},
+    {'name': 'img/B10_05.jpg', 'path': 'img/B10_05.jpg'},
+    {'name': 'img/B06_02.jpg', 'path': 'img/B06_02.jpg'},
+    {'name': 'img/B10_10.jpg', 'path': 'img/B10_10.jpg'},
+    {'name': 'img/B07_00.jpg', 'path': 'img/B07_00.jpg'},
+    {'name': 'img/B09_09.jpg', 'path': 'img/B09_09.jpg'},
+    {'name': 'img/B07_01.jpg', 'path': 'img/B07_01.jpg'},
+    {'name': 'img/B05_09.jpg', 'path': 'img/B05_09.jpg'},
+    {'name': 'img/B09_10.jpg', 'path': 'img/B09_10.jpg'},
+    {'name': 'img/B04_03.jpg', 'path': 'img/B04_03.jpg'},
+    {'name': 'img/B07_02.jpg', 'path': 'img/B07_02.jpg'},
+    {'name': 'img/B02_08.jpg', 'path': 'img/B02_08.jpg'},
+    {'name': 'img/B08_03.jpg', 'path': 'img/B08_03.jpg'},
+    {'name': 'img/B08_04.jpg', 'path': 'img/B08_04.jpg'},
+    {'name': 'img/B02_07.jpg', 'path': 'img/B02_07.jpg'},
+    {'name': 'img/B01_00.jpg', 'path': 'img/B01_00.jpg'},
+    {'name': 'img/B02_05.jpg', 'path': 'img/B02_05.jpg'},
+    {'name': 'img/B02_06.jpg', 'path': 'img/B02_06.jpg'},
+    {'name': 'img/B01_05.jpg', 'path': 'img/B01_05.jpg'},
+    {'name': 'img/B05_08.jpg', 'path': 'img/B05_08.jpg'},
+    {'name': 'img/B01_06.jpg', 'path': 'img/B01_06.jpg'},
+    {'name': 'img/B04_10.jpg', 'path': 'img/B04_10.jpg'},
+    {'name': 'img/B09_03.jpg', 'path': 'img/B09_03.jpg'},
+    {'name': 'img/B03_01.jpg', 'path': 'img/B03_01.jpg'},
+    {'name': 'img/B08_06.jpg', 'path': 'img/B08_06.jpg'},
+    {'name': 'img/B02_00.jpg', 'path': 'img/B02_00.jpg'},
+    {'name': 'img/B04_00.jpg', 'path': 'img/B04_00.jpg'},
+    {'name': 'img/B05_07.jpg', 'path': 'img/B05_07.jpg'},
+    {'name': 'img/B06_00.jpg', 'path': 'img/B06_00.jpg'},
+    {'name': 'img/B02_09.jpg', 'path': 'img/B02_09.jpg'},
+    {'name': 'img/B03_09.jpg', 'path': 'img/B03_09.jpg'},
+    {'name': 'img/B06_09.jpg', 'path': 'img/B06_09.jpg'},
+    {'name': 'img/B04_07.jpg', 'path': 'img/B04_07.jpg'},
+    {'name': 'img/B06_06.jpg', 'path': 'img/B06_06.jpg'},
+    {'name': 'img/B08_08.jpg', 'path': 'img/B08_08.jpg'},
+    {'name': 'img/B06_10.jpg', 'path': 'img/B06_10.jpg'},
+    {'name': 'img/B05_10.jpg', 'path': 'img/B05_10.jpg'},
+    {'name': 'img/B01_03.jpg', 'path': 'img/B01_03.jpg'},
+    {'name': 'img/B10_00.jpg', 'path': 'img/B10_00.jpg'},
+    {'name': 'img/B10_04.jpg', 'path': 'img/B10_04.jpg'},
+    {'name': 'img/B02_01.jpg', 'path': 'img/B02_01.jpg'},
+    {'name': 'img/B06_03.jpg', 'path': 'img/B06_03.jpg'},
+    {'name': 'img/B06_01.jpg', 'path': 'img/B06_01.jpg'},
+    {'name': 'img/B06_05.jpg', 'path': 'img/B06_05.jpg'},
+    {'name': 'img/B04_01.jpg', 'path': 'img/B04_01.jpg'},
+    {'name': 'img/B08_00.jpg', 'path': 'img/B08_00.jpg'},
+    {'name': 'img/B05_06.jpg', 'path': 'img/B05_06.jpg'},
+    {'name': 'img/B02_10.jpg', 'path': 'img/B02_10.jpg'},
+    {'name': 'img/B01_04.jpg', 'path': 'img/B01_04.jpg'},
+    {'name': 'img/B07_09.jpg', 'path': 'img/B07_09.jpg'},
+    {'name': 'img/B09_04.jpg', 'path': 'img/B09_04.jpg'},
+    {'name': 'img/B04_02.jpg', 'path': 'img/B04_02.jpg'},
+    {'name': 'img/B03_08.jpg', 'path': 'img/B03_08.jpg'},
+    {'name': 'img/B10_03.jpg', 'path': 'img/B10_03.jpg'},
+    {'name': 'img/B09_00.jpg', 'path': 'img/B09_00.jpg'},
+    {'name': 'img/B03_03.jpg', 'path': 'img/B03_03.jpg'},
+    {'name': 'img/B03_10.jpg', 'path': 'img/B03_10.jpg'},
+    {'name': 'img/B03_04.jpg', 'path': 'img/B03_04.jpg'},
+    {'name': 'img/B03_00.jpg', 'path': 'img/B03_00.jpg'},
+    {'name': 'img/B05_04.jpg', 'path': 'img/B05_04.jpg'},
+    {'name': 'img/B03_05.jpg', 'path': 'img/B03_05.jpg'},
+    {'name': 'img/B06_04.jpg', 'path': 'img/B06_04.jpg'},
+    {'name': 'img/B09_02.jpg', 'path': 'img/B09_02.jpg'},
+    {'name': 'img/B08_01.jpg', 'path': 'img/B08_01.jpg'},
+    {'name': 'img/B09_05.jpg', 'path': 'img/B09_05.jpg'},
+    {'name': 'img/B05_00.jpg', 'path': 'img/B05_00.jpg'},
+    {'name': 'img/B08_07.jpg', 'path': 'img/B08_07.jpg'},
+    {'name': 'img/B01_09.jpg', 'path': 'img/B01_09.jpg'},
+    {'name': 'img/B04_05.jpg', 'path': 'img/B04_05.jpg'},
+    {'name': 'img/B02_03.jpg', 'path': 'img/B02_03.jpg'},
+    {'name': 'img/B06_08.jpg', 'path': 'img/B06_08.jpg'},
+    {'name': 'img/B07_05.jpg', 'path': 'img/B07_05.jpg'},
+    {'name': 'fluency_conditions.xlsx', 'path': 'fluency_conditions.xlsx'},
+    {'name': 'img/B08_05.jpg', 'path': 'img/B08_05.jpg'},
+    {'name': 'img/B01_08.jpg', 'path': 'img/B01_08.jpg'},
+    {'name': 'img/B08_02.jpg', 'path': 'img/B08_02.jpg'},
+    {'name': 'img/B05_02.jpg', 'path': 'img/B05_02.jpg'},
+    {'name': 'img/B01_07.jpg', 'path': 'img/B01_07.jpg'},
+    {'name': 'img/B08_10.jpg', 'path': 'img/B08_10.jpg'},
+    {'name': 'img/B07_07.jpg', 'path': 'img/B07_07.jpg'},
     {'name': 'img/practice_image.jpg', 'path': 'img/practice_image.jpg'},
     {'name': 'img/B01_10.jpg', 'path': 'img/B01_10.jpg'},
-    {'name': 'img/B09_05.jpg', 'path': 'img/B09_05.jpg'},
-    {'name': 'img/B06_02.jpg', 'path': 'img/B06_02.jpg'},
-    {'name': 'img/B08_01.jpg', 'path': 'img/B08_01.jpg'},
-    {'name': 'img/B07_07.jpg', 'path': 'img/B07_07.jpg'},
-    {'name': 'img/B06_06.jpg', 'path': 'img/B06_06.jpg'},
-    {'name': 'img/B10_10.jpg', 'path': 'img/B10_10.jpg'},
-    {'name': 'img/B07_03.jpg', 'path': 'img/B07_03.jpg'},
-    {'name': 'img/B09_06.jpg', 'path': 'img/B09_06.jpg'},
-    {'name': 'img/B08_06.jpg', 'path': 'img/B08_06.jpg'},
-    {'name': 'img/B09_07.jpg', 'path': 'img/B09_07.jpg'},
-    {'name': 'img/B02_07.jpg', 'path': 'img/B02_07.jpg'},
-    {'name': 'img/B07_00.jpg', 'path': 'img/B07_00.jpg'},
-    {'name': 'img/B04_04.jpg', 'path': 'img/B04_04.jpg'},
-    {'name': 'img/B10_05.jpg', 'path': 'img/B10_05.jpg'},
-    {'name': 'img/B06_04.jpg', 'path': 'img/B06_04.jpg'},
-    {'name': 'img/B09_04.jpg', 'path': 'img/B09_04.jpg'},
-    {'name': 'img/B04_09.jpg', 'path': 'img/B04_09.jpg'},
-    {'name': 'img/B09_02.jpg', 'path': 'img/B09_02.jpg'},
-    {'name': 'img/B01_01.jpg', 'path': 'img/B01_01.jpg'},
-    {'name': 'img/B03_03.jpg', 'path': 'img/B03_03.jpg'},
-    {'name': 'img/B01_00.jpg', 'path': 'img/B01_00.jpg'},
-    {'name': 'img/B09_08.jpg', 'path': 'img/B09_08.jpg'},
-    {'name': 'img/B10_07.jpg', 'path': 'img/B10_07.jpg'},
-    {'name': 'img/B03_01.jpg', 'path': 'img/B03_01.jpg'},
-    {'name': 'img/B09_00.jpg', 'path': 'img/B09_00.jpg'},
-    {'name': 'img/B04_02.jpg', 'path': 'img/B04_02.jpg'},
-    {'name': 'img/B09_03.jpg', 'path': 'img/B09_03.jpg'},
-    {'name': 'img/B08_09.jpg', 'path': 'img/B08_09.jpg'},
-    {'name': 'img/B03_02.jpg', 'path': 'img/B03_02.jpg'},
-    {'name': 'img/B07_05.jpg', 'path': 'img/B07_05.jpg'},
-    {'name': 'img/B02_09.jpg', 'path': 'img/B02_09.jpg'},
-    {'name': 'img/B01_03.jpg', 'path': 'img/B01_03.jpg'},
-    {'name': 'img/B10_09.jpg', 'path': 'img/B10_09.jpg'},
-    {'name': 'img/B05_07.jpg', 'path': 'img/B05_07.jpg'},
-    {'name': 'img/B06_07.jpg', 'path': 'img/B06_07.jpg'},
-    {'name': 'img/B03_10.jpg', 'path': 'img/B03_10.jpg'},
-    {'name': 'img/B02_08.jpg', 'path': 'img/B02_08.jpg'},
-    {'name': 'img/B01_02.jpg', 'path': 'img/B01_02.jpg'},
-    {'name': 'img/B10_08.jpg', 'path': 'img/B10_08.jpg'},
-    {'name': 'img/B10_04.jpg', 'path': 'img/B10_04.jpg'},
-    {'name': 'img/B04_01.jpg', 'path': 'img/B04_01.jpg'},
-    {'name': 'img/B06_08.jpg', 'path': 'img/B06_08.jpg'},
-    {'name': 'img/B03_09.jpg', 'path': 'img/B03_09.jpg'},
-    {'name': 'img/B10_06.jpg', 'path': 'img/B10_06.jpg'},
-    {'name': 'img/B08_10.jpg', 'path': 'img/B08_10.jpg'},
-    {'name': 'img/B05_02.jpg', 'path': 'img/B05_02.jpg'},
-    {'name': 'img/B04_07.jpg', 'path': 'img/B04_07.jpg'},
-    {'name': 'img/B03_05.jpg', 'path': 'img/B03_05.jpg'},
-    {'name': 'img/B08_02.jpg', 'path': 'img/B08_02.jpg'},
-    {'name': 'img/B07_10.jpg', 'path': 'img/B07_10.jpg'},
-    {'name': 'img/B05_01.jpg', 'path': 'img/B05_01.jpg'},
-    {'name': 'img/B05_05.jpg', 'path': 'img/B05_05.jpg'},
-    {'name': 'img/B05_09.jpg', 'path': 'img/B05_09.jpg'},
-    {'name': 'img/B02_01.jpg', 'path': 'img/B02_01.jpg'},
-    {'name': 'img/B07_09.jpg', 'path': 'img/B07_09.jpg'},
-    {'name': 'img/B04_05.jpg', 'path': 'img/B04_05.jpg'},
-    {'name': 'img/B10_01.jpg', 'path': 'img/B10_01.jpg'},
-    {'name': 'img/B05_04.jpg', 'path': 'img/B05_04.jpg'},
-    {'name': 'img/B03_00.jpg', 'path': 'img/B03_00.jpg'},
-    {'name': 'img/B08_07.jpg', 'path': 'img/B08_07.jpg'},
-    {'name': 'img/B02_03.jpg', 'path': 'img/B02_03.jpg'},
-    {'name': 'img/B05_08.jpg', 'path': 'img/B05_08.jpg'},
-    {'name': 'img/B05_03.jpg', 'path': 'img/B05_03.jpg'},
     {'name': 'img/B02_04.jpg', 'path': 'img/B02_04.jpg'},
-    {'name': 'img/B03_07.jpg', 'path': 'img/B03_07.jpg'},
-    {'name': 'img/B02_02.jpg', 'path': 'img/B02_02.jpg'},
-    {'name': 'img/B01_04.jpg', 'path': 'img/B01_04.jpg'},
+    {'name': 'img/B10_06.jpg', 'path': 'img/B10_06.jpg'},
     {'name': 'img/B04_08.jpg', 'path': 'img/B04_08.jpg'},
-    {'name': 'img/B06_10.jpg', 'path': 'img/B06_10.jpg'},
-    {'name': 'img/B02_05.jpg', 'path': 'img/B02_05.jpg'},
-    {'name': 'img/B03_06.jpg', 'path': 'img/B03_06.jpg'},
     {'name': 'img/B09_01.jpg', 'path': 'img/B09_01.jpg'},
-    {'name': 'img/B02_06.jpg', 'path': 'img/B02_06.jpg'},
-    {'name': 'img/B03_08.jpg', 'path': 'img/B03_08.jpg'},
-    {'name': 'img/B05_06.jpg', 'path': 'img/B05_06.jpg'},
-    {'name': 'img/B06_05.jpg', 'path': 'img/B06_05.jpg'},
-    {'name': 'img/B08_05.jpg', 'path': 'img/B08_05.jpg'},
-    {'name': 'img/B04_00.jpg', 'path': 'img/B04_00.jpg'},
-    {'name': 'img/B10_03.jpg', 'path': 'img/B10_03.jpg'},
-    {'name': 'img/B07_08.jpg', 'path': 'img/B07_08.jpg'},
-    {'name': 'img/B05_10.jpg', 'path': 'img/B05_10.jpg'},
-    {'name': 'img/B01_05.jpg', 'path': 'img/B01_05.jpg'},
-    {'name': 'img/B04_03.jpg', 'path': 'img/B04_03.jpg'},
-    {'name': 'img/B02_10.jpg', 'path': 'img/B02_10.jpg'},
-    {'name': 'img/B01_08.jpg', 'path': 'img/B01_08.jpg'},
-    {'name': 'img/B07_02.jpg', 'path': 'img/B07_02.jpg'},
-    {'name': 'img/B02_00.jpg', 'path': 'img/B02_00.jpg'},
-    {'name': 'img/B08_00.jpg', 'path': 'img/B08_00.jpg'},
-    {'name': 'img/B10_00.jpg', 'path': 'img/B10_00.jpg'},
-    {'name': 'img/B09_10.jpg', 'path': 'img/B09_10.jpg'},
-    {'name': 'img/B01_09.jpg', 'path': 'img/B01_09.jpg'},
-    {'name': 'img/B07_06.jpg', 'path': 'img/B07_06.jpg'}
+    {'name': 'img/B05_05.jpg', 'path': 'img/B05_05.jpg'},
+    {'name': 'img/B10_07.jpg', 'path': 'img/B10_07.jpg'},
+    {'name': 'img/B10_01.jpg', 'path': 'img/B10_01.jpg'},
+    {'name': 'img/B09_06.jpg', 'path': 'img/B09_06.jpg'},
+    {'name': 'img/B10_08.jpg', 'path': 'img/B10_08.jpg'},
+    {'name': 'img/B07_10.jpg', 'path': 'img/B07_10.jpg'}
   ]
 });
 
@@ -231,10 +241,9 @@ async function updateInfo() {
   currentLoop = psychoJS.experiment;  // right now there are no loops
   expInfo['date'] = util.MonotonicClock.getDateStr();  // add a simple timestamp
   expInfo['expName'] = expName;
-  expInfo['psychopyVersion'] = '2022.2.4';
+  expInfo['psychopyVersion'] = '2022.2.5';
   expInfo['OS'] = window.navigator.platform;
 
-  psychoJS.experiment.dataFileName = (("." + "/") + `data/${expInfo["date"]}_${expInfo["participant"]}_${expName}`);
 
   // store frame rate of monitor if we can measure it successfully
   expInfo['frameRate'] = psychoJS.window.getActualFrameRate();
@@ -246,6 +255,11 @@ async function updateInfo() {
   // add info from the URL:
   util.addInfoFromUrl(expInfo);
   
+
+  
+  psychoJS.experiment.dataFileName = (("." + "/") + `data/${expInfo["date"]}_${expInfo["participant"]}_${expName}`);
+
+
   return Scheduler.Event.NEXT;
 }
 
@@ -321,8 +335,8 @@ var practiceStart_button;
 var fixationClock;
 var fixCross;
 var practiceFaceClock;
-var practiceResp;
 var respIndicator_2;
+var practiceResp;
 var practiceImage;
 var timesRedone;
 var redo_feedbackClock;
@@ -924,8 +938,6 @@ async function experimentInit() {
   
   // Initialize components for Routine "practiceFace"
   practiceFaceClock = new util.Clock();
-  practiceResp = new core.Keyboard({psychoJS: psychoJS, clock: new util.Clock(), waitForStart: true});
-  
   respIndicator_2 = new visual.Rect ({
     win: psychoJS.window, name: 'respIndicator_2', 
     width: [0.41, 0.61][0], height: [0.41, 0.61][1],
@@ -934,8 +946,10 @@ async function experimentInit() {
     colorSpace: 'rgb',
     lineColor: new util.Color([0.0, 0.0, 0.0]),
     fillColor: new util.Color([(- 1.0), 1.0, (- 1.0)]),
-    opacity: 1.0, depth: -1, interpolate: true,
+    opacity: 1.0, depth: 0, interpolate: true,
   });
+  
+  practiceResp = new core.Keyboard({psychoJS: psychoJS, clock: new util.Clock(), waitForStart: true});
   
   practiceImage = new visual.ImageStim({
     win : psychoJS.window,
@@ -2406,49 +2420,6 @@ function instrLoopLoopEndIteration(scheduler, snapshot) {
 }
 
 
-var attnChecker;
-function attnCheckerLoopBegin(attnCheckerLoopScheduler, snapshot) {
-  return async function() {
-    TrialHandler.fromSnapshot(snapshot); // update internal variables (.thisN etc) of the loop
-    
-    // set up handler to look after randomisation of conditions etc
-    attnChecker = new TrialHandler({
-      psychoJS: psychoJS,
-      nReps: 1, method: TrialHandler.Method.SEQUENTIAL,
-      extraInfo: expInfo, originPath: undefined,
-      trialList: undefined,
-      seed: undefined, name: 'attnChecker'
-    });
-    psychoJS.experiment.addLoop(attnChecker); // add the loop to the experiment
-    currentLoop = attnChecker;  // we're now the current loop
-    
-    // Schedule all the trials in the trialList:
-    attnChecker.forEach(function() {
-      snapshot = attnChecker.getSnapshot();
-    
-      attnCheckerLoopScheduler.add(importConditions(snapshot));
-      const attnLoopLoopScheduler = new Scheduler(psychoJS);
-      attnCheckerLoopScheduler.add(attnLoopLoopBegin(attnLoopLoopScheduler, snapshot));
-      attnCheckerLoopScheduler.add(attnLoopLoopScheduler);
-      attnCheckerLoopScheduler.add(attnLoopLoopEnd);
-      attnCheckerLoopScheduler.add(attnSuccessRoutineBegin(snapshot));
-      attnCheckerLoopScheduler.add(attnSuccessRoutineEachFrame());
-      attnCheckerLoopScheduler.add(attnSuccessRoutineEnd(snapshot));
-      const practiceTrialLoopScheduler = new Scheduler(psychoJS);
-      attnCheckerLoopScheduler.add(practiceTrialLoopBegin(practiceTrialLoopScheduler, snapshot));
-      attnCheckerLoopScheduler.add(practiceTrialLoopScheduler);
-      attnCheckerLoopScheduler.add(practiceTrialLoopEnd);
-      attnCheckerLoopScheduler.add(introDoneRoutineBegin(snapshot));
-      attnCheckerLoopScheduler.add(introDoneRoutineEachFrame());
-      attnCheckerLoopScheduler.add(introDoneRoutineEnd(snapshot));
-      attnCheckerLoopScheduler.add(attnCheckerLoopEndIteration(attnCheckerLoopScheduler, snapshot));
-    });
-    
-    return Scheduler.Event.NEXT;
-  }
-}
-
-
 var attnLoop;
 function attnLoopLoopBegin(attnLoopLoopScheduler, snapshot) {
   return async function() {
@@ -3038,38 +3009,6 @@ async function practiceTrialLoopEnd() {
 
 
 function practiceTrialLoopEndIteration(scheduler, snapshot) {
-  // ------Prepare for next entry------
-  return async function () {
-    if (typeof snapshot !== 'undefined') {
-      // ------Check if user ended loop early------
-      if (snapshot.finished) {
-        // Check for and save orphaned data
-        if (psychoJS.experiment.isEntryEmpty()) {
-          psychoJS.experiment.nextEntry(snapshot);
-        }
-        scheduler.stop();
-      } else {
-        psychoJS.experiment.nextEntry(snapshot);
-      }
-    return Scheduler.Event.NEXT;
-    }
-  };
-}
-
-
-async function attnCheckerLoopEnd() {
-  // terminate loop
-  psychoJS.experiment.removeLoop(attnChecker);
-  // update the current loop from the ExperimentHandler
-  if (psychoJS.experiment._unfinishedLoops.length>0)
-    currentLoop = psychoJS.experiment._unfinishedLoops.at(-1);
-  else
-    currentLoop = psychoJS.experiment;  // so we use addData from the experiment
-  return Scheduler.Event.NEXT;
-}
-
-
-function attnCheckerLoopEndIteration(scheduler, snapshot) {
   // ------Prepare for next entry------
   return async function () {
     if (typeof snapshot !== 'undefined') {
@@ -5195,6 +5134,10 @@ function fixationRoutineEnd(snapshot) {
         thisComponent.setAutoDraw(false);
       }
     });
+    // Run 'End Routine' code from clearBuffer
+    psychoJS.eventManager.clearEvents();
+    keys = psychoJS.eventManager.getKeys({"clear": true});
+    
     // the Routine "fixation" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset();
     
@@ -5228,8 +5171,8 @@ function practiceFaceRoutineBegin(snapshot) {
     
     // keep track of which components have finished
     practiceFaceComponents = [];
-    practiceFaceComponents.push(practiceResp);
     practiceFaceComponents.push(respIndicator_2);
+    practiceFaceComponents.push(practiceResp);
     practiceFaceComponents.push(practiceImage);
     
     practiceFaceComponents.forEach( function(thisComponent) {
@@ -5248,6 +5191,19 @@ function practiceFaceRoutineEachFrame() {
     t = practiceFaceClock.getTime();
     frameN = frameN + 1;// number of completed frames (so 0 is the first frame)
     // update/draw components on each frame
+    
+    // *respIndicator_2* updates
+    if ((practiceResp.keys) && respIndicator_2.status === PsychoJS.Status.NOT_STARTED) {
+      // keep track of start time/frame for later
+      respIndicator_2.tStart = t;  // (not accounting for frame time here)
+      respIndicator_2.frameNStart = frameN;  // exact frame index
+      
+      respIndicator_2.setAutoDraw(true);
+    }
+
+    if (respIndicator_2.status === PsychoJS.Status.STARTED && Boolean((practiceImage.status == FINISHED))) {
+      respIndicator_2.setAutoDraw(false);
+    }
     
     // *practiceResp* updates
     if (t >= 0.0 && practiceResp.status === PsychoJS.Status.NOT_STARTED) {
@@ -5275,19 +5231,6 @@ function practiceFaceRoutineEachFrame() {
       }
     }
     
-    
-    // *respIndicator_2* updates
-    if ((practiceResp.keys) && respIndicator_2.status === PsychoJS.Status.NOT_STARTED) {
-      // keep track of start time/frame for later
-      respIndicator_2.tStart = t;  // (not accounting for frame time here)
-      respIndicator_2.frameNStart = frameN;  // exact frame index
-      
-      respIndicator_2.setAutoDraw(true);
-    }
-
-    if (respIndicator_2.status === PsychoJS.Status.STARTED && Boolean((practiceImage.status == FINISHED))) {
-      respIndicator_2.setAutoDraw(false);
-    }
     
     // *practiceImage* updates
     if (t >= 0.0 && practiceImage.status === PsychoJS.Status.NOT_STARTED) {
@@ -5367,7 +5310,7 @@ function practiceFaceRoutineEnd(snapshot) {
     }
     _pj = {};
     _pj_snippets(_pj);
-    keys = psychoJS.eventManager.getKeys(["j", "k"]);
+    keys = psychoJS.eventManager.getKeys(["j", "k"], {"clear": true});
     if ((keys.length > 0)) {
         if ((_pj.in_es6("k", keys) || _pj.in_es6("j", keys))) {
             practiceRepeat.finished = true;
@@ -5462,7 +5405,6 @@ function redo_feedbackRoutineEachFrame() {
       // keyboard checking is just starting
       psychoJS.window.callOnFlip(function() { redo_keypress.clock.reset(); });  // t=0 on next screen flip
       psychoJS.window.callOnFlip(function() { redo_keypress.start(); }); // start on screen flip
-      psychoJS.window.callOnFlip(function() { redo_keypress.clearEvents(); });
     }
 
     if (redo_keypress.status === PsychoJS.Status.STARTED) {
@@ -5850,6 +5792,7 @@ function faceOnsetRoutineBegin(snapshot) {
     _catResp_allKeys = [];
     // Run 'Begin Routine' code from respCheck
     redo = 0;
+    keys = [];
     
     catAllKeys.keys = undefined;
     catAllKeys.rt = undefined;
@@ -6022,7 +5965,7 @@ function faceOnsetRoutineEnd(snapshot) {
     }
     _pj = {};
     _pj_snippets(_pj);
-    keys = psychoJS.eventManager.getKeys(["j", "k"]);
+    keys = psychoJS.eventManager.getKeys(["j", "k"], {"clear": true});
     if ((keys.length > 0)) {
         if ((_pj.in_es6("k", keys) || _pj.in_es6("j", keys))) {
             repeat_loop.finished = true;
@@ -7780,6 +7723,8 @@ async function quitPsychoJS(message, isCompleted) {
   if (psychoJS.experiment.isEntryEmpty()) {
     psychoJS.experiment.nextEntry();
   }
+  
+  
   
   
   

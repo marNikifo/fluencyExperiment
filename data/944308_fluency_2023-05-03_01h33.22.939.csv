@@ -1,7 +1,0 @@
-﻿idTextbox.text,welcomeDone.numClicks,welcomeDone.timesOn,welcomeDone.timesOff,participant,session,date,expName,psychopyVersion,OS,frameRate,consent_advance.keys,consent_advance.rt,consent_advance_2.keys,consent_advance_2.rt,consentClick.x,consentClick.y,consentClick.leftButton,consentClick.midButton,consentClick.rightButton,consentClick.time,consentClick.clicked_name,instr_advance_3.keys,instr_advance_3.rt,spec_instr_adv.keys,spec_instr_adv.rt,spec_instr_adv2.keys,spec_instr_adv2.rt,instrLoop.thisRepN,instrLoop.thisTrialN,instrLoop.thisN,instrLoop.thisIndex,instrLoop.ran,steps,fams,face_file,cond,instr,term,key_map
-5f600669b846780f0fe45709,1,[27.203],[27.203],944308,001,2023-05-03_01h33.22.939,fluency,2022.2.5,Win32,59.95203837,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,944308,001,2023-05-03_01h33.22.939,fluency,2022.2.5,Win32,59.95203837,space,1.42,,,,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,944308,001,2023-05-03_01h33.22.939,fluency,2022.2.5,Win32,59.95203837,,,space,0.419,,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,944308,001,2023-05-03_01h33.22.939,fluency,2022.2.5,Win32,59.95203837,,,,,0.342592593,-0.387037037,1,0,0,1.618,iAgree,,,,,,,,,,,,,,,,,,
-,,,,944308,001,2023-05-03_01h33.22.939,fluency,2022.2.5,Win32,59.95203837,,,,,,,,,,,,space,0.424,,,,,,,,,,,,,,,,
-,,,,944308,001,2023-05-03_01h33.22.939,fluency,2022.2.5,Win32,59.95203837,,,,,,,,,,,,,,space,0.354,space,0.431,0,0,0,57,1,2,6,img/B06_02.jpg,CONTROL,Press K as soon as you see a face, ,KJ

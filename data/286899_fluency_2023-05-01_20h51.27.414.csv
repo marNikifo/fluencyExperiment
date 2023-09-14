@@ -1,6 +1,0 @@
-﻿idTextbox.text,welcomeDone.numClicks,welcomeDone.timesOn,welcomeDone.timesOff,participant,session,date,expName,psychopyVersion,OS,frameRate,consent_advance.keys,consent_advance.rt,consent_advance_2.keys,consent_advance_2.rt,consentClick.x,consentClick.y,consentClick.leftButton,consentClick.midButton,consentClick.rightButton,consentClick.time,consentClick.clicked_name,instr_advance_3.keys,instr_advance_3.rt
-5c7ed8dfe82bf100010fb514,1,[26.30309999999404],[26.30319999998808],286899,001,2023-05-01_20h51.27.414,fluency,2022.2.5,Win32,60.03121623,,,,,,,,,,,,,
-,,,,286899,001,2023-05-01_20h51.27.414,fluency,2022.2.5,Win32,60.03121623,space,1.0266,,,,,,,,,,,
-,,,,286899,001,2023-05-01_20h51.27.414,fluency,2022.2.5,Win32,60.03121623,,,space,1.0706,,,,,,,,,
-,,,,286899,001,2023-05-01_20h51.27.414,fluency,2022.2.5,Win32,60.03121623,,,,,0.192708333,-0.361979167,1,0,0,2.2292,iAgree,,
-,,,,286899,001,2023-05-01_20h51.27.414,fluency,2022.2.5,Win32,60.03121623,,,,,,,,,,,,space,1.6882
