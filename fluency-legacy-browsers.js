@@ -107,118 +107,118 @@ psychoJS.start({
   expName: expName,
   expInfo: expInfo,
   resources: [
+    {'name': 'img/B04_07.jpg', 'path': 'img/B04_07.jpg'},
+    {'name': 'img/B05_03.jpg', 'path': 'img/B05_03.jpg'},
+    {'name': 'img/B07_10.jpg', 'path': 'img/B07_10.jpg'},
+    {'name': 'img/B03_02.jpg', 'path': 'img/B03_02.jpg'},
+    {'name': 'img/B01_01.jpg', 'path': 'img/B01_01.jpg'},
+    {'name': 'img/B05_09.jpg', 'path': 'img/B05_09.jpg'},
+    {'name': 'img/B01_04.jpg', 'path': 'img/B01_04.jpg'},
+    {'name': 'img/B05_02.jpg', 'path': 'img/B05_02.jpg'},
+    {'name': 'img/B09_10.jpg', 'path': 'img/B09_10.jpg'},
+    {'name': 'img/B04_01.jpg', 'path': 'img/B04_01.jpg'},
+    {'name': 'img/B10_03.jpg', 'path': 'img/B10_03.jpg'},
+    {'name': 'img/B02_09.jpg', 'path': 'img/B02_09.jpg'},
+    {'name': 'img/B04_05.jpg', 'path': 'img/B04_05.jpg'},
+    {'name': 'img/B01_03.jpg', 'path': 'img/B01_03.jpg'},
+    {'name': 'img/B07_02.jpg', 'path': 'img/B07_02.jpg'},
+    {'name': 'img/B03_05.jpg', 'path': 'img/B03_05.jpg'},
     {'name': 'img/B10_10.jpg', 'path': 'img/B10_10.jpg'},
+    {'name': 'img/B01_07.jpg', 'path': 'img/B01_07.jpg'},
+    {'name': 'img/B06_02.jpg', 'path': 'img/B06_02.jpg'},
+    {'name': 'img/B05_00.jpg', 'path': 'img/B05_00.jpg'},
+    {'name': 'img/B09_03.jpg', 'path': 'img/B09_03.jpg'},
+    {'name': 'img/B02_10.jpg', 'path': 'img/B02_10.jpg'},
+    {'name': 'img/B05_08.jpg', 'path': 'img/B05_08.jpg'},
+    {'name': 'img/B03_07.jpg', 'path': 'img/B03_07.jpg'},
+    {'name': 'img/B01_10.jpg', 'path': 'img/B01_10.jpg'},
+    {'name': 'img/B01_06.jpg', 'path': 'img/B01_06.jpg'},
+    {'name': 'img/B04_02.jpg', 'path': 'img/B04_02.jpg'},
+    {'name': 'img/B02_00.jpg', 'path': 'img/B02_00.jpg'},
+    {'name': 'img/B06_08.jpg', 'path': 'img/B06_08.jpg'},
+    {'name': 'img/B03_10.jpg', 'path': 'img/B03_10.jpg'},
+    {'name': 'img/B06_03.jpg', 'path': 'img/B06_03.jpg'},
+    {'name': 'img/B09_01.jpg', 'path': 'img/B09_01.jpg'},
+    {'name': 'img/B08_06.jpg', 'path': 'img/B08_06.jpg'},
+    {'name': 'img/B04_00.jpg', 'path': 'img/B04_00.jpg'},
+    {'name': 'img/B06_05.jpg', 'path': 'img/B06_05.jpg'},
+    {'name': 'img/B03_09.jpg', 'path': 'img/B03_09.jpg'},
+    {'name': 'img/B03_00.jpg', 'path': 'img/B03_00.jpg'},
+    {'name': 'img/B06_01.jpg', 'path': 'img/B06_01.jpg'},
+    {'name': 'img/B10_09.jpg', 'path': 'img/B10_09.jpg'},
+    {'name': 'img/B06_00.jpg', 'path': 'img/B06_00.jpg'},
+    {'name': 'img/B07_01.jpg', 'path': 'img/B07_01.jpg'},
+    {'name': 'img/B07_08.jpg', 'path': 'img/B07_08.jpg'},
+    {'name': 'img/B02_05.jpg', 'path': 'img/B02_05.jpg'},
+    {'name': 'img/B03_01.jpg', 'path': 'img/B03_01.jpg'},
+    {'name': 'img/B05_05.jpg', 'path': 'img/B05_05.jpg'},
+    {'name': 'img/B09_05.jpg', 'path': 'img/B09_05.jpg'},
+    {'name': 'img/B02_03.jpg', 'path': 'img/B02_03.jpg'},
+    {'name': 'img/B02_04.jpg', 'path': 'img/B02_04.jpg'},
+    {'name': 'img/B10_07.jpg', 'path': 'img/B10_07.jpg'},
+    {'name': 'img/B07_04.jpg', 'path': 'img/B07_04.jpg'},
+    {'name': 'img/B06_06.jpg', 'path': 'img/B06_06.jpg'},
+    {'name': 'img/B09_02.jpg', 'path': 'img/B09_02.jpg'},
+    {'name': 'img/B02_08.jpg', 'path': 'img/B02_08.jpg'},
+    {'name': 'img/B06_09.jpg', 'path': 'img/B06_09.jpg'},
+    {'name': 'img/B07_03.jpg', 'path': 'img/B07_03.jpg'},
+    {'name': 'img/B10_04.jpg', 'path': 'img/B10_04.jpg'},
+    {'name': 'img/B05_04.jpg', 'path': 'img/B05_04.jpg'},
+    {'name': 'img/B04_09.jpg', 'path': 'img/B04_09.jpg'},
+    {'name': 'img/practice_image.jpg', 'path': 'img/practice_image.jpg'},
+    {'name': 'img/B04_06.jpg', 'path': 'img/B04_06.jpg'},
+    {'name': 'img/B07_09.jpg', 'path': 'img/B07_09.jpg'},
+    {'name': 'img/B01_00.jpg', 'path': 'img/B01_00.jpg'},
+    {'name': 'img/B08_01.jpg', 'path': 'img/B08_01.jpg'},
+    {'name': 'img/B07_06.jpg', 'path': 'img/B07_06.jpg'},
+    {'name': 'img/B06_10.jpg', 'path': 'img/B06_10.jpg'},
+    {'name': 'img/B08_10.jpg', 'path': 'img/B08_10.jpg'},
+    {'name': 'img/B08_08.jpg', 'path': 'img/B08_08.jpg'},
+    {'name': 'img/B08_05.jpg', 'path': 'img/B08_05.jpg'},
+    {'name': 'img/B10_00.jpg', 'path': 'img/B10_00.jpg'},
+    {'name': 'img/B02_07.jpg', 'path': 'img/B02_07.jpg'},
+    {'name': 'img/B03_04.jpg', 'path': 'img/B03_04.jpg'},
+    {'name': 'img/B08_03.jpg', 'path': 'img/B08_03.jpg'},
+    {'name': 'img/B05_06.jpg', 'path': 'img/B05_06.jpg'},
+    {'name': 'img/B04_04.jpg', 'path': 'img/B04_04.jpg'},
+    {'name': 'img/B10_05.jpg', 'path': 'img/B10_05.jpg'},
+    {'name': 'img/B08_07.jpg', 'path': 'img/B08_07.jpg'},
+    {'name': 'img/B02_06.jpg', 'path': 'img/B02_06.jpg'},
+    {'name': 'img/B09_08.jpg', 'path': 'img/B09_08.jpg'},
+    {'name': 'fluency_conditions.xlsx', 'path': 'fluency_conditions.xlsx'},
+    {'name': 'img/B02_02.jpg', 'path': 'img/B02_02.jpg'},
+    {'name': 'img/B03_06.jpg', 'path': 'img/B03_06.jpg'},
+    {'name': 'img/B04_03.jpg', 'path': 'img/B04_03.jpg'},
+    {'name': 'img/B07_05.jpg', 'path': 'img/B07_05.jpg'},
+    {'name': 'img/B10_02.jpg', 'path': 'img/B10_02.jpg'},
+    {'name': 'img/B08_02.jpg', 'path': 'img/B08_02.jpg'},
+    {'name': 'img/B05_07.jpg', 'path': 'img/B05_07.jpg'},
+    {'name': 'img/B07_07.jpg', 'path': 'img/B07_07.jpg'},
+    {'name': 'img/B08_04.jpg', 'path': 'img/B08_04.jpg'},
+    {'name': 'img/B02_01.jpg', 'path': 'img/B02_01.jpg'},
+    {'name': 'img/B01_05.jpg', 'path': 'img/B01_05.jpg'},
+    {'name': 'img/B10_08.jpg', 'path': 'img/B10_08.jpg'},
+    {'name': 'img/B04_08.jpg', 'path': 'img/B04_08.jpg'},
+    {'name': 'img/B04_10.jpg', 'path': 'img/B04_10.jpg'},
+    {'name': 'img/B09_09.jpg', 'path': 'img/B09_09.jpg'},
+    {'name': 'img/B10_06.jpg', 'path': 'img/B10_06.jpg'},
+    {'name': 'img/B06_04.jpg', 'path': 'img/B06_04.jpg'},
+    {'name': 'img/B06_07.jpg', 'path': 'img/B06_07.jpg'},
+    {'name': 'img/B10_01.jpg', 'path': 'img/B10_01.jpg'},
+    {'name': 'img/B09_00.jpg', 'path': 'img/B09_00.jpg'},
+    {'name': 'img/B08_00.jpg', 'path': 'img/B08_00.jpg'},
     {'name': 'img/B01_08.jpg', 'path': 'img/B01_08.jpg'},
     {'name': 'img/B03_08.jpg', 'path': 'img/B03_08.jpg'},
-    {'name': 'img/B10_07.jpg', 'path': 'img/B10_07.jpg'},
-    {'name': 'img/B08_03.jpg', 'path': 'img/B08_03.jpg'},
-    {'name': 'img/B02_01.jpg', 'path': 'img/B02_01.jpg'},
-    {'name': 'img/B07_03.jpg', 'path': 'img/B07_03.jpg'},
-    {'name': 'img/B04_00.jpg', 'path': 'img/B04_00.jpg'},
-    {'name': 'img/B10_03.jpg', 'path': 'img/B10_03.jpg'},
-    {'name': 'img/B07_07.jpg', 'path': 'img/B07_07.jpg'},
-    {'name': 'img/B05_00.jpg', 'path': 'img/B05_00.jpg'},
-    {'name': 'img/B09_00.jpg', 'path': 'img/B09_00.jpg'},
-    {'name': 'img/B01_02.jpg', 'path': 'img/B01_02.jpg'},
-    {'name': 'img/B08_07.jpg', 'path': 'img/B08_07.jpg'},
-    {'name': 'img/B04_08.jpg', 'path': 'img/B04_08.jpg'},
-    {'name': 'img/B06_01.jpg', 'path': 'img/B06_01.jpg'},
-    {'name': 'img/B07_10.jpg', 'path': 'img/B07_10.jpg'},
-    {'name': 'img/B05_10.jpg', 'path': 'img/B05_10.jpg'},
-    {'name': 'img/B07_01.jpg', 'path': 'img/B07_01.jpg'},
-    {'name': 'img/B01_10.jpg', 'path': 'img/B01_10.jpg'},
-    {'name': 'img/B05_06.jpg', 'path': 'img/B05_06.jpg'},
-    {'name': 'img/B04_03.jpg', 'path': 'img/B04_03.jpg'},
-    {'name': 'img/B02_04.jpg', 'path': 'img/B02_04.jpg'},
-    {'name': 'img/B10_02.jpg', 'path': 'img/B10_02.jpg'},
-    {'name': 'img/B03_05.jpg', 'path': 'img/B03_05.jpg'},
-    {'name': 'img/B09_02.jpg', 'path': 'img/B09_02.jpg'},
-    {'name': 'img/B03_09.jpg', 'path': 'img/B03_09.jpg'},
-    {'name': 'img/B06_10.jpg', 'path': 'img/B06_10.jpg'},
-    {'name': 'img/B03_02.jpg', 'path': 'img/B03_02.jpg'},
-    {'name': 'img/B03_10.jpg', 'path': 'img/B03_10.jpg'},
-    {'name': 'img/B03_06.jpg', 'path': 'img/B03_06.jpg'},
-    {'name': 'img/B04_09.jpg', 'path': 'img/B04_09.jpg'},
     {'name': 'img/B03_03.jpg', 'path': 'img/B03_03.jpg'},
-    {'name': 'img/B08_00.jpg', 'path': 'img/B08_00.jpg'},
-    {'name': 'img/B03_04.jpg', 'path': 'img/B03_04.jpg'},
     {'name': 'img/B07_00.jpg', 'path': 'img/B07_00.jpg'},
-    {'name': 'img/B09_04.jpg', 'path': 'img/B09_04.jpg'},
-    {'name': 'img/B07_08.jpg', 'path': 'img/B07_08.jpg'},
-    {'name': 'img/B09_01.jpg', 'path': 'img/B09_01.jpg'},
-    {'name': 'img/B10_01.jpg', 'path': 'img/B10_01.jpg'},
-    {'name': 'img/B03_00.jpg', 'path': 'img/B03_00.jpg'},
-    {'name': 'img/B03_01.jpg', 'path': 'img/B03_01.jpg'},
-    {'name': 'img/B07_04.jpg', 'path': 'img/B07_04.jpg'},
-    {'name': 'img/B09_05.jpg', 'path': 'img/B09_05.jpg'},
-    {'name': 'img/B03_07.jpg', 'path': 'img/B03_07.jpg'},
-    {'name': 'img/B10_00.jpg', 'path': 'img/B10_00.jpg'},
-    {'name': 'img/B02_03.jpg', 'path': 'img/B02_03.jpg'},
-    {'name': 'img/B02_07.jpg', 'path': 'img/B02_07.jpg'},
-    {'name': 'img/B02_10.jpg', 'path': 'img/B02_10.jpg'},
-    {'name': 'img/B01_06.jpg', 'path': 'img/B01_06.jpg'},
-    {'name': 'img/B01_01.jpg', 'path': 'img/B01_01.jpg'},
-    {'name': 'img/B06_09.jpg', 'path': 'img/B06_09.jpg'},
-    {'name': 'img/B10_09.jpg', 'path': 'img/B10_09.jpg'},
-    {'name': 'img/B02_06.jpg', 'path': 'img/B02_06.jpg'},
-    {'name': 'img/B04_01.jpg', 'path': 'img/B04_01.jpg'},
-    {'name': 'img/B06_05.jpg', 'path': 'img/B06_05.jpg'},
-    {'name': 'img/B10_08.jpg', 'path': 'img/B10_08.jpg'},
-    {'name': 'img/B05_01.jpg', 'path': 'img/B05_01.jpg'},
-    {'name': 'img/B05_02.jpg', 'path': 'img/B05_02.jpg'},
-    {'name': 'img/B09_07.jpg', 'path': 'img/B09_07.jpg'},
-    {'name': 'img/B01_00.jpg', 'path': 'img/B01_00.jpg'},
-    {'name': 'img/B09_09.jpg', 'path': 'img/B09_09.jpg'},
-    {'name': 'img/B05_08.jpg', 'path': 'img/B05_08.jpg'},
-    {'name': 'img/B05_09.jpg', 'path': 'img/B05_09.jpg'},
-    {'name': 'img/B08_01.jpg', 'path': 'img/B08_01.jpg'},
-    {'name': 'fluency_conditions.xlsx', 'path': 'fluency_conditions.xlsx'},
-    {'name': 'img/B01_03.jpg', 'path': 'img/B01_03.jpg'},
-    {'name': 'img/B07_09.jpg', 'path': 'img/B07_09.jpg'},
-    {'name': 'img/B09_06.jpg', 'path': 'img/B09_06.jpg'},
-    {'name': 'img/B07_02.jpg', 'path': 'img/B07_02.jpg'},
-    {'name': 'img/B08_02.jpg', 'path': 'img/B08_02.jpg'},
-    {'name': 'img/B06_00.jpg', 'path': 'img/B06_00.jpg'},
-    {'name': 'img/B08_08.jpg', 'path': 'img/B08_08.jpg'},
-    {'name': 'img/B09_08.jpg', 'path': 'img/B09_08.jpg'},
-    {'name': 'img/B05_04.jpg', 'path': 'img/B05_04.jpg'},
     {'name': 'img/B01_09.jpg', 'path': 'img/B01_09.jpg'},
-    {'name': 'img/B02_08.jpg', 'path': 'img/B02_08.jpg'},
-    {'name': 'img/B07_06.jpg', 'path': 'img/B07_06.jpg'},
-    {'name': 'img/B02_02.jpg', 'path': 'img/B02_02.jpg'},
-    {'name': 'img/B06_07.jpg', 'path': 'img/B06_07.jpg'},
-    {'name': 'img/B08_04.jpg', 'path': 'img/B08_04.jpg'},
+    {'name': 'img/B05_01.jpg', 'path': 'img/B05_01.jpg'},
     {'name': 'img/B08_09.jpg', 'path': 'img/B08_09.jpg'},
-    {'name': 'img/B06_04.jpg', 'path': 'img/B06_04.jpg'},
-    {'name': 'img/B05_05.jpg', 'path': 'img/B05_05.jpg'},
-    {'name': 'img/B01_05.jpg', 'path': 'img/B01_05.jpg'},
-    {'name': 'img/B06_02.jpg', 'path': 'img/B06_02.jpg'},
-    {'name': 'img/B10_05.jpg', 'path': 'img/B10_05.jpg'},
-    {'name': 'img/B06_03.jpg', 'path': 'img/B06_03.jpg'},
-    {'name': 'img/B10_06.jpg', 'path': 'img/B10_06.jpg'},
-    {'name': 'img/B05_03.jpg', 'path': 'img/B05_03.jpg'},
-    {'name': 'img/B08_10.jpg', 'path': 'img/B08_10.jpg'},
-    {'name': 'img/B04_07.jpg', 'path': 'img/B04_07.jpg'},
-    {'name': 'img/B04_06.jpg', 'path': 'img/B04_06.jpg'},
-    {'name': 'img/B06_08.jpg', 'path': 'img/B06_08.jpg'},
-    {'name': 'img/B10_04.jpg', 'path': 'img/B10_04.jpg'},
-    {'name': 'img/B05_07.jpg', 'path': 'img/B05_07.jpg'},
-    {'name': 'img/B08_05.jpg', 'path': 'img/B08_05.jpg'},
-    {'name': 'img/B01_07.jpg', 'path': 'img/B01_07.jpg'},
-    {'name': 'img/B02_00.jpg', 'path': 'img/B02_00.jpg'},
-    {'name': 'img/B02_09.jpg', 'path': 'img/B02_09.jpg'},
-    {'name': 'img/B06_06.jpg', 'path': 'img/B06_06.jpg'},
-    {'name': 'img/B07_05.jpg', 'path': 'img/B07_05.jpg'},
-    {'name': 'img/B04_10.jpg', 'path': 'img/B04_10.jpg'},
-    {'name': 'img/B04_05.jpg', 'path': 'img/B04_05.jpg'},
-    {'name': 'img/B02_05.jpg', 'path': 'img/B02_05.jpg'},
-    {'name': 'img/B09_03.jpg', 'path': 'img/B09_03.jpg'},
-    {'name': 'img/B09_10.jpg', 'path': 'img/B09_10.jpg'},
-    {'name': 'img/B04_04.jpg', 'path': 'img/B04_04.jpg'},
-    {'name': 'img/B04_02.jpg', 'path': 'img/B04_02.jpg'},
-    {'name': 'img/B08_06.jpg', 'path': 'img/B08_06.jpg'},
-    {'name': 'img/practice_image.jpg', 'path': 'img/practice_image.jpg'},
-    {'name': 'img/B01_04.jpg', 'path': 'img/B01_04.jpg'}
+    {'name': 'img/B09_07.jpg', 'path': 'img/B09_07.jpg'},
+    {'name': 'img/B09_04.jpg', 'path': 'img/B09_04.jpg'},
+    {'name': 'img/B09_06.jpg', 'path': 'img/B09_06.jpg'},
+    {'name': 'img/B01_02.jpg', 'path': 'img/B01_02.jpg'},
+    {'name': 'img/B05_10.jpg', 'path': 'img/B05_10.jpg'}
   ]
 });
 
@@ -231,9 +231,10 @@ async function updateInfo() {
   currentLoop = psychoJS.experiment;  // right now there are no loops
   expInfo['date'] = util.MonotonicClock.getDateStr();  // add a simple timestamp
   expInfo['expName'] = expName;
-  expInfo['psychopyVersion'] = '2022.2.5';
+  expInfo['psychopyVersion'] = '2022.2.4';
   expInfo['OS'] = window.navigator.platform;
 
+  psychoJS.experiment.dataFileName = (("." + "/") + `data/${expInfo["date"]}_${expInfo["participant"]}_${expName}`);
 
   // store frame rate of monitor if we can measure it successfully
   expInfo['frameRate'] = psychoJS.window.getActualFrameRate();
@@ -245,11 +246,6 @@ async function updateInfo() {
   // add info from the URL:
   util.addInfoFromUrl(expInfo);
   
-
-  
-  psychoJS.experiment.dataFileName = (("." + "/") + `data/${expInfo["date"]}_${expInfo["participant"]}_${expName}`);
-
-
   return Scheduler.Event.NEXT;
 }
 
@@ -1775,11 +1771,6 @@ function helloRoutineEachFrame() {
       // if welcomeDone is clicked next frame, it is a new click
       welcomeDone.wasClicked = false;
     }
-    // check for quit (typically the Esc key)
-    if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
-      return quitPsychoJS('The [Escape] key was pressed. Goodbye!', false);
-    }
-    
     // check if the Routine should terminate
     if (!continueRoutine) {  // a component has requested a forced-end of Routine
       return Scheduler.Event.NEXT;
@@ -1905,11 +1896,6 @@ function consent1RoutineEachFrame() {
         // a response ends the routine
         continueRoutine = false;
       }
-    }
-    
-    // check for quit (typically the Esc key)
-    if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
-      return quitPsychoJS('The [Escape] key was pressed. Goodbye!', false);
     }
     
     // check if the Routine should terminate
@@ -2044,11 +2030,6 @@ function consent2RoutineEachFrame() {
         // a response ends the routine
         continueRoutine = false;
       }
-    }
-    
-    // check for quit (typically the Esc key)
-    if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
-      return quitPsychoJS('The [Escape] key was pressed. Goodbye!', false);
     }
     
     // check if the Routine should terminate
@@ -2223,11 +2204,6 @@ function consent3RoutineEachFrame() {
         }
       }
     }
-    // check for quit (typically the Esc key)
-    if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
-      return quitPsychoJS('The [Escape] key was pressed. Goodbye!', false);
-    }
-    
     // check if the Routine should terminate
     if (!continueRoutine) {  // a component has requested a forced-end of Routine
       return Scheduler.Event.NEXT;
@@ -3414,11 +3390,6 @@ function consent_rejectedRoutineEachFrame() {
         quitPsychoJS('Experiment exited. Have a nice day!', false);
     }
     
-    // check for quit (typically the Esc key)
-    if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
-      return quitPsychoJS('The [Escape] key was pressed. Goodbye!', false);
-    }
-    
     // check if the Routine should terminate
     if (!continueRoutine) {  // a component has requested a forced-end of Routine
       return Scheduler.Event.NEXT;
@@ -3549,11 +3520,6 @@ function instrStartRoutineEachFrame() {
         // a response ends the routine
         continueRoutine = false;
       }
-    }
-    
-    // check for quit (typically the Esc key)
-    if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
-      return quitPsychoJS('The [Escape] key was pressed. Goodbye!', false);
     }
     
     // check if the Routine should terminate
@@ -3714,11 +3680,6 @@ function specific_instrRoutineEachFrame() {
       }
     }
     
-    // check for quit (typically the Esc key)
-    if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
-      return quitPsychoJS('The [Escape] key was pressed. Goodbye!', false);
-    }
-    
     // check if the Routine should terminate
     if (!continueRoutine) {  // a component has requested a forced-end of Routine
       return Scheduler.Event.NEXT;
@@ -3853,11 +3814,6 @@ function rateInstrRoutineEachFrame() {
       IntroCont6.setAutoDraw(true);
     }
 
-    // check for quit (typically the Esc key)
-    if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
-      return quitPsychoJS('The [Escape] key was pressed. Goodbye!', false);
-    }
-    
     // check if the Routine should terminate
     if (!continueRoutine) {  // a component has requested a forced-end of Routine
       return Scheduler.Event.NEXT;
@@ -3998,11 +3954,6 @@ function general_instr2RoutineEachFrame() {
       IntroCont7.setAutoDraw(true);
     }
 
-    // check for quit (typically the Esc key)
-    if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
-      return quitPsychoJS('The [Escape] key was pressed. Goodbye!', false);
-    }
-    
     // check if the Routine should terminate
     if (!continueRoutine) {  // a component has requested a forced-end of Routine
       return Scheduler.Event.NEXT;
@@ -4150,11 +4101,6 @@ function specific_instr2RoutineEachFrame() {
       IntroCont8.setAutoDraw(true);
     }
 
-    // check for quit (typically the Esc key)
-    if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
-      return quitPsychoJS('The [Escape] key was pressed. Goodbye!', false);
-    }
-    
     // check if the Routine should terminate
     if (!continueRoutine) {  // a component has requested a forced-end of Routine
       return Scheduler.Event.NEXT;
@@ -4289,11 +4235,6 @@ function rateInstr2RoutineEachFrame() {
       IntroCont9.setAutoDraw(true);
     }
 
-    // check for quit (typically the Esc key)
-    if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
-      return quitPsychoJS('The [Escape] key was pressed. Goodbye!', false);
-    }
-    
     // check if the Routine should terminate
     if (!continueRoutine) {  // a component has requested a forced-end of Routine
       return Scheduler.Event.NEXT;
@@ -4424,11 +4365,6 @@ function attnCheck1RoutineEachFrame() {
         // a response ends the routine
         continueRoutine = false;
       }
-    }
-    
-    // check for quit (typically the Esc key)
-    if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
-      return quitPsychoJS('The [Escape] key was pressed. Goodbye!', false);
     }
     
     // check if the Routine should terminate
@@ -4589,11 +4525,6 @@ function attnCheck2RoutineEachFrame() {
       }
     }
     
-    // check for quit (typically the Esc key)
-    if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
-      return quitPsychoJS('The [Escape] key was pressed. Goodbye!', false);
-    }
-    
     // check if the Routine should terminate
     if (!continueRoutine) {  // a component has requested a forced-end of Routine
       return Scheduler.Event.NEXT;
@@ -4747,11 +4678,6 @@ function attnCheck3RoutineEachFrame() {
         // a response ends the routine
         continueRoutine = false;
       }
-    }
-    
-    // check for quit (typically the Esc key)
-    if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
-      return quitPsychoJS('The [Escape] key was pressed. Goodbye!', false);
     }
     
     // check if the Routine should terminate
@@ -4915,11 +4841,6 @@ function attnFailedRoutineEachFrame() {
       reviewStart.setAutoDraw(true);
     }
 
-    // check for quit (typically the Esc key)
-    if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
-      return quitPsychoJS('The [Escape] key was pressed. Goodbye!', false);
-    }
-    
     // check if the Routine should terminate
     if (!continueRoutine) {  // a component has requested a forced-end of Routine
       return Scheduler.Event.NEXT;
@@ -5054,11 +4975,6 @@ function attnSuccessRoutineEachFrame() {
       practiceStart_button.setAutoDraw(true);
     }
 
-    // check for quit (typically the Esc key)
-    if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
-      return quitPsychoJS('The [Escape] key was pressed. Goodbye!', false);
-    }
-    
     // check if the Routine should terminate
     if (!continueRoutine) {  // a component has requested a forced-end of Routine
       return Scheduler.Event.NEXT;
@@ -5164,11 +5080,6 @@ function fixationRoutineEachFrame() {
     if (fixCross.status === PsychoJS.Status.STARTED && t >= frameRemains) {
       fixCross.setAutoDraw(false);
     }
-    // check for quit (typically the Esc key)
-    if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
-      return quitPsychoJS('The [Escape] key was pressed. Goodbye!', false);
-    }
-    
     // check if the Routine should terminate
     if (!continueRoutine) {  // a component has requested a forced-end of Routine
       return Scheduler.Event.NEXT;
@@ -5309,11 +5220,6 @@ function practiceFaceRoutineEachFrame() {
     // Run 'Each Frame' code from endTrial_2
     if ((t > 3)) {
         continueRoutine = false;
-    }
-    
-    // check for quit (typically the Esc key)
-    if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
-      return quitPsychoJS('The [Escape] key was pressed. Goodbye!', false);
     }
     
     // check if the Routine should terminate
@@ -5483,11 +5389,6 @@ function redo_feedbackRoutineEachFrame() {
       }
     }
     
-    // check for quit (typically the Esc key)
-    if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
-      return quitPsychoJS('The [Escape] key was pressed. Goodbye!', false);
-    }
-    
     // check if the Routine should terminate
     if (!continueRoutine) {  // a component has requested a forced-end of Routine
       return Scheduler.Event.NEXT;
@@ -5648,11 +5549,6 @@ function ratingScaleRoutineEachFrame() {
       }
     }
     
-    // check for quit (typically the Esc key)
-    if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
-      return quitPsychoJS('The [Escape] key was pressed. Goodbye!', false);
-    }
-    
     // check if the Routine should terminate
     if (!continueRoutine) {  // a component has requested a forced-end of Routine
       return Scheduler.Event.NEXT;
@@ -5774,11 +5670,6 @@ function introDoneRoutineEachFrame() {
         // a response ends the routine
         continueRoutine = false;
       }
-    }
-    
-    // check for quit (typically the Esc key)
-    if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
-      return quitPsychoJS('The [Escape] key was pressed. Goodbye!', false);
     }
     
     // check if the Routine should terminate
@@ -5964,11 +5855,6 @@ function faceOnsetRoutineEachFrame() {
     // Run 'Each Frame' code from endTrial
     if ((t > 3)) {
         continueRoutine = false;
-    }
-    
-    // check for quit (typically the Esc key)
-    if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
-      return quitPsychoJS('The [Escape] key was pressed. Goodbye!', false);
     }
     
     // check if the Routine should terminate
@@ -6171,11 +6057,6 @@ function contRoutineEachFrame() {
       contPrompt.setAutoDraw(true);
     }
 
-    // check for quit (typically the Esc key)
-    if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
-      return quitPsychoJS('The [Escape] key was pressed. Goodbye!', false);
-    }
-    
     // check if the Routine should terminate
     if (!continueRoutine) {  // a component has requested a forced-end of Routine
       return Scheduler.Event.NEXT;
@@ -6297,11 +6178,6 @@ function intro2QuestionsRoutineEachFrame() {
         // a response ends the routine
         continueRoutine = false;
       }
-    }
-    
-    // check for quit (typically the Esc key)
-    if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
-      return quitPsychoJS('The [Escape] key was pressed. Goodbye!', false);
     }
     
     // check if the Routine should terminate
@@ -6501,11 +6377,6 @@ function closure1RoutineEachFrame() {
       // if surveyContinue1 is clicked next frame, it is a new click
       surveyContinue1.wasClicked = false;
     }
-    // check for quit (typically the Esc key)
-    if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
-      return quitPsychoJS('The [Escape] key was pressed. Goodbye!', false);
-    }
-    
     // check if the Routine should terminate
     if (!continueRoutine) {  // a component has requested a forced-end of Routine
       return Scheduler.Event.NEXT;
@@ -6703,11 +6574,6 @@ function closure2RoutineEachFrame() {
       // if surveyContinue2 is clicked next frame, it is a new click
       surveyContinue2.wasClicked = false;
     }
-    // check for quit (typically the Esc key)
-    if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
-      return quitPsychoJS('The [Escape] key was pressed. Goodbye!', false);
-    }
-    
     // check if the Routine should terminate
     if (!continueRoutine) {  // a component has requested a forced-end of Routine
       return Scheduler.Event.NEXT;
@@ -6905,11 +6771,6 @@ function closure3RoutineEachFrame() {
       // if surveyContinue3 is clicked next frame, it is a new click
       surveyContinue3.wasClicked = false;
     }
-    // check for quit (typically the Esc key)
-    if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
-      return quitPsychoJS('The [Escape] key was pressed. Goodbye!', false);
-    }
-    
     // check if the Routine should terminate
     if (!continueRoutine) {  // a component has requested a forced-end of Routine
       return Scheduler.Event.NEXT;
@@ -7095,11 +6956,6 @@ function closure4RoutineEachFrame() {
       // if surveyContinue4 is clicked next frame, it is a new click
       surveyContinue4.wasClicked = false;
     }
-    // check for quit (typically the Esc key)
-    if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
-      return quitPsychoJS('The [Escape] key was pressed. Goodbye!', false);
-    }
-    
     // check if the Routine should terminate
     if (!continueRoutine) {  // a component has requested a forced-end of Routine
       return Scheduler.Event.NEXT;
@@ -7297,11 +7153,6 @@ function demographicsRoutineEachFrame() {
       // if demogexitClick is clicked next frame, it is a new click
       demogexitClick.wasClicked = false;
     }
-    // check for quit (typically the Esc key)
-    if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
-      return quitPsychoJS('The [Escape] key was pressed. Goodbye!', false);
-    }
-    
     // check if the Routine should terminate
     if (!continueRoutine) {  // a component has requested a forced-end of Routine
       return Scheduler.Event.NEXT;
@@ -7446,11 +7297,6 @@ function openAnswerRoutineEachFrame() {
       // if openAnswerClick is clicked next frame, it is a new click
       openAnswerClick.wasClicked = false;
     }
-    // check for quit (typically the Esc key)
-    if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
-      return quitPsychoJS('The [Escape] key was pressed. Goodbye!', false);
-    }
-    
     // check if the Routine should terminate
     if (!continueRoutine) {  // a component has requested a forced-end of Routine
       return Scheduler.Event.NEXT;
@@ -7565,11 +7411,6 @@ function debriefRoutineEachFrame() {
         // a response ends the routine
         continueRoutine = false;
       }
-    }
-    
-    // check for quit (typically the Esc key)
-    if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
-      return quitPsychoJS('The [Escape] key was pressed. Goodbye!', false);
     }
     
     // check if the Routine should terminate
@@ -7715,11 +7556,6 @@ function completionRoutineEachFrame() {
         // a response ends the routine
         continueRoutine = false;
       }
-    }
-    
-    // check for quit (typically the Esc key)
-    if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
-      return quitPsychoJS('The [Escape] key was pressed. Goodbye!', false);
     }
     
     // check if the Routine should terminate
