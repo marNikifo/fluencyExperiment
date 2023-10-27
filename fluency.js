@@ -7497,7 +7497,7 @@ function completionRoutineEachFrame() {
 
     
     // *exitKey* updates
-    if (t >= 1 && exitKey.status === PsychoJS.Status.NOT_STARTED) {
+    if (t >= 0 && exitKey.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
       exitKey.tStart = t;  // (not accounting for frame time here)
       exitKey.frameNStart = frameN;  // exact frame index
