@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" ?>
-<PsychoPy2experiment encoding="utf-8" version="2022.2.4">
+<PsychoPy2experiment encoding="utf-8" version="2022.2.5">
   <Settings>
     <Param val="use prefs" valType="str" updates="None" name="Audio latency priority"/>
     <Param val="use prefs" valType="str" updates="None" name="Audio lib"/>
@@ -1423,8 +1423,8 @@
       <CodeComponent name="condSelect">
         <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
-        <Param val="#Use if-else flow to choose rows from the main&amp;#10;#file. These rows should be python &quot;lists&quot;. &amp;#10;&amp;#10;#I find the easiest way to use the participant number&amp;#10;#for this purpose. &amp;#10;#use the modulo operator (%) to cycle through&amp;#10;&amp;#10;# selects 110 trials of given condition based on number of participants&amp;#10;selected_rows = range((expInfo['participant']%8)*110,(expInfo['participant']%8+1)*110)&amp;#10;&amp;#10;#short trial 'run' for testing&amp;#10;#selected_rows=[1,2,3]&amp;#10;&amp;#10;#just mf&amp;#10;#selected_rows=range(112, 222)" valType="extendedCode" updates="constant" name="Begin Experiment"/>
-        <Param val="selected_rows = util.range(((expInfo[&quot;participant&quot;] % 8) * 110), (((expInfo[&quot;participant&quot;] % 8) + 1) * 110));&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="#Use if-else flow to choose rows from the main&amp;#10;#file. These rows should be python &quot;lists&quot;. &amp;#10;&amp;#10;#I find the easiest way to use the participant number&amp;#10;#for this purpose. &amp;#10;#use the modulo operator (%) to cycle through&amp;#10;&amp;#10;# selects 110 trials of given condition based on number of participants&amp;#10;#og number of conds was 8, adjusted after control was complete&amp;#10;#selected_rows = range((expInfo['participant']%8)*110,(expInfo['participant']%8+1)*110)&amp;#10;selected_rows = range((expInfo['participant']%6)*110,(expInfo['participant']%6+1)*110)&amp;#10;&amp;#10;#short trial 'run' for testing&amp;#10;#selected_rows=[1,2,3]&amp;#10;&amp;#10;#just mf&amp;#10;#selected_rows=range(112, 222)" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="selected_rows = util.range(((expInfo[&quot;participant&quot;] % 6) * 110), (((expInfo[&quot;participant&quot;] % 6) + 1) * 110));&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin Routine"/>
         <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
